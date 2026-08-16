@@ -1,0 +1,91 @@
+---
+import AdSlot from '../components/AdSlot.astro';
+
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+const siteName = 'MoneyMattersDaily';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} | {siteName}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/" class="site-logo">{siteName}</a>
+      <nav>
+        <a href="/budgeting">Budgeting</a>
+        <a href="/saving">Saving</a>
+        <a href="/credit">Credit</a>
+        <a href="/investing-basics">Investing Basics</a>
+        <a href="/app-comparisons">App Comparisons</a>
+      </nav>
+    </header>
+
+    <AdSlot position="header" />
+
+    <main>
+      <slot />
+    </main>
+
+    <AdSlot position="footer" />
+
+    <footer class="site-footer">
+      <p>&copy; {new Date().getFullYear()} {siteName}. Informational content only — not financial advice.</p>
+    </footer>
+
+    <style is:global>
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 0 1.25rem;
+        line-height: 1.6;
+        color: #1a1a1a;
+      }
+      .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid #eee;
+      }
+      .site-logo {
+        font-weight: 700;
+        font-size: 1.25rem;
+        text-decoration: none;
+        color: #1a1a1a;
+      }
+      .site-header nav {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+      }
+      .site-header nav a {
+        color: #444;
+        text-decoration: none;
+      }
+      .site-footer {
+        margin-top: 3rem;
+        padding: 1.5rem 0;
+        border-top: 1px solid #eee;
+        font-size: 0.85rem;
+        color: #777;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout
+  title="Practical Money Guides, Updated Regularly"
+  description="Clear, no-jargon guides on budgeting, saving, credit, and investing basics."
+>
+  <h1>Practical money guides, no jargon</h1>
+  <p>Budgeting, saving, credit, and beginner investing — explained plainly, updated regularly.</p>
+
+  <ul class="post-list">
+    {posts.map((post) => (
+      <li>
+        <a href={`/blog/${post.id}`}>{post.data.title}</a>
+        <p>{post.data.description}</p>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>
+
+<style>
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  .post-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  .post-list a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-decoration: none;
+  }
+  .post-list p {
+    margin: 0.25rem 0 0;
+    color: #555;
+    font-size: 0.95rem;
+  }
+</style>

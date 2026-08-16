@@ -1,0 +1,26 @@
+---
+// Reusable ad placement. Empty for now — once a network is approved,
+// drop its ad tag/script here (or swap in per-network components) without
+// touching page templates.
+interface Props {
+  position: 'header' | 'in-content' | 'sidebar' | 'footer';
+}
+const { position } = Astro.props;
+---
+
+<div class={`ad-slot ad-slot--${position}`} data-ad-position={position}>
+  <!-- AD_NETWORK_SCRIPT_PLACEHOLDER: position={position} -->
+</div>
+
+<style>
+  .ad-slot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    margin: 1.5rem 0;
+  }
+  .ad-slot:empty {
+    display: none; /* collapse cleanly while no network is wired in */
+  }
+</style>

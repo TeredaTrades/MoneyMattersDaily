@@ -1,0 +1,63 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  return [
+    'budgeting',
+    'saving',
+    'credit',
+    'investing-basics',
+    'app-comparisons',
+  ].map((pillar) => ({ params: { pillar } }));
+}
+
+const PILLARS: Record<string, string> = {
+  budgeting: 'Budgeting',
+  saving: 'Saving',
+  credit: 'Credit',
+  'investing-basics': 'Investing Basics',
+  'app-comparisons': 'App Comparisons',
+};
+
+const { pillar } = Astro.params as { pillar: string };
+const label = PILLARS[pillar];
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft && data.pillar === pillar);
+const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout title={label} description={`${label} guides on MoneyMattersDaily.`}>
+  <h1>{label}</h1>
+  <ul class="post-list">
+    {posts.map((post) => (
+      <li>
+        <a href={`/blog/${post.id}`}>{post.data.title}</a>
+        <p>{post.data.description}</p>
+      </li>
+    ))}
+  </ul>
+  {posts.length === 0 && <p>No posts in this pillar yet — check back soon.</p>}
+</BaseLayout>
+
+<style>
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  .post-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+  }
+  .post-list a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-decoration: none;
+  }
+  .post-list p {
+    margin: 0.25rem 0 0;
+    color: #555;
+    font-size: 0.95rem;
+  }
+</style>
