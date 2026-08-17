@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AdSlot from '../../components/AdSlot.astro';
+import BudgetDonut from '../../components/BudgetDonut.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
@@ -13,6 +14,14 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+// Posts with a matching hand-built illustration. Keeps content as plain
+// markdown (per README's simple, no-pipeline process) while still
+// allowing a supporting visual for specific posts.
+const ILLUSTRATIONS: Record<string, 'budget-donut'> = {
+  '50-30-20-budget-rule-explained': 'budget-donut',
+};
+const illustration = ILLUSTRATIONS[post.id];
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description}>
@@ -22,6 +31,7 @@ const { Content } = await render(post);
       Published {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
       {post.data.updatedDate && ` · Updated ${post.data.updatedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}
     </p>
+    {illustration === 'budget-donut' && <BudgetDonut />}
     <Content />
     <AdSlot position="in-content" />
   </article>

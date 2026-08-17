@@ -1,0 +1,54 @@
+---
+// Circumference math for r=70: 2 * PI * 70 = 439.82
+// Needs 50% = 219.91, Wants 30% = 131.95, Savings 20% = 87.96
+---
+
+<figure class="budget-donut">
+  <svg viewBox="0 0 200 200" width="220" height="220" role="img" aria-label="Donut chart showing the 50/30/20 budget split: 50% needs, 30% wants, 20% savings and debt payoff">
+    <circle cx="100" cy="100" r="70" fill="none" stroke="#e8edf2" stroke-width="32" />
+    <circle cx="100" cy="100" r="70" fill="none" stroke="#1f3a5f" stroke-width="32"
+      stroke-dasharray="219.91 439.82" stroke-dashoffset="0" transform="rotate(-90 100 100)" />
+    <circle cx="100" cy="100" r="70" fill="none" stroke="#5b7fa6" stroke-width="32"
+      stroke-dasharray="131.95 439.82" stroke-dashoffset="-219.91" transform="rotate(-90 100 100)" />
+    <circle cx="100" cy="100" r="70" fill="none" stroke="#a8c1d9" stroke-width="32"
+      stroke-dasharray="87.96 439.82" stroke-dashoffset="-351.86" transform="rotate(-90 100 100)" />
+  </svg>
+  <figcaption>
+    <span class="legend-item"><span class="swatch" style="background:#1f3a5f"></span>50% Needs</span>
+    <span class="legend-item"><span class="swatch" style="background:#5b7fa6"></span>30% Wants</span>
+    <span class="legend-item"><span class="swatch" style="background:#a8c1d9"></span>20% Savings &amp; debt payoff</span>
+  </figcaption>
+</figure>
+
+<style>
+  .budget-donut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1.75rem 0;
+  }
+  .budget-donut svg {
+    max-width: 100%;
+    height: auto;
+  }
+  figcaption {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.85rem;
+    color: #444;
+  }
+  .legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .swatch {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 2px;
+    display: inline-block;
+  }
+</style>

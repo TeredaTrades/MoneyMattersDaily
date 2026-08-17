@@ -1,5 +1,6 @@
 ---
 import AdSlot from '../components/AdSlot.astro';
+import PillarIcon from '../components/PillarIcon.astro';
 
 interface Props {
   title: string;
@@ -25,11 +26,11 @@ const siteName = 'MoneyMattersDaily';
     <header class="site-header">
       <a href="/" class="site-logo">{siteName}</a>
       <nav>
-        <a href="/budgeting">Budgeting</a>
-        <a href="/saving">Saving</a>
-        <a href="/credit">Credit</a>
-        <a href="/investing-basics">Investing Basics</a>
-        <a href="/app-comparisons">App Comparisons</a>
+        <a href="/budgeting"><PillarIcon name="budgeting" size={15} /> Budgeting</a>
+        <a href="/saving"><PillarIcon name="saving" size={15} /> Saving</a>
+        <a href="/credit"><PillarIcon name="credit" size={15} /> Credit</a>
+        <a href="/investing-basics"><PillarIcon name="investing-basics" size={15} /> Investing Basics</a>
+        <a href="/app-comparisons"><PillarIcon name="app-comparisons" size={15} /> App Comparisons</a>
         <a href="/about">About</a>
       </nav>
     </header>
@@ -61,6 +62,7 @@ const siteName = 'MoneyMattersDaily';
         padding: 0 1.25rem;
         line-height: 1.6;
         color: #1a1a1a;
+        --accent: #1f3a5f;
       }
       .site-header {
         display: flex;
@@ -86,6 +88,19 @@ const siteName = 'MoneyMattersDaily';
       .site-header nav a {
         color: #444;
         text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+      }
+      .site-header nav a svg {
+        color: #999;
+        flex-shrink: 0;
+      }
+      .site-header nav a:hover svg {
+        color: var(--accent);
+      }
+      .site-header nav a:hover {
+        color: var(--accent);
       }
       .site-footer {
         margin-top: 3rem;

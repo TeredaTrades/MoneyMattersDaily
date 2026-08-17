@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import PillarIcon from '../components/PillarIcon.astro';
 
 export async function getStaticPaths() {
   return [
@@ -28,7 +29,7 @@ const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.
 ---
 
 <BaseLayout title={label} description={`${label} guides on MoneyMattersDaily.`}>
-  <h1>{label}</h1>
+  <h1 class="pillar-heading"><PillarIcon name={pillar as any} size={30} /> {label}</h1>
   <ul class="post-list">
     {posts.map((post) => (
       <li>
@@ -41,6 +42,15 @@ const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.
 </BaseLayout>
 
 <style>
+  .pillar-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .pillar-heading svg {
+    color: #1f3a5f;
+    flex-shrink: 0;
+  }
   .post-list {
     list-style: none;
     padding: 0;

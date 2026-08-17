@@ -1,0 +1,46 @@
+---
+interface Props {
+  name: 'budgeting' | 'saving' | 'credit' | 'investing-basics' | 'app-comparisons';
+  size?: number;
+}
+const { name, size = 20 } = Astro.props;
+---
+
+{name === 'budgeting' && (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6" />
+    <path d="M12 12 L12 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+    <path d="M12 12 L18.8 15.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+  </svg>
+)}
+
+{name === 'saving' && (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M6 10.5c0-3.6 2.7-6.5 6-6.5s6 2.9 6 6.5V18a1 1 0 0 1-1 1h-1.2a1 1 0 0 1-1-.8l-.2-1.2H9.4l-.2 1.2a1 1 0 0 1-1 .8H7a1 1 0 0 1-1-1v-2.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+    <path d="M9.5 9.5h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    <path d="M4 12.5 6 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+  </svg>
+)}
+
+{name === 'credit' && (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect x="3" y="6" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.6" />
+    <path d="M3 10.5h18" stroke="currentColor" stroke-width="1.6" />
+    <path d="M6 15h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+  </svg>
+)}
+
+{name === 'investing-basics' && (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 18h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+    <path d="M6 18v-4M11 18V9M16 18v-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+    <path d="M16.5 6 20 5.3l.7 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+)}
+
+{name === 'app-comparisons' && (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect x="3.5" y="5" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6" />
+    <rect x="8.5" y="8" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6" fill="white" />
+  </svg>
+)}
