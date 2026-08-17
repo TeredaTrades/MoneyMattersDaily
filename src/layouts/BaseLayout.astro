@@ -30,6 +30,7 @@ const siteName = 'MoneyMattersDaily';
         <a href="/credit">Credit</a>
         <a href="/investing-basics">Investing Basics</a>
         <a href="/app-comparisons">App Comparisons</a>
+        <a href="/about">About</a>
       </nav>
     </header>
 
@@ -42,6 +43,13 @@ const siteName = 'MoneyMattersDaily';
     <AdSlot position="footer" />
 
     <footer class="site-footer">
+      <nav class="footer-links">
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/disclaimer">Disclaimer &amp; Privacy</a>
+        <a href="https://twitter.com/moneymattersdly" rel="noopener">Twitter</a>
+        <a href="https://pinterest.com/moneymattersdaily" rel="noopener">Pinterest</a>
+      </nav>
       <p>&copy; {new Date().getFullYear()} {siteName}. Informational content only — not financial advice.</p>
     </footer>
 
@@ -85,6 +93,19 @@ const siteName = 'MoneyMattersDaily';
         border-top: 1px solid #eee;
         font-size: 0.85rem;
         color: #777;
+      }
+      .footer-links {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 0.75rem;
+      }
+      .footer-links a {
+        color: #555;
+        text-decoration: none;
+      }
+      .footer-links a:hover {
+        text-decoration: underline;
       }
     </style>
   </body>
