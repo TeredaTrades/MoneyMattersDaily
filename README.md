@@ -37,3 +37,4 @@ npm run build    # static build to dist/
 - Domain not yet registered — verify `moneymattersdaily.com` (or a `.money`/`.blog` alternative) availability before launch
 - No ad network wired in yet — apply to PropellerAds and Adsterra first (best fit for zero-traffic start + non-PayPal, crypto-friendly payout options), Media.net and Infolinks later once there's traffic history
 - Hosting not yet chosen — GitHub Pages or Netlify free tier are the natural next step
+
