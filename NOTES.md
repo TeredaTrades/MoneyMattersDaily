@@ -2,6 +2,46 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-17 (later still) — Images + second post
+
+### Images
+- Added `PillarIcon.astro` — 5 hand-drawn line icons (one per pillar:
+  budgeting, saving, credit, investing-basics, app-comparisons), single
+  accent navy (#1f3a5f) via `currentColor`. Wired into main nav, pillar
+  page headings, and homepage post-list badges.
+- Deliberately avoided stock photos — no attribution overhead, keeps
+  the "plain and credible" identity from the README, avoids the
+  generic-stock-photo look that also reads as unfinished/AI-templated.
+- Added `BudgetDonut.astro` — a functional (not decorative) donut chart
+  illustrating the 50/30/20 split, injected into that specific post via
+  a small slug→illustration map in `[slug].astro`. Chose this over MDX
+  so post content stays plain markdown, matching the README's
+  intentionally simple no-pipeline process. Future posts needing a
+  custom illustration follow the same pattern (add to the map).
+
+### Second post
+- Published `how-much-emergency-fund.md` (saving pillar) — chose this
+  over the next-in-queue budgeting keyword to give the homepage pillar
+  diversity with only two live posts.
+- Deliberately varied structure vs. the first post (income-stability
+  scenarios instead of a bucket list) and included an explicit
+  point of view (the two-income case is called out as the one place
+  going under the "standard" 3-6mo advice is defensible) rather than
+  hedging every claim — per the "feels AI-generated" discussion earlier
+  in this project. Cross-links to the 50/30/20 post for the "needs"
+  baseline number.
+- Marked the keyword `published` in `content-pipeline/keyword-queue.json`.
+
+### Open items (carried over)
+- `hello@moneymattersdaily.money` still needs setup as a forwarding
+  group/alias (not a paid user).
+- MX verification in Google Admin still pending — recheck later.
+- Footer social links (Twitter, Pinterest) still placeholders.
+- Two posts live now — still thin for ad-network application; keep
+  publishing before applying to Adsterra/PropellerAds.
+
+---
+
 ## 2026-08-17 (later) — Google Workspace email setup for the domain
 
 ### What we did
