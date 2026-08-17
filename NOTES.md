@@ -2,6 +2,69 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-17 (later) — Google Workspace email setup for the domain
+
+### What we did
+- Added `moneymattersdaily.money` to the existing TeredaTrades Google
+  Workspace account as a **secondary domain** (not user-alias domain).
+  Reasoning: user-alias ties the address directly to
+  `mike@teredatrades.com` (same underlying identity, defeats the
+  unbranded-separation goal). Secondary domain lets us create a
+  genuinely separate-looking address.
+- **Cost note**: adding the secondary domain itself is free either way.
+  Cost only appears if you create a brand-new *licensed user* on it. To
+  avoid that, the plan is to set `hello@moneymattersdaily.money` up as a
+  **group/alias that forwards to the existing mailbox**, not a new paid
+  user — this part is not yet done (see open items).
+- Domain ownership verified via TXT record
+  (`google-site-verification=...`) added in Namecheap Advanced DNS,
+  alongside the existing SPF TXT record — multiple TXT records on `@` is
+  fine, no conflict.
+- Gmail/MX activation: Namecheap's Host Records "Type" dropdown does NOT
+  list MX directly — it lives in the separate **Mail Settings** section
+  further down the Advanced DNS page. Selected the **"Gmail"** preset
+  there (instead of manually entering an MX record), which
+  auto-configures the correct MX record server-side non-visibly in the
+  Host Records table.
+- Google's live MX verification check failed on first attempt
+  ("Unable to verify at the moment") — this is expected/normal, MX
+  propagation is slower than the TXT check. Clicked "Do this later"
+  rather than retrying repeatedly; nothing else (site, domain
+  verification, DNS) is blocked by this. Re-check later via Admin
+  console → Account → Domains → Manage domains.
+
+### Investigated: is this the same issue as teredatrades.com's search-indexing problem?
+Checked against the previously diagnosed root cause for teredatrades.com
+(GitHub Pages SSL cert stuck because Cloudflare's proxy served its own
+IPs instead of GitHub's, breaking the ACME challenge). **Not the same
+issue here** — verified `moneymattersdaily.money` resolves directly to
+GitHub Pages' real IPs (185.199.108-111.153) with no proxy in front of
+it, since DNS is managed plain through Namecheap. `pending_domain_unverified_at`
+and `protected_domain_state` both clear on GitHub's side. The only thing
+pending is normal SSL cert issuance time, not a structural DNS conflict.
+
+### Resolved: "Action required" email
+The red "Action needed" badges in Google Admin's domain list (for both
+teredatrades.com and moneymattersdaily.money) are just the MX-pending
+status described above, not a new problem. Separately, a stale browser
+tab titled "Action required: Verify your..." turned out to be the same
+Namecheap WHOIS contact-verification email already completed earlier in
+this session (same verification key) — no outstanding action, just an
+old tab left open.
+
+### Open items (carried over + new)
+- `hello@moneymattersdaily.money` still needs to be set up as a
+  forwarding group/alias (not a paid user) once the secondary domain
+  finishes verifying.
+- MX verification in Google Admin still pending — recheck later.
+- Footer social links (Twitter, Pinterest) still placeholders — need
+  real accounts before going live.
+- Site still needs images and more posts with varied
+  structure/voice — this is the main blocker before applying to
+  Adsterra/PropellerAds, more than any remaining DNS/email task.
+
+---
+
 ## 2026-08-17 — Deployment + ad-readiness review
 
 ### Deployment
