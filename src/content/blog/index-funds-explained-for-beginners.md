@@ -5,6 +5,7 @@ pubDate: 2026-08-18
 targetKeyword: "index funds explained for beginners"
 pillar: "investing-basics"
 draft: false
+pinApproved: true
 ---
 
 An index fund isn't a clever investment. That's the point. It's a basket of stocks (or bonds) built to match a market index — the S&P 500, the total US stock market, whatever the index is — rather than trying to beat it. You're not betting on which companies will win. You're betting that the economy, taken as a whole, keeps growing over the long run, and you want a slice of all of it instead of a bet on a few names.
