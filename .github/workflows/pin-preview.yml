@@ -1,0 +1,53 @@
+name: Generate Pinterest pin previews
+
+# Runs on PRs that add or change blog posts. Generates a pin PNG for each
+# changed post and commits it back onto the PR branch under public/pins/,
+# so reviewers see the actual image in the PR diff before anything is
+# approved. Approval itself is just setting `pinApproved: true` in that
+# post's frontmatter as part of the same PR — nothing gets pinned or
+# published from this workflow.
+
+on:
+  pull_request:
+    paths:
+      - 'src/content/blog/**.md'
+
+permissions:
+  contents: write
+
+jobs:
+  generate-pins:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Find changed blog posts
+        id: changed
+        uses: tj-actions/changed-files@v45
+        with:
+          files: src/content/blog/**.md
+
+      - name: Generate pin image(s)
+        if: steps.changed.outputs.any_changed == 'true'
+        run: node scripts/generate-pin.mjs ${{ steps.changed.outputs.all_changed_files }}
+
+      - name: Commit generated pins
+        if: steps.changed.outputs.any_changed == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: generate Pinterest pin preview(s) [skip ci]"
+          file_pattern: 'public/pins/*.png'
+          commit_user_name: pin-preview-bot
+          commit_user_email: actions@github.com
