@@ -5,6 +5,7 @@ pubDate: 2026-08-17
 targetKeyword: "how much should I have in an emergency fund"
 pillar: "saving"
 draft: false
+pinApproved: true
 ---
 
 The standard answer is 3-6 months of expenses. That's a fine starting point, but it's a range built for an average that doesn't describe most people's actual risk. If you've ever tried to hit "3-6 months" without knowing which end applies to you, you've felt the problem — it's not really an answer, it's a shrug.
