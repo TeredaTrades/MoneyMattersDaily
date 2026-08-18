@@ -2,6 +2,36 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-19 (latest, cont.) — X account created: @MoneyMattersDly
+
+### Resolved: X signup, fully unblocked
+The moderation fix worked — approving `info@x.com`'s pending message
+got the verification code through immediately. Account created:
+- Display name: `MoneyMattersDaily` (matches site branding capitalization)
+- Handle: `@MoneyMattersDly` (X's 15-char limit forced a shortened
+  handle — this happens to exactly match the placeholder
+  `twitter.com/moneymattersdly` already sitting in the site footer, so
+  **no code change needed there**; X handles are case-insensitive in
+  URLs)
+- Interests selected: Business & Finance, News, Technology (matches
+  site content pillars — avoided Politics/Crypto/Memes/Gaming etc. to
+  keep early algorithmic suggestions on-brand)
+- Followed 1 required starter pack: Hedge Funds (closest fit to actual
+  content vs. the CEO/startup/diplomat pack options)
+
+### Profile setup (in progress)
+Decided to mirror the Pinterest setup approach — reuse existing site
+assets/voice rather than new stock content:
+- Profile photo: site favicon (`public/favicon.svg`/`.ico`)
+- Bio: matches homepage tagline tone (plain-language, no-jargon
+  positioning)
+- Website field set to `https://moneymattersdaily.money`
+- Declined the "Get Verified" (paid Premium) prompt — same call as the
+  ad-network timing decision, not worth it pre-traffic
+- Left location blank (public-facing field here, unlike Pinterest's
+  backend-only country setting — no reason to disclose Ethiopia
+  publicly on the account)
+
 ## 2026-08-19 (latest) — Root cause found: X signup "silent block" was moderation, not X
 
 ### Resolves the open "X signup retried, same silent block" item
