@@ -1,8 +1,12 @@
 #!/usr/bin/env node
-// Builds public/pinterest-feed.xml — a curated RSS feed containing ONLY posts
-// where pinApproved: true in frontmatter. This is the feed URL you paste into
-// Pinterest (Settings -> Bulk Create Pins -> Auto-publish), NOT the main site
-// feed — that keeps unreviewed posts out of Pinterest entirely.
+// Builds one curated RSS feed PER PILLAR — public/pinterest-feed-<pillar>.xml —
+// each containing only posts in that pillar where pinApproved: true.
+//
+// Why per-pillar: Pinterest's RSS auto-publish connects one feed to one
+// board. A single combined feed would dump every approved post into
+// whichever board that feed is connected to, ignoring the pillar-specific
+// boards already set up on the account. Connect each feed URL below to its
+// matching board under Pinterest Settings -> Bulk Create Pins.
 //
 // Run automatically as part of `npm run build` (see package.json "prebuild").
 
@@ -15,9 +19,19 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const BLOG_DIR = path.join(ROOT, 'src/content/blog');
 const PINS_DIR = path.join(ROOT, 'public/pins');
-const OUT_FILE = path.join(ROOT, 'public/pinterest-feed.xml');
+const OUT_DIR = path.join(ROOT, 'public');
 
 const SITE = 'https://moneymattersdaily.money';
+
+// Maps each content pillar to the Pinterest board it should feed.
+// Update this if boards get renamed/added on the Pinterest side.
+const PILLAR_BOARDS = {
+  budgeting: 'Budgeting Tips',
+  saving: 'Saving Money',
+  credit: 'Building Credit',
+  'investing-basics': 'Investing Basics', // no board created on Pinterest yet as of this writing
+  'app-comparisons': 'Budgeting App Reviews',
+};
 
 function escapeXml(str) {
   return String(str)
@@ -28,7 +42,7 @@ function escapeXml(str) {
     .replace(/'/g, '&apos;');
 }
 
-const posts = fs
+const allPosts = fs
   .readdirSync(BLOG_DIR)
   .filter((f) => f.endsWith('.md'))
   .map((f) => {
@@ -45,15 +59,17 @@ const posts = fs
       );
     }
     return pinExists;
-  })
-  .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+  });
 
-const items = posts
-  .map((p) => {
-    const url = `${SITE}/blog/${p.slug}/`;
-    const imageUrl = `${SITE}/pins/${p.slug}.png`;
-    const pubDate = new Date(p.pubDate).toUTCString();
-    return `  <item>
+function buildFeedXml(pillar, posts) {
+  const boardName = PILLAR_BOARDS[pillar] ?? pillar;
+  const items = posts
+    .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
+    .map((p) => {
+      const url = `${SITE}/blog/${p.slug}/`;
+      const imageUrl = `${SITE}/pins/${p.slug}.png`;
+      const pubDate = new Date(p.pubDate).toUTCString();
+      return `  <item>
     <title>${escapeXml(p.title)}</title>
     <link>${url}</link>
     <guid isPermaLink="false">${SITE}/pinterest/${p.slug}</guid>
@@ -61,20 +77,47 @@ const items = posts
     <pubDate>${pubDate}</pubDate>
     <enclosure url="${imageUrl}" type="image/png" />
   </item>`;
-  })
-  .join('\n');
+    })
+    .join('\n');
 
-const xml = `<?xml version="1.0" encoding="UTF-8"?>
+  return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 <channel>
-  <title>Money Matters Daily — Pinterest Feed</title>
+  <title>Money Matters Daily — Pinterest Feed (${escapeXml(boardName)})</title>
   <link>${SITE}</link>
-  <description>Curated, approved pins for Pinterest auto-publish. Not the main site feed.</description>
+  <description>Curated, approved pins for the "${escapeXml(
+    boardName
+  )}" board. Not the main site feed.</description>
 ${items}
 </channel>
 </rss>
 `;
+}
 
-fs.mkdirSync(path.dirname(OUT_FILE), { recursive: true });
-fs.writeFileSync(OUT_FILE, xml);
-console.log(`wrote ${path.relative(ROOT, OUT_FILE)} with ${posts.length} approved post(s)`);
+fs.mkdirSync(OUT_DIR, { recursive: true });
+
+const pillars = Object.keys(PILLAR_BOARDS);
+let totalWritten = 0;
+
+for (const pillar of pillars) {
+  const posts = allPosts.filter((p) => p.pillar === pillar);
+  const xml = buildFeedXml(pillar, posts);
+  const outFile = path.join(OUT_DIR, `pinterest-feed-${pillar}.xml`);
+  fs.writeFileSync(outFile, xml);
+  console.log(
+    `wrote ${path.relative(ROOT, outFile)} with ${posts.length} approved post(s) -> board "${
+      PILLAR_BOARDS[pillar]
+    }"`
+  );
+  totalWritten += posts.length;
+}
+
+const unmapped = allPosts.filter((p) => !pillars.includes(p.pillar));
+if (unmapped.length > 0) {
+  console.warn(
+    `warning: ${unmapped.length} approved post(s) have a pillar with no board mapping in PILLAR_BOARDS and were skipped: ` +
+      unmapped.map((p) => `${p.slug} (${p.pillar})`).join(', ')
+  );
+}
+
+console.log(`total: ${totalWritten} approved post(s) across ${pillars.length} pillar feeds`);
