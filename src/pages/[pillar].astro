@@ -10,6 +10,8 @@ export async function getStaticPaths() {
     'credit',
     'investing-basics',
     'app-comparisons',
+    'travel-finance',
+    'news-trends',
   ].map((pillar) => ({ params: { pillar } }));
 }
 
@@ -19,6 +21,8 @@ const PILLARS: Record<string, string> = {
   credit: 'Credit',
   'investing-basics': 'Investing Basics',
   'app-comparisons': 'App Comparisons',
+  'travel-finance': 'Travel & Nomad Finances',
+  'news-trends': 'News & Trends',
 };
 
 const { pillar } = Astro.params as { pillar: string };
