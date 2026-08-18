@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import BudgetDonut from '../../components/BudgetDonut.astro';
+import PillarIcon from '../../components/PillarIcon.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
@@ -15,6 +16,15 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const samePillar = allPosts.filter((p) => p.id !== post.id && p.data.pillar === post.data.pillar);
+const otherPillar = allPosts.filter((p) => p.id !== post.id && p.data.pillar !== post.data.pillar);
+const related = [...samePillar, ...otherPillar]
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+const readingTime = Math.max(1, Math.round(post.body!.split(/\s+/).length / 220));
+
 // Posts with a matching hand-built illustration. Keeps content as plain
 // markdown (per README's simple, no-pipeline process) while still
 // allowing a supporting visual for specific posts.
@@ -26,21 +36,88 @@ const illustration = ILLUSTRATIONS[post.id];
 
 <BaseLayout title={post.data.title} description={post.data.description}>
   <article>
+    <p class="pillar-tag">
+      <PillarIcon name={post.data.pillar as any} size={14} />
+      <a href={`/${post.data.pillar}`}>{post.data.pillar.replace('-', ' ')}</a>
+    </p>
     <h1>{post.data.title}</h1>
     <p class="meta">
-      Published {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-      {post.data.updatedDate && ` · Updated ${post.data.updatedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}
+      By MoneyMattersDaily Editorial · Published {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}{post.data.updatedDate && ` · Updated ${post.data.updatedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}{' · '}{readingTime} min read
     </p>
     {illustration === 'budget-donut' && <BudgetDonut />}
     <Content />
     <AdSlot position="in-content" />
+
+    {related.length > 0 && (
+      <aside class="related">
+        <h2>Keep reading</h2>
+        <ul>
+          {related.map((r) => (
+            <li>
+              <a href={`/blog/${r.id}`}>
+                <PillarIcon name={r.data.pillar as any} size={15} />
+                <span>{r.data.title}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </aside>
+    )}
   </article>
 </BaseLayout>
 
 <style>
+  .pillar-tag {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #1f3a5f;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+  }
+  .pillar-tag a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .pillar-tag a:hover {
+    text-decoration: underline;
+  }
   .meta {
     color: #777;
     font-size: 0.9rem;
     margin-top: -0.5rem;
+  }
+  .related {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+  }
+  .related h2 {
+    font-size: 1.05rem;
+    margin-bottom: 0.75rem;
+  }
+  .related ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .related a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .related a svg {
+    color: #1f3a5f;
+    flex-shrink: 0;
+  }
+  .related a:hover {
+    text-decoration: underline;
   }
 </style>
