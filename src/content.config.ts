@@ -10,7 +10,15 @@ const blog = defineCollection({
     updatedDate: z.date().optional(),
     // Which search keyword this post targets — helps track testbed performance per topic
     targetKeyword: z.string(),
-    pillar: z.enum(['budgeting', 'saving', 'credit', 'investing-basics', 'app-comparisons']),
+    pillar: z.enum([
+      'budgeting',
+      'saving',
+      'credit',
+      'investing-basics',
+      'app-comparisons',
+      'travel-finance',
+      'news-trends',
+    ]),
     draft: z.boolean().default(false),
     // Set to true only after a human has reviewed the generated Pinterest pin image
     // (see scripts/generate-pin.mjs and .github/workflows/pin-preview.yml).
