@@ -31,6 +31,8 @@ const PILLAR_BOARDS = {
   credit: 'Building Credit',
   'investing-basics': 'Investing Basics', // no board created on Pinterest yet as of this writing
   'app-comparisons': 'Budgeting App Reviews',
+  'travel-finance': 'Travel & Nomad Finances', // no board created on Pinterest yet as of this writing
+  'news-trends': 'News & Trends', // no board created on Pinterest yet as of this writing
 };
 
 function escapeXml(str) {

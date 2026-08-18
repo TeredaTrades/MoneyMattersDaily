@@ -38,6 +38,8 @@ const PILLAR_LABELS = {
   credit: 'CREDIT',
   'investing-basics': 'INVESTING BASICS',
   'app-comparisons': 'APP COMPARISONS',
+  'travel-finance': 'TRAVEL & NOMAD FINANCES',
+  'news-trends': 'NEWS & TRENDS',
 };
 
 const PILLAR_ACCENTS = {
@@ -46,6 +48,8 @@ const PILLAR_ACCENTS = {
   credit: PALETTE.midTeal,
   'investing-basics': PALETTE.gold,
   'app-comparisons': PALETTE.lightTeal,
+  'travel-finance': PALETTE.gold,
+  'news-trends': PALETTE.midTeal,
 };
 
 function escapeXml(str) {
