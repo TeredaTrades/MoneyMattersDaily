@@ -2,6 +2,44 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-19 — SEO/AI-crawlability review + fix (PR #10)
+
+### Review, before adding any new articles
+Checked robots.txt, sitemap, page markup, and structured data against
+production (`https://moneymattersdaily.money`) to confirm what's actually
+crawlable before writing more content on top of it.
+
+- **robots.txt**: `User-agent: * / Allow: /`, sitemap declared — live
+  matches repo exactly. No disallow rules, so AI crawlers (GPTBot,
+  ClaudeBot, CCBot, PerplexityBot, etc.) are allowed same as search
+  engines. No change needed.
+- **Sitemap**: auto-generated post-build by walking real `dist/` output
+  (`scripts/generate-sitemap.mjs`), so it can't drift from actual pages.
+  No change needed.
+- **Meta tags**: title, description, basic OG tags were present, but
+  nothing else — no canonical tag, no `og:image`, no Twitter card meta,
+  no structured data anywhere in the codebase.
+- **No Search Console (or equivalent) connector available** in this
+  environment — could verify crawlability/markup, not live
+  indexing/impressions data.
+
+### Fixed (PR #10, `seo-canonical-jsonld` branch)
+- `BaseLayout.astro`: added `<link rel="canonical">` (derived from
+  `Astro.site` + `Astro.url.pathname`, so it's automatically correct on
+  every route), `og:url`, `og:site_name`, `og:image`/Twitter card meta
+  (optional — falls back to a `summary` card when no image is passed),
+  and site-wide `Organization` + `WebSite` JSON-LD rendered on every page.
+- `blog/[slug].astro`: passes `og:type=article`, reuses each post's
+  existing Pinterest pin (`/pins/<slug>.png`) as the OG/Twitter preview
+  image (no new asset needed), and adds an `Article` JSON-LD block
+  (headline, dates, author, publisher, `mainEntityOfPage`).
+- Verified with a local `npm run build` — canonical tag, OG/Twitter meta,
+  and both JSON-LD blocks confirmed in the built HTML on a post page and
+  the homepage (homepage correctly has no Article block/og:image).
+- Non-blog pages (about/contact/disclaimer/pillar pages/home) get the
+  canonical tag and site-wide JSON-LD automatically with no per-page
+  changes, since those props are optional on `BaseLayout`.
+
 ## 2026-08-18 (latest) — Pin icons/variation, budgeting post, all pillar feeds live
 
 ### Pin template: per-pillar icons + per-post variation

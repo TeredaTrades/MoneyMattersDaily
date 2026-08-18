@@ -5,9 +5,48 @@ import PillarIcon from '../components/PillarIcon.astro';
 interface Props {
   title: string;
   description: string;
+  // Root-relative path to a preview image (e.g. a post's Pinterest pin).
+  // Falls back to no og:image/twitter:image if omitted.
+  image?: string;
+  // 'website' (default) or 'article' for blog posts — feeds og:type.
+  type?: 'website' | 'article';
+  // Extra JSON-LD blocks for this specific page (e.g. an Article schema on
+  // blog posts). Always merged with the site-wide Organization/WebSite
+  // schema below, so callers only need to pass page-specific data.
+  jsonLd?: Record<string, unknown>[];
 }
-const { title, description } = Astro.props;
+const { title, description, image, type = 'website', jsonLd = [] } = Astro.props;
 const siteName = 'MoneyMattersDaily';
+
+// Astro.site is set via `site:` in astro.config.mjs, so this resolves to a
+// real absolute URL both locally and in production — no hardcoded domain.
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const imageURL = image ? new URL(image, Astro.site).toString() : undefined;
+
+// Site-wide structured data — present on every page so crawlers (search
+// and AI alike) have a stable anchor for "who publishes this site" instead
+// of having to infer it from prose.
+const siteSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': `${Astro.site}#organization`,
+      name: siteName,
+      url: Astro.site?.toString(),
+      logo: new URL('/favicon.svg', Astro.site).toString(),
+    },
+    {
+      '@type': 'WebSite',
+      '@id': `${Astro.site}#website`,
+      name: siteName,
+      url: Astro.site?.toString(),
+      publisher: { '@id': `${Astro.site}#organization` },
+    },
+  ],
+};
+
+const structuredData = [siteSchema, ...jsonLd];
 ---
 
 <!doctype html>
@@ -17,10 +56,25 @@ const siteName = 'MoneyMattersDaily';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title} | {siteName}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:site_name" content={siteName} />
+    {imageURL && <meta property="og:image" content={imageURL} />}
+
+    <meta name="twitter:card" content={imageURL ? 'summary_large_image' : 'summary'} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {imageURL && <meta name="twitter:image" content={imageURL} />}
+
     <link rel="icon" href="/favicon.svg" />
+
+    {structuredData.map((block) => (
+      <script type="application/ld+json" set:html={JSON.stringify(block)} />
+    ))}
   </head>
   <body>
     <header class="site-header">
