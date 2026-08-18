@@ -2,6 +2,31 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-19 (later) — Contact address decision + group setup verification
+
+### `hello@` → `contact@` decision (missed from the original email setup log)
+Originally planned as `hello@moneymattersdaily.money` (see the 2026-08-17
+Google Workspace email section below) — decided against that and went
+with **`contact@moneymattersdaily.money`** instead, judged more
+professional/standard for a finance site's public contact address.
+Should have been logged at the time; recording it now since it wasn't.
+
+### Contact group verified end-to-end
+`contact@moneymattersdaily.money` is a Google Group (not a full mailbox),
+custom access type. Confirmed in Admin Console:
+- Sole member: Mikias A Nedha (`mike@teredatrades.com`), role Owner.
+- Access settings: **External senders can post** (checkmark on
+  "Who can post" → External) — mail from outside senders (contact-form
+  visitors, customers) will actually reach the group, not bounce.
+- "Allow external members" = No — this only controls who can *join* the
+  group as a member, unrelated to who can *send* to it; doesn't affect
+  the above.
+
+### Open items
+- Still to verify: the member's email delivery preference (digest vs.
+  every email) and setting up "Send mail as" so replies go out from
+  `contact@moneymattersdaily.money` instead of the personal address.
+
 ## 2026-08-19 — SEO/AI-crawlability review + fix (PR #10)
 
 ### Review, before adding any new articles
