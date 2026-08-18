@@ -9,6 +9,7 @@
     "dev": "astro dev",
     "prebuild": "node scripts/generate-pinterest-feed.mjs",
     "build": "astro build",
+    "postbuild": "node scripts/generate-sitemap.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "pin:generate": "node scripts/generate-pin.mjs",
