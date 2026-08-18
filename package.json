@@ -14,14 +14,11 @@
     "astro": "astro",
     "pin:generate": "node scripts/generate-pin.mjs",
     "pin:generate:all": "node scripts/generate-pin.mjs --all",
-    "pinterest:feed": "node scripts/generate-pinterest-feed.mjs"
+    "pinterest:feed": "node scripts/generate-pinterest-feed.mjs",
+    "x:drafts": "node scripts/generate-x-drafts.mjs --all"
   },
   "dependencies": {
     "astro": "^7.2.2"
-  },
-  "devDependencies": {
-    "@resvg/resvg-js": "^2.6.2",
-    "gray-matter": "^4.0.3"
   },
   "devDependencies": {
     "@resvg/resvg-js": "^2.6.2",

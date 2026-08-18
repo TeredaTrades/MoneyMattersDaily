@@ -1,0 +1,46 @@
+name: Generate X draft posts
+
+# Runs on PRs that add or change blog posts. Generates copy-paste-ready X
+# draft text for each new post and commits it back onto the PR branch
+# under content-pipeline/x-drafts.md, so it's ready to paste into the X
+# app by hand once the PR is merged.
+#
+# This does NOT post to X and does not call the X API — no automation of
+# actual publishing, on purpose (see NOTES.md). Text only.
+
+on:
+  pull_request:
+    paths:
+      - 'src/content/blog/**.md'
+
+permissions:
+  contents: write
+
+jobs:
+  generate-x-drafts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate draft(s) for new posts
+        run: node scripts/generate-x-drafts.mjs --all
+
+      - name: Commit generated drafts
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: generate X draft post(s) [skip ci]"
+          file_pattern: 'content-pipeline/x-drafts.md'
+          commit_user_name: x-draft-bot
+          commit_user_email: actions@github.com
