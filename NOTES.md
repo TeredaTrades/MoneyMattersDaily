@@ -2,6 +2,38 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-18 (later) — DKIM completed; decided against MX activation wizard
+
+### DKIM: done
+- Cooldown passed, key generated successfully in Google Admin
+  (Gmail → Authenticate email). Added the `google._domainkey` TXT
+  record in Namecheap with the full `v=DKIM1; k=rsa; p=...` value.
+  Status flipped to "Authenticating email with DKIM" immediately,
+  and Domains → Manage domains → Email setup status now shows
+  **DKIM: Complete** and **SPF: Complete**.
+
+### MX: still shows "Pending activation" — decided to leave it
+- The Email setup status page shows current MX values already match
+  Google's recommended values exactly, but status stays "Pending
+  activation" with an "Activate Gmail" link.
+- Clicked through the wizard to see what it actually does. Turns out
+  it's not a simple confirmation — the final step ("Add Gmail
+  activation code") asks to **delete the existing 5 MX records**
+  (aspmx.l.google.com x5) and **replace them with a single new record
+  pointing to SMTP.GOOGLE.COM**. This is a real DNS change, not a
+  rubber-stamp step, despite how the flow is framed.
+- **Decision: don't make this change.** Mail is already working —
+  `contact@moneymattersdaily.money` sends/receives, SPF and DKIM are
+  both Complete. Swapping working MX records for an unfamiliar
+  single-record format risks a mail outage (propagation gap, typo,
+  TTL delay) for a badge that isn't blocking anything real. Nothing
+  in the project depends on this badge clearing.
+- If revisited later, do it in a low-stakes window with time to
+  verify mail still works afterward — not as a follow-through on an
+  in-progress wizard.
+- Left the "Users" confirmation screen from the wizard without
+  proceeding — closed the tab, no changes made to MX records.
+
 ## 2026-08-18 — Social media setup: Pinterest claimed, X paused
 
 ### Platform strategy — Pinterest over X/Reddit/LinkedIn
