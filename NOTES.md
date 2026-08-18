@@ -96,7 +96,9 @@ nav items showed a bare "no posts in this pillar yet" message.
   touching teredatrades.com's existing DKIM setup.
 
 ### Open items (carried over + new)
-- Update `/contact` page and footer from `hello@` to `contact@`.
+- ~~Update `/contact` page and footer from `hello@` to `contact@`.~~
+  Done 2026-08-18 — only `/contact` referenced it (footer doesn't link
+  an email directly); updated and pushed.
 - Retry DKIM key generation for moneymattersdaily.money once past the
   24–72hr post-Gmail-activation cooldown (Gmail enabled 2026-08-17, so
   should be clear sometime 2026-08-18 evening through 2026-08-20).
