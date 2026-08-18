@@ -47,6 +47,21 @@ Running log of setup decisions and open items. Newest entries at top.
   upload since it could be done entirely in Namecheap). Verified
   successfully on the first attempt.
 
+### X/Twitter re-test — confirmed hard app-only block
+- Re-tested the email-signup gate in a different browser using
+  Tor-powered incognito mode, to rule out a browser/IP fingerprint
+  cause. Same result — still redirected to "Get the app to finish
+  signing up using email," with only a QR code / App Store / Google
+  Play, and no email option on web.
+  Screenshot: `docs/images/x-signup-app-only-block.png`.
+- The "Or sign up using a different method" fallback on that screen
+  only offers phone signup, not a way to keep using email on web.
+- Conclusion: this isn't a fingerprint/IP heuristic that a different
+  browser or network can dodge — X currently requires the mobile app
+  to complete email signup, full stop. Don't re-try browser-based
+  workarounds; if X is picked back up, either sign up with phone on
+  web or install the app just for the one-time verification step.
+
 ### Current status
 - Done: Pinterest Business account created, goals/category set,
   website claimed and verified.
