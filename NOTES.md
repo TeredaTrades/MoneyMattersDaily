@@ -78,6 +78,43 @@ Running log of setup decisions and open items. Newest entries at top.
 - Begin pinning consistently (3–5/week target), each linking back to
   a corresponding post on the site.
 
+### Board + first-pin plan (drafted, not yet created)
+Boards to create, matching site pillars:
+- Budgeting Tips, Saving Money, Building Credit, Investing Basics,
+  Budgeting App Reviews.
+
+First 5 pins (one per live post, real links only):
+- 50/30/20 Budget Rule → Budgeting Tips board →
+  `/blog/50-30-20-budget-rule-explained`
+- How Much Should You Have in an Emergency Fund? → Saving Money
+  board → `/blog/how-much-emergency-fund`
+- How to Build Credit From Scratch → Building Credit board →
+  `/blog/how-to-build-credit-from-scratch`
+- Index Funds Explained for Beginners → Investing Basics board →
+  `/blog/index-funds-explained-for-beginners`
+- Best Budgeting Apps Compared (2026) → Budgeting App Reviews board →
+  `/blog/best-budgeting-apps-compared`
+
+### Pinterest posting automation — planned, not built
+Idea: a GitHub Action that auto-posts new pins via the Pinterest API
+(v5, `POST /v5/pins`) instead of manual upload each time.
+- Requires: a Pinterest developer app (developers.pinterest.com) and
+  an OAuth token with `pins:write` + `boards:read` scopes. Trial-tier
+  access is enough since it only ever posts to our own account (no
+  Pinterest app-review process needed for that).
+- Token would live as a GitHub Actions secret on this repo.
+- Real gap: pin images are still manually designed in Canva
+  (deliberate — avoids the stock-photo/AI-templated look). Two
+  options once boards/pins above are live:
+  - **Semi-auto (do this first):** finish a pin image in Canva, drop
+    it in the repo (e.g. `docs/pinterest-pins/`), Action picks it up
+    and posts automatically with the right board/title/link.
+  - **Full-auto:** Action also generates the image from the site's
+    own `PillarIcon.astro` style — more setup, and risks drifting
+    into the generic-template look the project actively avoids.
+- Not started. Do the manual boards/pins above first before building
+  this.
+
 ## 2026-08-18 — HTTPS fix, site polish, 3 new posts, contact email
 
 ### "Not secure" warning fix
