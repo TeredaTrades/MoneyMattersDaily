@@ -2,6 +2,57 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-18 (latest) — Pin icons/variation, budgeting post, all pillar feeds live
+
+### Pin template: per-pillar icons + per-post variation
+- All pins were rendering from the exact same template — only accent
+  color and title text changed — so posts sharing a pillar looked
+  like near-duplicates. Reworked `scripts/generate-pin.mjs`:
+  - One original, hand-drawn line icon per pillar (pie chart /
+    piggy bank / credit card / bar chart+arrow / phone checklist /
+    globe+plane / megaphone) — not sourced from any icon set.
+  - A seeded pseudo-random layer per post (icon rotation, horizontal
+    drift, scale, scatter-dot placement) derived from the post slug.
+    Same post always renders identically on re-run (stable git
+    diffs); different posts in the same pillar now look distinct.
+  - Regenerated all pins with `--all`, reviewed each pillar's icon
+    visually before merging. PR #8.
+
+### New budgeting-pillar post: written and approved
+- Budgeting Tips board had a gap: the only budgeting post (50/30/20)
+  was intentionally left `pinApproved: false` to avoid a duplicate
+  pin on that board (it was already posted manually with a Canva
+  image). Decided to write a second, unique budgeting post rather
+  than re-approve the duplicate.
+- Wrote `how-to-make-a-budget-for-beginners.md`, targeting the next
+  queued keyword ("how to make a budget for beginners"). Marked
+  `published` in `content-pipeline/keyword-queue.json`. PR #7.
+- Approved its pin (`pinApproved: true`), regenerated with the new
+  icon template, rebuilt to regenerate
+  `public/pinterest-feed-budgeting.xml` — now has 1 item. PR #9.
+- The 50/30/20 post stays unapproved on purpose — unchanged decision.
+
+### Pinterest: all 7 pillar feeds now have live content
+- Feed URLs (paste into each board's RSS connection to revalidate):
+  - `https://moneymattersdaily.money/pinterest-feed-app-comparisons.xml`
+  - `https://moneymattersdaily.money/pinterest-feed-budgeting.xml`
+  - `https://moneymattersdaily.money/pinterest-feed-credit.xml`
+  - `https://moneymattersdaily.money/pinterest-feed-investing-basics.xml`
+  - `https://moneymattersdaily.money/pinterest-feed-news-trends.xml`
+  - `https://moneymattersdaily.money/pinterest-feed-saving.xml`
+  - `https://moneymattersdaily.money/pinterest-feed-travel-finance.xml`
+- Budgeting Tips was the only board still showing "no items" going
+  into this session; it now has content like the other six.
+
+### Open item: footer social links never verified against real handles
+- `pinterest.com/moneymattersdaily` and `twitter.com/moneymattersdly`
+  in the footer were written as placeholder guesses before either
+  account existed. Pinterest account is now real and claimed — the
+  footer URL should be checked against the actual handle and
+  corrected if it doesn't match. Twitter is parked (see below), so
+  its footer link is a dead/unconfirmed link in the meantime — worth
+  deciding whether to remove it or leave it as a placeholder.
+
 ## 2026-08-18 (still later) — X signup retried, same silent block
 
 - Retried X/Twitter signup using `contact@moneymattersdaily.money`.
