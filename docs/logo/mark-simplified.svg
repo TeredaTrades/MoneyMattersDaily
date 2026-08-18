@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Simplified 2-leaf sprig: dropped the tiny third leaflet from the
+       original (vanishes below ~80px anyway), thickened the vein gaps,
+       and squared off proportions so it reads as a clear silhouette at
+       profile-picture thumbnail size, not just at full resolution. -->
+  <path fill="#1c4a4a" d="
+    M14,36
+    C40,34 78,42 98,66
+    C112,83 116,102 108,118
+    C98,136 72,140 50,128
+    C28,116 14,92 12,66
+    C11,56 12,45 14,36 Z
+  "/>
+  <path fill="#ffffff" d="
+    M28,50
+    C52,58 76,78 90,102
+    C86,106 82,109 77,111
+    C64,88 46,70 24,60
+    C25,56 26,53 28,50 Z
+  "/>
+  <path fill="#5b8a8a" d="
+    M96,64
+    C104,48 122,38 144,38
+    C140,54 132,72 118,82
+    C108,89 98,86 94,78
+    C92,73 93,68 96,64 Z
+  "/>
+  <path fill="#ffffff" d="
+    M104,58
+    C112,50 124,45 134,44
+    C126,54 116,64 106,70
+    C104,66 103,62 104,58 Z
+  "/>
+  <path fill="#1c4a4a" d="M98,80 C104,96 108,112 106,128 C102,116 98,100 94,86 Z"/>
+</svg>

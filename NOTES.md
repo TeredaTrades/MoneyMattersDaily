@@ -2,6 +2,76 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-19 (latest, cont. 3) — Logo review: recolored to teal, simplified mark for small sizes
+
+### Honest review of the drafted logo (leaf mark + serif wordmark)
+What worked: serif caps wordmark reads editorial/trustworthy rather than
+startup-generic, good instinct for finance; leaf mark is competently
+drawn with good negative-space vein lines; two-line stack works as a
+square avatar.
+
+Flagged before shipping it everywhere:
+- **Color mismatch** — original leaf green didn't match the site's
+  actual accent teal (`#1c4a4a`)/mid-teal (`#5b8a8a`) at all; would
+  clash between site chrome and logo if placed side by side.
+- **Style clash with the existing pillar icon system** — the site's
+  pillar icons (`PillarIcon.astro`) are deliberately thin-stroke,
+  hand-drawn line icons; this logo is solid-fill/organic-curve, a
+  different visual language. Still true after this pass — not fixed,
+  a decision still pending (see open items).
+- **Leaf-icon + serif-caps wordmark is a very common AI-logo-generator
+  template** (Looka/Canva/ChatGPT-style output for "wellness/finance"
+  briefs) — risks undercutting the "not AI-generated" effort already
+  put into the hand-drawn pillar icons. Still an open call, not
+  resolved by recoloring alone.
+- **Fine detail (vein lines, thin stem) wouldn't survive small sizes**
+  — addressed this pass, see below.
+
+### Recolor: math-based pixel remap, not a filter
+Original had 2 flat foreground colors on white
+(`rgb(5,77,59)` dark text/outline, `rgb(143,189,79)` light leaf fill).
+For each pixel, solved the actual alpha-blend ratio against those two
+source colors (not an approximate hue shift), then re-composited using
+the site's real palette — `#1c4a4a` for the dark/text color,
+`#5b8a8a` for the light leaf color — onto a transparent background.
+Preserves original anti-aliased edges with no fringing.
+
+Files (`docs/logo/`):
+- `full-lockup-teal.png` — full wordmark + tagline, recolored,
+  transparent bg. For header/OG-image/large use.
+- `mark-detailed-teal.png` — original fine-detail leaf only,
+  recolored, transparent bg. Large-size use only (see below for why).
+- Originals kept alongside (`full-lockup-original.png`,
+  `mark-detailed-original.png`) for reference.
+
+### Simplified mark for small sizes (profile picture use, not the browser favicon)
+Confirmed the site's actual browser favicon (`public/favicon.svg`) is
+a separate abstract "M" monogram, unrelated to this leaf logo — so
+"small sizes" here means Pinterest/X profile-picture thumbnail scale,
+not the favicon.
+
+Hand-built `docs/logo/mark-simplified.svg` as an actual vector (not a
+raster trace): dropped the tiny third leaflet from the original (it
+vanishes below ~80px anyway), thickened the vein gaps, simplified
+curves, and centered the composition so a circular crop (how
+Pinterest/X actually display profile photos) doesn't clip the stem
+the way the original's off-center trailing stem would have.
+Rendered and checked at 400/128/64/32px plus a circular-crop mockup —
+holds up clearly even at 32px. `mark-simplified-400.png` is the
+ready-to-upload profile picture file.
+
+### Open items
+- **Not yet decided**: whether to (a) keep this logo as-is now that
+  it's teal and has a small-size-safe mark, or (b) address the pillar-icon
+  style mismatch / AI-template-pattern concerns with a redesign.
+  Recoloring and simplifying didn't resolve either of those two flags
+  — they're still open calls, not fixed.
+- Logo files are committed to the repo (`docs/logo/`) but not yet wired
+  into the actual site (header currently just shows text
+  `MoneyMattersDaily`, no image) or uploaded as the live profile
+  picture on Pinterest/X — still manual steps once the style question
+  above is settled.
+
 ## 2026-08-19 (latest, cont. 2) — X posting: manual for now, drafting automated
 
 ### Decision: hold off on X posting automation
