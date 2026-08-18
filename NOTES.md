@@ -2,6 +2,115 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-18 — HTTPS fix, site polish, 3 new posts, contact email
+
+### "Not secure" warning fix
+- Site was showing "Not secure" in the browser despite `public/CNAME`,
+  DNS, and the Actions deploy all being correct. Root cause: GitHub's
+  `/pages` API showed no `https_certificate` field at all and
+  `https_enforced: false` — SSL cert issuance had silently never
+  triggered, even though DNS had verified.
+- Fix: cleared the custom domain field in Settings → Pages, waited,
+  re-entered `moneymattersdaily.money`. This forces GitHub to re-run
+  its domain check, which kicked off Let's Encrypt cert issuance
+  (confirmed via API: `https_certificate.state: "approved"`, valid to
+  2026-11-16, covering both root and `www`). Then checked "Enforce
+  HTTPS" once the checkbox became available. Resolved.
+
+### "Looks unfinished" — site polish
+Diagnosis: matched what NOTES already flagged as the main blocker —
+thin content (2 posts), no visual hierarchy, 3 of 5 pillars completely
+empty ("no posts yet"). Fixed in order of impact:
+
+- **Post pages (`[slug].astro`)**: added a pillar tag, a byline ("By
+  MoneyMattersDaily Editorial"), computed reading time, and a "Keep
+  reading" related-posts section (same-pillar posts first, then
+  others). Why: cheap trust/E-E-A-T signals, and related-posts gives
+  readers/crawlers more internal links per page.
+- **Homepage (`index.astro`)**: latest post now gets a hero/featured
+  treatment (bordered card, pillar tag, bigger title, CTA) instead of
+  being visually identical to older posts in a flat list. Why: a flat
+  list of same-weight links was the biggest single reason the site
+  read as a template rather than an edited publication.
+- Fixed a whitespace bug in the byline where Astro was collapsing the
+  space between the date and the reading-time separator — replaced
+  implicit whitespace with an explicit `{' · '}` expression.
+
+### Three new posts (filled the 3 empty pillars)
+Credit, Investing Basics, and App Comparisons had zero posts — worse
+for "feels unfinished" than any styling issue, since visiting those
+nav items showed a bare "no posts in this pillar yet" message.
+- `how-to-build-credit-from-scratch.md` (credit)
+- `index-funds-explained-for-beginners.md` (investing-basics)
+- `best-budgeting-apps-compared.md` (app-comparisons) — checked
+  current app landscape/pricing via web search before writing, since
+  Mint shut down in 2024 and app pricing changes; noted pricing is
+  approximate and to verify before signing up, per the "don't guess,
+  say so" standard from the earlier "feels AI-generated" discussion.
+- Marked all three `published` in `content-pipeline/keyword-queue.json`.
+- All 5 pillars now have at least one live post. Build verified clean
+  (`npm run build`, 14 pages, no errors) before pushing to `main`.
+
+### Contact email: `contact@` not `hello@`
+- Decided on `contact@moneymattersdaily.money` over the originally
+  planned `hello@` — reads as the standard, expected address for a
+  site's general contact page without implying team size (unlike
+  `team@`) or scope-limiting to press/content (unlike `editorial@`),
+  which matters since the site is deliberately kept unbranded/separate
+  from TeredaTrades' identity.
+- Set up as a Google Group (not a licensed user, to avoid cost):
+  name "MoneyMattersDaily Contact", email
+  `contact@moneymattersdaily.money`, description "Contact form/inbox
+  for moneymattersdaily.money — forwards to the site's editorial
+  contact.", owner added: the existing TeredaTrades mailbox.
+- Access type had to be switched from the "Public" preset to
+  **Custom**, specifically checking the **External** column on the
+  "Who can post" row. Default presets don't allow non-Workspace
+  senders to post — since site visitors emailing in are external by
+  definition, mail would otherwise bounce.
+- **Note:** `/contact` page and footer still reference `hello@` —
+  need to update both to `contact@` (not yet done).
+
+### Deliverability: test email landed in spam
+- First test send (from an outside Gmail account) did arrive, but in
+  Spam, not Inbox — expected for a domain with no sending reputation
+  yet. Marked "Not spam" on the test message.
+- Checked Email setup status in Google Admin: SPF and DKIM both showed
+  "Missing" (MX showed "Pending activation" but mail was already
+  flowing, so that badge appears to lag actual status).
+- Added SPF manually as a TXT record on `@` in Namecheap:
+  `v=spf1 include:_spf.google.com ~all` — this is Google's fixed,
+  domain-agnostic recommended value, safe to type manually rather than
+  copy from the (truncated-in-UI) recommended-value column.
+- DKIM is domain-specific (a generated key), so it has to come from
+  Google Admin → Authenticate email, not typed manually. First attempt
+  failed — cause: Google enforces a 24–72 hour cooldown after Gmail is
+  first enabled on a domain before a DKIM key can be generated, and
+  Gmail was only enabled on this domain the day before (2026-08-17).
+  **Open item: retry DKIM generation after the cooldown passes**, then
+  add the resulting TXT record to Namecheap.
+- Also caught and corrected a wrong-domain mistake before it caused
+  damage: the Authenticate Email page defaults to whichever domain was
+  last selected (was `teredatrades.com`) — switched to
+  `moneymattersdaily.money` before generating anything, to avoid
+  touching teredatrades.com's existing DKIM setup.
+
+### Open items (carried over + new)
+- Update `/contact` page and footer from `hello@` to `contact@`.
+- Retry DKIM key generation for moneymattersdaily.money once past the
+  24–72hr post-Gmail-activation cooldown (Gmail enabled 2026-08-17, so
+  should be clear sometime 2026-08-18 evening through 2026-08-20).
+- MX still shows "Pending activation" badge in Google Admin despite
+  mail delivery already working — worth rechecking once DKIM is done,
+  may just resolve itself.
+- Twitter/Pinterest footer links still placeholders (carried over,
+  unchanged).
+- Still just 5 posts total — keep publishing from
+  `content-pipeline/keyword-queue.json` before applying to ad networks
+  (carried over, unchanged).
+
+---
+
 ## 2026-08-17 (later still) — Images + second post
 
 ### Images
