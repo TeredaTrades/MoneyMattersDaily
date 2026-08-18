@@ -2,6 +2,34 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-19 (latest, cont. 2) — X posting: manual for now, drafting automated
+
+### Decision: hold off on X posting automation
+X killed its free API tier in Feb 2026 — now pay-per-use, prepaid with
+a card. Roughly $0.015/post with no link, ~$0.20/post with a link
+(posts driving traffic to the blog will have one). Not expensive at
+current volume (~$1.60-4/month for 8-20 posts), but it's a new
+recurring cost requiring card-on-file, unlike Pinterest's free posting
+API. **Decided to post manually for now** and revisit X automation
+once Pinterest's own posting automation (still just planned, not
+built — see the 2026-08-17 entry) is actually running and there's a
+proven cadence to match.
+
+### Built instead: free draft-text generator (no API, no posting)
+`scripts/generate-x-drafts.mjs` (`npm run x:drafts`) generates
+copy-paste-ready X post text per blog post — title + description,
+trimmed to fit X's 280-char limit with room reserved for the link.
+Writes to `content-pipeline/x-drafts.md`. Idempotent: only adds drafts
+for posts that don't have one yet; re-running never overwrites an
+existing draft unless that post's slug is passed explicitly, so
+hand-edited text survives. Same PR-trigger pattern as the pin-preview
+workflow: `.github/workflows/x-draft.yml` runs on blog-post PRs and
+commits the new draft(s) back onto the branch — text only, no API
+calls, nothing auto-posted anywhere.
+
+Also fixed an accidental duplicate `devDependencies` key in
+`package.json` noticed while in there (harmless, but cleaned up).
+
 ## 2026-08-19 (latest, cont.) — X account created: @MoneyMattersDly
 
 ### Resolved: X signup, fully unblocked
