@@ -68,14 +68,17 @@ const illustration = ILLUSTRATIONS[post.id];
 
 <style>
   .pillar-tag {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.4rem;
     color: #1c4a4a;
+    background: #e4eeee;
     font-size: 0.85rem;
     font-weight: 600;
     text-transform: capitalize;
-    margin-bottom: 0.5rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    margin-bottom: 0.75rem;
   }
   .pillar-tag a {
     color: inherit;
@@ -88,6 +91,14 @@ const illustration = ILLUSTRATIONS[post.id];
     color: #777;
     font-size: 0.9rem;
     margin-top: -0.5rem;
+  }
+  article :global(h2) {
+    margin-top: 2.25rem;
+    padding-left: 0.75rem;
+    border-left: 4px solid #1c4a4a;
+  }
+  article :global(p strong:first-child) {
+    color: #1c4a4a;
   }
   .related {
     margin-top: 3rem;
