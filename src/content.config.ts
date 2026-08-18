@@ -12,6 +12,10 @@ const blog = defineCollection({
     targetKeyword: z.string(),
     pillar: z.enum(['budgeting', 'saving', 'credit', 'investing-basics', 'app-comparisons']),
     draft: z.boolean().default(false),
+    // Set to true only after a human has reviewed the generated Pinterest pin image
+    // (see scripts/generate-pin.mjs and .github/workflows/pin-preview.yml).
+    // Only pinApproved posts are included in /pinterest-feed.xml.
+    pinApproved: z.boolean().default(false),
   }),
 });
 

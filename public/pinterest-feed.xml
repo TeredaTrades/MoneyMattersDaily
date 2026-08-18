@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Money Matters Daily — Pinterest Feed</title>
+  <link>https://moneymattersdaily.money</link>
+  <description>Curated, approved pins for Pinterest auto-publish. Not the main site feed.</description>
+  <item>
+    <title>The 50/30/20 Budget Rule, Explained Simply</title>
+    <link>https://moneymattersdaily.money/blog/50-30-20-budget-rule-explained/</link>
+    <guid isPermaLink="false">https://moneymattersdaily.money/pinterest/50-30-20-budget-rule-explained</guid>
+    <description>A plain-language breakdown of the 50/30/20 budgeting method — what counts as needs vs wants, and how to adjust it if it doesn&apos;t fit your income.</description>
+    <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    <enclosure url="https://moneymattersdaily.money/pins/50-30-20-budget-rule-explained.png" type="image/png" />
+  </item>
+</channel>
+</rss>
