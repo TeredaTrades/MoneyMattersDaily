@@ -2,6 +2,67 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-18 — Social media setup: Pinterest claimed, X paused
+
+### Platform strategy — Pinterest over X/Reddit/LinkedIn
+- X signup doesn't strictly require a phone number, but its anti-bot
+  detection gated new signup behind an app-download requirement; hit
+  that wall directly. Standard workarounds (incognito, different
+  browser/network) aren't guaranteed since the gate is
+  fingerprint/IP-based. **Paused on X** rather than force it.
+- Pinterest fits the planned content (budgeting templates, "save $X
+  in Y months" graphics, infographics) better — it's a visual search
+  engine where pins keep driving traffic long after posting, unlike
+  X's short shelf-life.
+- Reddit needs slow organic trust-building in subs like
+  r/personalfinance before any self-promotion (bans otherwise), so
+  it's not a quick "set up and post" channel. LinkedIn fits a
+  professional/B2B angle, not casual consumer budgeting content.
+- No phone number required for Pinterest signup.
+
+### Pinterest Business account setup
+- Signed up at pinterest.com/business/create using
+  contact@moneymattersdaily.money (not a personal Gmail).
+- Business type: **Content creator**. Country/region: kept as
+  **Ethiopia** (actual operating location, no registered entity).
+  Checked whether Ethiopia blocks Pinterest ads access — it's not
+  restricted/banned, just outside the short list of countries with
+  self-serve Ads Manager (~US, UK, Canada, Australia, NZ, France,
+  Ireland, Germany, Austria, Spain, Italy). Kenya and UAE were
+  checked as alternatives and neither is on that list either (UAE
+  requires a Pinterest-approved ad partner agency, same bucket as
+  Ethiopia) — so country wasn't changed just to chase ads access.
+  Ads can be revisited later via a partner agency once organic
+  content is established.
+- Business goals selected: drive traffic to the site, create content
+  to grow an audience, grow brand awareness. Brand focus category:
+  **Education** (no dedicated Finance option). Onboarding path:
+  **Showcase your brand**.
+
+### Website verification
+- Confirmed the site was actually live first (visited the domain
+  directly, checked DNS propagation on whatsmydns.net, confirmed A
+  records + CNAME in Namecheap).
+- Claimed the domain via DNS TXT record (chosen over HTML tag/file
+  upload since it could be done entirely in Namecheap). Verified
+  successfully on the first attempt.
+
+### Current status
+- Done: Pinterest Business account created, goals/category set,
+  website claimed and verified.
+- Not yet done: creating boards (Budgeting, Saving, Debt Payoff,
+  etc.), designing infographics in Canva, first pins.
+- Paused: X/Twitter setup, blocked on the app-download gate — may
+  revisit or skip in favor of a Pinterest-first approach.
+
+### Next steps
+- Create 5–8 Pinterest boards matching site content pillars.
+- Design first infographics in Canva (2:3 ratio, 1000×1500px) —
+  start with a budgeting template pin and a "save $X in Y months"
+  graphic.
+- Begin pinning consistently (3–5/week target), each linking back to
+  a corresponding post on the site.
+
 ## 2026-08-18 — HTTPS fix, site polish, 3 new posts, contact email
 
 ### "Not secure" warning fix
