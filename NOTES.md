@@ -2,6 +2,38 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-19 (latest) — Root cause found: X signup "silent block" was moderation, not X
+
+### Resolves the open "X signup retried, same silent block" item
+Checked `contact@`'s Conversations → Pending queue in Google Groups
+(`groups.google.com/a/moneymattersdaily.money/g/contact/pending-messages`)
+and found 3 held messages — all `info@x.com` verification-code emails
+from earlier X signup attempts (3 separate codes, ~15min apart), never
+approved into the inbox.
+
+**Root cause**: the group is holding messages from first-time/unknown
+external senders for moderation, even though the general "Who can post
+→ External" access setting is Allowed. X's verification emails were
+never actually blocked or lost — they were arriving and sitting
+unseen in this queue the whole time. That's what looked like a
+"silent block" on the X side across multiple retries; it was actually
+this group waiting on manual approval that nobody was checking.
+
+**Status**: the 3 held codes are stale (verification codes expire in
+minutes, these are hours old) — not usable. Next step before retrying
+X signup again: find and disable the moderation hold on first-time
+external senders in Group settings, *then* retry so the next
+verification email lands directly in the inbox instead of the pending
+queue.
+
+### Also verified as part of this pass
+- Subscription/delivery setting for the sole member (Mikias A Nedha,
+  `mike@teredatrades.com`) is **"Each email"** — no digest delay, this
+  part was already correct.
+- Access settings for the group (`contact@moneymattersdaily.money`):
+  external senders are allowed to post; "Allow external members" = No
+  only affects who can join as a member, unrelated to who can send.
+
 ## 2026-08-19 (later) — Contact address decision + group setup verification
 
 ### `hello@` → `contact@` decision (missed from the original email setup log)
