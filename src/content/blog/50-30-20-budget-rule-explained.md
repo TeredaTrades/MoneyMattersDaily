@@ -5,7 +5,7 @@ pubDate: 2026-08-17
 targetKeyword: "50 30 20 budget rule"
 pillar: "budgeting"
 draft: false
-pinApproved: true
+pinApproved: false
 ---
 
 The 50/30/20 rule splits your take-home pay into three buckets: 50% needs, 30% wants, 20% savings and debt payoff. It's popular because it's simple enough to start today without a spreadsheet.
