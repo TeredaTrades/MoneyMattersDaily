@@ -2,6 +2,26 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-18 (still later) — X signup retried, same silent block
+
+- Retried X/Twitter signup using `contact@moneymattersdaily.money`.
+  Flow proceeded past the earlier app-download wall this time and
+  showed the "enter the code we sent you" screen — but no email ever
+  arrived. Confirmed via Gmail search: nothing from Twitter/X in
+  Inbox or Spam, over a 7-day window.
+- Ruled out a mail-delivery problem: Pinterest and Canva verification
+  codes both arrived instantly and cleanly to the same address the
+  same day, and a manual test send (teredatrades@gmail.com →
+  contact@) delivered in seconds right after the second "Send again"
+  attempt on X's side.
+- Tried both mobile web and the native X app — same outcome on both,
+  so it's not a web-vs-app difference. Reads as a fraud/anti-bot flag
+  on the domain, device, or network rather than the entry point.
+- **Decision: park X again**, unchanged from the earlier call.
+  Nothing suggests more retries change the outcome right now. Revisit
+  later once the domain has more sending/site history — Pinterest is
+  live, claimed, and already the working channel in the meantime.
+
 ## 2026-08-18 (later) — DKIM completed; decided against MX activation wizard
 
 ### DKIM: done
