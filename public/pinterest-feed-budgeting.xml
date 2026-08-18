@@ -4,6 +4,13 @@
   <title>Money Matters Daily — Pinterest Feed (Budgeting Tips)</title>
   <link>https://moneymattersdaily.money</link>
   <description>Curated, approved pins for the "Budgeting Tips" board. Not the main site feed.</description>
-
+  <item>
+    <title>How to Make a Budget: A Step-by-Step Guide for Beginners</title>
+    <link>https://moneymattersdaily.money/blog/how-to-make-a-budget-for-beginners/</link>
+    <guid isPermaLink="false">https://moneymattersdaily.money/pinterest/how-to-make-a-budget-for-beginners</guid>
+    <description>No spreadsheets, no jargon — a plain walk-through of how to build your first budget from a blank page, using numbers you already have.</description>
+    <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+    <enclosure url="https://moneymattersdaily.money/pins/how-to-make-a-budget-for-beginners.png" type="image/png" />
+  </item>
 </channel>
 </rss>
