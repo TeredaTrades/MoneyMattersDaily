@@ -2,6 +2,36 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-19 (latest, cont. 7) — Started publishing from the content queue: one post per day
+
+Found the existing article backlog at `content-pipeline/keyword-queue.json`
+(10 pending topics across 5 pillars, 5 already published). Deliberately
+publishing one at a time rather than batching — the "Daily" in the site
+name is meant literally, so a daily publish cadence matches the brand
+better than dumping several posts at once.
+
+**First post published from the queue:** "Zero-Based Budgeting Explained"
+(budgeting pillar) — chosen as the next item in queue order, and because
+it pairs naturally with the already-live 50/30/20 post (cross-linked both
+directions... actually only linked from the new post to the existing one,
+worth adding the reverse link on the 50/30/20 post in a future pass).
+Opened as **PR #11** rather than pushed straight to `main`, matching the
+existing review pattern (`pin-preview.yml` / `x-draft.yml` workflows run
+on blog-post PRs; `pinApproved` left `false` pending human review of the
+generated pin, same convention as all other existing posts). Verified
+locally with a full `npm run build` before pushing — page compiles,
+internal links resolve, Pinterest pin renders correctly with the new key
+mark from the previous entry.
+`content-pipeline/keyword-queue.json` updated to mark this keyword
+published.
+
+### Open items
+- PR #11 not yet merged — waiting on review/CI.
+- 9 topics still pending in the queue. Cadence going forward: one per
+  day, picking the next in queue order unless told otherwise.
+- Still open: add a reverse cross-link from the 50/30/20 post to this
+  new zero-based-budgeting post.
+
 ## 2026-08-19 (latest, cont. 6) — Key mark added to Pinterest pins + built X header banner
 
 ### Clarified profile-picture file choice
