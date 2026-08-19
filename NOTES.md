@@ -56,9 +56,12 @@ just the URL, for every draft. Regenerated all 9 existing drafts via
 `--all` in the new format. Pushed to the PR #11 branch.
 
 ### Open items
-- PR #11 (new post + key mark on pins + equation field + new X draft
-  format) still not merged — several changes have now stacked onto this
-  one branch. Worth reviewing and merging before adding more to it.
+- **Correction**: PR #11 was already merged (`adde76e`) — not still
+  open as logged below. What's actually pending is a *new*, separate
+  commit pushed to the same branch name
+  (`post/zero-based-budgeting-explained`) after that merge — the X
+  draft format rewrite (link-in-reply, main post + pin image). That
+  needs its own PR opened and merged, it's not a continuation of #11.
 - X drafts still require manually attaching the pin image and manually
   posting the reply — no automation, by design (see earlier entries on
   why X API automation is on hold).
