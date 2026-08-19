@@ -251,6 +251,23 @@ function scatterDots(rng, accent, offwhite, band) {
   return dots.join('\n      ');
 }
 
+// Brand mark — same key icon as PillarIcon.astro's construction and the
+// site favicon, recolored offwhite for legibility on the dark pin background
+// (this is a static pin PNG, no dark-mode media query available like
+// favicon.svg has). Coordinates below are the header/favicon key shape,
+// re-centered on its own bow (9,8 -> 0,0) so it's easy to place and scale.
+function keyMark(cx, bottomY, height, color) {
+  const scale = height / 17.5; // source bbox is ~17.5 units tall
+  const x = cx;
+  const y = bottomY - 12 * scale;
+  return `
+  <g transform="translate(${x} ${y}) scale(${scale.toFixed(3)})" fill="none" stroke="${color}" stroke-width="1.7">
+    <circle cx="0" cy="0" r="5.5" />
+    <path d="M0,5.5 L0,12 M0,12 L3.5,12 M0,9 L2.5,9" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="0" cy="0" r="1.7" />
+  </g>`;
+}
+
 function buildSvg({ title, pillar, slug }) {
   const W = 1000;
   const H = 1500;
@@ -294,6 +311,9 @@ function buildSvg({ title, pillar, slug }) {
   </defs>
 
   <rect width="${W}" height="${H}" fill="url(#bgGrad)" />
+
+  <!-- brand mark, sits in the empty space above the wordmark -->
+  ${keyMark(W / 2, 95, 46, PALETTE.offwhite)}
 
   <!-- wordmark -->
   <text x="${W / 2}" y="140" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
