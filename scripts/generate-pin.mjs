@@ -268,7 +268,7 @@ function keyMark(cx, bottomY, height, color) {
   </g>`;
 }
 
-function buildSvg({ title, pillar, slug }) {
+function buildSvg({ title, pillar, slug, equation }) {
   const W = 1000;
   const H = 1500;
   const accent = PILLAR_ACCENTS[pillar] ?? PALETTE.gold;
@@ -334,6 +334,13 @@ function buildSvg({ title, pillar, slug }) {
     ${iconMarkup}
   </g>
 
+  ${equation ? `
+  <!-- optional equation, sits in the gap between icon and title -->
+  <rect x="${W / 2 - 230}" y="600" width="460" height="66" rx="10" fill="${PALETTE.offwhite}" opacity="0.08" />
+  <rect x="${W / 2 - 230}" y="600" width="460" height="66" rx="10" fill="none" stroke="${accent}" stroke-width="2" opacity="0.6" />
+  <text x="${W / 2}" y="643" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="34" font-weight="700" fill="${PALETTE.offwhite}">${escapeXml(equation)}</text>` : ''}
+
   <!-- title -->
   <text text-anchor="middle" font-family="Arial, sans-serif" font-weight="800"
         font-size="${titleFontSize}" fill="${PALETTE.offwhite}">
@@ -373,7 +380,7 @@ function generateOne(filePath) {
     return null;
   }
   const slug = path.basename(filePath, '.md');
-  const svg = buildSvg({ title: data.title, pillar: data.pillar, slug });
+  const svg = buildSvg({ title: data.title, pillar: data.pillar, slug, equation: data.equation });
   const resvg = new Resvg(svg, { fitTo: { mode: 'width', value: 1000 } });
   const png = resvg.render().asPng();
 

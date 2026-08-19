@@ -20,6 +20,10 @@ const blog = defineCollection({
       'news-trends',
     ]),
     draft: z.boolean().default(false),
+    // Optional short equation/formula shown on the Pinterest pin between the
+    // pillar icon and title (e.g. "Income − Expenses = $0"). Keep it short —
+    // it renders as one line at a fixed size, no wrapping.
+    equation: z.string().optional(),
     // Set to true only after a human has reviewed the generated Pinterest pin image
     // (see scripts/generate-pin.mjs and .github/workflows/pin-preview.yml).
     // Only pinApproved posts are included in /pinterest-feed.xml.

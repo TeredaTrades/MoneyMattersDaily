@@ -29,6 +29,14 @@ What Fed Rate Decisions Actually Mean for Your Wallet — Every Fed announcement
 https://moneymattersdaily.money/blog/what-fed-rate-decisions-mean-for-you
 ```
 
+## zero-based-budgeting-explained
+
+```
+Zero-Based Budgeting Explained — Every dollar gets a job before the month starts. Here's how zero-based budgeting actually works, how it's different from 50/30/20, and who it fits best.
+
+https://moneymattersdaily.money/blog/zero-based-budgeting-explained
+```
+
 ## best-budgeting-apps-compared
 
 ```
