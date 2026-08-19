@@ -29,7 +29,6 @@ const OUT_FILE = path.join(ROOT, 'content-pipeline/x-drafts.md');
 
 const SITE = 'https://moneymattersdaily.money';
 const X_LIMIT = 280;
-const URL_RESERVE = 24; // X shortens any link to 23 chars via t.co, +1 for the newline before it
 
 function loadPost(slugOrPath) {
   const slug = slugOrPath.includes('/')
@@ -54,7 +53,11 @@ function allPosts() {
 }
 
 function buildDraftText(title, description) {
-  const maxText = X_LIMIT - URL_RESERVE - 2; // -2 for the "\n\n" before the link
+  // No URL_RESERVE needed anymore — the link goes in a separate reply, not
+  // the main post. X's algorithm (as of ~Q1 2026) suppresses reach 30-50%+
+  // for non-Premium accounts when a link is in the main post body, so the
+  // main post is link-free and the URL is posted as the first reply instead.
+  const maxText = X_LIMIT - 1;
   let text = `${title} — ${description}`;
   if (text.length > maxText) {
     text = `${text.slice(0, maxText - 1).trimEnd()}…`;
@@ -106,8 +109,12 @@ function main() {
       continue; // not asked for and no existing draft — don't touch
     }
 
-    const body = `\`\`\`\n${buildDraftText(data.title, data.description)}\n\n${url}\n\`\`\``;
-    existingDrafts.set(slug, `${body}`);
+    const body =
+      `**Post (attach the matching pin image from public/pins/):**\n` +
+      `\`\`\`\n${buildDraftText(data.title, data.description)}\n\`\`\`\n\n` +
+      `**First reply (post right after, replying to your own post — no image needed):**\n` +
+      `\`\`\`\n${url}\n\`\`\``;
+    existingDrafts.set(slug, body);
     written += 1;
   }
 
@@ -122,7 +129,13 @@ function main() {
     'Auto-generated starting drafts — edit freely before posting, this file is\n' +
     'never auto-posted anywhere. Re-running `npm run x:drafts` only adds drafts\n' +
     'for new posts; it never overwrites an existing one unless you pass that\n' +
-    "post's slug explicitly.\n";
+    "post's slug explicitly.\n\n" +
+    'Each entry is split into a main post and a separate first-reply. X\'s\n' +
+    'algorithm significantly suppresses reach for non-Premium accounts when a\n' +
+    'link is in the main post body, so post the text first (with the matching\n' +
+    'pin image from public/pins/ attached), then reply to your own post with\n' +
+    'just the link. The pin images already have the site domain printed on\n' +
+    'them, so the image itself carries attribution even before the reply.\n';
 
   const body = orderedSlugs
     .map((slug) => `## ${slug}\n\n${existingDrafts.get(slug)}\n`)
