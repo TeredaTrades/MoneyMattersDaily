@@ -11,7 +11,7 @@ equation: "Income − Expenses = $0"
 
 Zero-based budgeting means income minus expenses equals zero — not because you spent everything, but because every dollar was assigned a job in advance, including the dollars going to savings. Nothing is left unassigned to "figure out later."
 
-That's the core difference from a method like [50/30/20](/blog/50-30-20-budget-rule-explained), which sets broad percentage targets and lets you spend freely inside them. Zero-based budgeting is more hands-on: you plan the month down to the dollar before it starts, not after.
+That's the core difference from a method like [50/30/20](/blog/50-30-20-budget-rule-explained/), which sets broad percentage targets and lets you spend freely inside them. Zero-based budgeting is more hands-on: you plan the month down to the dollar before it starts, not after.
 
 ## How it actually works
 
@@ -36,4 +36,4 @@ If you're on a stable salary and a simpler method has been working, there's no r
 
 ## Getting started without overcomplicating it
 
-Don't try to predict every category perfectly in month one. Build the budget, live with it for a few weeks, then adjust categories that were clearly too tight or too loose. If you haven't tracked spending at all yet, start with [a basic budget](/blog/how-to-make-a-budget-for-beginners) first — zero-based budgeting is easier to build once you already know where your money tends to go.
+Don't try to predict every category perfectly in month one. Build the budget, live with it for a few weeks, then adjust categories that were clearly too tight or too loose. If you haven't tracked spending at all yet, start with [a basic budget](/blog/how-to-make-a-budget-for-beginners/) first — zero-based budgeting is easier to build once you already know where your money tends to go.

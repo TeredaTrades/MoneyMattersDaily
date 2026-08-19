@@ -68,7 +68,7 @@ const articleJsonLd = {
   <article>
     <p class="pillar-tag">
       <PillarIcon name={post.data.pillar as any} size={14} />
-      <a href={`/${post.data.pillar}`}>{post.data.pillar.replace('-', ' ')}</a>
+      <a href={`/${post.data.pillar}/`}>{post.data.pillar.replace('-', ' ')}</a>
     </p>
     <h1>{post.data.title}</h1>
     <p class="meta">
@@ -84,7 +84,7 @@ const articleJsonLd = {
         <ul>
           {related.map((r) => (
             <li>
-              <a href={`/blog/${r.id}`}>
+              <a href={`/blog/${r.id}/`}>
                 <PillarIcon name={r.data.pillar as any} size={15} />
                 <span>{r.data.title}</span>
               </a>
