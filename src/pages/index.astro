@@ -16,7 +16,7 @@ const [featured, ...rest] = posts;
   <p class="intro">Budgeting, saving, credit, and beginner investing — explained plainly, updated regularly.</p>
 
   {featured && (
-    <a href={`/blog/${featured.id}`} class="featured-post">
+    <a href={`/blog/${featured.id}/`} class="featured-post">
       <span class="featured-tag">
         <PillarIcon name={featured.data.pillar as any} size={16} />
         Latest — {featured.data.pillar.replace('-', ' ')}
@@ -33,7 +33,7 @@ const [featured, ...rest] = posts;
       <ul class="post-list">
         {rest.map((post) => (
           <li>
-            <a href={`/blog/${post.id}`}>
+            <a href={`/blog/${post.id}/`}>
               <span class="post-icon"><PillarIcon name={post.data.pillar as any} size={18} /></span>
               <span>
                 <span class="post-title">{post.data.title}</span>

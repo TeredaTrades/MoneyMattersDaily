@@ -26,7 +26,7 @@ Here's a more useful way to size it.
 
 Use your bare-minimum monthly number, not your normal monthly spending. Rent/mortgage, utilities, groceries, insurance, minimum debt payments, transportation. Leave out the subscriptions and dining-out money — in an actual emergency you'd cut those first, so they shouldn't inflate the size of the fund you're trying to build.
 
-If you did the math for the [50/30/20 rule](/blog/50-30-20-budget-rule-explained), your "needs" bucket is close to this number already.
+If you did the math for the [50/30/20 rule](/blog/50-30-20-budget-rule-explained/), your "needs" bucket is close to this number already.
 
 ## If the number you land on feels impossible right now
 
