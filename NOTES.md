@@ -2,6 +2,55 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-19 (latest, cont. 6) — Key mark added to Pinterest pins + built X header banner
+
+### Clarified profile-picture file choice
+Both Pinterest and X flatten transparent PNGs onto their own default
+backing rather than adapting live like `favicon.svg`'s dark-mode CSS
+swap does (that only works because it's a live SVG; a static PNG
+can't respond to page theme). So: use
+`docs/logo/profile-pic-teal-bg-400.png` (solid teal circle) for both
+platforms' profile picture upload, not the transparent version. The
+transparent PNG is still useful for watermarking/overlay use, just
+not as the direct profile picture.
+
+### Pinterest pin template (`scripts/generate-pin.mjs`) — added the mark
+Checked the actual pin-generation code before assuming anything was
+"decorative and unrelated" — correction to how this was described
+earlier in conversation: the big circular graphic on each pin (pie
+chart on budgeting pins, piggy bank on saving, etc.) is each pillar's
+own dedicated large-format icon, a deliberate separate icon set for
+pin art, not a stray unrelated graphic. Left that as-is.
+What was actually missing: the wordmark ("MONEY MATTERS DAILY") had
+no brand mark next to it anywhere in the template. Added a
+`keyMark()` helper — same key shape/proportions as the header and
+favicon — placed above the wordmark, offwhite stroke (dark teal won't
+show against the pin's dark teal background, unlike the favicon which
+can rely on a CSS dark-mode swap that doesn't exist on a rendered
+PNG). Regenerated all 8 existing pins via `node scripts/generate-pin.mjs
+--all` so they carry it now; verified against both a 4-line title and a
+longer pillar label (Travel & Nomad Finances) for overlap before
+committing. Future posts get the mark automatically since it's in the
+template, not hand-added per image.
+
+### Built the X header banner
+`docs/logo/x-banner-1500x500.png` — key mark, wordmark, and a small
+pillar tagline, teal gradient background matching the pin template's
+palette. Checked the layout stays clear of the bottom-left zone where
+X's UI overlaps the circular profile picture on top of the banner.
+No equivalent was needed for Pinterest — it has no profile banner,
+only per-board cover thumbnails (which pull from pin images, not a
+logo placement).
+
+### Open items
+- Files ready but not yet uploaded anywhere: profile pictures (both
+  variants), the X banner. All manual upload steps.
+- Only `favicon.svg` has the dark-mode CSS swap; every other
+  placement (pins, banner) is a static export with a color choice
+  baked in at generation time — correct as long as each background is
+  fixed (dark teal in both current cases), but worth remembering if a
+  future placement needs a light background.
+
 ## 2026-08-19 (latest, cont. 5) — Logo decision finalized: key mark, wired in for real
 
 ### Abandoned the leaf entirely
