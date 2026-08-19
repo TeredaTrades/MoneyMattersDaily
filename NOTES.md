@@ -2,6 +2,78 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-19 (latest, cont. 5) — Logo decision finalized: key mark, wired in for real
+
+### Abandoned the leaf entirely
+After the outline-redraw draft (previous entry), explored non-leaf
+directions instead of continuing to patch the leaf's generic-template
+problem. Rejected in order: growth/circle, bar-chart, and sparkline
+concepts (too close to a trading/investing-app look, which isn't the
+site's intent); "M" monogram (two rounds of attempts didn't resolve
+into a readable letterform); simplified single-leaf silhouettes
+(flagged as reading unintentionally suggestive once reduced to a plain
+curved almond shape — this is why the leaf direction was dropped
+altogether, not just the fill style); book/bookmark and overlapping-
+circles concepts (all rejected, no specific reason given). **Landed
+on a key mark** — round bow, single shaft, two teeth, small center
+hole — stroke-only, same construction as `PillarIcon.astro`
+(hollow, `currentColor`-style teal stroke). Chosen for reading clearly
+as a distinct object with no ambiguity, and being uncommon in
+finance-blog branding specifically (vs. leaf/shield/chart, which are
+saturated).
+Iterated shaft orientation (diagonal "skeleton key" vs. upright) —
+picked upright for its tighter, more square bounding box, which
+crops better into a circle (profile pictures) and favicons.
+Checked legibility at true 16px/32px favicon size: 32px is fully
+crisp; 16px is recognizable but the two teeth notches soften toward
+one shape at that size. Decided this was an acceptable tradeoff — a
+single-size file is used everywhere rather than maintaining a separate
+simplified favicon-only variant, matching the "keep it simple unless
+proven necessary" call made here rather than the earlier
+detailed/simplified split done for the leaf mark.
+
+### Shipped — replaces the leaf work, live on the actual site now
+Unlike the leaf mark (which only ever lived as unused files in
+`docs/logo/`), the key mark is now wired into the real site:
+- **`public/favicon.svg`** — replaced the old, unrelated mountain/
+  torch shape with the key mark. Kept the existing
+  `prefers-color-scheme: dark` swap pattern (teal → white in dark
+  mode).
+- **`public/favicon.ico`** — regenerated as a real multi-resolution
+  icon (16/32/48px embedded) from the new mark. Replaces the old
+  orphaned file, which was a single 32px PNG mislabeled `.ico`, in an
+  unrelated black/magenta color scheme, and wasn't referenced by any
+  code (browsers may still auto-request it by convention, so it
+  wasn't fully inert despite being dead code).
+- **JSON-LD `Organization.logo`** (`BaseLayout.astro` line 37) —
+  updates automatically, no code change needed; it already pointed at
+  `/favicon.svg` by path.
+- **Site header** (`BaseLayout.astro`) — was text-only
+  (`{siteName}`, no image). Added the mark at 30px next to the
+  wordmark; tested 24px first, felt like a stray bullet next to the
+  bold wordmark rather than a mark, sized up. Verified via an actual
+  `npm run build` + screenshot of the built output, not just an
+  isolated mockup.
+- **`docs/logo/mark-key.svg`** — standalone source file, inline
+  color attributes (not the `<style>`-tag approach used in
+  `favicon.svg`, since third-party upload targets like Pinterest/X
+  may strip `<style>` tags).
+- **`docs/logo/profile-pic-transparent-400.png`** and
+  **`profile-pic-teal-bg-400.png`** — ready-to-upload 400×400
+  Pinterest/X profile picture exports; transparent-background and
+  solid-teal-circle-background variants, confirmed alpha channel
+  present on the transparent one.
+
+### Open items
+- Profile pictures not yet actually uploaded to Pinterest/X — files
+  are ready in `docs/logo/`, upload is a manual step.
+- All the recolored/simplified **leaf** mark files from the previous
+  two entries (`full-lockup-teal.png`, `mark-detailed-teal.png`,
+  `mark-simplified.svg`, etc.) are now superseded and unused — left in
+  place in `docs/logo/` for reference/history, not deleted.
+- 16px favicon softness (teeth notches blurring) accepted as a known,
+  minor tradeoff — not revisited unless it becomes a real complaint.
+
 ## 2026-08-19 (latest, cont. 4) — Logo: outline redraw attempt, plus found 3 disconnected identities on the live site
 
 ### Redraw direction changed: leaf shape kept, fill style dropped
