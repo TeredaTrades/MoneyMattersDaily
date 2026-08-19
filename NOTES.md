@@ -2,6 +2,49 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-19 (latest, cont. 8) — Pin equation field + X algorithm research (link/image placement)
+
+### Pinterest pin: optional equation field
+Added a reusable `equation` frontmatter field (`src/content.config.ts`) so
+any post can show a short formula on its pin, rendered in a bordered box
+in the gap between the pillar icon and title (`generate-pin.mjs`). Used
+it on the zero-based-budgeting post: "Income − Expenses = $0". Confirmed
+optional/non-breaking by regenerating a post without the field
+(how-much-emergency-fund) and diffing the output — identical to before.
+Pushed onto the still-open PR #11 branch, not merged yet.
+
+### X posting format changed: link moved out of the main post
+Researched current X algorithm behavior before answering a question about
+whether the drafted posts needed images. Two findings, both acted on:
+
+1. **Images**: worth attaching — posts with native images get roughly a
+   15–25% reach lift over text-only. The existing Pinterest pin PNGs
+   double as this; no new asset needed.
+2. **Links**: since ~Q1 2026, X's algorithm suppresses reach by
+   30–50%+ (multiple independent sources; some report "near-zero"
+   engagement) for non-Premium accounts when a link sits in the main
+   post body — X wants to keep users on-platform. The account isn't on
+   Premium, so this applies in full. Workaround used industry-wide:
+   post the text alone (with image attached), then reply to your own
+   post with just the link, in a separate reply.
+Separately confirmed: the site domain printed as text on the pin images
+themselves is **not** treated as a link by the algorithm — no evidence
+X OCR-scans images for URLs — so that's unaffected and actually helps
+attribution survive reposts/screenshots even without a clickable link.
+
+`scripts/generate-x-drafts.mjs` rewritten to output this format
+directly: a link-free main post + a separate "first reply" block with
+just the URL, for every draft. Regenerated all 9 existing drafts via
+`--all` in the new format. Pushed to the PR #11 branch.
+
+### Open items
+- PR #11 (new post + key mark on pins + equation field + new X draft
+  format) still not merged — several changes have now stacked onto this
+  one branch. Worth reviewing and merging before adding more to it.
+- X drafts still require manually attaching the pin image and manually
+  posting the reply — no automation, by design (see earlier entries on
+  why X API automation is on hold).
+
 ## 2026-08-19 (latest, cont. 7) — Started publishing from the content queue: one post per day
 
 Found the existing article backlog at `content-pipeline/keyword-queue.json`
