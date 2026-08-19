@@ -1,8 +1,44 @@
 # Project notes / decision log
 
+> **⚠️ READ THIS FIRST:** Entries are newest-first. The section
+> immediately below this line is the current state of the project.
+> Do NOT scroll to the bottom for "the latest" — that's the oldest
+> entry, from the very first setup session. A status check done
+> against the bottom of this file on 2026-08-19 produced several
+> incorrect "still open" items that had actually been resolved days
+> earlier — see the "HTTPS confirmed live; correcting a stale status
+> check" entry below for what that looked like and why it happened.
+> When in doubt, check the date on the entry, not its position.
+
 Running log of setup decisions and open items. Newest entries at top.
 
-## 2026-08-19 (latest, cont. 9) — HTTPS confirmed live; correcting a stale status check
+## 2026-08-19 (latest, cont. 10) — Top-of-file banner + daily post reminder automation
+
+### Banner added
+Added a "read this first" banner at the very top of this file after
+today's read-order mistake (see "cont. 9" below) — points anyone
+opening this file straight at the current section and warns that the
+bottom is the oldest entry, not the latest.
+
+### Daily post reminder — chose reminder-only, not full auto-generation
+Two options considered for "at least one post a day":
+1. **Reminder only** (built): `.github/workflows/daily-post-reminder.yml`
+   runs daily at 14:00 UTC, checks git history for a post added to
+   `src/content/blog/` that day; if none, opens a GitHub issue
+   (`content-reminder` label) naming the next `"pending"` keyword from
+   `content-pipeline/keyword-queue.json`. Companion workflow
+   `close-post-reminder.yml` auto-closes that issue once a post
+   actually lands on `main`. No content is generated or committed by
+   either workflow — reminder/tracking only.
+2. **Full auto-generation** (not built): an LLM writes the whole post
+   and opens a PR unattended. Skipped on purpose — this project
+   already has a logged entry about the site "feeling AI-generated"
+   where the fix was editorial (specificity, varied structure, an
+   actual point of view), not a tooling fix, and X posting was kept
+   manual for the same review-quality reason. Revisit only if there's
+   a real editorial-review step in front of anything auto-generated.
+
+
 
 Confirmed via GitHub Pages settings screenshot: DNS check successful,
 custom domain `moneymattersdaily.money` set, **Enforce HTTPS checked

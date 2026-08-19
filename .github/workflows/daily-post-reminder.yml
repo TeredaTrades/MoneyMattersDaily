@@ -1,0 +1,65 @@
+name: Daily post reminder
+
+# Runs every day. Checks whether a new post landed in
+# src/content/blog/ today; if not, opens a GitHub issue with the next
+# pending keyword from content-pipeline/keyword-queue.json so there's
+# no ambiguity about what to write next.
+#
+# This is a REMINDER, not a writer — it never generates or commits
+# post content itself. Full auto-generation was considered and
+# deliberately skipped; see NOTES.md ("feels AI-generated" fix was
+# editorial, not tooling) and the X-draft workflow's same reasoning.
+
+on:
+  schedule:
+    - cron: '0 14 * * *' # 14:00 UTC daily
+  workflow_dispatch: {} # allow manual trigger for testing
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-and-remind:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for a post published today
+        id: check
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          FOUND=$(git log --since="${TODAY}T00:00:00Z" --name-only --diff-filter=A --pretty=format: -- 'src/content/blog/*.md' | grep -v '^$' | head -1 || true)
+          if [ -n "$FOUND" ]; then
+            echo "posted=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "posted=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Get next pending keyword
+        id: next
+        if: steps.check.outputs.posted == 'false'
+        run: |
+          NEXT=$(node -e "
+            const q = require('./content-pipeline/keyword-queue.json');
+            const next = q.find(k => k.status === 'pending');
+            console.log(next ? next.keyword + ' (' + next.pillar + ')' : 'none left — add more to keyword-queue.json');
+          ")
+          echo "keyword=$NEXT" >> "$GITHUB_OUTPUT"
+
+      - name: Open reminder issue
+        if: steps.check.outputs.posted == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const today = new Date().toISOString().slice(0, 10);
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `No post published yet today (${today})`,
+              body: `No new file landed in \`src/content/blog/\` today.\n\nNext pending keyword from the queue: **${{ steps.next.outputs.keyword }}**\n\nThis issue was opened automatically and closes itself once today's post is merged (workflow: \`daily-post-reminder.yml\`).`,
+              labels: ['content-reminder']
+            });
