@@ -2,6 +2,69 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-19 (latest, cont. 4) — Logo: outline redraw attempt, plus found 3 disconnected identities on the live site
+
+### Redraw direction changed: leaf shape kept, fill style dropped
+Followed up on the pillar-icon style-mismatch flag from the previous
+entry. First explored moving off the leaf shape entirely (growth/circle,
+bar-chart, sparkline, "M" monogram concepts) to solve the AI-template
+concern at the same time — rejected: chart/trendline shapes read as
+"trading app" (not the site's intent), the monogram sketches didn't
+resolve into a clear "M," and simplified single-leaf silhouettes were
+flagged as reading unintentionally suggestive once simplified down to
+a plain curved almond shape. Decision: keep the leaf concept (the
+three-leaflet sprig from the existing detailed mark), but redraw it as
+a stroke-only outline to match `PillarIcon.astro`'s construction
+(hollow, `currentColor` stroke, ~1.6 weight equivalent), rather than
+solid fill. Traded off knowingly: this fixes the stroke-vs-fill
+mismatch but does **not** resolve the generic-leaf-logo-template
+concern — accepted as a deliberate tradeoff, not a fix.
+Status: draft outline traced by hand (no vector source file exists for
+the original detailed mark, only the PNGs in `docs/logo/` — traced
+from those, not pixel-exact). Not yet finalized or saved to the repo.
+
+### Found: the live site currently has 3 disconnected logo identities
+Checked what's actually wired into `src/layouts/BaseLayout.astro`
+before going further, since none of the `docs/logo/` work (recolor,
+simplified mark, this outline draft) was connected to anything live:
+
+1. **`public/favicon.svg`** — the real browser tab icon (line 73) and
+   the JSON-LD `Organization.logo` field crawlers read (line 37). An
+   abstract mountain/torch shape, black line art on transparent
+   (white in dark mode via `prefers-color-scheme`). Unrelated to the
+   leaf mark.
+2. **`public/favicon.ico`** — same mountain/torch silhouette as the
+   SVG, but a completely different export: single 32×32 PNG
+   relabeled `.ico` (not a real multi-res icon file), white shape on
+   a black rounded-square background with a magenta/pink accent —
+   a color not used anywhere else in the site's teal palette. **Not
+   referenced anywhere in `BaseLayout.astro`** — dead/orphaned file,
+   though browsers may still auto-request `/favicon.ico` by
+   convention despite the explicit `<link rel="icon">` override.
+3. **Site header** — plain text (`{siteName}`), no logo image at all
+   (line 81).
+Also clarified: `og:image`/`twitter:image` (lines 66/71) is an
+unrelated, separate pipeline — a per-page optional prop for share
+preview images (e.g. a post's Pinterest pin), not a logo slot. Most
+pages currently pass nothing and show no social preview image. Don't
+conflate fixing the logo with fixing this.
+
+Net effect: the leaf mark (any version, including all the recolor/
+simplify work) exists only as files in `docs/logo/` — it isn't the
+favicon, isn't the JSON-LD logo, isn't in the header. Stranded until
+deliberately wired in.
+
+### Open items
+- Outline leaf redraw: still a hand-traced draft, not finalized or
+  committed.
+- Once a final mark is chosen: needs to replace `favicon.svg`'s
+  shape, update the JSON-LD `logo` URL, and a decision made on
+  whether to add it to the header (currently text-only).
+- `favicon.ico` orphan: delete, or regenerate a proper multi-res
+  version matching the final mark — undecided.
+- Generic-leaf-template concern from the previous entry remains
+  open and accepted as a known tradeoff, not resolved.
+
 ## 2026-08-19 (latest, cont. 3) — Logo review: recolored to teal, simplified mark for small sizes
 
 ### Honest review of the drafted logo (leaf mark + serif wordmark)
