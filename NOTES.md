@@ -2,6 +2,24 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-19 (latest, cont. 9) — HTTPS confirmed live; correcting a stale status check
+
+Confirmed via GitHub Pages settings screenshot: DNS check successful,
+custom domain `moneymattersdaily.money` set, **Enforce HTTPS checked
+and active**, site live at https://moneymattersdaily.money/. No action
+needed here — this was already effectively done, just not visually
+confirmed until now.
+
+Also correcting a mistake from earlier today: a status check of this
+file read from the bottom (oldest entries, 2026-08-17) instead of the
+top (newest), so posts/images/social-links/hello@ were reported as
+still-open when they'd already been resolved days ago in later
+entries. No duplicate NOTES files exist — just the one, newest-first.
+The stale historical "Open items" block near the bottom of the file
+was reverted to its original wording as an accurate record of what
+was open *at that point in time*; only entries dated 2026-08-19 or
+later reflect current status.
+
 ## 2026-08-19 (latest, cont. 8) — Pin equation field + X algorithm research (link/image placement)
 
 ### Pinterest pin: optional equation field
@@ -899,20 +917,16 @@ Namecheap WHOIS contact-verification email already completed earlier in
 this session (same verification key) — no outstanding action, just an
 old tab left open.
 
-### Open items (carried over + new) — updated 2026-08-19, verified against repo
+### Open items (carried over + new)
 - `hello@moneymattersdaily.money` still needs to be set up as a
   forwarding group/alias (not a paid user) once the secondary domain
-  finishes verifying. **Still open — no evidence this was done.**
-- MX verification in Google Admin — **resolved**: decision made to
-  leave MX unactivated intentionally on both domains (SPF/DKIM are
-  green, mail already works). See 2026-08-19 DNS confirmation entries.
-- Footer social links (Twitter, Pinterest) — **resolved**: real URLs
-  now live (`twitter.com/moneymattersdly`, `pinterest.com/moneymattersdaily`),
-  no longer placeholders.
-- Site images/post variety — **resolved**: 9 posts now published
-  (was 1), each with a Pinterest pin graphic in `public/pins/`.
-  Haven't verified in-body images per post — check individual posts
-  if that matters before ad-network application.
+  finishes verifying.
+- MX verification in Google Admin still pending — recheck later.
+- Footer social links (Twitter, Pinterest) still placeholders — need
+  real accounts before going live.
+- Site still needs images and more posts with varied
+  structure/voice — this is the main blocker before applying to
+  Adsterra/PropellerAds, more than any remaining DNS/email task.
 
 ---
 
