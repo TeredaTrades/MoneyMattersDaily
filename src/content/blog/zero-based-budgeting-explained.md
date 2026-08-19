@@ -6,6 +6,7 @@ targetKeyword: "zero based budgeting explained"
 pillar: "budgeting"
 draft: false
 pinApproved: false
+equation: "Income − Expenses = $0"
 ---
 
 Zero-based budgeting means income minus expenses equals zero — not because you spent everything, but because every dollar was assigned a job in advance, including the dollars going to savings. Nothing is left unassigned to "figure out later."
