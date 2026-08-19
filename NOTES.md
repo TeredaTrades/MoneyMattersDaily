@@ -899,16 +899,20 @@ Namecheap WHOIS contact-verification email already completed earlier in
 this session (same verification key) — no outstanding action, just an
 old tab left open.
 
-### Open items (carried over + new)
+### Open items (carried over + new) — updated 2026-08-19, verified against repo
 - `hello@moneymattersdaily.money` still needs to be set up as a
   forwarding group/alias (not a paid user) once the secondary domain
-  finishes verifying.
-- MX verification in Google Admin still pending — recheck later.
-- Footer social links (Twitter, Pinterest) still placeholders — need
-  real accounts before going live.
-- Site still needs images and more posts with varied
-  structure/voice — this is the main blocker before applying to
-  Adsterra/PropellerAds, more than any remaining DNS/email task.
+  finishes verifying. **Still open — no evidence this was done.**
+- MX verification in Google Admin — **resolved**: decision made to
+  leave MX unactivated intentionally on both domains (SPF/DKIM are
+  green, mail already works). See 2026-08-19 DNS confirmation entries.
+- Footer social links (Twitter, Pinterest) — **resolved**: real URLs
+  now live (`twitter.com/moneymattersdly`, `pinterest.com/moneymattersdaily`),
+  no longer placeholders.
+- Site images/post variety — **resolved**: 9 posts now published
+  (was 1), each with a Pinterest pin graphic in `public/pins/`.
+  Haven't verified in-body images per post — check individual posts
+  if that matters before ad-network application.
 
 ---
 
