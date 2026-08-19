@@ -12,6 +12,110 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-19 (latest, cont. 11) — SEO/indexing session with Claude (chat) + backlink strategy research
+
+### Context
+This entry covers a full session done via Claude chat (not Claude Code in-repo)
+using a manually-provided GitHub PAT for repo read/write access. Starting point:
+a note saying moneymattersdaily.money wasn't showing in Google search results
+(moneymatterdaily.com, a similarly-named unrelated/low-quality site, was
+showing instead).
+
+### Search Console findings — mostly already resolved, small real bug found
+Checked GSC directly (screenshots from the user, who has an existing verified
+domain property already set up — not done in this session):
+- Sitemap: submitted 2026-08-18, status Success, 13 pages discovered. Already
+  fine, no action needed.
+- Homepage: confirmed "URL is on Google" / indexed.
+- Individual post URLs: mixed — some already indexed on their own
+  (`managing-money-as-a-digital-nomad` for example), others showed "URL is not
+  on Google" and were manually submitted via Request Indexing
+  (`how-to-make-a-budget-for-beginners`, plus the user worked through most of
+  the rest of the post list, about/contact/disclaimer pages, until hitting the
+  ~10-12/day manual submission quota — pillar pages not yet checked, carry
+  over to next session).
+
+### Real bug found and fixed: canonical/sitemap trailing-slash mismatch (PR #13, merged)
+Inspecting `how-to-make-a-budget-for-beginners` (no trailing slash) in GSC
+showed "No referring sitemaps detected" even though the sitemap was confirmed
+successful. Root cause: `scripts/generate-sitemap.mjs` always emits URLs with
+a trailing slash (walks `dist/` for `index.html`, matching the directory-style
+static build output), but `BaseLayout.astro`'s canonical/OG tags were built
+from `Astro.url.pathname` — whatever format a page happened to be requested
+with — so canonical tags didn't consistently match the sitemap's URLs.
+
+Fix, PR #13 (`fix-trailing-slash-canonical` branch, now merged to `main` and
+deployed):
+1. `astro.config.mjs` — added `trailingSlash: 'always'`, forcing canonical/
+   OG/Twitter URLs to always include the trailing slash, matching the
+   sitemap.
+2. Follow-up caught while verifying #1 with a real `npm run build`: every
+   hardcoded internal `<a href>` (nav + footer in `BaseLayout.astro`, the
+   about/contact/disclaimer pages, the pillar/post loop templates in
+   `[pillar].astro`/`[slug].astro`/`index.astro`) and two manual cross-links
+   inside blog post markdown itself (`how-much-emergency-fund.md`,
+   `zero-based-budgeting-explained.md`) were still missing trailing slashes.
+   Left alone, every link on the site would've pointed at a URL that didn't
+   match its own destination page's canonical tag — same inconsistency,
+   just moved from "sitemap vs. canonical" to "internal links vs.
+   canonical." Fixed all of them.
+3. Verified: full local build (20 pages, no errors) + a script checking
+   every `href="/..."` in the built HTML against actual built page paths —
+   zero broken/mismatched links before pushing.
+
+Net effect going forward: Google's regular crawler should now discover new/
+updated pages via consistent sitemap↔canonical↔internal-link signals,
+without needing manual Request Indexing on every single new post.
+
+### Confirmed: no comment system exists — intentional, not an oversight
+Checked the full source tree for any comment functionality (none found).
+This matches the README's stated "plain and credible," no-lead-gen,
+no-engagement-funnel design intent for a YMYL finance site — not a missing
+feature. If ever revisited, a static-site-compatible option like Giscus
+(GitHub-Discussions-backed, no server) would be the cheapest fit — not
+pursued this session.
+
+### Backlink strategy — researched, mostly steered away from riskier tactics
+Explored what's realistic for link-building at this stage:
+- **Rejected as unreliable/risky**: bulk "300+ guest post site" listicles
+  (identified as classic link-farm directories — templated boilerplate
+  copy repeated verbatim across unrelated domains is the tell; Google's
+  Sept 2025 update specifically targeted these networks in YMYL niches).
+  Also checked Wise Bread specifically as a named example — its real
+  "guest post" page turned out to be invite-only/writer-recruitment
+  (unpublished samples required, sent to a hiring email), not an open
+  backlink exchange.
+- **Rejected as unrealistic for a new site**: "best personal finance
+  blogs" roundup lists — these are editorially curated by each site's own
+  staff about already-established blogs (Wise Bread, Mr. Money Mustache,
+  Financial Samurai, etc.), not open-submission lists a new/unknown site
+  could get added to.
+- **Identified as the realistic path**: journalist source-request
+  platforms (post-HARO landscape) — Source of Sources (free, HARO's
+  original founder's replacement), Qwoted (free tier), Featured (revived
+  HARO brand, free daily digest), #JournoRequest on X/Bluesky. You answer
+  a real journalist's question with a specific, quotable, ready-to-use
+  answer; if used, you get a byline + real editorial backlink regardless
+  of how new/small your site is. Lower effort per attempt than guest
+  posting, no bad-neighborhood risk, doesn't require existing authority.
+  **Not yet signed up for or used** — next step if pursued.
+- **Resource-page outreach**: two email templates drafted (a "add my
+  guide to your resource list" pitch and a guest-post pitch) — kept as
+  optional/secondary, lower expected hit rate than the journalist-query
+  route. Not sent to anyone yet; no real target list built (would need
+  real resource/roundup pages to still be found, not done this session).
+
+### Open items
+- Pillar pages (`/budgeting`, `/saving`, `/credit`, `/investing-basics`,
+  `/app-comparisons`) not yet checked/submitted in GSC — quota was hit
+  before reaching these. Resume next session (quota resets daily).
+- Backlink outreach: no actual sending done this session — research and
+  strategy only. Journalist-platform signup/usage not started.
+- Envelope budgeting (next item in `content-pipeline/keyword-queue.json`)
+  and the other 5 pending queue topics still not written.
+
+---
+
 ## 2026-08-19 (latest, cont. 10) — Top-of-file banner + daily post reminder automation
 
 ### Banner added
