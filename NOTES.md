@@ -12,6 +12,37 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-20 — Daily post: envelope budgeting method
+
+Published today's post from the queue (session done via Claude chat with a
+manually-provided GitHub PAT, same as the 08-19 SEO session). Next pending
+item in `content-pipeline/keyword-queue.json` in order was "envelope
+budgeting method" (budgeting pillar) — written, verified with a full local
+`npm run build` (no errors, internal links resolve), opened as **PR #15**
+(`post/envelope-budgeting-method` branch), `pinApproved` left `false`
+pending pin review, matching the existing convention. Queue entry marked
+`published`.
+
+Deliberately used a cash-vs-digital comparison structure with an explicit
+recommendation (digital as the practical default, cash for one specific
+overspending pattern) rather than the numbered-steps format used by the
+last two budgeting posts — per the standing "vary structure, keep a point
+of view" editorial guidance. Cross-links to zero-based-budgeting-explained,
+50-30-20-budget-rule-explained, and how-to-make-a-budget-for-beginners.
+
+### Open items
+- PR #15 not yet merged — waiting on review/CI.
+- 5 topics still pending in the queue (best high yield savings accounts,
+  how to save money on a low income, what hurts your credit score, credit
+  utilization explained, how to start investing with little money, best
+  free investing apps compared).
+- Reverse cross-link from 50/30/20 → zero-based-budgeting still not added
+  (carried over from 08-19).
+- Pillar pages in GSC still not checked/submitted (carried over from
+  08-19 SEO session).
+
+---
+
 ## 2026-08-19 (latest, cont. 11) — SEO/indexing session with Claude (chat) + backlink strategy research
 
 ### Context
