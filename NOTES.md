@@ -12,6 +12,64 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-20 (cont.) — External feedback to discuss (not yet acted on)
+
+Feedback below came secondhand (a friend of a friend). Logging verbatim
+for a future session — nothing implemented yet.
+
+### 1. Articles need more depth
+The fetched digital-nomad guide is listed as a one-minute read. Useful,
+but too brief to compete consistently on high-value financial searches
+where established publishers provide examples, tables, sources,
+country-specific caveats, and decision support. For each important
+guide, aim for:
+- A clear answer in the first 2–3 sentences
+- A realistic worked example with numbers
+- A "who this is for / not for" section
+- Specific trade-offs and common mistakes
+- Links to primary sources where a claim depends on laws, rates, tax
+  rules, fees, or product terms
+- A practical next step or downloadable/template-like tool
+
+Example given: in the zero-based budgeting guide, include a full sample
+monthly budget at $2,000, $4,000, and variable-income levels — not only
+a definition. For the digital-nomad article, add a comparison table for
+home bank vs. multi-currency account vs. local bank, with clearly dated
+fee/product details and source links.
+
+### 2. Trust/E-E-A-T signals
+- Add "Reviewed by" only when a qualified reviewer has actually
+  reviewed it.
+- Add "Last updated" dates and explain what was updated when changes
+  are material.
+- Cite official sources — government consumer agencies, central banks,
+  regulators, tax authorities, fund prospectuses, and app pricing/terms
+  pages.
+- Add an editorial policy, corrections policy, affiliate disclosure,
+  and contact method.
+- Avoid generic AI-style volume. Google's stated direction: AI use
+  itself is not the deciding factor; original, helpful, high-quality
+  content with demonstrable E-E-A-T is.
+
+### 3. Content direction
+Rather than trying to cover every finance subject, make the site known
+for a few unusually practical angles:
+- Budgeting for irregular income: freelancers, creators, commission
+  earners, and gig workers.
+- Money across borders: remote workers, digital nomads, multi-currency
+  budgeting, transfer fees, and tax-residency checklists.
+- Beginner financial systems: a sequence from first budget → emergency
+  fund → debt/credit → investing basics.
+- Tool-led guides: calculators, checklists, budget templates,
+  bank/app comparison frameworks.
+
+### Open items
+- Discuss and decide which of the above to act on — none implemented
+  yet. Worth weighing against the existing "reviewed by" / editorial
+  policy pages already noted as open in earlier entries.
+
+---
+
 ## 2026-08-20 — Daily post: envelope budgeting method
 
 Published today's post from the queue (session done via Claude chat with a
