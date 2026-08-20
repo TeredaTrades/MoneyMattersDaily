@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## envelope-budgeting-method
+
+**Post (attach the matching pin image from public/pins/):**
+```
+The Envelope Budgeting Method: How It Works (Cash and Digital) — Split your money into spending categories before you spend it, not after. How the envelope method works, why it's so effective against overspending, and whether to use cash or an app.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/envelope-budgeting-method
+```
+
 ## how-to-make-a-budget-for-beginners
 
 **Post (attach the matching pin image from public/pins/):**
