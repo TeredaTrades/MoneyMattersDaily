@@ -12,6 +12,61 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-21 (cont. 2) — Pin visual variety + content-depth treatment (PR #18)
+
+Second action on the 2026-08-20 external feedback batch — item 1 (depth)
+plus a separate pin-variety fix requested in the same conversation
+(budgeting-pillar pins all sharing the same pie-chart icon and looking
+too similar to each other).
+
+**Pin variety:** added a `pinVisual` schema field (`icon` default /
+`equation` / `flow` / `table` / `plain`) and extended
+`scripts/generate-pin.mjs` with flow-chain and small-table renderers to
+go with the existing equation display. Applied deliberately sparingly,
+not to every post: zero-based-budgeting-explained now shows its equation
+instead of the pie chart, envelope-budgeting-method shows a 4-step flow
+chain, 50-30-20-budget-rule-explained shows a small Needs/Wants/Savings
+table, and high-yield-savings-accounts-explained is now a plain
+title-forward pin. All other posts unchanged, still on their pillar's
+default icon. Also added table/blockquote CSS to BaseLayout.astro so
+plain markdown tables and blockquotes render cleanly in post bodies
+without needing raw HTML in the `.md` files.
+
+**Content depth:** retrofitted the two posts most directly named in the
+08-20 feedback (not a full-site rollout yet):
+- `zero-based-budgeting-explained` — added the exact example the
+  feedback suggested: full sample budgets at $2,000/mo, $4,000/mo, and
+  a variable-income example (as tables), a highlighted equation
+  blockquote, a common-mistakes section, and a last-updated note.
+- `managing-money-as-a-digital-nomad` — the specific "one-minute read"
+  the feedback flagged as too brief. Added the home-bank vs.
+  multi-currency vs. local-bank comparison table the feedback asked
+  for, a worked currency-conversion cost example, a who-this-is-
+  for/not-for section, and primary-source links (CFPB on currency
+  conversion fees, IRS Publication 519 on the Substantial Presence
+  Test) rather than the previous unsourced version.
+
+Verified with a full local `npm run build` (clean) and regenerated all
+11 pins — confirmed the seeded pin generation is still deterministic
+for the 7 posts not touched by this change (only the 4 targeted pins
+actually changed).
+
+### Open items
+- PR #18 not yet merged.
+- Depth treatment has only been applied to 2 posts so far — the rest of
+  the catalog (8 other published posts) hasn't been touched. Worth
+  deciding whether/how far to roll this out, and to which posts.
+- Item 3 from the 08-20 feedback (content-direction reframing toward
+  irregular-income / cross-border / financial-systems-sequence /
+  tool-led-guides angles) still not discussed.
+- 6 topics still pending in the queue (unchanged from prior entries).
+- Reverse cross-link from 50/30/20 → zero-based-budgeting still not
+  added (carried over from 08-19).
+- Pillar pages in GSC still not checked/submitted (carried over from
+  08-19 SEO session).
+
+---
+
 ## 2026-08-21 (cont.) — Editorial policy + corrections policy pages (PR #17)
 
 First concrete action on the 2026-08-20 external feedback batch (item 2,

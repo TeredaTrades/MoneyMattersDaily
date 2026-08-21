@@ -6,6 +6,7 @@ targetKeyword: "best high yield savings accounts explained"
 pillar: "saving"
 draft: false
 pinApproved: false
+pinVisual: "plain"
 ---
 
 A high-yield savings account (HYSA) is a savings account, usually from an online bank, that pays a meaningfully higher interest rate than a traditional bank's savings account — often several times the national average — with the same federal deposit insurance and no added risk. The rate isn't fixed: it moves with the broader interest-rate environment, so any specific number you read today (including in this article) should be treated as a snapshot, not a guarantee.

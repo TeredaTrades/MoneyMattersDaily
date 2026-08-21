@@ -6,6 +6,8 @@ targetKeyword: "envelope budgeting method"
 pillar: "budgeting"
 draft: false
 pinApproved: false
+pinVisual: "flow"
+flowSteps: ["Get paid", "Fund envelopes", "Spend from envelope", "Empty = stop"]
 ---
 
 The envelope method splits your spending money into fixed categories — groceries, gas, dining out — before the month starts, each with its own hard limit. Once an envelope is empty, that category is done until next month, no matter what's left in the others.

@@ -129,6 +129,38 @@ const structuredData = [siteSchema, ...jsonLd];
         color: #1a1a1a;
         --accent: #1c4a4a;
       }
+      article table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.5rem 0;
+        font-size: 0.95rem;
+      }
+      article th,
+      article td {
+        text-align: left;
+        padding: 0.6rem 0.8rem;
+        border: 1px solid #ddd;
+      }
+      article th {
+        background: #f0f4f4;
+        font-weight: 700;
+      }
+      article tbody tr:nth-child(even) {
+        background: #fafbfb;
+      }
+      /* Used for highlighted equations/worked-example callouts — a plain
+         markdown blockquote (`>`), so posts don't need raw HTML. */
+      article blockquote {
+        margin: 1.5rem 0;
+        padding: 0.9rem 1.2rem;
+        border-left: 4px solid var(--accent);
+        background: #f0f4f4;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+      article blockquote p {
+        margin: 0.3rem 0;
+      }
       .site-header {
         display: flex;
         justify-content: space-between;
