@@ -207,8 +207,83 @@ function iconFor(pillar) {
 }
 
 // ---------------------------------------------------------------------------
-// Layout
+// Alternate icon-area visuals — flow chain and small table. Equation and
+// plain modes need no extra markup beyond what buildSvg already has.
 // ---------------------------------------------------------------------------
+
+function buildFlowVisual(steps, accent, offwhite, centerY) {
+  const clean = (steps && steps.length ? steps : ['Step one', 'Step two', 'Step three']).slice(0, 4);
+  const n = clean.length;
+  const margin = 40;
+  const gap = 24;
+  const boxW = Math.min(230, (1000 - margin * 2 - gap * (n - 1)) / n);
+  const boxH = 84;
+  const totalW = n * boxW + (n - 1) * gap;
+  const startX = 500 - totalW / 2;
+  const fontSize = boxW < 180 ? 20 : 24;
+  const wrapChars = boxW < 180 ? 13 : 16;
+
+  const boxes = clean.map((label, i) => {
+    const x = startX + i * (boxW + gap);
+    const lines = wrapText(label, wrapChars).slice(0, 2);
+    const lineHeight = fontSize * 1.2;
+    const textStartY = centerY - ((lines.length - 1) * lineHeight) / 2 + fontSize / 3;
+    const tspans = lines
+      .map((line, li) => `<tspan x="${x + boxW / 2}" y="${textStartY + li * lineHeight}">${escapeXml(line)}</tspan>`)
+      .join('\n        ');
+    const arrow =
+      i < n - 1
+        ? `<path d="M ${x + boxW + 8} ${centerY} L ${x + boxW + gap - 8} ${centerY}" stroke="${accent}" stroke-width="4" marker-end="url(#arrowhead)" />`
+        : '';
+    return `
+      <rect x="${x}" y="${centerY - boxH / 2}" width="${boxW}" height="${boxH}" rx="12" fill="${offwhite}" opacity="0.1" />
+      <rect x="${x}" y="${centerY - boxH / 2}" width="${boxW}" height="${boxH}" rx="12" fill="none" stroke="${accent}" stroke-width="2.5" opacity="0.75" />
+      <text text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="${fontSize}" fill="${offwhite}">
+        ${tspans}
+      </text>
+      ${arrow}`;
+  });
+
+  return `
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="${accent}" />
+      </marker>
+    </defs>
+    ${boxes.join('\n')}`;
+}
+
+function buildTableVisual(rows, accent, offwhite, centerY) {
+  const clean = (rows && rows.length ? rows : [{ label: 'Label', value: 'Value' }]).slice(0, 3);
+  const rowH = 74;
+  const tableW = 620;
+  const tableH = clean.length * rowH;
+  const startY = centerY - tableH / 2;
+  const x = 500 - tableW / 2;
+  const fontSize = 30;
+
+  const rowsMarkup = clean.map((row, i) => {
+    const y = startY + i * rowH;
+    const stripe = i % 2 === 0 ? 0.1 : 0.04;
+    return `
+      <rect x="${x}" y="${y}" width="${tableW}" height="${rowH}" fill="${offwhite}" opacity="${stripe}" />
+      <text x="${x + 28}" y="${y + rowH / 2 + fontSize / 3}" font-family="Arial, sans-serif" font-weight="600" font-size="${fontSize}" fill="${offwhite}" opacity="0.9">${escapeXml(row.label)}</text>
+      <text x="${x + tableW - 28}" y="${y + rowH / 2 + fontSize / 3}" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="${fontSize}" fill="${accent}">${escapeXml(row.value)}</text>`;
+  });
+
+  return `
+    <rect x="${x}" y="${startY}" width="${tableW}" height="${tableH}" rx="10" fill="none" stroke="${accent}" stroke-width="2.5" opacity="0.7" />
+    ${clean
+      .slice(0, -1)
+      .map((_, i) => {
+        const y = startY + (i + 1) * rowH;
+        return `<line x1="${x}" y1="${y}" x2="${x + tableW}" y2="${y}" stroke="${accent}" stroke-width="1.5" opacity="0.4" />`;
+      })
+      .join('\n      ')}
+    ${rowsMarkup.join('\n')}`;
+}
+
+
 
 function escapeXml(str) {
   return str
@@ -268,7 +343,7 @@ function keyMark(cx, bottomY, height, color) {
   </g>`;
 }
 
-function buildSvg({ title, pillar, slug, equation }) {
+function buildSvg({ title, pillar, slug, equation, pinVisual = 'icon', flowSteps, tableRows }) {
   const W = 1000;
   const H = 1500;
   const accent = PILLAR_ACCENTS[pillar] ?? PALETTE.gold;
@@ -291,16 +366,50 @@ function buildSvg({ title, pillar, slug, equation }) {
 
   // Per-post variation: icon rotation, horizontal drift, and scale all come
   // from the slug seed, so two posts in the same pillar (same icon, same
-  // color) still land differently on the page.
+  // color) still land differently on the page. Only used when pinVisual
+  // is the default 'icon' — the other visual modes have their own layout.
   const iconRotation = rng.range(-7, 7);
   const iconOffsetX = rng.range(-40, 40);
   const iconScale = rng.range(0.92, 1.12);
   const iconCenterX = W / 2 + iconOffsetX;
   const iconCenterY = 470;
-  const iconMarkup = iconFor(pillar)(accent, PALETTE.offwhite);
 
   const topDots = scatterDots(rng, accent, PALETTE.lightTeal, [255, 320]);
   const bottomDots = scatterDots(rng, accent, PALETTE.lightTeal, [1140, 1290]);
+
+  // The icon-area visual: pillar icon (default), a big equation display, a
+  // flow chain, a small table, or nothing (plain — title-forward pin).
+  let visualMarkup = '';
+  if (pinVisual === 'icon') {
+    visualMarkup = `
+  <g transform="translate(${iconCenterX.toFixed(1)} ${iconCenterY}) rotate(${iconRotation.toFixed(1)}) scale(${iconScale.toFixed(2)})">
+    ${iconFor(pillar)(accent, PALETTE.offwhite)}
+  </g>`;
+  } else if (pinVisual === 'equation') {
+    const text = equation || '';
+    visualMarkup = `
+  <rect x="${W / 2 - 320}" y="${iconCenterY - 90}" width="640" height="180" rx="16" fill="${PALETTE.offwhite}" opacity="0.08" />
+  <rect x="${W / 2 - 320}" y="${iconCenterY - 90}" width="640" height="180" rx="16" fill="none" stroke="${accent}" stroke-width="2.5" opacity="0.75" />
+  <text x="${W / 2}" y="${iconCenterY + 18}" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="48" font-weight="700" fill="${PALETTE.offwhite}">${escapeXml(text)}</text>`;
+  } else if (pinVisual === 'flow') {
+    visualMarkup = buildFlowVisual(flowSteps, accent, PALETTE.offwhite, iconCenterY);
+  } else if (pinVisual === 'table') {
+    visualMarkup = buildTableVisual(tableRows, accent, PALETTE.offwhite, iconCenterY);
+  }
+  // 'plain' leaves visualMarkup empty — no icon, no equation, no table.
+
+  // The standalone equation box (between icon and title) only applies in
+  // icon/flow/table/plain modes — 'equation' mode already rendered the
+  // equation itself, larger, in the visual area above.
+  const equationBoxMarkup =
+    equation && pinVisual !== 'equation'
+      ? `
+  <rect x="${W / 2 - 230}" y="600" width="460" height="66" rx="10" fill="${PALETTE.offwhite}" opacity="0.08" />
+  <rect x="${W / 2 - 230}" y="600" width="460" height="66" rx="10" fill="none" stroke="${accent}" stroke-width="2" opacity="0.6" />
+  <text x="${W / 2}" y="643" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="34" font-weight="700" fill="${PALETTE.offwhite}">${escapeXml(equation)}</text>`
+      : '';
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
   <defs>
@@ -329,17 +438,10 @@ function buildSvg({ title, pillar, slug, equation }) {
   <!-- scatter accents -->
   ${topDots}
 
-  <!-- pillar icon (varies per post via seeded rotation/offset/scale) -->
-  <g transform="translate(${iconCenterX.toFixed(1)} ${iconCenterY}) rotate(${iconRotation.toFixed(1)}) scale(${iconScale.toFixed(2)})">
-    ${iconMarkup}
-  </g>
+  <!-- icon-area visual: pillar icon, equation, flow, table, or nothing (plain) -->
+  ${visualMarkup}
 
-  ${equation ? `
-  <!-- optional equation, sits in the gap between icon and title -->
-  <rect x="${W / 2 - 230}" y="600" width="460" height="66" rx="10" fill="${PALETTE.offwhite}" opacity="0.08" />
-  <rect x="${W / 2 - 230}" y="600" width="460" height="66" rx="10" fill="none" stroke="${accent}" stroke-width="2" opacity="0.6" />
-  <text x="${W / 2}" y="643" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
-        font-size="34" font-weight="700" fill="${PALETTE.offwhite}">${escapeXml(equation)}</text>` : ''}
+  ${equationBoxMarkup}
 
   <!-- title -->
   <text text-anchor="middle" font-family="Arial, sans-serif" font-weight="800"
@@ -380,7 +482,15 @@ function generateOne(filePath) {
     return null;
   }
   const slug = path.basename(filePath, '.md');
-  const svg = buildSvg({ title: data.title, pillar: data.pillar, slug, equation: data.equation });
+  const svg = buildSvg({
+    title: data.title,
+    pillar: data.pillar,
+    slug,
+    equation: data.equation,
+    pinVisual: data.pinVisual,
+    flowSteps: data.flowSteps,
+    tableRows: data.tableRows,
+  });
   const resvg = new Resvg(svg, { fitTo: { mode: 'width', value: 1000 } });
   const png = resvg.render().asPng();
 
