@@ -12,6 +12,49 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-21 — Daily post: high-yield savings accounts explained
+
+Published today's post from the queue. PR #15 (envelope budgeting) merged
+since the last entry, with its pin auto-generated. Next pending item in
+`content-pipeline/keyword-queue.json` in order was "best high yield
+savings accounts explained" (saving pillar) — written, verified with a
+full local `npm run build` (no errors), opened as **PR #16**
+(`post/high-yield-savings-accounts-explained` branch), `pinApproved` left
+`false` pending pin review. Queue entry marked `published`.
+
+Used this post to try out a few items from the 2026-08-20 external
+feedback where they fit the topic naturally: a comparison table of what
+actually separates one HYSA from another (APY, rate conditions, minimum
+balance, fees, access speed, insurance type), a worked numeric example
+($10k at checking vs. national-average vs. HYSA rates), a "who this is
+for / not for" section, and a common-mistakes section. Deliberately did
+**not** name a specific "best" bank or quote a single rate as fact —
+researched current rate reporting (NerdWallet, Kiplinger, Experian,
+Fortune, Yahoo Finance, US News, CNBC, Bask Bank's own rate page all
+current as of mid-August 2026) to ground the *range* described
+(Fed target 3.50–3.75%, top HYSAs roughly 4%+ vs. FDIC national average
+~0.4%), but treated any single number as a snapshot that will go stale,
+consistent with how how-much-emergency-fund.md already handled this same
+problem. Linked to FDIC deposit-insurance and Federal Reserve monetary
+policy pages as primary sources rather than a bank's marketing page.
+
+### Open items
+- PR #16 not yet merged — waiting on review/CI.
+- Still haven't decided which other items from the 08-20 feedback batch
+  (Reviewed-by, editorial/corrections/affiliate-disclosure pages, the
+  3-pillar content-direction reframing) to act on — this session only
+  applied the "more depth" piece, and only where it fit one post.
+- 6 topics still pending in the queue (how to save money on a low
+  income, what hurts your credit score, credit utilization explained,
+  how to start investing with little money, compound interest explained
+  simply, best free investing apps compared).
+- Reverse cross-link from 50/30/20 → zero-based-budgeting still not
+  added (carried over from 08-19).
+- Pillar pages in GSC still not checked/submitted (carried over from
+  08-19 SEO session).
+
+---
+
 ## 2026-08-20 (cont.) — External feedback to discuss (not yet acted on)
 
 Feedback below came secondhand (a friend of a friend). Logging verbatim

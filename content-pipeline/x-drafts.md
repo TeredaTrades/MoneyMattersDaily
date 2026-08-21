@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## high-yield-savings-accounts-explained
+
+**Post (attach the matching pin image from public/pins/):**
+```
+High-Yield Savings Accounts, Explained: What They Are and How to Compare Them — A high-yield savings account pays several times the national average with no extra risk. Here's what actually separates one HYSA from another, and how to compare them without chasing a rate that cha…
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/high-yield-savings-accounts-explained
+```
+
 ## envelope-budgeting-method
 
 **Post (attach the matching pin image from public/pins/):**
