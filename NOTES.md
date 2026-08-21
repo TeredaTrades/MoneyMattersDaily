@@ -12,6 +12,49 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-21 (cont.) — Editorial policy + corrections policy pages (PR #17)
+
+First concrete action on the 2026-08-20 external feedback batch (item 2,
+trust/E-E-A-T signals). Added two new pages, linked from the footer nav:
+
+- `/editorial-policy` — how content is produced/sourced, when a
+  "Reviewed by" credit applies (only when someone qualified has actually
+  reviewed the piece — not a blanket label, and most posts don't have one
+  today), when "last updated" notes apply, and what we don't do
+  (paid placement, affiliate-driven rankings).
+- `/corrections-policy` — how factual errors get fixed vs. how stale
+  rates/figures (expected drift, not "errors") get handled vs. typos.
+
+Deliberately did **not** add a standalone affiliate-disclosure page:
+there are no live affiliate links on the site, and the existing
+`/about` page explicitly states the site doesn't do affiliate-driven
+"best X" rankings. A disclosure page today would be disclosing something
+that doesn't exist — flagged this instead of building it, holding off
+until an actual affiliate relationship goes live. Contact was already
+covered by the existing `/contact` page — no changes needed there.
+
+Also decided (not yet executed): hold off on adding "Reviewed by" tags
+to any post until there's an actual qualified reviewer in the loop —
+adding the tag now would immediately contradict the policy this PR just
+wrote.
+
+### Open items
+- PR #17 not yet merged.
+- Still to discuss/decide: item 1 (depth) rollout to older posts beyond
+  the one it was trialed on (high-yield-savings-accounts-explained), and
+  item 3 (content-direction reframing toward irregular-income /
+  cross-border / financial-systems-sequence / tool-led-guides angles).
+- If/when an affiliate relationship goes live, revisit both the
+  About page's current "we don't do affiliate rankings" language and
+  add the affiliate-disclosure page at that point.
+- 6 topics still pending in the queue (unchanged from prior entry).
+- Reverse cross-link from 50/30/20 → zero-based-budgeting still not
+  added (carried over from 08-19).
+- Pillar pages in GSC still not checked/submitted (carried over from
+  08-19 SEO session).
+
+---
+
 ## 2026-08-21 — Daily post: high-yield savings accounts explained
 
 Published today's post from the queue. PR #15 (envelope budgeting) merged
