@@ -6,6 +6,7 @@ targetKeyword: "best high yield savings accounts explained"
 pillar: "saving"
 draft: false
 pinApproved: true
+depthReviewed: true
 pinVisual: "plain"
 ---
 

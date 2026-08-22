@@ -15,7 +15,8 @@
     "pin:generate": "node scripts/generate-pin.mjs",
     "pin:generate:all": "node scripts/generate-pin.mjs --all",
     "pinterest:feed": "node scripts/generate-pinterest-feed.mjs",
-    "x:drafts": "node scripts/generate-x-drafts.mjs --all"
+    "x:drafts": "node scripts/generate-x-drafts.mjs --all",
+    "content:depth-status": "node scripts/depth-status.mjs"
   },
   "dependencies": {
     "astro": "^7.2.2"

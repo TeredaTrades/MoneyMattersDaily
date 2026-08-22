@@ -6,6 +6,7 @@ targetKeyword: "50 30 20 budget rule"
 pillar: "budgeting"
 draft: false
 pinApproved: false
+depthReviewed: true
 pinVisual: "table"
 tableRows:
   - { label: "Needs", value: "50%" }
