@@ -5,7 +5,7 @@ pubDate: 2026-08-22
 targetKeyword: "how to save money on a low income"
 pillar: "saving"
 draft: false
-pinApproved: false
+pinApproved: true
 pinVisual: "table"
 tableRows:
   - label: "Biggest lever"
