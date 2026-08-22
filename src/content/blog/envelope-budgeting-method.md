@@ -5,7 +5,7 @@ pubDate: 2026-08-20
 targetKeyword: "envelope budgeting method"
 pillar: "budgeting"
 draft: false
-pinApproved: false
+pinApproved: true
 pinVisual: "flow"
 flowSteps: ["Get paid", "Fund envelopes", "Spend from envelope", "Empty = stop"]
 ---
