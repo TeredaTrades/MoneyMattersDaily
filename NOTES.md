@@ -12,6 +12,71 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-22 (cont.) — Investigated why Pinterest wasn't showing new pins
+
+### Context
+After approving pins for 4 backlogged posts (see entry below) plus the
+day's new post, none of the boards showed any movement — every board
+stayed frozen at the exact same pin count/age ("3d") from when the
+feeds were first connected on 2026-08-18/19, even hours after multiple
+merges to `main`. Investigated end-to-end rather than assuming either
+"just wait" or "something's broken," since both were plausible.
+
+### Ruled out, in order
+1. **Deploy pipeline** — confirmed `deploy.yml` runs on every push to
+   `main` and the specific deployments for both approval PRs (#20, #21)
+   show `success` via the GitHub deployments API, with a live
+   `environment_url`.
+2. **Feed file correctness** — regenerated locally and diffed; the
+   `pinterest-feed-saving.xml` content, then confirmed live in-browser:
+   valid RSS 2.0, correct `<link>`, `<guid>`, `<description>`, `<pubDate>`
+   (newest first), and `<enclosure>` pointing at the right PNG for all 3
+   saving-pillar posts. No malformed XML, no trailing-slash mismatch
+   (the `trailingSlash: 'always'` config from PR #13 only affects
+   Astro-routed pages — files under `public/`, including every
+   `pinterest-feed-*.xml` and every pin PNG, are served as raw static
+   assets with no routing applied, so that fix is unrelated to this).
+3. **"Feeds were never actually connected" theory** — this looked
+   likely at first (board-level "Edit info and settings" has no RSS
+   option at all — confirmed by screenshot, that panel is just cover/
+   name/description/privacy/collaborators/personalization/delete).
+   Turned out to be a UI location issue, not a missing setup: Pinterest
+   puts RSS auto-publish at the **account** level, not per-board, under
+   Settings → **Import content → Bulk create Pins → Auto-publish**.
+   Checked there and **all 7 pillar feed URLs are already connected
+   correctly**, each pointing at the right board. So the pipeline was
+   built and connected correctly from the start — this was a real dead
+   end to rule out, not wasted effort, since the alternative (a
+   never-connected feed) would have meant nothing on Pinterest would
+   ever have worked, which didn't match the fact that boards did have
+   pins from the initial connection.
+
+### Conclusion: not a bug, just Pinterest's polling
+Everything on our side (site, deploy, feed files, Pinterest's own
+account-level connection) checks out correct. Pinterest's own docs say
+new pins from an RSS feed appear "within 24 hours," but in practice
+these feeds haven't picked up anything new in several days despite
+multiple content changes in that window. Tried clicking "Edit" on the
+Saving Money feed entry (without changing the URL) to see if re-saving
+forces an immediate re-check — outcome not yet confirmed as of this
+entry.
+
+### Open items
+- Confirm whether the "Edit and re-save" nudge actually triggered a
+  re-poll on the Saving Money board specifically (test case: 2 new pins
+  should appear that weren't there before). If it works, repeat for the
+  other 6 feeds.
+- If even that doesn't work within another 24 hours, worth contacting
+  Pinterest support directly rather than continuing to self-diagnose —
+  everything on the site/config side is confirmed correct at this
+  point, so any further delay is unambiguously on Pinterest's end.
+- Worth revisiting later whether this pipeline should treat "pins show
+  up on Pinterest" as unreliable/slow by default (multi-day, not
+  same-day) rather than assuming the docs' 24-hour figure, when setting
+  future expectations.
+
+---
+
 ## 2026-08-22 — Daily post: how to save money on a low income
 
 Published from the queue via Claude chat (manually-provided GitHub PAT,
