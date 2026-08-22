@@ -118,5 +118,40 @@
         "keyword": "what a government shutdown means for your paycheck",
         "pillar": "news-trends",
         "status": "pending"
+    },
+    {
+        "keyword": "how to budget on an irregular income",
+        "pillar": "budgeting",
+        "status": "pending"
+    },
+    {
+        "keyword": "budgeting for freelancers and gig workers",
+        "pillar": "budgeting",
+        "status": "pending"
+    },
+    {
+        "keyword": "multi-currency budgeting for remote workers",
+        "pillar": "travel-finance",
+        "status": "pending"
+    },
+    {
+        "keyword": "tax residency basics for digital nomads",
+        "pillar": "travel-finance",
+        "status": "pending"
+    },
+    {
+        "keyword": "the beginner's financial order of operations: budget to invest",
+        "pillar": "budgeting",
+        "status": "pending"
+    },
+    {
+        "keyword": "free budgeting calculator templates compared",
+        "pillar": "app-comparisons",
+        "status": "pending"
+    },
+    {
+        "keyword": "debt payoff calculator explained",
+        "pillar": "app-comparisons",
+        "status": "pending"
     }
 ]
