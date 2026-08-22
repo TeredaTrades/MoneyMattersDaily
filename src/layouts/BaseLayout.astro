@@ -75,6 +75,8 @@ const structuredData = [siteSchema, ...jsonLd];
     {structuredData.map((block) => (
       <script type="application/ld+json" set:html={JSON.stringify(block)} />
     ))}
+
+    <script is:inline data-goatcounter="https://mmd.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   </head>
   <body>
     <header class="site-header">
