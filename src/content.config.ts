@@ -42,6 +42,14 @@ const blog = defineCollection({
     // (see scripts/generate-pin.mjs and .github/workflows/pin-preview.yml).
     // Only pinApproved posts are included in /pinterest-feed.xml.
     pinApproved: z.boolean().default(false),
+    // Tracks the two-tier publishing model: a post can ship (draft: false) as a
+    // solid v1 — clear answer, correct info, reasonable length — without yet
+    // having the full depth treatment (worked numeric example, common-mistakes
+    // section, who-this-is-for section, sourced links for anything time-sensitive).
+    // Defaults false so every new post is visibly flagged as pending the second
+    // pass until someone deliberately marks it done. Run
+    // `npm run content:depth-status` to see which posts still need review.
+    depthReviewed: z.boolean().default(false),
   }),
 });
 

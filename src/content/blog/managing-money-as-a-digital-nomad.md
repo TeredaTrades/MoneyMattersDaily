@@ -7,6 +7,7 @@ targetKeyword: "digital nomad finances"
 pillar: "travel-finance"
 draft: false
 pinApproved: true
+depthReviewed: true
 ---
 
 Moving your income and spending across borders adds a layer most budgeting advice doesn't cover. In short: fix your banking setup before you leave, treat currency conversion as a real budget line rather than background noise, and confirm your tax residency status before your first trip, not after.

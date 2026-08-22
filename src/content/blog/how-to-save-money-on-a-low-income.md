@@ -6,6 +6,7 @@ targetKeyword: "how to save money on a low income"
 pillar: "saving"
 draft: false
 pinApproved: true
+depthReviewed: true
 pinVisual: "table"
 tableRows:
   - label: "Biggest lever"

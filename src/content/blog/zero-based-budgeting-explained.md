@@ -6,6 +6,7 @@ targetKeyword: "zero based budgeting explained"
 pillar: "budgeting"
 draft: false
 pinApproved: true
+depthReviewed: true
 equation: "Income − Expenses = $0"
 pinVisual: "equation"
 ---

@@ -6,6 +6,7 @@ targetKeyword: "envelope budgeting method"
 pillar: "budgeting"
 draft: false
 pinApproved: true
+depthReviewed: true
 pinVisual: "flow"
 flowSteps: ["Get paid", "Fund envelopes", "Spend from envelope", "Empty = stop"]
 ---
