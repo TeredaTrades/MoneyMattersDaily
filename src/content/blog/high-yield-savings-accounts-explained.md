@@ -5,7 +5,7 @@ pubDate: 2026-08-21
 targetKeyword: "best high yield savings accounts explained"
 pillar: "saving"
 draft: false
-pinApproved: false
+pinApproved: true
 pinVisual: "plain"
 ---
 

@@ -5,7 +5,7 @@ pubDate: 2026-08-19
 targetKeyword: "zero based budgeting explained"
 pillar: "budgeting"
 draft: false
-pinApproved: false
+pinApproved: true
 equation: "Income − Expenses = $0"
 pinVisual: "equation"
 ---
