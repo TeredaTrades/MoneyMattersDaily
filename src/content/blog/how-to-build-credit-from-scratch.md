@@ -38,6 +38,8 @@ Length of credit history is worth about 15% of a FICO score, and there's no shor
 - Don't skip straight to a large loan (like a car loan) to "build credit faster." Without an existing history, you'll likely be declined or offered a rate that reflects the risk you represent on paper, regardless of your actual reliability.
 - Don't assume a debit card or cash usage helps. Only accounts that report to Equifax, Experian, or TransUnion count. Debit activity is invisible to your credit file no matter how responsibly you spend.
 
+Once that first account is reporting, see [what actually hurts your credit score](/blog/what-hurts-your-credit-score/) for the mistakes — and myths — worth knowing as you build history.
+
 ## Realistic timeline
 
 You can typically get an initial score within 3–6 months of your first reporting account. A genuinely solid file — the kind that gets you approved for an unsecured card, a decent auto loan rate, or a mortgage pre-approval — usually takes 1–2 years of consistent on-time payments and low utilization. There's no way to compress this much further; the system is deliberately built to reward time and consistency over activity.
