@@ -33,3 +33,5 @@ High cost-of-living areas often push "needs" past 50% no matter how careful the 
 ## Getting started
 
 Track one month of real spending before assigning numbers. Most people are surprised by where the "wants" bucket actually sits — subscriptions and food delivery are the usual culprits. Once you know the real baseline, the 50/30/20 split becomes a target to move toward rather than a number to hit immediately.
+
+If you want every dollar assigned a job instead of working off three broad percentages, see [zero-based budgeting explained](/blog/zero-based-budgeting-explained/) for a more hands-on alternative.
