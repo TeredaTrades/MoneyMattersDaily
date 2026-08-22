@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## how-to-save-money-on-a-low-income
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How to Save Money on a Low Income: Where to Actually Start — Standard savings advice assumes room in the budget that isn't always there. Here's where the real leverage is when income is tight, an honest look at cutting expenses versus growing income, and a tax credit most low-i…
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-save-money-on-a-low-income
+```
+
 ## high-yield-savings-accounts-explained
 
 **Post (attach the matching pin image from public/pins/):**
