@@ -46,3 +46,28 @@ A budget that's only checked at month-end isn't steering anything — it's a rep
 - **Only tracking, never deciding.** Recording where money went is step one. The budget's job is deciding where it goes next — without that second part, tracking alone won't change anything.
 
 A first budget doesn't need to be precise, just honest. The categories and limits will shift once you see a few real months of data — the goal at the start is simply to stop guessing.
+
+## A worked example
+
+Take-home pay: $3,200/month.
+
+| Category | Amount |
+|---|---|
+| Rent | $1,100 |
+| Loan payment (fixed) | $250 |
+| Insurance (fixed) | $150 |
+| Subscriptions (fixed) | $60 |
+| Groceries (variable, last month's actual) | $420 |
+| Gas/transportation (variable) | $180 |
+| Dining out (variable) | $260 |
+| Entertainment (variable) | $90 |
+| **Total spent** | **$2,510** |
+| **Left over** | **$690** |
+
+That $690 isn't automatically "extra" — step 3 above is deciding where it goes on purpose (savings, debt, a goal) rather than letting it quietly absorb into next month's dining-out budget, which is the single most common way a first budget slips.
+
+## Who this is for
+
+This is for anyone building a budget from scratch for the first time, regardless of income level — the process works the same whether take-home pay is $2,000 or $8,000/month. If you've already got a working budget and want a more structured system, [zero-based budgeting](/blog/zero-based-budgeting-explained/) or the [envelope method](/blog/envelope-budgeting-method/) are better next steps than starting over here.
+
+*Last updated August 2026.*

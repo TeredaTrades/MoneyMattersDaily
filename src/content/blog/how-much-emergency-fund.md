@@ -38,6 +38,26 @@ It's not supposed to appear all at once. A more realistic path:
 
 ## Where to actually keep it
 
-Not in your checking account, where it quietly gets spent, and not in anything invested, where it can lose value right when you need it. A high-yield savings account is the right tool — separate from daily spending, but accessible within a day or two if you actually need it.
+Not in your checking account, where it quietly gets spent, and not in anything invested, where it can lose value right when you need it. A [high-yield savings account](/blog/high-yield-savings-accounts-explained/) is the right tool — separate from daily spending, but accessible within a day or two if you actually need it.
+
+## A worked example
+
+Say your bare-minimum monthly expenses (rent, utilities, groceries, insurance, minimum debt payments, transportation — no subscriptions or dining out) come to $2,400/month, and you're in a single-income, moderately stable job.
+
+- **3-month target:** $7,200
+- **6-month target:** $14,400
+- **Realistic build order:** $500-1,000 first (roughly 2-3 weeks of consistent saving at $200-300/paycheck), then $2,400 (one month), then the rest in $1,000-2,000 chunks as budget allows.
+
+At $200/paycheck (biweekly), reaching the full 6-month target takes about 18 months. That's normal — this is a multi-year project for most people, not something built in a single push.
+
+## Common mistakes
+
+- **Using your full monthly spending instead of bare-minimum expenses.** This inflates the target and makes it feel unreachable — use the "needs" number, not the number that includes takeout and streaming.
+- **Keeping it somewhere too accessible (checking account) or too locked up (a CD, a brokerage account).** Both create the wrong failure mode — one gets spent by accident, the other can't be reached fast enough or could be worth less than you put in.
+- **Waiting to start until the "real" target amount is affordable.** The $500-1,000 starter fund matters more than hitting 3-6 months quickly — it's the number that actually prevents most emergencies from becoming debt.
+
+## Who this is for — and who it isn't
+
+This applies to most working households. It's less relevant if you have guaranteed income regardless of employment status (certain pensions, some disability income) or very low fixed costs and a genuine safety net elsewhere (family who could cover a gap). If you're behind on essential bills right now, building an emergency fund isn't the right first move — that's a cash-flow problem to address directly (see [how to save money on a low income](/blog/how-to-save-money-on-a-low-income/) for that situation, or contact 211.org for local assistance).
 
 *Last updated August 2026. High-yield savings rates move with the broader interest rate environment — check current rates before assuming a specific number.*
