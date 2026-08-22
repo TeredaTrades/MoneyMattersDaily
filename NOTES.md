@@ -12,6 +12,50 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-22 — Daily post: how to save money on a low income
+
+Published from the queue via Claude chat (manually-provided GitHub PAT,
+same pattern as prior sessions). Next pending item in
+`content-pipeline/keyword-queue.json` in order was "how to save money on
+a low income" (saving pillar) — written, verified with a full local
+`npm run build` (no errors, internal links resolve), opened as **PR #19**
+(`post/how-to-save-money-on-a-low-income` branch), `pinApproved` left
+`false` pending pin review. Queue entry marked `published`.
+
+Structured around one core argument rather than a generic tips list: a
+comparison table of expense categories by typical monthly impact vs.
+effort to change (housing/transport vs. subscriptions/fees), making the
+case that small discretionary cuts get disproportionate attention
+relative to their actual dollar impact. Also included a staged worked
+example ($2,400/mo take-home, three changes over ~2 months) and a section
+on the federal Saver's Credit (2026 income limits: $80,500 MFJ / $60,375
+HoH / $40,250 single, sourced from the IRS) — a concrete, often-missed
+lever specific to this income range, not generic advice repeated from
+other posts. Added a "who this is for / not for" section that explicitly
+routes acute-crisis situations (missed rent, shutoff notices) to 211.org
+and local assistance programs rather than treating this as a savings-
+strategy problem — kept in scope, not just a disclaimer.
+`pinVisual: "table"` used (the table renderer added in PR #18) — first
+post to use it since that renderer shipped.
+
+### Open items
+- PR #19 not yet merged.
+- PR #18 (pin variety + content-depth treatment on 2 posts) still not
+  merged either — carried over.
+- Content-depth treatment still only applied to a handful of posts, not
+  the full catalog — carried over.
+- 5 topics still pending in the queue (what hurts your credit score,
+  credit utilization explained, how to start investing with little
+  money, compound interest explained simply, best free investing apps
+  compared).
+- Item 3 from the 08-20 feedback (content-direction reframing) still not
+  discussed — carried over.
+- Reverse cross-link from 50/30/20 → zero-based-budgeting still not
+  added — carried over.
+- Pillar pages in GSC still not checked/submitted — carried over.
+
+---
+
 ## 2026-08-21 (cont. 2) — Pin visual variety + content-depth treatment (PR #18)
 
 Second action on the 2026-08-20 external feedback batch — item 1 (depth)
