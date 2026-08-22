@@ -40,3 +40,30 @@ For most people starting out, digital is the practical default — it works for 
 Envelope budgeting isn't a full budgeting system on its own — it's a spending-control layer that sits inside one. It tells you how to handle the variable, day-to-day categories; it doesn't tell you how much should go to savings or fixed bills in the first place. Pair it with [a zero-based budget](/blog/zero-based-budgeting-explained/) if you want every dollar assigned a job, or with the [50/30/20 rule](/blog/50-30-20-budget-rule-explained/) if you want a simpler top-level split — either way, envelopes are what you use inside the "wants" or discretionary portion once that top-level number is set.
 
 If you haven't built any budget yet, [start with the basics](/blog/how-to-make-a-budget-for-beginners/) first — envelope budgeting is a technique for controlling categories you've already identified, not a replacement for figuring out what those categories should be.
+
+## A worked example
+
+Biweekly pay: $1,600. Variable-category envelopes funded each pay period:
+
+| Envelope | Funded amount |
+|---|---|
+| Groceries | $220 |
+| Gas | $80 |
+| Dining out | $90 |
+| Entertainment | $40 |
+| Discretionary shopping | $70 |
+| **Total funded** | **$500** |
+
+If dining out runs dry with four days left in the period, that's the signal to cook at home for those four days — not to pull $20 from groceries. If it happens two pay periods in a row, the fix is resizing dining out to $110-120 next time, not tolerating the shortfall indefinitely.
+
+## Common mistakes
+
+- **Too many envelopes.** Fifteen categories defeats the "check at a glance" advantage that makes this method work — collapse similar ones (gas + parking + rideshare into one "transportation" envelope) rather than tracking each separately.
+- **Funding envelopes from a guess instead of last month's real spending.** An envelope sized on a hope instead of data will run dry every single period, which teaches you nothing except that budgeting "doesn't work."
+- **Treating every empty envelope as a system failure.** Running dry occasionally is information (that category needs more next period), not proof the method is broken — the method is broken only if you respond to every shortfall by borrowing instead of resizing.
+
+## Who this is for — and who it isn't
+
+This fits best for anyone whose overspending shows up in small, repeated purchases rather than one large expense — the "death by a thousand cuts" pattern in dining out, discretionary shopping, or entertainment. It's less useful for fixed costs (rent, loan payments) that don't need a spending limit, and less useful on its own for someone who hasn't yet figured out how much should go to savings versus spending in the first place — that decision belongs to a top-level method like [zero-based budgeting](/blog/zero-based-budgeting-explained/) or [50/30/20](/blog/50-30-20-budget-rule-explained/), with envelopes layered on top.
+
+*Last updated August 2026.*
