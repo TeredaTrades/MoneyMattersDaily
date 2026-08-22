@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## what-hurts-your-credit-score
+
+**Post (attach the matching pin image from public/pins/):**
+```
+What Actually Hurts Your Credit Score (and What's Just a Myth) — Credit scores run on a weighted formula, not intuition — and some of the most common 'credit tips' people follow are myths that do nothing or actively backfire. Here's what really moves the number, ranked by weigh…
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/what-hurts-your-credit-score
+```
+
 ## how-to-save-money-on-a-low-income
 
 **Post (attach the matching pin image from public/pins/):**

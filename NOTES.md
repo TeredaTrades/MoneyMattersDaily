@@ -12,6 +12,52 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-23 (technically — 03:00-ish, before the calendar day proper) — Daily post: what hurts your credit score
+
+Published a day early / at the very edge of the day, since the user
+flagged they'd be unavailable most of tomorrow and likely too tired in
+the evening — no auto-publish scheduling exists yet (only
+`daily-post-reminder.yml`, which opens a reminder issue at 14:00 UTC,
+not an actual publish), so doing it now at the start of the day was the
+practical call rather than risk missing it or rushing full publish
+automation together at 3am. Next pending item in
+`content-pipeline/keyword-queue.json` in order was "what hurts your
+credit score" (credit pillar) — written, verified with a full local
+`npm run build` (no errors, internal links resolve), opened as **PR #23**
+(`post/what-hurts-your-credit-score` branch), `pinApproved` left `false`
+pending pin review. Queue entry marked `published`.
+
+Structured around FICO's actual factor weights (payment history 35%,
+utilization 30%, length of history 15%, credit mix 10%, new credit 10%)
+rather than a generic tips list, plus a dedicated myths section (checking
+your own score, income, carrying a balance on purpose, debit card
+activity — none of which affect the score) since myth-correction is a
+different value proposition than the existing how-to-build-credit post.
+Also covered two real 2026-specific developments: rent/utility
+reporting (Experian Boost, RentTrack, Esusu) and BNPL plans increasingly
+being reported to bureaus — sourced from current 2026 credit-scoring
+coverage rather than older general knowledge. Added a reverse cross-link
+from `how-to-build-credit-from-scratch.md` to this post. `pinVisual` left
+at default (`icon`) since the two posts immediately prior both used
+`table`, per the "don't repeat visual types back-to-back" guidance.
+
+### Open items
+- PR #23 not yet merged.
+- Auto-publish scheduling still doesn't exist — worth a real discussion
+  later about whether it's worth building (would mean removing/reducing
+  the human review step that currently sits before every post goes
+  live), rather than solving it ad hoc at 3am again next time.
+- Same carried-over items as prior entries: PR #19 and #18 not yet
+  merged; content-depth treatment only on a handful of posts; 4 topics
+  now remaining in the queue (credit utilization explained, how to
+  start investing with little money, compound interest explained
+  simply, best free investing apps compared); item 3 from the 08-20
+  feedback (content-direction reframing) still not discussed; reverse
+  cross-link from 50/30/20 → zero-based-budgeting still not added;
+  pillar pages in GSC still not checked/submitted.
+
+---
+
 ## 2026-08-22 (cont.) — Investigated why Pinterest wasn't showing new pins
 
 ### Context
