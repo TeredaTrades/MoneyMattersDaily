@@ -55,12 +55,12 @@ at default (`icon`) since the two posts immediately prior both used
   merged (confirmed via `git log` / GitHub: 0 open PRs). The reverse
   cross-link from 50/30/20 → zero-based-budgeting was already added.
   Content-depth treatment had already been extended to more posts than
-  "a handful" by this point. Still genuinely open: 4 topics remaining
-  in the queue (credit utilization explained, how to start investing
-  with little money, compound interest explained simply, best free
-  investing apps compared); item 3 from the 08-20 feedback (content-
-  direction reframing) still not discussed; pillar pages in GSC still
-  not checked/submitted.
+  "a handful" by this point. Item 3 from the 08-20 feedback was in fact
+  acted on (broadened the queue + added 2 pillars) — see the resolution
+  note in the reconstructed entry below. The queue also grew well past
+  4 items: 20 pending as of 2026-08-24, across all 7 pillars now.
+  Genuinely still open: pillar pages in GSC still not checked/
+  submitted.
 
 ---
 
@@ -100,15 +100,23 @@ entry below and before that evening's credit-score post session:
   Backfilled `true` on the 8 posts that already had full treatment at
   that point.
 
+### Item 3 of the 08-20 feedback (content direction) — closing out
+Reading the commit evidence together with the 2026-08-24 conversation:
+this session's keyword batches were the actual (if unlogged) response
+to item 3 from the 08-20 friend feedback below. Rather than narrowing
+the site to a few practical angles, the direction taken was to
+broaden — all four suggested angles (irregular income, cross-border/
+money-across-borders, beginner financial-systems sequence, tool-led
+guides) were taken in as new queued keywords, and the cross-border
+angle grew into two new pillars (travel-finance, news-trends). Pillar
+list is now 7, not 5: budgeting, saving, credit, investing-basics,
+app-comparisons, travel-finance, news-trends. Closing item 3 as
+decided/acted-on rather than "not yet discussed."
+
 ### Open items
 - Confirm whether any other unlogged work exists beyond this window —
   this reconstruction was triggered by finding this specific gap, not
   by an exhaustive audit of the whole history.
-- The travel-finance and news-trends pillars now have queued/published
-  content (e.g. `managing-money-as-a-digital-nomad.md`) but aren't
-  reflected in the site's stated 5-pillar structure — worth deciding
-  whether to formally expand the pillar list or fold this content under
-  an existing pillar.
 
 ---
 
