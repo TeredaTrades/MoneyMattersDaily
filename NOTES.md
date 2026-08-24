@@ -47,14 +47,68 @@ at default (`icon`) since the two posts immediately prior both used
   later about whether it's worth building (would mean removing/reducing
   the human review step that currently sits before every post goes
   live), rather than solving it ad hoc at 3am again next time.
-- Same carried-over items as prior entries: PR #19 and #18 not yet
-  merged; content-depth treatment only on a handful of posts; 4 topics
-  now remaining in the queue (credit utilization explained, how to
-  start investing with little money, compound interest explained
-  simply, best free investing apps compared); item 3 from the 08-20
-  feedback (content-direction reframing) still not discussed; reverse
-  cross-link from 50/30/20 → zero-based-budgeting still not added;
-  pillar pages in GSC still not checked/submitted.
+- **Correction (added 2026-08-24):** the items below were carried
+  over from prior entries but several were already stale even at the
+  time this entry was written, due to an unlogged session earlier the
+  same day — see the reconstructed entry directly below this one for
+  what actually happened and when. PR #19 and #18 were in fact already
+  merged (confirmed via `git log` / GitHub: 0 open PRs). The reverse
+  cross-link from 50/30/20 → zero-based-budgeting was already added.
+  Content-depth treatment had already been extended to more posts than
+  "a handful" by this point. Still genuinely open: 4 topics remaining
+  in the queue (credit utilization explained, how to start investing
+  with little money, compound interest explained simply, best free
+  investing apps compared); item 3 from the 08-20 feedback (content-
+  direction reframing) still not discussed; pillar pages in GSC still
+  not checked/submitted.
+
+---
+
+## 2026-08-22 (cont. 2), 11:33–12:14 UTC — Reconstructed entry: keyword batch, cross-link, depth treatment batch 2, GoatCounter, two-tier depth tracking
+
+> **Note:** This entry was written after the fact, on 2026-08-24, by
+> reconstructing from commit history — it was not logged at the time.
+> The actual work is confirmed real and merged directly to `main`
+> (no PR trail for these, unlike the PR-based post workflow); the
+> narrative below is inferred from commit messages/diffs, not from a
+> live session note, so it may be thinner on the "why" than other
+> entries.
+
+Six changes landed in this window, after the Pinterest RSS investigation
+entry below and before that evening's credit-score post session:
+
+- **Keyword queue**: added 9 keywords to balance pillars (saving,
+  app-comparisons, travel-finance, news-trends — travel-finance and
+  news-trends are new pillars not in the original 5), then a further 7
+  keywords covering irregular-income, cross-border, financial-systems-
+  sequence, and tool-led-guide angles, sourced from the Aug 20 feedback.
+  Commit message notes site direction was kept broad rather than
+  narrowed in response to that feedback.
+- **Reverse cross-link**: added from `50-30-20-budget-rule-explained.md`
+  to zero-based-budgeting, closing the item that had been sitting open
+  in prior entries.
+- **Depth treatment batch 2**: extended the worked-example/common-
+  mistakes/who-this-is-for treatment to 4 more posts — emergency fund,
+  budget for beginners, envelope method, 50/30/20 — on top of the 2
+  covered in PR #18.
+- **GoatCounter analytics**: added a tracking script to the base layout,
+  pointed at `mmd.goatcounter.com`.
+- **Two-tier publishing tracking**: added a `depthReviewed` field to the
+  content schema plus an `npm run content:depth-status` script, so new
+  posts default to `depthReviewed: false` and the depth-treatment
+  backlog is visible in tooling instead of tracked ad hoc in this file.
+  Backfilled `true` on the 8 posts that already had full treatment at
+  that point.
+
+### Open items
+- Confirm whether any other unlogged work exists beyond this window —
+  this reconstruction was triggered by finding this specific gap, not
+  by an exhaustive audit of the whole history.
+- The travel-finance and news-trends pillars now have queued/published
+  content (e.g. `managing-money-as-a-digital-nomad.md`) but aren't
+  reflected in the site's stated 5-pillar structure — worth deciding
+  whether to formally expand the pillar list or fold this content under
+  an existing pillar.
 
 ---
 
