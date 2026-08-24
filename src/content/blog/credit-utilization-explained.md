@@ -5,7 +5,7 @@ pubDate: 2026-08-24
 targetKeyword: "credit utilization explained"
 pillar: "credit"
 draft: false
-pinApproved: false
+pinApproved: true
 depthReviewed: true
 pinIcon: "gauge"
 ---
