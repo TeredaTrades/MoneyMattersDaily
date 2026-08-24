@@ -12,18 +12,6 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
-## credit-utilization-explained
-
-**Post (attach the matching pin image from public/pins/):**
-```
-Credit Utilization Explained: The Number That Moves Your Score Fastest — Credit utilization is 30% of your FICO score and resets every billing cycle, making it the fastest lever you have. Here's how it's actually calculated — per-card, overall, and by statement date — with work…
-```
-
-**First reply (post right after, replying to your own post — no image needed):**
-```
-https://moneymattersdaily.money/blog/credit-utilization-explained
-```
-
 ## what-hurts-your-credit-score
 
 **Post (attach the matching pin image from public/pins/):**
