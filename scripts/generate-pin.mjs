@@ -150,6 +150,29 @@ const ICONS = {
         <circle cx="48" cy="30" r="20" fill="none" stroke="${offwhite}" stroke-width="5" opacity="0.6" />
       </g>`;
   },
+  gauge(accent, offwhite) {
+    // Speedometer-style dial with tick marks and a needle — old-car gauge look.
+    const r = 78;
+    const ticks = [-90, -45, 0, 45, 90].map((deg) => {
+      const rad = ((deg - 90) * Math.PI) / 180;
+      const x1 = (r - 14) * Math.cos(rad);
+      const y1 = (r - 14) * Math.sin(rad);
+      const x2 = r * Math.cos(rad);
+      const y2 = r * Math.sin(rad);
+      return `<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" />`;
+    }).join('\n        ');
+    const needleDeg = 35; // points up and to the right, toward the "high" end
+    const needleRad = ((needleDeg - 90) * Math.PI) / 180;
+    const needleX = (r - 22) * Math.cos(needleRad);
+    const needleY = (r - 22) * Math.sin(needleRad);
+    return `
+      <g fill="none" stroke="${offwhite}" stroke-width="6" stroke-linecap="round">
+        <path d="M ${-r} 0 A ${r} ${r} 0 0 1 ${r} 0" opacity="0.9" />
+        ${ticks}
+        <line x1="0" y1="0" x2="${needleX.toFixed(1)}" y2="${needleY.toFixed(1)}" stroke="${accent}" stroke-width="7" />
+        <circle cx="0" cy="0" r="9" fill="${accent}" stroke="${offwhite}" stroke-width="3" />
+      </g>`;
+  },
   'investing-basics'(accent, offwhite) {
     // Rising bar chart with a trend arrow.
     return `
@@ -202,7 +225,8 @@ const ICONS = {
   },
 };
 
-function iconFor(pillar) {
+function iconFor(pillar, iconKey) {
+  if (iconKey && ICONS[iconKey]) return ICONS[iconKey];
   return ICONS[pillar] ?? ICONS.budgeting;
 }
 
@@ -343,7 +367,7 @@ function keyMark(cx, bottomY, height, color) {
   </g>`;
 }
 
-function buildSvg({ title, pillar, slug, equation, pinVisual = 'icon', flowSteps, tableRows }) {
+function buildSvg({ title, pillar, slug, equation, pinVisual = 'icon', flowSteps, tableRows, pinIcon }) {
   const W = 1000;
   const H = 1500;
   const accent = PILLAR_ACCENTS[pillar] ?? PALETTE.gold;
@@ -383,7 +407,7 @@ function buildSvg({ title, pillar, slug, equation, pinVisual = 'icon', flowSteps
   if (pinVisual === 'icon') {
     visualMarkup = `
   <g transform="translate(${iconCenterX.toFixed(1)} ${iconCenterY}) rotate(${iconRotation.toFixed(1)}) scale(${iconScale.toFixed(2)})">
-    ${iconFor(pillar)(accent, PALETTE.offwhite)}
+    ${iconFor(pillar, pinIcon)(accent, PALETTE.offwhite)}
   </g>`;
   } else if (pinVisual === 'equation') {
     const text = equation || '';
@@ -490,6 +514,7 @@ function generateOne(filePath) {
     pinVisual: data.pinVisual,
     flowSteps: data.flowSteps,
     tableRows: data.tableRows,
+    pinIcon: data.pinIcon,
   });
   const resvg = new Resvg(svg, { fitTo: { mode: 'width', value: 1000 } });
   const png = resvg.render().asPng();

@@ -7,6 +7,7 @@ pillar: "credit"
 draft: false
 pinApproved: false
 depthReviewed: true
+pinIcon: "gauge"
 ---
 
 Utilization is simply the balance on a credit card divided by its limit, but the mechanics of *when* that balance gets measured trip up more people than the concept itself. Get the timing right and this is the single fastest lever on a credit score — it resets every billing cycle, unlike payment history, which takes years to fully recover from a mistake.
