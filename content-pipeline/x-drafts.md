@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## how-to-start-investing-with-little-money
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How to Start Investing With Little Money — You don't need $1,000 to start investing — fractional shares and low/no-minimum brokers mean $20 a paycheck is enough to begin. Here's the actual order of operations.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-start-investing-with-little-money
+```
+
 ## credit-utilization-explained
 
 **Post (attach the matching pin image from public/pins/):**

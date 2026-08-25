@@ -12,6 +12,39 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-25 (later) — Published "How to Start Investing With Little Money" + pin, direct to main (no PR)
+
+### What we did
+- Wrote and published `how-to-start-investing-with-little-money.md`
+  (investing-basics pillar) — next keyword in the queue. Follows the
+  depth-treatment template established on credit-utilization-explained:
+  worked example, common mistakes, and an explicit "who this is for /
+  who should wait" section rather than hedging for everyone.
+- Content covers the actual order of operations (employer match → small
+  cushion → high-interest debt → investing), why fractional shares +
+  $0-minimum accounts make small amounts realistic now, and why a Roth
+  IRA is worth prioritizing early given penalty-free contribution
+  withdrawals. Cross-links to the index-funds-explained post for the
+  "what fund" question this one deliberately doesn't re-explain.
+- **Skipped the normal PR flow at the user's request this session** —
+  `pin-preview.yml` and `x-draft.yml` only trigger on `pull_request`,
+  so both were run locally instead (`node scripts/generate-pin.mjs`,
+  `node scripts/generate-x-drafts.mjs --all`) and committed straight to
+  `main` alongside the post. `pinApproved: true` and `depthReviewed:
+  true` set directly in frontmatter rather than via the usual separate
+  review/approval commit.
+- Marked the keyword `published` in `content-pipeline/keyword-queue.json`.
+- Confirmed `npm run build` succeeds and the post's route generates
+  correctly before pushing.
+
+### Note for next session
+This was a one-off to skip review latency, not a new default — future
+posts should go back through the normal `post/<slug>` branch + PR flow
+(gets the pin/X-draft bot commits and a review point before merge)
+unless told otherwise again.
+
+---
+
 ## 2026-08-25 — Investigated "pin hasn't shown up" for credit-utilization-explained; confirmed everything correct, just Pinterest's normal processing window
 
 Checked why the credit-utilization-explained pin hadn't appeared on the
