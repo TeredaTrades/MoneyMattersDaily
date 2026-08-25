@@ -12,7 +12,49 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
-## 2026-08-24 — Daily post: credit utilization explained, gauge pin icon, pin approved
+## 2026-08-25 — Investigated "pin hasn't shown up" for credit-utilization-explained; confirmed everything correct, just Pinterest's normal processing window
+
+Checked why the credit-utilization-explained pin hadn't appeared on the
+Building Credit board yet. Traced the whole chain and found nothing
+wrong:
+
+- `credit-utilization-explained.md` has `pinApproved: true` and its pin
+  PNG exists at `public/pins/credit-utilization-explained.png`.
+- `generate-pinterest-feed.mjs` correctly includes it — confirmed by
+  fetching the live `pinterest-feed-credit.xml` directly and seeing the
+  post's title/link/description/pubDate/enclosure all present.
+- The "Deploy to GitHub Pages" workflow run right after PR #27 merged
+  (2026-08-24 14:24 UTC) succeeded, so the live feed reflects this.
+- The credit feed's RSS auto-publish connection on the Pinterest side
+  was already saved/active (confirmed — the Save-button appearance on
+  revisiting Settings > Bulk Create Pins > Edit was just from reopening
+  the editor, not an unsaved state).
+
+**Conclusion: this was never broken — it's Pinterest's normal RSS
+processing latency.** Per Pinterest's own help docs, once a feed is
+connected, new items get turned into pins within roughly **24 hours**
+of the feed updating (some third-party sources say up to 24-48h).
+Deploy landed 14:24 UTC 08-24, so as of this check it was still well
+inside that window.
+
+**For next time:** if a pin seems to be "stuck" after a post is
+merged and `pinApproved: true`, check in this order before assuming
+something's broken: (1) frontmatter has `pinApproved: true` and a pin
+PNG exists, (2) the live `pinterest-feed-<pillar>.xml` actually lists
+the post, (3) the deploy workflow succeeded after that merge, (4) the
+board's feed connection is still active in Pinterest Settings > Bulk
+Create Pins. If all four check out, the fix is just to wait — give it
+the full ~24h from deploy time before treating it as an actual
+problem. Check the board itself (not the settings/feed-editor screen)
+to confirm once it lands.
+
+### Open items
+- Pillar pages in GSC still not checked/submitted (carried over).
+- Auto-publish scheduling still doesn't exist (carried over).
+
+---
+
+
 
 Next pending item in `content-pipeline/keyword-queue.json` was "credit
 utilization explained" (credit pillar). Written, verified with a local
