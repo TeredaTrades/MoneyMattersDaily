@@ -38,6 +38,13 @@ const illustration = ILLUSTRATIONS[post.id];
 // instead of shipping a separate asset.
 const pinImage = `/pins/${post.id}.png`;
 
+// Every published post also has a matching landscape hero banner generated
+// by scripts/generate-hero.mjs (public/heroes/<slug>.png) — reuses the same
+// palette/pillar icons as the pin, so it's on-brand rather than a stock
+// photo. Closes the "every post is a wall of text" gap without adding a
+// manual per-post asset step.
+const heroImage = `/heroes/${post.id}.png`;
+
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -74,6 +81,15 @@ const articleJsonLd = {
     <p class="meta">
       By MoneyMattersDaily Editorial · Published {post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}{post.data.updatedDate && ` · Updated ${post.data.updatedDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}{' · '}{readingTime} min read
     </p>
+    <img
+      class="hero-image"
+      src={heroImage}
+      alt=""
+      role="presentation"
+      width="1600"
+      height="500"
+      fetchpriority="high"
+    />
     {illustration === 'budget-donut' && <BudgetDonut />}
     <Content />
     <AdSlot position="in-content" />
@@ -121,6 +137,14 @@ const articleJsonLd = {
     color: #777;
     font-size: 0.9rem;
     margin-top: -0.5rem;
+  }
+  .hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1600 / 500;
+    border-radius: 10px;
+    margin: 1.25rem 0 1.75rem;
   }
   article :global(h2) {
     margin-top: 2.25rem;
