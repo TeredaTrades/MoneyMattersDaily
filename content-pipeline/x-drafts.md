@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## compound-interest-explained-simply
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Compound Interest Explained Simply — Compound interest is interest earned on interest, not just on what you put in — and the gap between simple and compound growth is small at first, then isn't. Here's the actual math.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/compound-interest-explained-simply
+```
+
 ## how-to-start-investing-with-little-money
 
 **Post (attach the matching pin image from public/pins/):**
