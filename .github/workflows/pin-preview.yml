@@ -1,11 +1,13 @@
-name: Generate Pinterest pin previews
+name: Generate Pinterest pin + hero previews
 
-# Runs on PRs that add or change blog posts. Generates a pin PNG for each
-# changed post and commits it back onto the PR branch under public/pins/,
-# so reviewers see the actual image in the PR diff before anything is
-# approved. Approval itself is just setting `pinApproved: true` in that
-# post's frontmatter as part of the same PR — nothing gets pinned or
-# published from this workflow.
+# Runs on PRs that add or change blog posts. Generates a pin PNG (Pinterest)
+# and a hero PNG (in-post banner, public/heroes/) for each changed post and
+# commits both back onto the PR branch, so reviewers see the actual images
+# in the PR diff before anything is approved. Pin approval is still just
+# setting `pinApproved: true` in that post's frontmatter as part of the same
+# PR — nothing gets pinned or published from this workflow. Heroes have no
+# separate approval gate (they're not sent to a third party like Pinterest
+# is) — they render on the live post automatically once the PR merges.
 
 on:
   pull_request:
@@ -43,11 +45,15 @@ jobs:
         if: steps.changed.outputs.any_changed == 'true'
         run: node scripts/generate-pin.mjs ${{ steps.changed.outputs.all_changed_files }}
 
-      - name: Commit generated pins
+      - name: Generate hero image(s)
+        if: steps.changed.outputs.any_changed == 'true'
+        run: node scripts/generate-hero.mjs ${{ steps.changed.outputs.all_changed_files }}
+
+      - name: Commit generated pins + heroes
         if: steps.changed.outputs.any_changed == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: generate Pinterest pin preview(s) [skip ci]"
-          file_pattern: 'public/pins/*.png'
+          commit_message: "chore: generate pin + hero preview(s) [skip ci]"
+          file_pattern: 'public/pins/*.png public/heroes/*.png'
           commit_user_name: pin-preview-bot
           commit_user_email: actions@github.com

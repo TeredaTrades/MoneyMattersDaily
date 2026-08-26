@@ -14,6 +14,8 @@
     "astro": "astro",
     "pin:generate": "node scripts/generate-pin.mjs",
     "pin:generate:all": "node scripts/generate-pin.mjs --all",
+    "hero:generate": "node scripts/generate-hero.mjs",
+    "hero:generate:all": "node scripts/generate-hero.mjs --all",
     "pinterest:feed": "node scripts/generate-pinterest-feed.mjs",
     "x:drafts": "node scripts/generate-x-drafts.mjs --all",
     "content:depth-status": "node scripts/depth-status.mjs"
