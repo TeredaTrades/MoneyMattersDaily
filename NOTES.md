@@ -12,6 +12,63 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-26 — Wrote "Compound Interest Explained Simply"; investigated pin-not-showing report (resolved) and found a real gap (open)
+
+### What we did
+- Next pending item in `content-pipeline/keyword-queue.json` was "compound
+  interest explained simply" (investing-basics pillar). Written with the
+  depth treatment applied from the start (worked numeric examples, common
+  mistakes, who-this-is-for), rather than as a later retrofit pass.
+  Covers the A = P(1 + r/n)^(nt) formula, why compounding frequency
+  matters far less than rate/time once the rate is fixed, and an
+  early-vs-late investor worked example. The early-vs-late numbers were
+  computed in Python before publishing (verified precisely: Investor A
+  ≈ $252,418, Investor B ≈ $226,706 — an earlier draft had A off by
+  about $7k from eyeballing it, caught and corrected before commit).
+- Used the new `pinVisual: "equation"` mode (added on the credit-utilization
+  post) with `equation: "A = P(1 + r/n)^(nt)"` — first post to use it since
+  it landed.
+- Cross-linked to `index-funds-explained-for-beginners` (compounding is the
+  mechanical reason that post's "stay invested" advice works).
+- Followed the normal `post/<slug>` branch + PR flow (PR #28) per the note
+  left in the prior session — no repeat of the direct-to-main shortcut.
+- Learned the hard way: piping `keyword-queue.json` through Python's
+  `json.dump` with `indent=2` silently reformatted the *entire* file from
+  its original 4-space indentation, producing a 300+ line diff for a
+  1-line status change. Caught before pushing (diff review), fixed by
+  reverting the file and editing just the one `"status"` field with
+  `str_replace` instead. **For next time:** never round-trip this file
+  through a JSON library for a single-field edit — use a direct string
+  replace so the diff stays proportional to the change.
+
+### Pin investigation (started, then partly overtaken by events)
+User reported yesterday's and the day-before's pins hadn't shown up on
+Pinterest. Investigation found two different things:
+- **credit-utilization-explained** (2 days old at the time): frontmatter,
+  feed, and deploy all checked out fine — user confirmed mid-session that
+  this one has since pinned. Nothing was actually wrong here; same normal
+  RSS latency as the prior credit-post investigation, just a longer wait
+  this time.
+- **how-to-start-investing-with-little-money** (investing-basics pillar):
+  found a real, still-open gap while checking `scripts/generate-pinterest-feed.mjs`
+  — `PILLAR_BOARDS['investing-basics']` has been marked "no board created
+  on Pinterest yet as of this writing" since it was added. The feed itself
+  generates correctly (confirmed both this post and compound-interest-
+  explained-simply are in `pinterest-feed-investing-basics.xml`), but with
+  no board connected on the Pinterest side, nothing in that feed can ever
+  auto-publish regardless of latency. **This is a "create the board and
+  connect the feed" action item on the Pinterest UI side, not a code fix**
+  — flagged to the user, not yet actioned as of this entry.
+
+### Open items
+- **Investing Basics Pinterest board still not created/connected** — new
+  this session, blocks pinning for that entire pillar (now 3 posts deep:
+  index-funds, how-to-start-investing, compound-interest).
+- Pillar pages in GSC still not checked/submitted (carried over).
+- Auto-publish scheduling still doesn't exist (carried over).
+
+---
+
 ## 2026-08-25 (later) — Published "How to Start Investing With Little Money" + pin, direct to main (no PR)
 
 ### What we did
