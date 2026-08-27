@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## best-free-investing-apps-compared
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Best Free Investing Apps Compared (2026) — Fidelity, Robinhood, Charles Schwab, Acorns, and SoFi Invest all offer $0-commission trading — here's who each one actually fits, and where the real differences are.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/best-free-investing-apps-compared
+```
+
 ## compound-interest-explained-simply
 
 **Post (attach the matching pin image from public/pins/):**
