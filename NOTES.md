@@ -12,6 +12,47 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-27 (later) — Wrote "Best Free Investing Apps Compared"; skipped the auto-publish trial for today
+
+### What we did
+- User chose to write today's post manually rather than wait for the
+  auto-publish trial's 14:00 UTC cron (checked first: `ANTHROPIC_API_KEY`
+  secret status couldn't be confirmed via the API — repo-scoped PAT gets a
+  403 listing secrets — so this was also a hedge against the trial silently
+  failing today).
+- Took the next pending keyword: "best free investing apps compared"
+  (app-comparisons pillar). Compares Fidelity, Robinhood, Charles Schwab,
+  Acorns, and SoFi Invest on cost/good-fit/downside, following the same
+  structure as `best-budgeting-apps-compared.md` (the established
+  app-comparisons format) rather than the worked-example depth template
+  used for explainer posts — a comparison post doesn't have numeric claims
+  to work through the same way.
+- Checked current app pricing/features via web search before writing
+  (Fidelity/Schwab $0 min + commissions, Robinhood Gold ~$5/mo,
+  Acorns' flat $3–12/mo tiers, SoFi Invest bundled with banking) rather
+  than relying on training-data figures, since broker pricing changes.
+- Followed the normal `post/<slug>` branch + PR flow (PR #30) — did not
+  repeat the direct-to-main shortcut from 2026-08-25. `pinApproved` and
+  `depthReviewed` left at their schema defaults (`false`) for human review
+  via the PR's auto-generated pin/hero previews, rather than being set
+  directly.
+- Marked the keyword `published` via a single targeted string replace on
+  `content-pipeline/keyword-queue.json` (not a JSON round-trip) — confirmed
+  the diff was exactly one line before pushing.
+- Confirmed `npm run build` succeeds and the new route generates before
+  pushing.
+
+### Open items
+- PR #30 needs review/merge; check the bot-generated pin image once
+  `pin-preview.yml` runs on it.
+- Still unconfirmed: whether `ANTHROPIC_API_KEY` was added as a repo
+  secret for the auto-publish trial (window still open through
+  2026-08-29) — worth checking directly on GitHub, not just via API.
+- Pillar pages in GSC still not checked/submitted (carried over).
+- Investing Basics Pinterest board still not created/connected (carried over).
+
+---
+
 ## 2026-08-27 — Auto-publish trial: fully unattended write+publish, time-boxed to 2 days
 
 ### What this is
