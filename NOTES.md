@@ -12,6 +12,80 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-27 — Auto-publish trial: fully unattended write+publish, time-boxed to 2 days
+
+### What this is
+User explicitly requested "fully unattended" posting — no human review before
+a post goes live — after being offered a scoped-down alternative (pre-write
+and review a queue, then auto-publish from it on schedule) and choosing the
+fuller version instead, deliberately limited to "a couple of days only."
+
+This directly overrides the standing caution repeated across many earlier
+entries in this file (2026-08-19 "Daily post reminder" entry, and "Auto-publish
+scheduling still doesn't exist" carried as an open item for over a week) —
+full auto-generation was treated as something requiring real discussion
+specifically because an earlier version of this site "felt AI-generated" and
+the fix was editorial judgment (specificity, varied structure, an actual point
+of view), not a tooling fix. That reasoning doesn't change here — this is a
+knowing, explicit, time-boxed exception, not a reversal of the standing
+decision.
+
+### What was built
+- `content-pipeline/auto-publish-trial.json` — `enabled: true`,
+  `startedAt: 2026-08-27`, `expiresAt: 2026-08-29`. The workflow reads this
+  file on every run; once today's date passes `expiresAt`, the job no-ops and
+  the site silently reverts to reminder-only (`daily-post-reminder.yml`) —
+  no manual step needed to turn it back off.
+- `scripts/generate-post.mjs` — pulls the next `pending` keyword from
+  `content-pipeline/keyword-queue.json`, calls the Anthropic API with a system
+  prompt built from this project's own established editorial bar (clear
+  answer up front, worked numeric example, who-this-is-for/not-for, common
+  mistakes, sourced figures, varied structure, an actual point of view, no
+  AI-blog boilerplate), writes the post directly to `src/content/blog/`, and
+  sets `pinApproved: true` / `depthReviewed: true` directly in frontmatter
+  since there's no human left in the loop to flip them. Updates the queue
+  entry to `published` via a **targeted string replace**, not a JSON
+  round-trip — deliberately avoiding the exact indentation-reformatting
+  mistake logged in the 2026-08-26 entry above.
+- `.github/workflows/auto-publish-trial.yml` — daily cron (same 14:00 UTC
+  slot as the existing reminder), checks the trial-window file first, then:
+  generate post → `npm run build` (verifies it actually compiles before
+  anything is committed) → generate pin + hero images → generate X draft
+  text (still not auto-posted to X, unchanged from standing policy) → commit
+  and push **directly to `main`**, skipping the PR review step every other
+  post has gone through.
+
+### Known, accepted risk — flagged, not solved
+No independent fact-check or math-verification step exists in this pipeline.
+Prior sessions caught real numeric errors by hand before publishing (see the
+2026-08-26 entry: an early-vs-late-investor example was off by about $7k
+before being caught and corrected in Python). This trial has no equivalent
+safety net — the model is instructed to only state figures it's confident
+about and to describe ranges/mechanisms instead of inventing precise ones
+where unsure, but that's a prompting mitigation, not a verification step.
+Accepted as a known trade-off for this specific 2-day trial, not resolved.
+
+### What still requires manual action
+`ANTHROPIC_API_KEY` must be added as a repository secret
+(Settings → Secrets and variables → Actions) before this workflow can
+actually run — not something a repo-scoped PAT can do on the user's behalf.
+Nothing publishes until that's added.
+
+### Open items
+- Confirm `ANTHROPIC_API_KEY` secret has been added.
+- After 2026-08-29: confirm the trial window actually stopped runs (check
+  Actions history), and decide whether to delete
+  `auto-publish-trial.yml`/`generate-post.mjs` entirely or leave them dormant
+  for a possible future trial.
+- If posts from this window read noticeably worse than the hand-reviewed
+  backlog, worth logging that concretely here — it's the actual evidence
+  this project has been missing in the ongoing "should this be automated"
+  discussion.
+- Pillar pages in GSC still not checked/submitted (carried over).
+- Investing Basics Pinterest board still not created/connected (carried over).
+
+---
+
 ## 2026-08-26 — Wrote "Compound Interest Explained Simply"; investigated pin-not-showing report (resolved) and found a real gap (open)
 
 ### What we did

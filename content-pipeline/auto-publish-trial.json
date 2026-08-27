@@ -1,0 +1,6 @@
+{
+  "enabled": true,
+  "startedAt": "2026-08-27",
+  "expiresAt": "2026-08-29",
+  "note": "Fully unattended write+publish trial (no human review before merge), requested for a couple of days only. auto-publish-trial.yml checks expiresAt on every run and does nothing once past it — self-reverts to the normal reminder-only workflow with no manual action needed. See NOTES.md for the standing caution around removing the human review step before this was added."
+}

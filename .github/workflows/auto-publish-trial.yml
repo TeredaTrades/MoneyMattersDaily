@@ -1,0 +1,88 @@
+name: Auto-publish trial (unattended, time-boxed)
+
+# TEMPORARY. Writes and publishes one post per day with NO human review,
+# for the window defined in content-pipeline/auto-publish-trial.json only.
+# Once today's date is past that file's expiresAt, this workflow does
+# nothing — it self-reverts to the normal reminder-only flow
+# (daily-post-reminder.yml) with no manual action needed.
+#
+# This intentionally skips the review step every other post on this site
+# has gone through (see NOTES.md — full auto-generation was repeatedly
+# flagged as "worth a real discussion" specifically because an earlier
+# version of the site "felt AI-generated" and the fix was editorial, not
+# tooling). Requested as a short, explicit trial — not a new default.
+
+on:
+  schedule:
+    - cron: '0 14 * * *' # same time as the normal reminder check
+  workflow_dispatch: {} # allow manual trigger for testing
+
+permissions:
+  contents: write
+
+jobs:
+  check-trial-window:
+    runs-on: ubuntu-latest
+    outputs:
+      active: ${{ steps.check.outputs.active }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Check trial window
+        id: check
+        run: |
+          ENABLED=$(node -e "console.log(require('./content-pipeline/auto-publish-trial.json').enabled)")
+          EXPIRES=$(node -e "console.log(require('./content-pipeline/auto-publish-trial.json').expiresAt)")
+          TODAY=$(date -u +%Y-%m-%d)
+          if [ "$ENABLED" = "true" ] && [[ "$TODAY" < "$EXPIRES" || "$TODAY" == "$EXPIRES" ]]; then
+            echo "active=true" >> "$GITHUB_OUTPUT"
+            echo "Trial active (today=$TODAY, expires=$EXPIRES)"
+          else
+            echo "active=false" >> "$GITHUB_OUTPUT"
+            echo "Trial window over or disabled (today=$TODAY, expires=$EXPIRES) — skipping."
+          fi
+
+  generate-and-publish:
+    needs: check-trial-window
+    if: needs.check-trial-window.outputs.active == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate today's post (unattended)
+        id: gen
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/generate-post.mjs
+
+      - name: Verify site builds
+        run: npm run build
+
+      - name: Generate pin + hero for the new post
+        if: steps.gen.outputs.slug
+        run: |
+          node scripts/generate-pin.mjs "${{ steps.gen.outputs.slug }}"
+          node scripts/generate-hero.mjs "${{ steps.gen.outputs.slug }}"
+
+      - name: Generate X draft (text only, not posted)
+        if: steps.gen.outputs.slug
+        run: node scripts/generate-x-drafts.mjs --all
+
+      - name: Commit and push directly to main
+        if: steps.gen.outputs.slug
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-publish trial: ${{ steps.gen.outputs.slug }} [unattended, no human review]"
+          file_pattern: 'src/content/blog/*.md public/pins/*.png public/heroes/*.png content-pipeline/keyword-queue.json content-pipeline/x-drafts.md'
+          commit_user_name: auto-publish-trial-bot
+          commit_user_email: actions@github.com
