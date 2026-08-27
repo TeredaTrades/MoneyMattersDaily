@@ -5,6 +5,8 @@ pubDate: 2026-08-27
 targetKeyword: "best free investing apps compared"
 pillar: "app-comparisons"
 draft: false
+pinApproved: true
+depthReviewed: true
 ---
 
 "Free" is table stakes now — Fidelity, Robinhood, Schwab, and most competitors all charge $0 commission on stock and ETF trades, so that alone doesn't separate them anymore. The real differences are in account minimums, what happens to money you haven't invested yet, how much hand-holding the app gives you, and what it's quietly trying to upsell you into. Pricing and features below are approximate and change; check each app's current site before opening an account.
