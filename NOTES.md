@@ -12,6 +12,74 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-30 — Wrote "Best Ways to Automate Your Savings"; found a CI race condition and a stale Pinterest feed
+
+### What we did
+- Next pending keyword: "best ways to automate your savings" (saving
+  pillar). Covers direct deposit splits, recurring transfers, and
+  round-ups as three distinct methods (not interchangeable), the order
+  to set them up in (transfer first to test the amount, then split,
+  then round-ups on top), and a worked $50/month → $600/yr example.
+  `pinVisual: "flow"` (Get paid → Split off savings → Transfer clears →
+  Balance grows, untouched).
+- Followed the normal `post/<slug>` branch + PR flow (PR #33).
+  `pinApproved`/`depthReviewed` left at schema defaults for human
+  review. Marked the keyword `published` via a single targeted string
+  replace, confirmed as a one-line diff. `npm run build` succeeds and
+  the new route generates.
+- Auto-publish trial (2026-08-27–2026-08-29) is now past its
+  `expiresAt` — self-reverted to reminder-only as designed, no manual
+  step needed. All three scheduled runs during the window failed
+  (`generate-and-publish` job failing at the "Generate today's post"
+  step); couldn't pull the raw Actions log to confirm the exact cause
+  (log host is outside the network allowlist), but the script has no
+  guard around a missing `ANTHROPIC_API_KEY`, and listing repo secrets
+  via the API 403s for a repo-scoped PAT (same limitation logged
+  2026-08-27) — so it's unconfirmed, not just unlikely, whether the
+  secret was ever actually added. The trial produced no usable output
+  either way; the "should this be automated" question is still open.
+
+### Found: pin-preview and x-draft workflows race on the same branch
+Both `.github/workflows/pin-preview.yml` and `.github/workflows/x-draft.yml`
+trigger on the same `pull_request` event (`paths: src/content/blog/**.md`),
+checkout the same PR branch, and each independently commit-and-push their
+generated output back to it. When both fire together, whichever finishes
+last gets a non-fast-forward push rejection — happened here: x-draft's
+commit landed first, pin-preview's "Commit generated pins + heroes" step
+failed. Worked around it this time by running `node scripts/generate-pin.mjs`
+and `generate-hero.mjs` locally and pushing directly rather than retrying
+CI (a repo-scoped PAT can't call the rerun-failed-jobs API — 403). Not
+fixed at the workflow level yet — a real fix would serialize the two jobs
+or have one `git pull --rebase` before pushing.
+
+### Found: per-pillar Pinterest feed files go stale after merge
+`public/pinterest-feed-app-comparisons.xml` on `main` was missing the
+"Best Free Investing Apps Compared" post entirely, despite it being
+merged and `pinApproved: true` since 2026-08-27. The feed only
+regenerates via the `prebuild` script (`generate-pinterest-feed.mjs`),
+which runs on `npm run build` — nothing in CI re-runs a build (and thus
+the feed) after a PR merges to `main`, so a pillar's feed silently
+drifts out of date until someone happens to build locally. Fixed this
+one file as a side effect of running `npm run build` locally to verify
+this session's post (included in the pin/hero commit on PR #33) — but
+the underlying gap is unfixed and will recur for every pillar on every
+future merge until something rebuilds on merge.
+
+### Open items
+- PR #33 needs review/merge (post, pin, hero all ready; pin/hero were
+  committed manually due to the CI race above, not by the workflow).
+- CI race between pin-preview.yml and x-draft.yml — not fixed, will
+  recur on the next post's PR.
+- Pinterest feed staleness after merge — not fixed; worth either a
+  post-merge workflow that runs `npm run build`/`pinterest:feed`, or
+  checking the other pillar feeds for the same drift.
+- Whether `ANTHROPIC_API_KEY` was ever added as a repo secret for the
+  auto-publish trial — still unconfirmed; window is now closed either
+  way.
+- Pillar pages in GSC still not checked/submitted (carried over).
+
+---
+
 ## 2026-08-27 (later) — Wrote "Best Free Investing Apps Compared"; skipped the auto-publish trial for today
 
 ### What we did
