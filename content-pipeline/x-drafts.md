@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## best-ways-to-automate-your-savings
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Best Ways to Automate Your Savings (And How to Actually Set Them Up) — Direct deposit splits, recurring transfers, and round-ups all do the same basic job, but they're not interchangeable. Here's how each one actually works, which order to set them up in, and a worked example o…
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/best-ways-to-automate-your-savings
+```
+
 ## best-free-investing-apps-compared
 
 **Post (attach the matching pin image from public/pins/):**
