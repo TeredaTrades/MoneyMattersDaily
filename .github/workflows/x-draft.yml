@@ -16,6 +16,16 @@ on:
 permissions:
   contents: write
 
+# Shared with pin-preview.yml on purpose: both workflows trigger on the
+# same PR event and push to the same branch. Without this, they run in
+# parallel and race to push, and whichever finishes second gets a
+# non-fast-forward rejection (seen in practice on 2026-08-30, see
+# NOTES.md). Same group name across both files serializes them instead
+# of letting them collide.
+concurrency:
+  group: blog-post-ci-${{ github.head_ref }}
+  cancel-in-progress: false
+
 jobs:
   generate-x-drafts:
     runs-on: ubuntu-latest
@@ -36,6 +46,12 @@ jobs:
 
       - name: Generate draft(s) for new posts
         run: node scripts/generate-x-drafts.mjs --all
+
+      # Belt-and-suspenders alongside the concurrency group above: rebase
+      # onto whatever's now on the branch before committing, so a push
+      # here can't be rejected as non-fast-forward.
+      - name: Pull latest before committing
+        run: git pull --rebase origin ${{ github.head_ref }}
 
       - name: Commit generated drafts
         uses: stefanzweifel/git-auto-commit-action@v5

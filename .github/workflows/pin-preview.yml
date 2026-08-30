@@ -17,6 +17,15 @@ on:
 permissions:
   contents: write
 
+# Shared with x-draft.yml on purpose: both workflows trigger on the same
+# PR event and push to the same branch. Without this, they run in parallel
+# and race to push, and whichever finishes second gets a non-fast-forward
+# rejection (seen in practice on 2026-08-30, see NOTES.md). Same group name
+# across both files serializes them instead of letting them collide.
+concurrency:
+  group: blog-post-ci-${{ github.head_ref }}
+  cancel-in-progress: false
+
 jobs:
   generate-pins:
     runs-on: ubuntu-latest
@@ -48,6 +57,13 @@ jobs:
       - name: Generate hero image(s)
         if: steps.changed.outputs.any_changed == 'true'
         run: node scripts/generate-hero.mjs ${{ steps.changed.outputs.all_changed_files }}
+
+      # Belt-and-suspenders alongside the concurrency group above: rebase
+      # onto whatever's now on the branch (e.g. x-draft's commit) before
+      # committing, so a push here can't be rejected as non-fast-forward.
+      - name: Pull latest before committing
+        if: steps.changed.outputs.any_changed == 'true'
+        run: git pull --rebase origin ${{ github.head_ref }}
 
       - name: Commit generated pins + heroes
         if: steps.changed.outputs.any_changed == 'true'
