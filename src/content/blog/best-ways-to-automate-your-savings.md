@@ -5,8 +5,8 @@ pubDate: 2026-08-30
 targetKeyword: "best ways to automate your savings"
 pillar: "saving"
 draft: false
-pinApproved: false
-depthReviewed: false
+pinApproved: true
+depthReviewed: true
 pinVisual: "flow"
 flowSteps: ["Get paid", "Split off savings", "Transfer clears", "Balance grows, untouched"]
 ---
