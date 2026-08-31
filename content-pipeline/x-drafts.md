@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## best-debt-payoff-apps-compared
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Best Debt Payoff Apps Compared (2026) — Undebt.it, YNAB, Debt Payoff Planner, Rocket Money, and Empower each attack debt differently — free planner, budgeting-first, dedicated tracker, spending-leak finder, or all-in-one dashboard. Here's who each one fits.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/best-debt-payoff-apps-compared
+```
+
 ## best-ways-to-automate-your-savings
 
 **Post (attach the matching pin image from public/pins/):**
