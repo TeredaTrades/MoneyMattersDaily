@@ -12,6 +12,70 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-31 (latest, cont. 2) — Teammate's "referring page" question led to one more real bug (JSON-LD trailing slash)
+
+### Context
+A teammate had picked up the Request Indexing cleanup from where an
+earlier session left off (the 7 "Redirect error" pages from the 08-19
+manual batch), and asked two questions about what they were seeing in
+GSC: (1) some flagged pages show a "referring page" (another post
+linking to them) and others say "None detected" — does that distinction
+matter? (2) some pages also show "No referring sitemaps detected" /
+sitemap-related messages — does that matter separately? They'd already
+submitted Request Indexing on all 7, noting it commonly fails on the
+first attempt and succeeds on a retry.
+
+### Investigation: referring-page data turned out to be worth checking, not just cosmetic
+Pulled up the two examples that *do* show a referring page (e.g.
+`best-budgeting-apps-compared`, linked from 2 other posts) — both show
+**"Last crawl: Aug 19, 2026"**, which is the exact day PR #13 (the
+trailing-slash fix) shipped. Checked the related-posts widget that
+generates those internal links: it already builds the correct
+trailing-slash URL format today. So those referring-page links were
+almost certainly captured by Google's crawler *before* that day's fix
+went live, and it simply hasn't recrawled since — not a live bug, just
+a stale snapshot. Confirms Request Indexing (forcing a fresh crawl) is
+the right and sufficient fix for these.
+
+That check of the related-posts/blog-post file is what surfaced a
+second, still-live issue: every blog post's JSON-LD structured data
+(`mainEntityOfPage.@id`) was building its own self-referencing URL as
+`/blog/${post.id}` (no trailing slash) — inconsistent with the
+canonical tag two lines below it on the same page, and unlike every
+other dynamic URL builder in the codebase (related posts, pillar-page
+post lists, homepage links), which already use the trailing-slash
+form. Swept the rest of the codebase for the same pattern — this was
+the only remaining instance. **Fixed** in `src/pages/blog/[slug].astro`
+(commit `8589ef5`), verified via a full build that the JSON-LD now
+matches the canonical URL exactly.
+
+### Answers given to the teammate
+- **Referring page vs. "None detected"**: doesn't change the fix.
+  Pages with a referring page were discovered via an internal link
+  (link format now fixed, see above); pages with "None detected" were
+  discovered via the manual 08-19 GSC submission instead. Different
+  discovery path, same root cause (bad trailing-slash link somewhere
+  upstream of the fix), same solution (Request Indexing / recrawl).
+- **"No referring sitemaps detected" / sitemap processing messages**:
+  no action needed. Spot-checked `index-funds-explained-for-beginners`
+  directly in the built sitemap — present, correctly slashed. These
+  messages just reflect what Google saw as of its last crawl (still
+  pre-08-19-fix for these URLs); it'll pick the sitemap association up
+  on its next pass.
+- **Request Indexing failing once then succeeding on retry**: known
+  GSC quirk (transient server-side hiccup / soft rate-limit on
+  Google's end, not caused by anything in this repo). Retrying is the
+  correct response — no fix needed here either.
+
+### Net result of this session
+Three real bugs found and fixed today: the `github.io` duplicate-canonical
+redirect (see "cont." entries above), the thin-content pillar pages, and
+now this JSON-LD trailing-slash inconsistency. All three pushed to
+`main`. The remaining GSC "not indexed" items (redirect errors, pages
+with redirect, the one "Discovered - currently not indexed" page) are
+all expected to self-resolve as Google reprocesses/recrawls — nothing
+else identified as a live bug in this review.
+
 ## 2026-08-31 (latest) — Closed out the GSC page-indexing review: identified the last item, no fix needed
 
 ### Context
