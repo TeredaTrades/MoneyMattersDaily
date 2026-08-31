@@ -60,7 +60,7 @@ const articleJsonLd = {
   publisher: { '@id': `${Astro.site}#organization` },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': new URL(`/blog/${post.id}`, Astro.site).toString(),
+    '@id': new URL(`/blog/${post.id}/`, Astro.site).toString(),
   },
 };
 ---
