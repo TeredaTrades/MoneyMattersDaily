@@ -12,6 +12,55 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-31 (latest, cont. 4) — Diagnosed duplicate pins on Investing Basics board; not a repo/feed bug
+
+### Context
+Teammate noticed duplicate pins on Pinterest — "Compound Interest
+Explained Simply" showing 3x and "How to Start Investing With Little
+Money" 2x on the profile grid. Investigated whether the repo/feed
+generation was creating duplicates.
+
+### Findings — repo side is clean
+- `public/pins/` has exactly one PNG per post, no duplicate image files.
+- Every `public/pinterest-feed-<pillar>.xml` lists each post exactly
+  once, with a `guid` derived from the post slug only (not a date), so
+  re-running `generate-pinterest-feed.mjs` can't change a post's GUID
+  between builds.
+- No post title appears in more than one pillar feed.
+- The duplicates are isolated to the **Investing Basics** pillar only
+  — nothing from Saving, Credit, or App Comparisons is duplicated.
+
+### Root cause: Pinterest-side, not code
+`PILLAR_BOARDS['investing-basics']` in `generate-pinterest-feed.mjs`
+still carries the comment "no board created on Pinterest yet as of
+this writing." NOTES.md history (2026-08-25 to 08-27) shows this board
+sat disconnected across several sessions while people repeatedly
+re-checked "why hasn't this pin shown up." There's no log entry
+confirming when/how the board was finally connected, meaning it was
+most likely connected directly in the Pinterest UI without being
+logged here.
+
+Pinterest's Bulk Create Pins import doesn't dedupe across a
+disconnect/reconnect of the same feed — each reconnect re-imports
+every item in the feed as a fresh pin regardless of GUID. With 3 items
+in `pinterest-feed-investing-basics.xml` (compound-interest,
+how-to-start-investing, index-funds), repeated reconnect attempts
+during that troubleshooting window would produce exactly this pattern.
+
+### Fix / for next time
+- Manually delete the duplicate pins on the Investing Basics board on
+  Pinterest (kept the one with real engagement).
+- **Never disconnect/reconnect a board's RSS feed connection to
+  "check" it** — this re-imports the whole feed as new pins. To check
+  status, look at the board itself or fetch the feed URL directly
+  (same guidance already in the 2026-08-25 "for next time" note above).
+
+### Open items
+- Confirm no other pillar board was disconnected/reconnected during
+  troubleshooting (only Investing Basics confirmed affected so far).
+
+---
+
 ## 2026-08-31 (latest, cont. 3) — `www` stopped resolving; DNS investigated with Claude (chat), root cause not fully determined
 
 ### Context
