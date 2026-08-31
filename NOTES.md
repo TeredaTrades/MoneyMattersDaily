@@ -12,6 +12,51 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-31 (latest) — Closed out the GSC page-indexing review: identified the last item, no fix needed
+
+### Context
+Got the screenshot for the remaining "Discovered - currently not
+indexed" page (1 affected): `https://moneymattersdaily.money/blog/how-much-emergency-fund/`,
+**last crawled: N/A**.
+
+### Assessment: not a bug, no action needed
+"Last crawled: N/A" means Google hasn't crawled this exact (correct,
+trailing-slash) URL at all yet — this is plain crawl-budget
+prioritization on a brand-new site, not a quality judgment like the
+pillar-page issue was. It also connects back to the very first
+screenshot: `how-much-emergency-fund` (no trailing slash) was one of
+the 7 "Redirect error" examples from the 08-19 manual Request Indexing
+batch. Google's crawler has been spending attention on the *wrong*
+(non-slash) URL for this specific post and hasn't reached the correct
+canonical one yet. Expected to resolve on its own alongside the
+redirect-error reprocessing already in progress — no separate fix.
+
+### Session wrap-up: full 08-31 GSC review, all 5 non-indexed reasons now accounted for
+1. Redirect error (7) + Page with redirect (6) — traced to the 08-19
+   manual non-trailing-slash Request Indexing batch (about/contact/
+   disclaimer + most posts) plus the X-drafts trailing-slash bug (fixed
+   this session). Self-resolves as Google reprocesses.
+2. Duplicate without user-selected canonical (1) — real bug: GitHub
+   Pages' default `teredatrades.github.io/MoneyMattersDaily/` URL was
+   serving the same content in parallel with no redirect. Fixed with a
+   client-side hostname redirect in `BaseLayout.astro`.
+3. Crawled - currently not indexed (2: budgeting, saving pillar pages)
+   — real bug: thin, near-duplicate pillar-page template couldn't clear
+   Google's bar on high-competition head terms. Fixed with unique intro
+   copy + meta descriptions across all 7 pillars.
+4. Discovered - currently not indexed (1: how-much-emergency-fund) —
+   not a bug, just crawl-budget prioritization tangled up with the same
+   redirect-error post. No action.
+
+### Open items
+- Confirm all of the above actually clear in GSC — takes 1-2 weeks to
+  reprocess; check back rather than expecting immediate movement.
+- Everything else carried over from prior entries (Pinterest feed
+  staleness reassessment, ad-network application still on hold) still
+  open.
+
+---
+
 ## 2026-08-31 (latest) — Found and fixed the "Crawled - currently not indexed" cause (thin, near-duplicate pillar pages)
 
 ### Context
