@@ -12,6 +12,63 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-31 (even later) — Traced the redirect-error count past X posts; found and fixed the real duplicate-canonical source
+
+### Context
+User pushed back on the previous entry's implied X-posts-as-sole-cause
+theory: only 3 X posts exist live, nowhere near enough to produce 13
+redirect-flagged pages on their own. Went back and traced every
+URL-generating path in the repo instead of extending that theory.
+
+### Redirect errors (7) + page-with-redirect (6): mostly pre-existing, not new
+Checked every hardcoded/generated `moneymattersdaily.money` URL in the
+codebase (nav/footer links, `generate-sitemap.mjs`,
+`generate-pinterest-feed.mjs`, `generate-x-drafts.mjs`, contact.astro) —
+all consistently emit the trailing-slash form already (fixed across PR #13
+on 08-19 and the X-drafts fix earlier today). Re-read the 08-19 NOTES
+entry closely: that session's user manually typed non-trailing-slash URLs
+into GSC's Request Indexing tool for **about, contact, disclaimer, and
+most of the post list** — before the trailing-slash fix even existed.
+That single batch, not the 3 X posts, plausibly accounts for the bulk of
+the 13 (it explains /about and /contact specifically, which no X post
+ever linked to). Google queued exactly those URLs and is still working
+through re-crawling/redirect-following them. No further code fix needed
+here — self-resolves as Google reprocesses.
+
+### Real, previously-unaddressed bug found: "Duplicate without user-selected canonical"
+GitHub Pages keeps serving this exact build at the default project URL
+(`teredatrades.github.io/MoneyMattersDaily/...`) in parallel with the
+custom domain — confirmed via GitHub's own docs and community threads:
+unlike the www<->apex pair (which GitHub *does* auto-redirect, confirmed
+via `GET /repos/.../pages` API showing the HTTPS cert covers both
+`moneymattersdaily.money` and `www.moneymattersdaily.money`), the default
+`<org>.github.io/<repo>` URL is never redirected away once a custom
+domain is added — it just keeps working, serving byte-identical content.
+Every page already has a correct `rel=canonical` pointing at the custom
+domain, but on a domain this new (registered 08-16) Google hasn't built
+enough trust to reliably prefer a self-declared canonical over a host it
+found the content on directly — which is exactly what "Duplicate without
+user-selected canonical" describes.
+
+### Fixed
+`src/layouts/BaseLayout.astro` — added a client-side hostname check as
+the first thing in `<head>`: any visit via a `*.github.io` host hard-
+redirects (`location.replace`) to the same path on
+`moneymattersdaily.money`. Can't do this server-side (fully static site,
+no per-host headers/redirects available on GitHub Pages), so this is the
+standard workaround for this exact problem. Verified in a full local
+build (32 pages) that the script is present in every page's built HTML.
+Committed and pushed directly to `main` (no open PR blocking it).
+
+### Open items
+- Confirm this actually clears the duplicate-canonical flag in GSC —
+  takes time to reprocess, check back in a week or two alongside the
+  redirect-error validation already in progress.
+- Everything else carried over from the prior entry (Pinterest feed
+  staleness, 2 remaining low-priority non-indexed reasons) still open.
+
+---
+
 ## 2026-08-31 (later still) — GSC page-indexing review: found and fixed a real source of bad backlinks (missing trailing slash in X drafts)
 
 ### What we did
