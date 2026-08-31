@@ -12,6 +12,68 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-31 (still later) — Fixed x-draft's rebase failure; re-checked the "stale Pinterest feed" item and it's likely a non-issue
+
+### Fixed: x-draft.yml / pin-preview.yml "Pull latest before committing" step
+Root cause confirmed by re-reading both workflows side by side (couldn't
+pull the actual job log — same blob-storage-host-outside-allowlist
+limitation logged repeatedly since 2026-08-27): "Generate draft(s) for
+new posts" / "Generate pin image(s)+hero image(s)" leave the working tree
+dirty (uncommitted) before the "Pull latest before committing" step runs
+a plain `git pull --rebase`, which refuses to rebase over uncommitted
+changes. `pin-preview.yml` happened to run first both times we've
+watched it, so there was nothing to rebase against yet and the dirty
+tree never mattered; `x-draft.yml` ran second on this session's PR and
+hit it. Fixed both workflows by adding `--autostash` to the pull command
+(stashes the generated-but-uncommitted file, rebases, reapplies it) —
+applied to `pin-preview.yml` too, preventively, since it has the same
+generate-then-pull ordering and would hit the identical failure the day
+it runs second. Pushed directly to `main` (workflow-only change, no blog
+content). Will confirm clean on the next post's PR.
+
+### Re-examined: "Pinterest feed goes stale after merge"
+Traced the actual deploy path instead of just looking at the checked-in
+`public/pinterest-feed-*.xml` files. `deploy.yml` triggers on every push
+to `main` (confirmed via the Actions API: it ran and succeeded after
+every recent merge, including both of today's), does a fresh checkout,
+and runs `npm run build` — whose `prebuild` step is exactly
+`generate-pinterest-feed.mjs`, regenerating all seven feed files from
+the current `src/content/blog` + `pinApproved` flags *before* `astro
+build` copies `public/` into `dist/` for deployment. So the **live**
+feed at moneymattersdaily.money/pinterest-feed-*.xml should already be
+current after every single merge, regardless of what's committed in the
+repo's own `public/*.xml` copies. What actually goes stale is only the
+git-tracked copy of those files (cosmetic — a diff nobody needs to look
+at, not a functional problem) — not what Pinterest's RSS reader
+actually fetches. Couldn't directly fetch the live XML to confirm from
+here (domain isn't indexed/reachable via available tools yet), so this
+is a strong inference from the CI evidence, not a hands-on confirmation
+— worth a 30-second manual check (open the live feed URL, or watch
+whether best-debt-payoff-apps-compared and best-ways-to-automate-your-
+savings show up on their boards within ~24h of today's deploys) before
+fully closing this out.
+
+### Open items
+- Confirm the Pinterest-feed-staleness reassessment above by checking
+  the live feed URL or watching for today's two posts to pin on
+  schedule — if confirmed, this item can close for good; if the pins
+  don't show up, the actual bug is somewhere else and this write-up is
+  wrong.
+- GSC submission status for pillar pages — user believes this was
+  already done; couldn't confirm via search (domain not turning up in
+  results yet, which isn't conclusive either way) — worth a direct look
+  at Search Console's Coverage/Pages report rather than guessing from
+  outside.
+- No ad network application submitted yet — still correctly on hold;
+  traffic (31 visits/16 days, 1 Google + 1 Pinterest referral) isn't
+  enough to compare networks on yet.
+- Whether `ANTHROPIC_API_KEY` was ever added as a repo secret for the
+  now-expired auto-publish trial — unconfirmed, but the trial window
+  closed 2026-08-29 and nothing depends on the answer anymore; low
+  priority unless auto-publish gets revisited.
+
+---
+
 ## 2026-08-31 (later) — Logged first traffic snapshot; too early for ad network decisions
 
 ### What we did

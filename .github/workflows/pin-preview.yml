@@ -61,9 +61,13 @@ jobs:
       # Belt-and-suspenders alongside the concurrency group above: rebase
       # onto whatever's now on the branch (e.g. x-draft's commit) before
       # committing, so a push here can't be rejected as non-fast-forward.
+      # --autostash: this workflow has happened to run first every time so
+      # far, so the dirty-working-tree failure seen in x-draft.yml on
+      # 2026-08-31 hasn't hit it yet, but the same generate-then-pull order
+      # would cause it here too if this ever runs second. Fixed preventively.
       - name: Pull latest before committing
         if: steps.changed.outputs.any_changed == 'true'
-        run: git pull --rebase origin ${{ github.head_ref }}
+        run: git pull --rebase --autostash origin ${{ github.head_ref }}
 
       - name: Commit generated pins + heroes
         if: steps.changed.outputs.any_changed == 'true'

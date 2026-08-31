@@ -49,9 +49,15 @@ jobs:
 
       # Belt-and-suspenders alongside the concurrency group above: rebase
       # onto whatever's now on the branch before committing, so a push
-      # here can't be rejected as non-fast-forward.
+      # here can't be rejected as non-fast-forward. --autostash is required
+      # because "Generate draft(s) for new posts" leaves the working tree
+      # dirty (content-pipeline/x-drafts.md, not yet committed) — a plain
+      # `git pull --rebase` refuses to run over uncommitted changes, which
+      # is what actually failed here on 2026-08-31 (see NOTES.md), not the
+      # race itself. --autostash stashes that file, rebases, then reapplies
+      # it before the commit step below picks it up.
       - name: Pull latest before committing
-        run: git pull --rebase origin ${{ github.head_ref }}
+        run: git pull --rebase --autostash origin ${{ github.head_ref }}
 
       - name: Commit generated drafts
         uses: stefanzweifel/git-auto-commit-action@v5
