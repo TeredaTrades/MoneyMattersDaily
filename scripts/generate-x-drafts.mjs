@@ -97,7 +97,7 @@ function main() {
   let skipped = 0;
 
   for (const { slug, data } of posts) {
-    const url = `${SITE}/blog/${slug}`;
+    const url = `${SITE}/blog/${slug}/`;
     const shouldForce = forceSlugs.has(slug);
     const hasExisting = existingDrafts.has(slug);
 

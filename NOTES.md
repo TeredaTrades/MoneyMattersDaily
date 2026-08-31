@@ -12,6 +12,81 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-31 (later still) — GSC page-indexing review: found and fixed a real source of bad backlinks (missing trailing slash in X drafts)
+
+### What we did
+User shared a GSC "Page indexing" screenshot (moneymattersdaily.money
+domain property, last updated 8/21/26): 27 indexed, 17 not indexed.
+Breakdown of the 17: 7 "Redirect error" + 6 "Page with redirect" (both
+source: Website, validation: Started) — 13 of 17, the large majority —
+plus 2 "Crawled - currently not indexed", 1 "Discovered - currently not
+indexed" (both Google systems, Not Started), 1 "Duplicate without
+user-selected canonical" (Website, Not Started). Saved the screenshot to
+`content-pipeline/analytics/2026-08-31-gsc-page-indexing.png`.
+
+Traced the 13 redirect-related pages instead of guessing. `astro.config.mjs`
+sets `trailingSlash: 'always'` (fixed in an earlier session per its own
+comment), and `BaseLayout.astro`'s canonical tag, `generate-sitemap.mjs`,
+and `generate-pinterest-feed.mjs` are all consistent with that — every
+internal link, canonical URL, and Pinterest feed URL ends in `/`. But
+`scripts/generate-x-drafts.mjs` was building post links as
+`${SITE}/blog/${slug}` — **no trailing slash** — for every one of the 19
+posts drafted so far. Those drafts are the copy-paste text the user
+manually posts to X, so any of them actually posted became a real
+external backlink pointing at the non-canonical URL, which the site then
+redirects — exactly the "Redirect error"/"Page with redirect" pattern
+GSC is reporting, and roughly the right count (13 flagged, up to 19
+possible offending links).
+
+### Fixed
+- `scripts/generate-x-drafts.mjs`: added the trailing slash to match
+  every other URL-generating script in the repo.
+- Force-regenerated `content-pipeline/x-drafts.md` for all 19 existing
+  posts so already-drafted (but not-yet-tweeted) links are corrected
+  too. Diffed before/after to confirm only URLs changed (one post's
+  tweet copy also picked up a wording refresh reflecting that post's
+  current description — not a regression, the source content had
+  moved on since that draft was first generated).
+- Can't retroactively fix links already posted to X — those tweets, if
+  any, still point at the non-slash URL and will keep re-registering as
+  redirect backlinks until Google reprocesses them, which it should do
+  on its own once it stops finding fresh instances of the bad link
+  going forward.
+
+### Not investigated this session
+- The other 4 non-indexed pages ("Crawled/Discovered - currently not
+  indexed" x3, "Duplicate without user-selected canonical" x1) — small
+  counts, Google-side/normal-for-a-new-site reasons, lower priority
+  than the 13.
+- Whether the 7 "Redirect error" vs 6 "Page with redirect" split maps
+  to anything beyond "some of these got further along in Google's own
+  redirect-following than others" — not chased down, doesn't change the
+  fix.
+- Both reasons show validation "Started" already in the screenshot,
+  meaning GSC was already mid-revalidation on something before this
+  session — unclear what triggered that or whether it was a manual
+  "Validate fix" click; worth asking the user next time this comes up.
+
+### Also: shelved the auto-publish trial per user request
+User asked to pause/shelve the auto-publish trial line of work for now.
+Not pursuing further; the unconfirmed `ANTHROPIC_API_KEY` secret
+question is no longer worth chasing (see Open items).
+
+### Open items
+- Confirm the trailing-slash fix actually resolves the redirect-flagged
+  pages — GSC validation takes time; check back on the Page indexing
+  report in a week or two rather than expecting an immediate change.
+- Confirm the Pinterest-feed-staleness reassessment from earlier today
+  (still unconfirmed — see that entry).
+- The 4 smaller non-indexed reasons above — low priority, revisit if
+  they don't clear on their own as the site accumulates more indexed
+  pages and backlinks.
+- No ad network application submitted yet — still on hold on traffic
+  grounds.
+- Auto-publish trial — shelved, not being pursued for now.
+
+---
+
 ## 2026-08-31 (still later) — Fixed x-draft's rebase failure; re-checked the "stale Pinterest feed" item and it's likely a non-issue
 
 ### Fixed: x-draft.yml / pin-preview.yml "Pull latest before committing" step
@@ -67,10 +142,9 @@ fully closing this out.
 - No ad network application submitted yet — still correctly on hold;
   traffic (31 visits/16 days, 1 Google + 1 Pinterest referral) isn't
   enough to compare networks on yet.
-- Whether `ANTHROPIC_API_KEY` was ever added as a repo secret for the
-  now-expired auto-publish trial — unconfirmed, but the trial window
-  closed 2026-08-29 and nothing depends on the answer anymore; low
-  priority unless auto-publish gets revisited.
+- Auto-publish trial — shelved per user request 2026-08-31. Not
+  revisiting for now; whether `ANTHROPIC_API_KEY` was ever added as a
+  repo secret is no longer worth chasing down.
 
 ---
 
