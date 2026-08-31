@@ -12,6 +12,68 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-31 (latest, cont. 3) — `www` stopped resolving; DNS investigated with Claude (chat), root cause not fully determined
+
+### Context
+User reported `https://www.moneymattersdaily.money` times out in-browser
+while the apex `https://moneymattersdaily.money` (no `www`) loads fine.
+Checked in the same browser to rule out a local/cache issue.
+
+### Investigation
+Namecheap Advanced DNS screenshot for the domain shows only the 4 A
+records on `@` (GitHub Pages IPs) and the Google site-verification TXT
+record — **no CNAME record for `www` at all**. It isn't misconfigured,
+it's simply missing.
+
+Checked the repo for any earlier discussion of this (issues, commits,
+NOTES) before assuming it was never set up correctly:
+- NOTES.md's original 2026-08-17 setup entry documents the `www` CNAME
+  as having been correctly created then (`www` → `teredatrades.github.io`),
+  alongside the 4 A records.
+- This morning's "traced the redirect-error count" session (~11:07 UTC,
+  see entry above) independently re-verified via `GET /repos/.../pages`
+  that `www` was still working — GitHub was auto-redirecting the
+  www<->apex pair and the HTTPS cert covered both hostnames. So the
+  record was present and functioning at least that recently.
+- Re-ran that same Pages API check just now: HTTPS cert is still
+  `"state": "approved"` covering both `moneymattersdaily.money` and
+  `www.moneymattersdaily.money`. GitHub's side is fully intact — this
+  confirms the break is Namecheap-DNS-only, not a GitHub Pages/cert
+  problem.
+- Searched full git history, all workflows, and all scripts for any
+  Namecheap/DNS automation — none exists. DNS is managed entirely by
+  hand in Namecheap's panel, so a record being edited/removed there
+  leaves **no trace anywhere in this repo**, regardless of when it
+  happened. `public/CNAME` (the GitHub Pages custom-domain file, a
+  different thing from the Namecheap `www` DNS record) has been
+  untouched since its creation on 2026-08-17 and only ever contained
+  the apex domain — not a lead here.
+- No GitHub Issue was ever opened about this specifically; the
+  "discussion" being recalled was this NOTES.md log, not an Issue.
+
+### Root cause: not determined
+Best-supported timeline: the `www` CNAME existed and worked from setup
+(08-17) through at least this morning (~11:07 UTC today). It was gone
+by the time of this session. Cannot pin down who/when/why beyond that —
+Namecheap's free tier has no host-record change/audit log, and nothing
+in this repo touches DNS. Worth asking teammates directly whether anyone
+touched Namecheap's Advanced DNS panel today.
+
+### Fix (queued, not yet applied as of this entry)
+Re-add in Namecheap Advanced DNS: `Type: CNAME`, `Host: www`,
+`Value: teredatrades.github.io`. Since GitHub's cert already covers
+`www`, this should resolve without any GitHub-side re-verification once
+DNS propagates — just re-test `https://www.moneymattersdaily.money`
+directly afterward.
+
+### Open items
+- Apply the CNAME fix above and confirm `www` loads.
+- Ask teammates whether anyone edited Namecheap DNS today — the repo
+  has no way to answer this.
+- Everything else carried over from prior entries.
+
+---
+
 ## 2026-08-31 (latest, cont. 2) — Teammate's "referring page" question led to one more real bug (JSON-LD trailing slash)
 
 ### Context
