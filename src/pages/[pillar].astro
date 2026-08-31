@@ -25,15 +25,64 @@ const PILLARS: Record<string, string> = {
   'news-trends': 'News & Trends',
 };
 
+// Each pillar page used to be just a heading over a bare list of post
+// links, with a meta description that only swapped one word
+// ("${label} guides on MoneyMattersDaily.") across all seven pillars.
+// That's almost certainly why GSC flagged the two highest-competition,
+// most generic pillars (budgeting, saving) as "Crawled - currently not
+// indexed" on 2026-08-31 while the narrower ones (credit,
+// investing-basics, app-comparisons) got indexed without any manual
+// push — a thin, near-duplicate page has a much harder time clearing
+// Google's bar on a head term than on a long-tail one. Real, unique
+// copy per pillar (both on-page and in the meta description) is the
+// standard fix for that judgment, independent of the exact competitive
+// reasoning.
+const PILLAR_META_DESCRIPTIONS: Record<string, string> = {
+  budgeting:
+    'Budgeting guides that start from how your money actually moves, not a one-size-fits-all percentage split.',
+  saving:
+    'Saving strategies for real income and real expenses — emergency funds, automation, and how much is actually enough.',
+  credit:
+    'Straight explanations of how credit scores and utilization actually work, and what moves the needle fastest.',
+  'investing-basics':
+    'Beginner investing explained without the jargon — index funds, account types, and how to start with little money.',
+  'app-comparisons':
+    'Head-to-head comparisons of budgeting and finance apps, focused on who each one actually fits.',
+  'travel-finance':
+    'Money guides for travelers and digital nomads — cross-border banking, budgeting on the road, and avoiding fees.',
+  'news-trends':
+    'What financial news actually changes for your budget — Fed moves, inflation reports, and other headlines explained.',
+};
+
+const PILLAR_INTROS: Record<string, string> = {
+  budgeting:
+    "Budgeting only works if it matches how your money actually moves — not a percentage split lifted from a personal-finance TikTok. These guides walk through several budgeting methods, when each one fits, and how to adjust it when your income or expenses don't cooperate.",
+  saving:
+    "\"How much should I have saved?\" depends on your job stability, your dependents, and your expenses — not a flat number. These guides cover emergency funds, automation, and building a saving habit that survives a bad month.",
+  credit:
+    'Credit scores react to a handful of specific factors — utilization, payment history, account age — and most credit advice skips explaining which of those actually moves the number fastest. These guides go through the mechanics, not just the rules of thumb.',
+  'investing-basics':
+    "Investing doesn't require picking stocks or timing the market. These guides cover the basics that actually matter for a beginner: what index funds are, which account type to use, and how to start with whatever you have.",
+  'app-comparisons':
+    "The right budgeting or finance app depends on how you actually want to track money, not which one has the most features. These comparisons focus on who each app fits, not just a spec-sheet rundown.",
+  'travel-finance':
+    'Managing money while traveling or living abroad brings its own problems — foreign transaction fees, unpredictable income, banking across borders. These guides are written for that situation specifically, not adapted from general budgeting advice.',
+  'news-trends':
+    "Financial headlines get covered everywhere; what they actually change for your budget usually doesn't. These guides explain the mechanism behind a given headline — a Fed rate move, an inflation report — rather than just reporting the news itself.",
+};
+
 const { pillar } = Astro.params as { pillar: string };
 const label = PILLARS[pillar];
+const metaDescription = PILLAR_META_DESCRIPTIONS[pillar];
+const intro = PILLAR_INTROS[pillar];
 
 const allPosts = await getCollection('blog', ({ data }) => !data.draft && data.pillar === pillar);
 const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<BaseLayout title={label} description={`${label} guides on MoneyMattersDaily.`}>
+<BaseLayout title={label} description={metaDescription}>
   <h1 class="pillar-heading"><PillarIcon name={pillar as any} size={30} /> {label}</h1>
+  <p class="pillar-intro">{intro}</p>
   <ul class="post-list">
     {posts.map((post) => (
       <li>
@@ -54,6 +103,13 @@ const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.
   .pillar-heading svg {
     color: #1c4a4a;
     flex-shrink: 0;
+  }
+  .pillar-intro {
+    max-width: 65ch;
+    color: #333;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0.75rem 0 1.75rem;
   }
   .post-list {
     list-style: none;
