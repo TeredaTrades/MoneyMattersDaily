@@ -52,6 +52,31 @@ const structuredData = [siteSchema, ...jsonLd];
 <!doctype html>
 <html lang="en">
   <head>
+    <!--
+      GitHub Pages keeps serving this exact build at its default project URL
+      (teredatrades.github.io/MoneyMattersDaily/...) in parallel with the
+      custom domain — unlike the www<->apex case, GitHub does not add a
+      server-side redirect between a custom domain and the default github.io
+      URL, so the same content stays live at both. That's what GSC's
+      "Duplicate without user-selected canonical" report (2026-08-31) was
+      almost certainly picking up: our rel=canonical below is correct, but
+      on a domain this new Google hasn't yet built enough trust to reliably
+      defer to a self-declared canonical over a host it found the content on
+      directly. Since this is a fully static site with no server, we can't
+      set a per-host redirect or header — a client-side hostname check with
+      a hard redirect is the standard workaround. Placed first in <head> so
+      it fires before anything else loads.
+    -->
+    <script is:inline>
+      if (window.location.hostname.endsWith('.github.io')) {
+        window.location.replace(
+          'https://moneymattersdaily.money' +
+            window.location.pathname +
+            window.location.search +
+            window.location.hash
+        );
+      }
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title} | {siteName}</title>
