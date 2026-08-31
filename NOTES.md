@@ -12,6 +12,48 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-08-31 (latest) — Found and fixed the "Crawled - currently not indexed" cause (thin, near-duplicate pillar pages)
+
+### Context
+Continuing the GSC page-indexing review. User screenshotted the
+"Crawled - currently not indexed" drilldown: exactly 2 affected pages,
+`/budgeting/` and `/saving/` — first detected 8/22/26, which lines up
+with the 08-22 session's manual Request Indexing submission for those
+two pillar pages specifically (credit, investing-basics, and
+app-comparisons had already indexed naturally by then).
+
+### Root cause
+`src/pages/[pillar].astro` was a bare template for all seven pillars: an
+H1, a plain `<ul>` of post links, and a meta description that only
+swapped one word across all seven pages
+(`"${label} guides on MoneyMattersDaily."`). Thin, near-duplicate
+boilerplate like that clears Google's indexing bar much more easily on
+a narrow, low-competition pillar (credit, investing-basics,
+app-comparisons) than on a broad, high-competition head term
+(budgeting, saving) — matching exactly which two got flagged.
+
+### Fixed
+Added real, distinct copy for all seven pillars (not just the two
+flagged, since travel-finance/news-trends have only 1 post each right
+now and would hit the same issue as they're checked later):
+- `PILLAR_META_DESCRIPTIONS` — unique meta/OG/Twitter description per pillar
+- `PILLAR_INTROS` — unique 2-3 sentence on-page intro paragraph per pillar,
+  matching the plain-language/no-jargon tone from `about.astro`
+
+Verified in a full local build (32 pages) that each pillar's rendered
+meta description and on-page intro are actually distinct. Committed and
+pushed directly to `main`.
+
+### Open items
+- Confirm this clears the "Crawled - not indexed" flag in GSC — takes
+  time to reprocess.
+- Didn't get a screenshot of the "Discovered - currently not indexed"
+  (1 page) drilldown yet — that one's usually just crawl-budget
+  prioritization on a new site rather than a real issue, but worth
+  checking the actual URL before assuming.
+
+---
+
 ## 2026-08-31 (even later) — Traced the redirect-error count past X posts; found and fixed the real duplicate-canonical source
 
 ### Context
