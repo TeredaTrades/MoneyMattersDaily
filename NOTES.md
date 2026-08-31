@@ -12,7 +12,41 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
-## 2026-08-31 — Wrote "Best Debt Payoff Apps Compared"; pin-preview/x-draft race is fixed, but found a new x-draft CI failure
+## 2026-08-31 (later) — Logged first traffic snapshot; too early for ad network decisions
+
+### What we did
+User shared a GoatCounter screenshot covering 2026-08-15 to 2026-08-31
+(16 days): 31 total visits, only 1 Google-referred and 1 Pinterest-referred
+visit in that window, 61% direct/unknown referrer, and a 48% Ethiopia /
+39% US location split. Saved the screenshot and a written summary to
+`content-pipeline/analytics/2026-08-31-goatcounter-traffic.png` and
+`2026-08-31-traffic-summary.md` for future reference.
+
+### Read
+Organic search and Pinterest aren't sending meaningful traffic yet (one
+visit each over 16 days) — expected this early, with the site newly
+indexed and Pinterest's own board/pin backlog still catching up. Not
+enough volume yet to compare ad network RPM/fill-rate against each
+other, so no network application makes sense purely on the traffic data
+yet. Adsterra/PropellerAds/Infolinks have low or no minimum-traffic bar
+and could technically be applied to now if the goal is just to get pixel
+tags live and start collecting whatever trickle of impression data
+exists; Media.net wants real volume (and leans US/UK/CA) before approval
+is likely, so that one's still a "wait and reassess" candidate.
+
+### Open items (carried over + new)
+- No ad network application submitted yet — revisit once there's a
+  months-long trend of organic/Pinterest traffic to look at, not just
+  this one snapshot.
+- Pillar pages in GSC still not checked/submitted (carried over — this
+  would likely be the highest-leverage next step for actually growing
+  the Google referral number above 1).
+- x-draft.yml's rebase-step failure and Pinterest feed staleness after
+  merge — still open (carried over from earlier today).
+
+---
+
+
 
 ### What we did
 - Next pending keyword: "best debt payoff apps compared" (app-comparisons
