@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## best-net-worth-tracking-apps-compared
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Best Net Worth Tracking Apps Compared (2026) — Empower, Monarch, Copilot, Kubera, and YNAB all track net worth differently — free dashboard, all-in-one budgeting, manual control, or premium net-worth-only. Here's who each one fits.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/best-net-worth-tracking-apps-compared/
+```
+
 ## best-debt-payoff-apps-compared
 
 **Post (attach the matching pin image from public/pins/):**
