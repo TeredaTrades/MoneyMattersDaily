@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## how-to-budget-for-long-term-travel
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How to Budget for Long-Term Travel — A practical framework for budgeting extended travel — separating one-time setup costs from ongoing daily spending, sizing your buffer, and picking a daily-spend target by region.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-budget-for-long-term-travel/
+```
+
 ## best-net-worth-tracking-apps-compared
 
 **Post (attach the matching pin image from public/pins/):**
