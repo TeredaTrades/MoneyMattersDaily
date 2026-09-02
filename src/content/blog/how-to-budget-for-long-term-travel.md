@@ -5,8 +5,8 @@ pubDate: 2026-09-02
 targetKeyword: "how to budget for long-term travel"
 pillar: "travel-finance"
 draft: false
-pinApproved: false
-depthReviewed: false
+pinApproved: true
+depthReviewed: true
 ---
 
 Long-term travel budgeting fails for a predictable reason: people budget it like a vacation, multiplied. A two-week trip budget is mostly one-time costs (flights, a splurge or two) spread over a short window. A six-month trip is the opposite — one-time costs are a small slice, and your daily burn rate is what actually determines whether the money lasts. Get the daily number wrong by even a little and it compounds over months, not days.
