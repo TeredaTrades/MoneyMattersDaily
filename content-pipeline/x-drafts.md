@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## best-banking-apps-for-digital-nomads
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Best Banking Apps for Digital Nomads (2026) — Wise, Revolut, N26, Charles Schwab Investor Checking, and Chime compared for the specific problems digital nomads run into — foreign fees, ATM access, multi-currency holding, and getting paid across borders.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/best-banking-apps-for-digital-nomads/
+```
+
 ## how-to-budget-for-long-term-travel
 
 **Post (attach the matching pin image from public/pins/):**
