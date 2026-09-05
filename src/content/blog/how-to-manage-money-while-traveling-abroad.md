@@ -5,8 +5,8 @@ pubDate: 2026-09-05
 targetKeyword: "how to manage money while traveling abroad"
 pillar: "travel-finance"
 draft: false
-pinApproved: false
-depthReviewed: false
+pinApproved: true
+depthReviewed: true
 pinVisual: "flow"
 flowSteps: ["Split funds 3 ways", "Notify bank of travel", "Decline DCC at checkout", "Check spend weekly"]
 ---
