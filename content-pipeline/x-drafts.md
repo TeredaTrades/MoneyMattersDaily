@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## how-to-manage-money-while-traveling-abroad
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How to Manage Money While Traveling Abroad — The day-to-day money habits that actually matter on a trip: how to split your funds, avoid the dynamic currency conversion trap, and keep a card working when your primary one doesn't.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-manage-money-while-traveling-abroad/
+```
+
 ## best-banking-apps-for-digital-nomads
 
 **Post (attach the matching pin image from public/pins/):**
