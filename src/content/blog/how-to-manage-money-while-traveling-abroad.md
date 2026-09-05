@@ -8,7 +8,7 @@ draft: false
 pinApproved: false
 depthReviewed: false
 pinVisual: "flow"
-flowSteps: ["Split funds 3 ways", "Notify your bank", "Decline DCC at checkout", "Check spend weekly"]
+flowSteps: ["Split funds 3 ways", "Notify bank of travel", "Decline DCC at checkout", "Check spend weekly"]
 ---
 
 Managing money abroad isn't about how much you brought — it's about whether you can actually get to it when something goes wrong. The four habits below cost nothing to set up and solve the problems that actually derail trips: a blocked card, a bad exchange rate you didn't need to accept, and no idea how much you've spent until the trip's over.
