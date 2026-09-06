@@ -12,6 +12,53 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-06 (cont.) — Confirmed pillar Pinterest feeds regenerate correctly; flagged two items that need a human check (not verifiable from this session)
+
+### Confirmed: feed regeneration is not stale in practice
+Ran `generate-pinterest-feed.mjs` locally to check the 08-31 "likely-
+resolved-but-unconfirmed" note about feeds going stale after merge.
+Result: all 7 pillar feeds regenerate correctly from current post
+frontmatter — travel-finance went from the tracked repo copy's 1 item
+to the correct 4, news-trends from 1 to the correct 2, matching every
+`pinApproved: true` post in each pillar. Committed the regenerated
+`public/pinterest-feed-*.xml` files so the repo's tracked copies match
+current state (deploy.yml already regenerates these fresh on every
+push regardless, per the 08-31 finding — this commit is just hygiene
+so the repo isn't misleading if someone reads these files directly).
+**This closes out the "likely-resolved-but-unconfirmed" item.**
+
+### Flagged, can't verify from this session
+1. **`www` DNS status** — the 08-31 entry left a queued Namecheap CNAME
+   fix with no confirmation it was applied or that `www` resolves
+   again. This sandbox's network is domain-allowlisted and can't reach
+   `moneymattersdaily.money` directly (blocked at the egress proxy, not
+   a real signal either way) — needs a direct browser check of
+   `https://www.moneymattersdaily.money`.
+2. **Travel-finance and News-trends Pinterest board connections** —
+   `generate-pinterest-feed.mjs` still carries "no board created yet"
+   comments for both (same stale-comment pattern the 08-31 entry found
+   for Investing Basics, where the board turned out to already be
+   connected but the comment was never updated). With 4 travel-finance
+   and 2 news-trends posts now `pinApproved: true` and feeding correct
+   XML, if either board's RSS connection was never actually set up in
+   Pinterest, those pins have been silently not importing since
+   08-19/08-27 respectively. No API access to Pinterest from here —
+   needs a direct check of both boards' Settings > Bulk Create Pins
+   connection status.
+
+### Open items
+- Confirm `www` resolves (human check).
+- Confirm Travel & Nomad Finances and News & Trends boards are
+  connected to their feed URLs in Pinterest (human check) — if not,
+  connect them following the same steps as the 08-26 Investing Basics
+  fix.
+- Redirect-error validation recheck, still due ~9/13-9/20 (carried
+  over from same-day entry above).
+- Everything else carried over from 08-31 (ad-network application
+  still on hold pending traffic, duplicate-pin cleanup confirmation).
+
+---
+
 ## 2026-09-06 — Checked redirect-error validation status; still pending, no failures
 
 ### Context
