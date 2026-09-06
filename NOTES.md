@@ -12,6 +12,39 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-07 — Published today's post: "What Stock Market Volatility Means for Your Savings"
+
+### What was done
+Wrote and published the next pending news-trends keyword from the queue
+("what stock market volatility means for your savings"). Full depth
+pass on the first write (worked numeric example, who this is/isn't
+for, common mistakes, sourced current data) rather than a shallow v1 —
+`depthReviewed: true`, `pinApproved: true` from the start.
+
+Grounded the post in current market data pulled at write time rather
+than invented figures: VIX sitting in the low-to-mid 14s in early
+September 2026 (near 2026 lows), versus a spike above 31 in late March
+2026; S&P 500 up ~16% YTD and at record highs; noted the historical
+seasonal pattern of VIX drifting higher from late August into October
+regardless of underlying news. Cross-linked to the two existing
+news-trends posts (fed rate decisions, inflation reports) and to the
+emergency-fund post for the "money you need soon shouldn't be in
+stocks" point.
+
+Generated the matching pin (`pinVisual: "table"` — Calm/Normal/Elevated
+VIX bands, to vary the pin layout rather than defaulting to the plain
+title-only style the last news-trends post used) and hero image via
+`pin:generate` / `hero:generate`, refreshed all 7 Pinterest pillar
+feeds via `pinterest:feed`, and added the X draft via `x:drafts`.
+Marked the keyword `"published"` in `keyword-queue.json` (25 pending →
+24 pending).
+
+### Open items
+- Everything else in the queue still pending, same ~1/day cadence.
+- Redirect-error validation recheck, still due ~9/13-9/20 (unchanged).
+
+---
+
 ## 2026-09-06 (cont. 3) — Added 16 international keywords to the queue, interleaved with the existing 9 pending
 
 ### Context
