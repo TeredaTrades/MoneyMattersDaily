@@ -12,6 +12,45 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-06 (cont. 2) — Closed out both flagged checks: `www` DNS confirmed fixed, both Pinterest boards confirmed connected
+
+### `www` DNS
+Namecheap Advanced DNS screenshot confirms the `www` CNAME record is
+present: `www` → `teredatrades.github.io`, Automatic TTL, alongside the
+4 GitHub Pages A records on `@`. Whatever happened around 08-31 to make
+it briefly disappear, it's correct now. (A same-session browser check
+loaded the apex domain successfully and showed today's post live and
+current — good general health signal, but tested the apex, not `www`
+specifically, so the DNS record itself is the actual confirmation
+here.)
+
+### Pinterest board connections
+Pinterest profile screenshot shows both flagged boards are, and
+apparently always were, correctly connected:
+- **News & Trends** — 2 pins, updated 10h ago. Matches the 2 approved
+  news-trends posts exactly.
+- **Travel & Nomad Finances** — 4 pins, updated 1d ago. Matches the 4
+  approved travel-finance posts exactly.
+
+Same pattern as the Investing Basics case from 08-26/08-31: the "no
+board created yet" comments in `generate-pinterest-feed.mjs` are stale
+leftovers from setup, not current state. **Both boards have been
+working the whole time — no fix needed.**
+
+### Housekeeping
+`generate-pinterest-feed.mjs`'s `PILLAR_BOARDS` comments for
+investing-basics, travel-finance, and news-trends are now confirmed
+stale for all three entries. Worth deleting those comments outright
+next time that file is touched, since they've caused two rounds of
+unnecessary "is this board actually connected" investigation.
+
+### Open items
+- Redirect-error validation recheck, still due ~9/13-9/20 (unchanged).
+- Ad-network application still on hold pending traffic (unchanged).
+- Delete the stale `PILLAR_BOARDS` comments (minor, low priority).
+
+---
+
 ## 2026-09-06 (cont.) — Confirmed pillar Pinterest feeds regenerate correctly; flagged two items that need a human check (not verifiable from this session)
 
 ### Confirmed: feed regeneration is not stale in practice

@@ -29,10 +29,10 @@ const PILLAR_BOARDS = {
   budgeting: 'Budgeting Tips',
   saving: 'Saving Money',
   credit: 'Building Credit',
-  'investing-basics': 'Investing Basics', // no board created on Pinterest yet as of this writing
+  'investing-basics': 'Investing Basics',
   'app-comparisons': 'Budgeting App Reviews',
-  'travel-finance': 'Travel & Nomad Finances', // no board created on Pinterest yet as of this writing
-  'news-trends': 'News & Trends', // no board created on Pinterest yet as of this writing
+  'travel-finance': 'Travel & Nomad Finances',
+  'news-trends': 'News & Trends',
 };
 
 function escapeXml(str) {
