@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## what-stock-market-volatility-means-for-your-savings
+
+**Post (attach the matching pin image from public/pins/):**
+```
+What Stock Market Volatility Means for Your Savings — A volatility headline and a threat to your savings are two different things. Here's how to tell which one you're actually looking at, based on when you need the money.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/what-stock-market-volatility-means-for-your-savings/
+```
+
 ## what-inflation-reports-mean-for-your-budget
 
 **Post (attach the matching pin image from public/pins/):**
