@@ -5,8 +5,8 @@ pubDate: 2026-09-06
 targetKeyword: "what inflation reports mean for your budget"
 pillar: "news-trends"
 draft: false
-pinApproved: false
-depthReviewed: false
+pinApproved: true
+depthReviewed: true
 pinVisual: "plain"
 ---
 
