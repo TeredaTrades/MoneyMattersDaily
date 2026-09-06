@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## what-inflation-reports-mean-for-your-budget
+
+**Post (attach the matching pin image from public/pins/):**
+```
+What Inflation Reports Actually Mean for Your Budget — The monthly CPI report gets a headline number, but that number isn't your grocery bill. Here's how to read an inflation report and what to actually change in your budget because of it.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/what-inflation-reports-mean-for-your-budget/
+```
+
 ## how-to-manage-money-while-traveling-abroad
 
 **Post (attach the matching pin image from public/pins/):**
