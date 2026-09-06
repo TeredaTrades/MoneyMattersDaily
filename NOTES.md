@@ -12,6 +12,48 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-06 — Checked redirect-error validation status; still pending, no failures
+
+### Context
+Following up on the 08-31 GSC page-indexing close-out, which flagged
+"Redirect error (7) + Page with redirect (6)" as expected to self-resolve
+as Google reprocesses, on a 1-2 week timeline.
+
+### Finding
+GSC's "Redirect error" validation screenshot shows: validation started
+8/24/26, **7 pending / 0 failed**, all 7 example URLs (contact, about,
+50-30-20-budget-rule-explained, index-funds-explained-for-beginners,
+how-much-emergency-fund, best-budgeting-apps-compared,
+how-to-build-credit-from-scratch) still showing **last crawled: Aug 19,
+2026** — i.e. Google hasn't recrawled any of these specific (incorrect,
+non-trailing-slash) URLs since the original 08-19 manual Request
+Indexing batch.
+
+13 days have elapsed since validation started (8/24 → 9/06). Google's
+own guidance puts redirect-error revalidation at up to ~2-4 weeks, so
+this is on the slower end of normal but not yet a red flag — 0 failed
+is the important number here, not the "last crawled" staleness.
+
+### Also confirmed still healthy (code/infra side, no screenshot needed)
+- GitHub Pages HTTPS cert: approved, covers both apex and `www`, valid
+  through 2026-11-16.
+- `robots.txt` correctly allows crawling, points to sitemap.
+- `.github.io` duplicate-host client-side redirect (BaseLayout.astro)
+  still in place.
+- `generate-x-drafts.mjs` trailing-slash fix still in place — verified
+  on this week's two new posts' generated X drafts.
+
+### Open items
+- Recheck this same validation view in another week (~9/13-9/20) — if
+  still 7 pending with 0 failed and no crawl-date movement past that
+  point, worth a closer look; if it clears or the "last crawled" dates
+  move forward, this closes out.
+- Everything else carried over from the 08-31 entry (Pinterest feed
+  staleness reassessment, ad-network application still on hold, pillar
+  boards duplicate-pin fix) still open.
+
+---
+
 ## 2026-08-31 (latest, cont. 4) — Diagnosed duplicate pins on Investing Basics board; not a repo/feed bug
 
 ### Context
