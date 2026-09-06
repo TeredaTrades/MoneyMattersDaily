@@ -115,8 +115,18 @@
         "status": "pending"
     },
     {
+        "keyword": "UK ISAs explained: how tax-free saving works",
+        "pillar": "saving",
+        "status": "pending"
+    },
+    {
         "keyword": "what a government shutdown means for your paycheck",
         "pillar": "news-trends",
+        "status": "pending"
+    },
+    {
+        "keyword": "TFSA vs RRSP: Canada's tax-advantaged accounts explained",
+        "pillar": "investing-basics",
         "status": "pending"
     },
     {
@@ -125,8 +135,18 @@
         "status": "pending"
     },
     {
+        "keyword": "how UK credit scores work: Experian vs Equifax vs TransUnion",
+        "pillar": "credit",
+        "status": "pending"
+    },
+    {
         "keyword": "budgeting for freelancers and gig workers",
         "pillar": "budgeting",
+        "status": "pending"
+    },
+    {
+        "keyword": "how superannuation works: Australia's retirement savings explained",
+        "pillar": "investing-basics",
         "status": "pending"
     },
     {
@@ -135,8 +155,18 @@
         "status": "pending"
     },
     {
+        "keyword": "best budgeting apps for Canadians compared",
+        "pillar": "app-comparisons",
+        "status": "pending"
+    },
+    {
         "keyword": "tax residency basics for digital nomads",
         "pillar": "travel-finance",
+        "status": "pending"
+    },
+    {
+        "keyword": "how European Central Bank rate decisions affect your money",
+        "pillar": "news-trends",
         "status": "pending"
     },
     {
@@ -145,13 +175,63 @@
         "status": "pending"
     },
     {
+        "keyword": "managing money in Japan as an expat or remote worker",
+        "pillar": "travel-finance",
+        "status": "pending"
+    },
+    {
         "keyword": "free budgeting calculator templates compared",
         "pillar": "app-comparisons",
         "status": "pending"
     },
     {
+        "keyword": "EPF vs PPF: India's retirement savings basics explained",
+        "pillar": "saving",
+        "status": "pending"
+    },
+    {
         "keyword": "debt payoff calculator explained",
         "pillar": "app-comparisons",
+        "status": "pending"
+    },
+    {
+        "keyword": "best banking apps for Australians compared",
+        "pillar": "app-comparisons",
+        "status": "pending"
+    },
+    {
+        "keyword": "Japan's NISA program explained: tax-free investing basics",
+        "pillar": "investing-basics",
+        "status": "pending"
+    },
+    {
+        "keyword": "Thailand digital nomad visa and money basics: banking, taxes, and cost of living",
+        "pillar": "travel-finance",
+        "status": "pending"
+    },
+    {
+        "keyword": "Eurozone inflation reports explained: reading the HICP",
+        "pillar": "news-trends",
+        "status": "pending"
+    },
+    {
+        "keyword": "best money management apps for UPI and digital payments in India",
+        "pillar": "app-comparisons",
+        "status": "pending"
+    },
+    {
+        "keyword": "managing money in China: Alipay, WeChat Pay, and digital banking basics",
+        "pillar": "travel-finance",
+        "status": "pending"
+    },
+    {
+        "keyword": "managing money in Latin America as a digital nomad: banking and currency basics",
+        "pillar": "travel-finance",
+        "status": "pending"
+    },
+    {
+        "keyword": "mobile money in Africa: M-Pesa and digital banking basics explained",
+        "pillar": "travel-finance",
         "status": "pending"
     }
 ]

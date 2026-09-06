@@ -12,6 +12,67 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-06 (cont. 3) — Added 16 international keywords to the queue, interleaved with the existing 9 pending
+
+### Context
+Traffic mix is no longer US-only (Canada, Taiwan, France, Mexico all
+showing up), and every published post so far assumes a US financial
+system (BLS CPI, Fed rate decisions, 401k/Roth-style tax mechanics,
+US-only banking apps). User asked to start folding in other countries
+rather than staying US-only.
+
+### Added (16 new keywords)
+- **UK**: ISAs explained (saving), how UK credit scores work — Experian/
+  Equifax/TransUnion (credit)
+- **Canada**: TFSA vs RRSP (investing-basics), best budgeting apps for
+  Canadians (app-comparisons)
+- **Australia**: how superannuation works (investing-basics), best
+  banking apps for Australians (app-comparisons)
+- **EU (broad, not single-country)**: how ECB rate decisions affect
+  your money, Eurozone inflation reports / reading the HICP (both
+  news-trends)
+- **Japan**: NISA program explained (investing-basics), managing money
+  in Japan as an expat/remote worker (travel-finance)
+- **India**: EPF vs PPF (saving), best apps for UPI/digital payments
+  (app-comparisons)
+- **China**: managing money — Alipay, WeChat Pay, digital banking
+  basics (travel-finance)
+- **Thailand**: digital nomad visa + money basics — banking, taxes,
+  cost of living (travel-finance) — flagged by user specifically given
+  Thailand's digital-nomad popularity
+- **Latin America (broad)**: managing money as a digital nomad —
+  banking and currency basics (travel-finance)
+- **Africa (broad)**: mobile money — M-Pesa and digital banking basics
+  (travel-finance)
+
+Interleaved into the existing 9-item pending queue rather than
+appended at the end, so international content starts showing up
+immediately rather than after another 9 US-only posts. Queue is now
+25 pending (up from 9), full order in
+`content-pipeline/keyword-queue.json`.
+
+### Notes for whoever writes these
+- Broad-region posts (EU, Latin America, Africa) should stay
+  intentionally general — don't invent country-specific numbers for a
+  regional post.
+- Country-specific posts (UK, Canada, Australia, Japan, India, China,
+  Thailand) should name real, correct instruments/institutions (ISA,
+  TFSA/RRSP, Superannuation, NISA, EPF/PPF, Alipay/WeChat Pay) and are
+  exactly the kind of "current state" facts worth a quick search to
+  verify before publishing, same bar as the CPI figures in the
+  inflation-report post.
+- Travel-finance pillar is carrying most of the new load (5 of the 16)
+  since expat/nomad-specific money guides fit that pillar naturally —
+  worth watching that pillar doesn't start feeling repetitive alongside
+  the existing multi-currency-budgeting and tax-residency pending items.
+
+### Open items
+- Everything above still pending, will publish roughly 1/day per the
+  existing cadence.
+- Redirect-error validation recheck, still due ~9/13-9/20 (unchanged).
+
+---
+
 ## 2026-09-06 (cont. 2) — Closed out both flagged checks: `www` DNS confirmed fixed, both Pinterest boards confirmed connected
 
 ### `www` DNS
