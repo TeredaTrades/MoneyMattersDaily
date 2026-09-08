@@ -12,6 +12,76 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-08 (cont.) — GSC validation failures investigated: `www` outage confirmed as cause, redirect-error/page-with-redirect batches now Failed (not just pending)
+
+### Context
+User forwarded a GSC "Validation details" screenshot for a 4-URL sample
+(`/blog/zero-based-budgeting-explained`, `https://www.moneymattersdaily.money/`,
+`/blog/what-fed-rate-decisions-mean-for-you`, `http://moneymattersdaily.money/about`)
+— validation started 8/24/26, **Failed: 9/5/26**, 4 pending / 4 failed.
+Followed by a second screenshot: the full "Page indexing" overview
+(last update 9/4/26) showing **"Redirect error" (7) and "Page with
+redirect" (8) both now status Failed**, "Duplicate without
+user-selected canonical" (1) still Started, "Discovered - currently
+not indexed" (2) still Started, "Crawled - currently not indexed"
+Passed/0.
+
+The 4-URL sample's counts (4 failed) don't map cleanly onto either the
+1-page duplicate-canonical bucket or exactly the 7/8 redirect buckets
+alone, but 3 of the 4 (about, the two blog posts, submitted without
+trailing slashes in the manual 08-19 Request Indexing batch per the
+08-31 entry) are classic redirect-source URLs, and the 8-count on
+"Page with redirect" matches this sample's total (4 pending + 4
+failed = 8) closely enough that this sample is most likely drawn from
+that bucket, not the duplicate-canonical one.
+
+### Root cause, high confidence: the `www` DNS outage (8/31–9/6)
+Checked the repo for code-level causes first (canonical tags, noindex
+directives, missing images, content.config schema, robots.txt,
+astro.config.mjs) — all clean, nothing new broken. Checked
+GitHub's side via the Pages API — HTTPS cert approved for both apex
+and `www`, `https_enforced: true`, latest deploy workflow green.
+
+The redirect config itself (trailing-slash canonicalization,
+http→https, www→apex) is and was correct throughout. But this
+validation window (crawl attempts through 9/4–9/5) falls squarely
+inside the `www` DNS outage documented in the 08-31/09-06 entries
+above: the `www` CNAME record went missing from Namecheap DNS around
+8/31 and wasn't confirmed restored until 9/6. Any validation crawl
+that needed to follow a redirect through `www` (or hit
+`www.moneymattersdaily.money` directly, as the homepage sample URL
+does) during that window would have hit a real, genuine failure —
+not a code bug, an actual outage. This is the most likely explanation
+for why a batch that was "0 failed / 7 pending" as of the 09-06
+same-day check has since flipped to Failed: the failure was probably
+already baked in from crawl attempts earlier in the window, and
+GSC's status just hadn't surfaced it yet at that check.
+
+### Duplicate-canonical (1 page, Started) — separate, older issue, unaffected by DNS
+The `.github.io`-duplicate-host client-side redirect (`BaseLayout.astro`,
+commit `b36ac5e`, 8/31) is unrelated to the DNS outage and still in
+place. This is a known-weaker signal for Google (client-side JS
+redirects aren't treated as equivalent to a server-side 301 for
+canonicalization purposes), compounded by the domain being very new
+(registered 8/16). No further code fix identified — likely just needs
+more time/trust to clear, independent of the `www` issue above.
+
+### Open items
+- **Action needed from user, not code**: with `www` DNS confirmed
+  fixed since 9/6, click "Start new validation" in GSC for both
+  "Redirect error" and "Page with redirect" (and re-validate the
+  duplicate-canonical one while there, though that one's expected
+  timeline is separate/longer). No connector/API access to Search
+  Console from this session — this has to be done directly in the
+  GSC UI.
+- Recheck in ~1-2 weeks whether the new validation attempt clears,
+  now that the actual outage is over.
+- Redirect-error validation recheck from the plain 09-06 entry above
+  is superseded by this entry — that check's "0 failed" reading is
+  now known to be stale/incomplete.
+
+---
+
 ## 2026-09-08 — Homepage carousel: visitor-feedback fixes (size, loop, nav colors, count)
 
 ### What was done
