@@ -15,6 +15,22 @@ const [featured, ...rest] = posts;
   <h1>Practical money guides, no jargon</h1>
   <p class="intro">Budgeting, saving, credit, and beginner investing — explained plainly, updated regularly.</p>
 
+  {posts.length > 1 && (
+    <>
+      <h2 class="section-heading">Browse recent articles</h2>
+      <ul class="pin-carousel">
+        {posts.slice(0, 12).map((post) => (
+          <li class="pin-card">
+            <a href={`/blog/${post.id}/`}>
+              <img src={`/pins/${post.id}.png`} alt="" loading="lazy" width="1000" height="1500" />
+              <span>{post.data.title}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </>
+  )}
+
   {featured && (
     <a href={`/blog/${featured.id}/`} class="featured-post">
       <span class="featured-tag">
@@ -97,6 +113,43 @@ const [featured, ...rest] = posts;
     color: #333;
     border-bottom: 1px solid #eee;
     padding-bottom: 0.5rem;
+  }
+  .pin-carousel {
+    list-style: none;
+    display: flex;
+    gap: 0.9rem;
+    padding: 0.25rem 0 1rem;
+    margin: 0.75rem 0 1.75rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .pin-card {
+    flex: 0 0 auto;
+    width: 6.5rem;
+    scroll-snap-align: start;
+  }
+  .pin-card a {
+    display: block;
+    text-decoration: none;
+  }
+  .pin-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1000 / 1500;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  }
+  .pin-card span {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top: 0.4rem;
+    font-size: 0.78rem;
+    line-height: 1.25;
+    color: #333;
   }
   .post-list {
     list-style: none;

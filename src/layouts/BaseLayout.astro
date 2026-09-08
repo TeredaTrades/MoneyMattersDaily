@@ -1,6 +1,17 @@
 ---
 import AdSlot from '../components/AdSlot.astro';
 import PillarIcon from '../components/PillarIcon.astro';
+import { PILLAR_ACCENTS } from '../../scripts/lib/visual-kit.mjs';
+
+const PILLARS: { slug: keyof typeof PILLAR_ACCENTS; label: string }[] = [
+  { slug: 'budgeting', label: 'Budgeting' },
+  { slug: 'saving', label: 'Saving' },
+  { slug: 'credit', label: 'Credit' },
+  { slug: 'investing-basics', label: 'Investing Basics' },
+  { slug: 'app-comparisons', label: 'App Comparisons' },
+  { slug: 'travel-finance', label: 'Travel & Nomad Finances' },
+  { slug: 'news-trends', label: 'News & Trends' },
+];
 
 interface Props {
   title: string;
@@ -106,22 +117,20 @@ const structuredData = [siteSchema, ...jsonLd];
   <body>
     <header class="site-header">
       <a href="/" class="site-logo">
-        <svg viewBox="0 0 24 24" fill="none" width="30" height="30" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" width="42" height="42" aria-hidden="true">
           <circle cx="9" cy="8" r="5.5" stroke="#1c4a4a" stroke-width="1.7" />
           <path d="M9 13.5 L9 20 M9 20 L12.5 20 M9 17 L11.5 17" stroke="#1c4a4a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
           <circle cx="9" cy="8" r="1.7" stroke="#1c4a4a" stroke-width="1.7" />
         </svg>
-        {siteName}
+        <span>Money Matters Daily</span>
       </a>
-      <nav>
-        <a href="/budgeting/"><PillarIcon name="budgeting" size={15} /> Budgeting</a>
-        <a href="/saving/"><PillarIcon name="saving" size={15} /> Saving</a>
-        <a href="/credit/"><PillarIcon name="credit" size={15} /> Credit</a>
-        <a href="/investing-basics/"><PillarIcon name="investing-basics" size={15} /> Investing Basics</a>
-        <a href="/app-comparisons/"><PillarIcon name="app-comparisons" size={15} /> App Comparisons</a>
-        <a href="/travel-finance/"><PillarIcon name="travel-finance" size={15} /> Travel & Nomad Finances</a>
-        <a href="/news-trends/"><PillarIcon name="news-trends" size={15} /> News & Trends</a>
-        <a href="/about/">About</a>
+      <nav class="pillar-nav" aria-label="Topics">
+        {PILLARS.map((p) => (
+          <a href={`/${p.slug}/`} class="pillar-tile" style={`--tile-accent: ${PILLAR_ACCENTS[p.slug]}`}>
+            <PillarIcon name={p.slug} size={16} />
+            {p.label}
+          </a>
+        ))}
       </nav>
     </header>
 
@@ -198,36 +207,42 @@ const structuredData = [siteSchema, ...jsonLd];
         border-bottom: 2px solid #1c4a4a;
       }
       .site-logo {
-        font-weight: 700;
-        font-size: 1.25rem;
+        font-weight: 800;
+        font-size: 1.75rem;
+        letter-spacing: -0.01em;
         text-decoration: none;
         color: var(--accent);
         display: inline-flex;
         align-items: center;
-        gap: 0.5rem;
+        gap: 0.6rem;
       }
-      .site-header nav {
+      .pillar-nav {
         display: flex;
-        gap: 1rem;
         flex-wrap: wrap;
-        font-size: 0.9rem;
+        gap: 0.5rem;
+        width: 100%;
       }
-      .site-header nav a {
-        color: #444;
-        text-decoration: none;
+      .pillar-tile {
         display: inline-flex;
         align-items: center;
-        gap: 0.35rem;
+        gap: 0.4rem;
+        color: #333;
+        text-decoration: none;
+        font-size: 0.85rem;
+        font-weight: 600;
+        padding: 0.45rem 0.8rem;
+        border-radius: 999px;
+        background: color-mix(in srgb, var(--tile-accent) 16%, white);
+        border: 1px solid color-mix(in srgb, var(--tile-accent) 45%, white);
+        transition: background-color 0.15s ease, border-color 0.15s ease;
       }
-      .site-header nav a svg {
-        color: #5b8a8a;
+      .pillar-tile svg {
+        color: color-mix(in srgb, var(--tile-accent) 70%, #1c4a4a);
         flex-shrink: 0;
       }
-      .site-header nav a:hover svg {
-        color: var(--accent);
-      }
-      .site-header nav a:hover {
-        color: var(--accent);
+      .pillar-tile:hover {
+        background: color-mix(in srgb, var(--tile-accent) 30%, white);
+        border-color: var(--tile-accent);
       }
       .site-footer {
         margin-top: 3rem;
