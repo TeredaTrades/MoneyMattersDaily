@@ -15,43 +15,73 @@ Running log of setup decisions and open items. Newest entries at top.
 ## 2026-09-08 — Homepage carousel: visitor-feedback fixes (size, loop, nav colors, count)
 
 ### What was done
-Several rounds of fixes to the homepage "Browse recent articles"
-carousel and header nav, driven by real visitor feedback:
+A visitor left feedback on the site; this covers everything from that
+round through to the final smooth result, across several commits
+(`5014b45` → `9a33974`).
 
-- Rebuilt the carousel from a 12-tile horizontal scroll-snap strip of
-  narrow portrait pin crops into a compact, full-width auto-advancing
-  single-slide carousel (landscape-cropped thumbnail + title, ~4.5s
-  auto-advance, dot navigation, swipe support, pauses on hover/focus,
-  respects `prefers-reduced-motion`).
-- First loop implementation used a clone-slide-then-snap trick, which
-  still had a perceptible hitch on wraparound (likely a repaint
-  artifact from swapping between two identical-but-distinct DOM/img
-  elements). Replaced it with true DOM-node rotation: the slide that
-  scrolls off is physically moved (same node, nothing duplicated) to
-  the other end of the track, transform resets to 0 in the same
-  synchronous pass — genuinely continuous, not a reset dressed up to
-  look continuous.
-- Found and fixed a subtle rightward drift in that loop: the step
-  distance was `translateX(-100%)`, a CSS percentage resolved against
-  the flex track's own box. Flex-basis rounding can differ by a
-  fraction of a pixel between items depending on the browser's layout
-  pass, and that compounded over several loop cycles into a visible
-  creep. Fixed by measuring the carousel's real pixel width
-  (`root.clientWidth`) fresh on every step instead of using a
-  percentage.
-- Unified the 7 pillar-nav tiles to the single site brand accent
-  (`--accent`, #1c4a4a) instead of cycling through the 3-color
-  `PILLAR_ACCENTS` palette from `visual-kit.mjs` — that palette was
-  built for varying generated Pinterest pin images, not for nav
-  styling, and reusing it there made the nav look arbitrarily
-  multicolored (only 3 colors across 7 links). `PILLAR_ACCENTS` itself
-  is untouched and still used correctly by `generate-pin.mjs` /
-  `generate-hero.mjs`.
-- Carousel post count: was hardcoded to 8 with no real reasoning
-  behind that number (site has 26 published posts and growing daily).
-  Bumped to 12 most-recent-by-`pubDate`, which was already how the
-  carousel selected posts, so new posts automatically take the front
-  slot on the next build/deploy — no manual step needed.
+**Sizing (`5014b45`).** The "Browse recent articles" carousel was a
+12-tile horizontal scroll-snap strip of narrow, tall portrait pin
+crops (4.5rem wide, 1000:1500 aspect) — long lengthwise even though
+each individual tile was narrow, and the crop made both image and
+title hard to read. Rebuilt as a compact, full-width single-slide
+carousel: one landscape-cropped thumbnail + full title per slide,
+auto-advancing every 4.5s, with dot navigation, swipe support, pause
+on hover/focus, and respecting `prefers-reduced-motion`. Later
+(`c89cc9a`) sized up slightly per follow-up feedback (thumbnail
+5.5×3.7rem → 7×4.7rem, more padding, bigger title text).
+
+**Nav colors (`5014b45`).** Visitor asked why the 7 pillar-nav links
+had different colors. Cause: the tiles were pulling `--tile-accent`
+from `PILLAR_ACCENTS` in `visual-kit.mjs` — a 3-color palette (gold /
+light-teal / mid-teal) built to vary generated Pinterest pin images,
+cycled arbitrarily across 7 nav links, so it looked unintentional
+rather than designed. User chose to unify to the single site brand
+accent (`--accent`, #1c4a4a) instead of designing 7 distinct colors.
+`PILLAR_ACCENTS` itself wasn't touched — still used correctly by
+`generate-pin.mjs` / `generate-hero.mjs` for pin image variety.
+
+**Loop, three passes.** The auto-advance needed to wrap from the last
+slide back to the first without a visible rewind. Took three attempts
+to get genuinely smooth:
+1. `5014b45`/`df2f496` — clone-slide-then-snap: duplicate the first
+   slide after the last (and vice versa), animate onto the clone
+   normally, then instantly jump to the real slide once the clone is
+   fully in view (visually identical, so in theory invisible). Still
+   had a perceptible hitch on wraparound — likely a repaint/compositing
+   artifact from swapping between two distinct-but-identical DOM/img
+   elements, even though they looked the same.
+2. `4c6df6e` — true DOM-node rotation instead: no clones at all. The
+   slide that scrolls off is physically moved (the *same* node) to
+   the other end of the track, and the transform resets to 0 in the
+   same synchronous pass. Nothing is ever duplicated or swapped for a
+   lookalike, so there's nothing to repaint on the reset — this is
+   the technique production carousel libraries (Splide, Flickity)
+   use. Fixed the hitch.
+3. That surfaced a second, different bug: each successive slide
+   landed a little further right ("drift"). Root cause:
+   `translateX(-100%)`, a CSS percentage resolved against the flex
+   track's own box, combined with per-item flex-basis sub-pixel
+   rounding — a fraction-of-a-pixel mismatch that compounded over
+   several loop cycles. `c89cc9a` switched to a JS-measured pixel
+   value (`root.clientWidth`) recomputed on every step — fixed the
+   drift, but `clientWidth` *rounds to a whole pixel*, while the flex
+   layout underneath uses full sub-pixel precision, so the transition
+   would animate smoothly to that slightly-off rounded endpoint and
+   then the instant reset-to-0 right after would visibly *correct*
+   the leftover fraction of a pixel — a distinct "quick snap right
+   before it settles," reported as a follow-up. `9a33974` fixed that
+   for good by measuring the actual sliding element's
+   `getBoundingClientRect().width` (a float, not rounded) instead of
+   the container's `clientWidth` — the exact same sub-pixel number
+   the browser's layout already used, so there's nothing left to
+   correct. Confirmed smooth by the user after this one.
+
+**Post count (`c89cc9a`).** Carousel was hardcoded to 8 posts — an
+arbitrary number from the original build, unrelated to the site
+actually having 26 published posts (and growing ~1/day). Bumped to
+12, still most-recent-by-`pubDate` (unchanged selection logic, so new
+posts still auto-slot into the front on every build/deploy — no
+manual step needed).
 
 ### Open item — traffic-based carousel selection
 Idea floated: instead of "12 most recent," pick the 12 posts that
