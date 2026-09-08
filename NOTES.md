@@ -12,6 +12,82 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-08 — Homepage carousel: visitor-feedback fixes (size, loop, nav colors, count)
+
+### What was done
+Several rounds of fixes to the homepage "Browse recent articles"
+carousel and header nav, driven by real visitor feedback:
+
+- Rebuilt the carousel from a 12-tile horizontal scroll-snap strip of
+  narrow portrait pin crops into a compact, full-width auto-advancing
+  single-slide carousel (landscape-cropped thumbnail + title, ~4.5s
+  auto-advance, dot navigation, swipe support, pauses on hover/focus,
+  respects `prefers-reduced-motion`).
+- First loop implementation used a clone-slide-then-snap trick, which
+  still had a perceptible hitch on wraparound (likely a repaint
+  artifact from swapping between two identical-but-distinct DOM/img
+  elements). Replaced it with true DOM-node rotation: the slide that
+  scrolls off is physically moved (same node, nothing duplicated) to
+  the other end of the track, transform resets to 0 in the same
+  synchronous pass — genuinely continuous, not a reset dressed up to
+  look continuous.
+- Found and fixed a subtle rightward drift in that loop: the step
+  distance was `translateX(-100%)`, a CSS percentage resolved against
+  the flex track's own box. Flex-basis rounding can differ by a
+  fraction of a pixel between items depending on the browser's layout
+  pass, and that compounded over several loop cycles into a visible
+  creep. Fixed by measuring the carousel's real pixel width
+  (`root.clientWidth`) fresh on every step instead of using a
+  percentage.
+- Unified the 7 pillar-nav tiles to the single site brand accent
+  (`--accent`, #1c4a4a) instead of cycling through the 3-color
+  `PILLAR_ACCENTS` palette from `visual-kit.mjs` — that palette was
+  built for varying generated Pinterest pin images, not for nav
+  styling, and reusing it there made the nav look arbitrarily
+  multicolored (only 3 colors across 7 links). `PILLAR_ACCENTS` itself
+  is untouched and still used correctly by `generate-pin.mjs` /
+  `generate-hero.mjs`.
+- Carousel post count: was hardcoded to 8 with no real reasoning
+  behind that number (site has 26 published posts and growing daily).
+  Bumped to 12 most-recent-by-`pubDate`, which was already how the
+  carousel selected posts, so new posts automatically take the front
+  slot on the next build/deploy — no manual step needed.
+
+### Open item — traffic-based carousel selection
+Idea floated: instead of "12 most recent," pick the 12 posts that
+have actually gotten the most reader attention (page views), pulled
+from GoatCounter (already live site-wide via the tracking script in
+`BaseLayout.astro`, `mmd.goatcounter.com`) rather than the current
+manual screenshot + written-summary process in
+`content-pipeline/analytics/`.
+
+Not implemented yet — deliberately parked, not forgotten. Two real
+blockers before it's worth building:
+1. **Traffic is currently too low to rank meaningfully.** Per the
+   2026-09-06 snapshot, total site traffic was 44 visits over 22 days,
+   with most individual posts sitting at 0–2 visits each. At that
+   volume "most-viewed" is mostly noise (which single visitor happened
+   to click what), not a real signal of reader interest — a
+   traffic-ranked carousel right now could easily overfit to a
+   coincidence and stop surfacing new posts fairly.
+2. **No API wiring exists yet.** GoatCounter has a read API that could
+   be queried at build time (e.g., a small script writing a
+   `content-pipeline/top-pages.json` similar in spirit to
+   `keyword-queue.json`, read by `index.astro`), with a sensible
+   fallback (e.g., blend recency + views, or guarantee brand-new posts
+   a few days of exposure regardless of view count so nothing never
+   gets a chance to accumulate views in the first place). Would need
+   an API token stored as a repo secret and a decision on refresh
+   cadence (build-time fetch vs. a scheduled workflow like the
+   existing publish/reminder ones).
+
+Revisit once weekly traffic is high enough that the top posts are
+consistently the same across snapshots (a real pattern, not noise) —
+worth a quick check next time a `content-pipeline/analytics/` entry
+is written.
+
+---
+
 ## 2026-09-08 — Published today's post: "UK ISAs Explained: How Tax-Free Saving Works"
 
 ### What was done
