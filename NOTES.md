@@ -66,19 +66,27 @@ canonicalization purposes), compounded by the domain being very new
 (registered 8/16). No further code fix identified — likely just needs
 more time/trust to clear, independent of the `www` issue above.
 
+### Update, same day — new validation started for all three
+User clicked "Start new validation" in GSC for "Redirect error" and
+"Page with redirect" (Page indexing overview screenshot confirms both
+now show status **Started**, not Failed — "Duplicate without
+user-selected canonical" also shows Started, likely just refreshed by
+viewing the page rather than an explicit re-trigger). This is a clean
+validation window with the `www` outage actually resolved beforehand,
+so it's a fair test of whether the underlying fixes hold.
+
 ### Open items
-- **Action needed from user, not code**: with `www` DNS confirmed
-  fixed since 9/6, click "Start new validation" in GSC for both
-  "Redirect error" and "Page with redirect" (and re-validate the
-  duplicate-canonical one while there, though that one's expected
-  timeline is separate/longer). No connector/API access to Search
-  Console from this session — this has to be done directly in the
-  GSC UI.
-- Recheck in ~1-2 weeks whether the new validation attempt clears,
-  now that the actual outage is over.
+- Recheck in ~1-2 weeks (~9/15-9/22) whether this validation round
+  clears. If "Page with redirect" / "Redirect error" fail again with
+  `www` confirmed healthy throughout, that would rule out the DNS
+  outage as the (sole) cause and point back to something in the
+  redirect chain itself — worth a fresh look at that point.
+- Duplicate-canonical (1 page) still expected to take longer
+  (domain-trust/time issue, not a fixable bug) — don't be alarmed if
+  it's still Started/unresolved at the next check while the other two
+  clear.
 - Redirect-error validation recheck from the plain 09-06 entry above
-  is superseded by this entry — that check's "0 failed" reading is
-  now known to be stale/incomplete.
+  is fully superseded by this entry.
 
 ---
 
