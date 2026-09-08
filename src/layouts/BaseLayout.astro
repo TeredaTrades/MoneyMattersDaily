@@ -1,9 +1,8 @@
 ---
 import AdSlot from '../components/AdSlot.astro';
 import PillarIcon from '../components/PillarIcon.astro';
-import { PILLAR_ACCENTS } from '../../scripts/lib/visual-kit.mjs';
 
-const PILLARS: { slug: keyof typeof PILLAR_ACCENTS; label: string }[] = [
+const PILLARS: { slug: 'budgeting' | 'saving' | 'credit' | 'investing-basics' | 'app-comparisons' | 'travel-finance' | 'news-trends'; label: string }[] = [
   { slug: 'budgeting', label: 'Budgeting' },
   { slug: 'saving', label: 'Saving' },
   { slug: 'credit', label: 'Credit' },
@@ -126,7 +125,7 @@ const structuredData = [siteSchema, ...jsonLd];
       </a>
       <nav class="pillar-nav" aria-label="Topics">
         {PILLARS.map((p) => (
-          <a href={`/${p.slug}/`} class="pillar-tile" style={`--tile-accent: ${PILLAR_ACCENTS[p.slug]}`}>
+          <a href={`/${p.slug}/`} class="pillar-tile">
             <PillarIcon name={p.slug} size={16} />
             {p.label}
           </a>
@@ -232,17 +231,17 @@ const structuredData = [siteSchema, ...jsonLd];
         font-weight: 600;
         padding: 0.45rem 0.8rem;
         border-radius: 999px;
-        background: color-mix(in srgb, var(--tile-accent) 16%, white);
-        border: 1px solid color-mix(in srgb, var(--tile-accent) 45%, white);
+        background: color-mix(in srgb, var(--accent) 10%, white);
+        border: 1px solid color-mix(in srgb, var(--accent) 30%, white);
         transition: background-color 0.15s ease, border-color 0.15s ease;
       }
       .pillar-tile svg {
-        color: color-mix(in srgb, var(--tile-accent) 70%, #1c4a4a);
+        color: var(--accent);
         flex-shrink: 0;
       }
       .pillar-tile:hover {
-        background: color-mix(in srgb, var(--tile-accent) 30%, white);
-        border-color: var(--tile-accent);
+        background: color-mix(in srgb, var(--accent) 22%, white);
+        border-color: var(--accent);
       }
       .site-footer {
         margin-top: 3rem;
