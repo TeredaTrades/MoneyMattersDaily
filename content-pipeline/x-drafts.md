@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## uk-isas-explained-how-tax-free-saving-works
+
+**Post (attach the matching pin image from public/pins/):**
+```
+UK ISAs Explained: How Tax-Free Saving Works — ISAs let UK savers and investors keep growth free of Income Tax and Capital Gains Tax. Here's what the £20,000 allowance actually covers, which ISA type fits which goal, and what's changing in 2027.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/uk-isas-explained-how-tax-free-saving-works/
+```
+
 ## what-stock-market-volatility-means-for-your-savings
 
 **Post (attach the matching pin image from public/pins/):**
