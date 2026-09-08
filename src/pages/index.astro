@@ -60,16 +60,21 @@ const carouselPosts = posts.slice(0, 12);
             track.style.transition = '';
           }
 
-          // Measure the visible viewport in real pixels rather than using
-          // a CSS "100%" transform. Percentage transforms on a flex track
-          // are resolved against the track's own box, and per-item
-          // sub-pixel rounding in flex layout can make that a fraction of
-          // a pixel off from one slide to the next — small enough to be
-          // invisible on a single step, but it compounds over several
-          // loops into a visible rightward creep. A fresh pixel
-          // measurement every step removes that ambiguity entirely.
+          // Measure the actual rendered slide with sub-pixel precision
+          // (getBoundingClientRect, a float) rather than a rounded
+          // integer like clientWidth. clientWidth rounds to the nearest
+          // whole pixel, and the flex layout underneath uses full
+          // sub-pixel precision — so a whole-pixel step distance could be
+          // a fraction of a pixel short of (or past) the real slide
+          // boundary. The CSS transition would animate smoothly to that
+          // rounded endpoint, then the instant reset-to-0 right after
+          // would visibly correct the sub-pixel gap — the "quick snap
+          // right before it settles" that was showing up. Measuring the
+          // actual slide element removes that gap entirely.
           function stepWidth() {
-            return root.clientWidth;
+            return track.firstElementChild
+              ? (track.firstElementChild as HTMLElement).getBoundingClientRect().width
+              : root.clientWidth;
           }
 
           // True infinite loop: instead of resetting position to fake a
