@@ -11,14 +11,6 @@ const [featured, ...rest] = posts;
 // published (pubDate desc sort above) they automatically slot in at the
 // front and the oldest one ages out. Nothing to update by hand.
 const carouselPosts = posts.slice(0, 8);
-// Leading/trailing clones of the last/first real slide make the loop
-// seamless: the track visually "arrives" at a clone that's identical to
-// the real slide, then snaps (transition disabled for one frame) back to
-// the real one before continuing — no visible rewind.
-const carouselSlides =
-  carouselPosts.length > 1
-    ? [carouselPosts[carouselPosts.length - 1], ...carouselPosts, carouselPosts[0]]
-    : carouselPosts;
 ---
 
 <BaseLayout
@@ -33,20 +25,12 @@ const carouselSlides =
       <h2 class="section-heading">Browse recent articles</h2>
       <div class="pin-carousel" id="pin-carousel">
         <div class="pin-track" id="pin-track">
-          {carouselSlides.map((post, i) => {
-            const isClone = i === 0 || i === carouselSlides.length - 1;
-            return (
-              <a
-                href={`/blog/${post.id}/`}
-                class="pin-slide"
-                aria-hidden={isClone ? 'true' : undefined}
-                tabindex={isClone ? -1 : undefined}
-              >
-                <img src={`/pins/${post.id}.png`} alt="" loading="lazy" width="1000" height="1500" />
-                <span class="pin-slide-title">{post.data.title}</span>
-              </a>
-            );
-          })}
+          {carouselPosts.map((post) => (
+            <a href={`/blog/${post.id}/`} class="pin-slide">
+              <img src={`/pins/${post.id}.png`} alt="" loading="lazy" width="1000" height="1500" />
+              <span class="pin-slide-title">{post.data.title}</span>
+            </a>
+          ))}
         </div>
         <div class="pin-dots" role="tablist" aria-label="Carousel slides">
           {carouselPosts.map((_, i) => (
@@ -60,48 +44,76 @@ const carouselSlides =
           const track = document.getElementById('pin-track') as HTMLElement;
           const dots = Array.from(root.querySelectorAll('.pin-dot')) as HTMLButtonElement[];
           const realCount = dots.length;
-          const hasClones = realCount > 1;
-          // With clones, real slide 0 sits at track index 1 (index 0 is the
-          // trailing clone of the last slide).
-          let index = hasClones ? 1 : 0;
+          let dotIndex = 0; // which real slide is currently first, for dot highlighting
           let timer: ReturnType<typeof setInterval> | null = null;
+          let animating = false;
           const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
           function setActiveDot() {
-            const realIndex = hasClones ? (index - 1 + realCount) % realCount : index;
-            dots.forEach((d, di) => d.classList.toggle('active', di === realIndex));
+            dots.forEach((d, di) => d.classList.toggle('active', di === dotIndex));
           }
 
-          function goTo(i: number, animate = true) {
-            index = i;
-            if (animate) {
-              track.style.transform = `translateX(-${index * 100}%)`;
-            } else {
-              track.style.transition = 'none';
-              track.style.transform = `translateX(-${index * 100}%)`;
-              // Force a reflow so the jump applies before transitions resume.
-              void track.offsetHeight;
-              track.style.transition = '';
-            }
-            setActiveDot();
+          function jumpInstant(deltaTransform: string) {
+            track.style.transition = 'none';
+            track.style.transform = deltaTransform;
+            void track.offsetHeight; // force reflow before re-enabling transition
+            track.style.transition = '';
           }
 
-          // After the track finishes animating onto a clone slide, jump
-          // instantly (no transition) to the matching real slide.
-          track.addEventListener('transitionend', () => {
-            if (!hasClones) return;
-            if (index === realCount + 1) {
-              requestAnimationFrame(() => goTo(1, false));
-            } else if (index === 0) {
-              requestAnimationFrame(() => goTo(realCount, false));
-            }
-          });
-
+          // True infinite loop: instead of resetting position to fake a
+          // wrap-around, the slide that just scrolled out of view is
+          // physically moved to the other end of the track (same DOM
+          // node — nothing is duplicated or swapped for a lookalike), and
+          // the transform is reset to 0 in that same instant. Since the
+          // remaining slides haven't moved, there's nothing to repaint —
+          // no snap, no flicker, genuinely continuous.
           function next() {
-            goTo(index + 1);
+            if (animating || realCount < 2) return;
+            animating = true;
+            track.style.transform = 'translateX(-100%)';
+            track.addEventListener('transitionend', function onEnd(e) {
+              if (e.propertyName !== 'transform') return;
+              track.removeEventListener('transitionend', onEnd);
+              track.appendChild(track.firstElementChild as Node);
+              jumpInstant('translateX(0)');
+              dotIndex = (dotIndex + 1) % realCount;
+              setActiveDot();
+              animating = false;
+            });
           }
+
           function prev() {
-            goTo(index - 1);
+            if (animating || realCount < 2) return;
+            animating = true;
+            track.insertBefore(track.lastElementChild as Node, track.firstElementChild);
+            jumpInstant('translateX(-100%)');
+            requestAnimationFrame(() => {
+              track.style.transform = 'translateX(0)';
+            });
+            track.addEventListener('transitionend', function onEnd(e) {
+              if (e.propertyName !== 'transform') return;
+              track.removeEventListener('transitionend', onEnd);
+              dotIndex = (dotIndex - 1 + realCount) % realCount;
+              setActiveDot();
+              animating = false;
+            });
+          }
+
+          // Direct jump for dot clicks: rotate the DOM the shortest way
+          // round to the target slide, no in-between animation.
+          function jumpTo(target: number) {
+            if (animating || target === dotIndex || realCount < 2) return;
+            const forwardSteps = (target - dotIndex + realCount) % realCount;
+            const backwardSteps = realCount - forwardSteps;
+            const goForward = forwardSteps <= backwardSteps;
+            const steps = goForward ? forwardSteps : backwardSteps;
+            for (let s = 0; s < steps; s++) {
+              if (goForward) track.appendChild(track.firstElementChild as Node);
+              else track.insertBefore(track.lastElementChild as Node, track.firstElementChild);
+            }
+            jumpInstant('translateX(0)');
+            dotIndex = target;
+            setActiveDot();
           }
 
           function start() {
@@ -116,8 +128,7 @@ const carouselSlides =
 
           dots.forEach((dot) => {
             dot.addEventListener('click', () => {
-              const realIndex = Number(dot.dataset.index);
-              goTo(hasClones ? realIndex + 1 : realIndex);
+              jumpTo(Number(dot.dataset.index));
               start();
             });
           });
@@ -140,7 +151,7 @@ const carouselSlides =
             start();
           }, { passive: true });
 
-          goTo(index, false);
+          setActiveDot();
           start();
         }
       </script>
