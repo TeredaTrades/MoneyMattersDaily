@@ -12,6 +12,39 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-08 — Published today's post: "UK ISAs Explained: How Tax-Free Saving Works"
+
+### What was done
+Wrote and published the next pending keyword from the queue ("UK ISAs
+explained: how tax-free saving works", saving pillar) — the first of
+the 16 international keywords added on 2026-09-06 to actually ship.
+Full depth pass on the first write (`depthReviewed: true`,
+`pinApproved: true` from the start), same two-tier-skip pattern as the
+last two posts.
+
+Verified current UK ISA figures via web search before writing rather
+than relying on training data, since allowance rules are set annually
+and change with Budget announcements: £20,000 overall 2026/27
+allowance (unchanged), £4,000 Lifetime ISA cap with 25% government
+bonus, £9,000 Junior ISA allowance, and the Autumn 2025 Budget
+announcement that the Cash ISA allowance for under-65s drops to
+£12,000 from 6 April 2027 (65+ unaffected, overall £20,000 limit
+unchanged). Cross-checked across multiple sources (SJP, NS&I, YBS,
+Moneyfacts) before writing since this is YMYL content.
+
+Cross-linked to the existing high-yield-savings and index-funds posts
+for the Cash vs. Stocks-and-Shares ISA comparison. Generated the pin
+(`pinVisual: "table"` — allowance amounts by ISA type) and hero image,
+refreshed all 7 Pinterest pillar feeds, and added the X draft.
+Marked the keyword `"published"` in `keyword-queue.json` (24 pending
+→ 23 pending).
+
+### Open items
+- Everything else in the queue still pending, same ~1/day cadence.
+- Redirect-error validation recheck, still due ~9/13-9/20 (unchanged).
+
+---
+
 ## 2026-09-07 — Published today's post: "What Stock Market Volatility Means for Your Savings"
 
 ### What was done
