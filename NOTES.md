@@ -12,6 +12,46 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-09 — Published today's post: "What a Government Shutdown Means for Your Paycheck"
+
+### What was done
+Wrote and published the next pending news-trends keyword from the queue
+("what a government shutdown means for your paycheck"). Full depth pass
+on the first write (`depthReviewed: true`, `pinApproved: true` from the
+start), same pattern as the last several posts.
+
+Verified current status via web search before writing rather than
+assuming an active shutdown: 2026 has already had two (a 4-day lapse
+Jan 31–Feb 3, and a Homeland Security-only lapse Feb 14–Apr 30, on top
+of the record 43-day 2025–26 shutdown), but as of writing the
+government is funded through **December 11, 2026** under a CR signed
+in early September — no active lapse right now. Framed the post around
+the durable mechanics (excepted vs. furloughed vs. contractor, the
+Government Employee Fair Treatment Act's back-pay guarantee for
+federal employees but not contractors) rather than a specific ongoing
+crisis, with a dated freshness note pointing at live trackers for the
+current status.
+
+Cross-linked to the stock-market-volatility post (broader-economy
+angle) and the emergency-fund post (the actual cash-flow-buffer
+recommendation). Used `pinVisual: "flow"` (funding lapses → work stops
+→ essential staff unpaid → back pay) to vary the pin layout — the
+other three news-trends posts use icon (default), plain, and table,
+so this was the one visual style in the schema this pillar hadn't
+used yet. Generated the pin and hero image, refreshed all 7 Pinterest
+pillar feeds (25 approved posts total, up from 24), added the X draft,
+and confirmed a clean `npm run build`. Marked the keyword `"published"`
+in `keyword-queue.json` (23 pending → 22 pending).
+
+### Open items
+- Everything else in the queue still pending, same ~1/day cadence.
+- Redirect-error validation recheck, still due ~9/13-9/20 (unchanged).
+- Pin image and X draft are generated/committed but **not yet manually
+  posted to Pinterest/X** — that step is still manual per the site's
+  posting workflow, not something this session has credentials for.
+
+---
+
 ## 2026-09-08 (cont.) — GSC validation failures investigated: `www` outage confirmed as cause, redirect-error/page-with-redirect batches now Failed (not just pending)
 
 ### Context

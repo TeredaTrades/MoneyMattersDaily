@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## what-a-government-shutdown-means-for-your-paycheck
+
+**Post (attach the matching pin image from public/pins/):**
+```
+What a Government Shutdown Means for Your Paycheck — A shutdown headline sounds like an emergency, but what it actually changes for your paycheck depends on one distinction: excepted, furloughed, or not a federal employee at all. Here's how to tell, and what's guaranteed either…
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/what-a-government-shutdown-means-for-your-paycheck/
+```
+
 ## uk-isas-explained-how-tax-free-saving-works
 
 **Post (attach the matching pin image from public/pins/):**
