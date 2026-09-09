@@ -12,6 +12,50 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-10 — Published today's post: "TFSA vs. RRSP: Canada's Tax-Advantaged Accounts Explained"
+
+### What was done
+Wrote and published the next pending investing-basics keyword from the
+queue ("TFSA vs RRSP: Canada's tax-advantaged accounts explained").
+Full depth pass on the first write (`depthReviewed: true`, `pinApproved:
+true` from the start), same pattern as the last several posts.
+
+Researched current 2026 figures via web search rather than assuming
+prior-year numbers, since both contribution limits change annually:
+TFSA annual limit $7,000 (unchanged from 2025/2024, third year at this
+threshold), $109,000 cumulative room since 2009; RRSP dollar cap
+$33,810 for 2026 (up from $32,490 in 2025); Home Buyers' Plan
+withdrawal limit $60,000 per person (raised from $35,000 in April
+2024). Framed the post around the core tax-now-vs-tax-later mechanic
+rather than just listing numbers, with a worked example comparing the
+same $7,000 contribution through each account.
+
+Initially drafted with `pillar: "saving"` by analogy to the UK ISA
+post (same "country-specific tax-advantaged account" shape), then
+corrected to `pillar: "investing-basics"` to match what
+`keyword-queue.json` had already specified for this keyword — the
+regenerated pin/hero art (growth-chart icon) fits an RRSP/TFSA
+comparison better than the piggy-bank icon anyway. Left `pinVisual` at
+its default (icon) rather than table/flow/equation, since the last few
+posts in rotation had already used non-default visuals repeatedly —
+per the schema's own "sparingly, not every post" guidance.
+
+Cross-linked to the investing-with-little-money and index-funds posts
+(what goes inside either account) and the emergency-fund post (for
+readers using a TFSA as a flexible buffer rather than long-term
+savings). Generated the pin and hero image, added the X draft (link-
+in-reply, per the current X strategy), and confirmed a clean
+`npm run build`. Marked the keyword `published` in
+`keyword-queue.json` (22 pending → 21 pending).
+
+### Open items
+- Everything else in the queue still pending, same ~1/day cadence.
+- Pin image and X draft are generated/committed but **not yet
+  manually posted to Pinterest/X** — same manual step as every prior
+  post; no credentials for either in this session.
+
+---
+
 ## 2026-09-09 — Published today's post: "What a Government Shutdown Means for Your Paycheck"
 
 ### What was done

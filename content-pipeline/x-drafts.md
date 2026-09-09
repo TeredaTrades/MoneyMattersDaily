@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## tfsa-vs-rrsp-canadas-tax-advantaged-accounts-explained
+
+**Post (attach the matching pin image from public/pins/):**
+```
+TFSA vs. RRSP: Canada's Tax-Advantaged Accounts Explained — TFSAs and RRSPs both shelter your money from tax, but on opposite ends of the timeline. Here's how the 2026 contribution limits work, which one to prioritize, and why most people eventually need both.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/tfsa-vs-rrsp-canadas-tax-advantaged-accounts-explained/
+```
+
 ## what-a-government-shutdown-means-for-your-paycheck
 
 **Post (attach the matching pin image from public/pins/):**
