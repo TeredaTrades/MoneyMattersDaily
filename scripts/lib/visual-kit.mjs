@@ -130,27 +130,20 @@ export const ICONS = {
       </g>`;
   },
   mapleLeaf(accent, offwhite) {
-    // Traced from the Canadian flag emblem: an apex tip, three tiered
-    // lateral points per side (a moderate upper point, the wide "shoulder"
-    // point, and a smaller lower point), a small base lobe before the
-    // central notch, and a tapered stem. General-purpose override icon for
-    // Canada-specific posts (pinIcon: "mapleLeaf"), not tied to a pillar.
+    // Traced directly from a reference Canadian flag image (contour
+    // extraction + polygon simplification), not hand-drawn from memory —
+    // matches the real 11-point silhouette and tapered stem. General-
+    // purpose override icon for Canada-specific posts (pinIcon:
+    // "mapleLeaf"), not tied to a pillar.
     const pts = [
-      '0,-95',
-      '18,-60', '55,-78',
-      '35,-30', '98,-8',
-      '55,20', '78,55',
-      '40,45', '25,70',
-      '0,55',
-      '-25,70', '-40,45',
-      '-78,55', '-55,20',
-      '-98,-8', '-35,-30',
-      '-55,-78', '-18,-60',
+      '0,-95', '-17,-63', '-35,-72', '-26,-21', '-51,-41', '-58,-28',
+      '-85,-33', '-76,-4', '-88,2', '-43,39', '-48,57', '-3,52', '-4,95',
+      '4,95', '3,52', '48,57', '43,39', '88,2', '76,-4', '85,-33',
+      '58,-28', '51,-41', '26,-21', '35,-72', '17,-63',
     ].join(' ');
     return `
       <g stroke="${offwhite}" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
         <polygon points="${pts}" fill="${accent}" opacity="0.85" />
-        <polygon points="-6,52 6,52 4,95 -4,95" fill="${accent}" opacity="0.85" />
       </g>`;
   },
   gauge(accent, offwhite) {
