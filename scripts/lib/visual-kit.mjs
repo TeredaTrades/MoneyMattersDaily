@@ -129,6 +129,22 @@ export const ICONS = {
         <circle cx="48" cy="30" r="20" fill="none" stroke="${offwhite}" stroke-width="5" opacity="0.6" />
       </g>`;
   },
+  mapleLeaf(accent, offwhite) {
+    // Stylized maple leaf silhouette — general-purpose override icon for
+    // Canada-specific posts (e.g. pinIcon: "mapleLeaf"), not tied to a pillar.
+    const pts = [
+      '0,-92', '10,-55', '35,-60', '28,-38', '55,-42', '46,-18', '72,-8',
+      '60,10', '78,22', '58,30', '62,52', '35,40', '30,60', '12,42',
+      '6,70', '0,58', '-6,70', '-12,42', '-30,60', '-35,40', '-62,52',
+      '-58,30', '-78,22', '-60,10', '-72,-8', '-46,-18', '-55,-42',
+      '-28,-38', '-35,-60', '-10,-55',
+    ].join(' ');
+    return `
+      <g fill="none" stroke="${offwhite}" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+        <polygon points="${pts}" fill="${accent}" opacity="0.85" />
+        <line x1="0" y1="58" x2="4" y2="88" stroke="${offwhite}" stroke-width="6" />
+      </g>`;
+  },
   gauge(accent, offwhite) {
     // Speedometer-style dial with tick marks and a needle — old-car gauge look.
     const r = 78;

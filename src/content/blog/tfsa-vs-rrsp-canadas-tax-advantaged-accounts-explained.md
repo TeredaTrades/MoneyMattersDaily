@@ -4,6 +4,7 @@ description: "TFSAs and RRSPs both shelter your money from tax, but on opposite 
 pubDate: 2026-09-10
 targetKeyword: "TFSA vs RRSP: Canada's tax-advantaged accounts explained"
 pillar: "investing-basics"
+pinIcon: "mapleLeaf"
 draft: false
 pinApproved: true
 depthReviewed: true
