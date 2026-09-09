@@ -130,19 +130,26 @@ export const ICONS = {
       </g>`;
   },
   mapleLeaf(accent, offwhite) {
-    // Stylized maple leaf silhouette — general-purpose override icon for
-    // Canada-specific posts (e.g. pinIcon: "mapleLeaf"), not tied to a pillar.
+    // Stylized maple leaf silhouette — a central spike plus tapering
+    // shoulder/side lobes each side, closer to how a maple leaf actually
+    // reads at small sizes than a uniform many-point star. General-purpose
+    // override icon for Canada-specific posts (pinIcon: "mapleLeaf"), not
+    // tied to a pillar.
     const pts = [
-      '0,-92', '10,-55', '35,-60', '28,-38', '55,-42', '46,-18', '72,-8',
-      '60,10', '78,22', '58,30', '62,52', '35,40', '30,60', '12,42',
-      '6,70', '0,58', '-6,70', '-12,42', '-30,60', '-35,40', '-62,52',
-      '-58,30', '-78,22', '-60,10', '-72,-8', '-46,-18', '-55,-42',
-      '-28,-38', '-35,-60', '-10,-55',
+      '0,-95',
+      '25,-58', '88,-52',
+      '38,-12', '80,28',
+      '30,32', '48,72',
+      '10,55', '0,70',
+      '-10,55', '-48,72',
+      '-30,32', '-80,28',
+      '-38,-12', '-88,-52',
+      '-25,-58',
     ].join(' ');
     return `
       <g fill="none" stroke="${offwhite}" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
         <polygon points="${pts}" fill="${accent}" opacity="0.85" />
-        <line x1="0" y1="58" x2="4" y2="88" stroke="${offwhite}" stroke-width="6" />
+        <line x1="0" y1="70" x2="0" y2="95" stroke="${offwhite}" stroke-width="7" />
       </g>`;
   },
   gauge(accent, offwhite) {
