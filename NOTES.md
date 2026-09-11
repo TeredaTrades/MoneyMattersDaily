@@ -12,7 +12,55 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
-## 2026-09-10 — Published today's post: "TFSA vs. RRSP: Canada's Tax-Advantaged Accounts Explained"
+## 2026-09-11 — Published today's post: "How to Budget on an Irregular Income"
+
+### What was done
+Wrote and published the next pending budgeting keyword from the queue
+("how to budget on an irregular income"). Full depth pass on the first
+write (`depthReviewed: true`, `pinApproved: true` from the start), same
+pattern as the last several posts. Also picked up pillar diversity for
+free — the prior four published posts were investing-basics,
+news-trends, saving, news-trends, so this was budgeting either way by
+strict queue order.
+
+Core framing: budget off the lowest realistic month (not the average,
+not the best month), treat the buffer-building as a fixed cost until
+it's funded, and re-budget every time money arrives rather than setting
+a budget once — essentially zero-based budgeting applied to irregular
+income instead of just expenses. Verified 2026 quarterly estimated tax
+deadlines and the IRS safe-harbor thresholds via web search rather than
+assuming prior-year dates, since the piece touches on self-employment
+tax: **Q1 Apr 15, Q2 Jun 15, Q3 Sep 15, Q4 Jan 15 2027**; safe harbor is
+the smaller of 90% of current-year tax or 100% of prior-year tax (110%
+if prior-year AGI was over $150,000). Kept the tax section deliberately
+short — the pending "budgeting for freelancers and gig workers" keyword
+later in the queue is the natural place for a full tax/invoicing
+workflow, so this post only covers what's needed for the budgeting
+mechanic itself.
+
+Cross-linked to the emergency-fund post (buffer sizing), high-yield
+savings post (where to park the buffer), zero-based budgeting post (the
+re-budgeting-every-time-money-arrives parallel), and — for readers who
+land here but actually have steady income — the beginner budget and
+50/30/20 posts. Used the default `pinVisual` (pillar icon) since no
+recent budgeting post had used it (the three most recent budgeting
+posts used table/flow/equation in that order — icon was the one still
+fresh). Generated the pin and hero image, refreshed all 7 Pinterest
+pillar feeds (27 approved posts total, up from 26; budgeting feed 3→4),
+added the X draft, and confirmed a clean `npm run build` (42 pages) and
+`content:depth-status` (24 done, correctly not flagging this one as
+pending). Marked the keyword `"published"` in `keyword-queue.json` (21
+pending → 20 pending).
+
+### Open items
+- Everything else in the queue still pending, same ~1/day cadence.
+- Pin image and X draft are generated/committed but **not yet manually
+  posted to Pinterest/X** — same manual step as every prior post; no
+  credentials for either in this session.
+
+---
+
+
 
 ### What was done
 Wrote and published the next pending investing-basics keyword from the

@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## how-to-budget-on-an-irregular-income
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How to Budget on an Irregular Income — Most budgeting advice assumes a steady paycheck. Here's how to budget when your income actually changes month to month — freelance, commission, gig work, or seasonal — without the good months quietly funding the bad ones.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-budget-on-an-irregular-income/
+```
+
 ## tfsa-vs-rrsp-canadas-tax-advantaged-accounts-explained
 
 **Post (attach the matching pin image from public/pins/):**
