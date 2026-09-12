@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## how-uk-credit-scores-work-experian-vs-equifax-vs-transunion
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How UK Credit Scores Work: Experian vs Equifax vs TransUnion — The UK doesn't have one credit score — it has three, on three different scales, and two of them just changed. Here's what Experian, Equifax, and TransUnion actually measure, their current bands, and why the same fin…
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-uk-credit-scores-work-experian-vs-equifax-vs-transunion/
+```
+
 ## how-to-budget-on-an-irregular-income
 
 **Post (attach the matching pin image from public/pins/):**

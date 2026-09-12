@@ -12,7 +12,56 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
-## 2026-09-11 — Published today's post: "How to Budget on an Irregular Income"
+## 2026-09-12 — Published today's post: "How UK Credit Scores Work: Experian vs Equifax vs TransUnion"
+
+### What was done
+Wrote and published the next pending credit-pillar keyword from the
+queue. Full depth pass on the first write, same pattern as recent posts.
+Credit pillar was next in strict queue order and also hadn't been
+touched since 2026-08-24, so no diversity trade-off needed.
+
+This one had a genuinely time-sensitive hook worth researching properly
+rather than assuming stale bands: **Experian moved its UK score from a
+0–999 to a 0–1,250 scale in a rollout that ran November–December 2025**
+(confirmed directly from experian.co.uk's own "1250 score" page — Low
+0–640, Fair 641–860, Good 861–1,000, Very Good 1,001–1,120, Excellent
+1,121–1,250), and **TransUnion is in the middle of doing the same thing
+right now** — its own current scale is 0–710, but a new 0–999 scale
+starts rolling out "late September 2026" (i.e. essentially this week)
+through June 2027, per Which?'s coverage of TransUnion's announcement.
+Both agencies stated the rescaling doesn't change actual lending
+eligibility, just the number/band a given risk assessment maps to.
+Equifax's 0–1,000 scale (since April 2021) is unchanged and was the
+easy one to confirm. Used `pinVisual: "table"` with a 3-row
+Experian/Equifax/TransUnion range comparison — first credit-pillar post
+to use a non-default visual, and a strong fit given the post is
+literally a 3-way scale comparison.
+
+Cross-linked to the existing credit-pillar posts (what-hurts-your-score,
+credit-utilization-explained) for the FICO/US-focused mechanics that
+still apply directionally even though this post is UK-specific — flagged
+that distinction explicitly in the text rather than blurring the two
+systems together.
+
+Generated pin + hero, refreshed all 7 Pinterest feeds (28 approved
+posts total, credit feed 3→4), added the X draft, confirmed a clean
+`npm run build` (43 pages) and `depth-status` (25 done, this post
+correctly not flagged pending). Marked the keyword `"published"` (20
+pending → 19 pending).
+
+### Open items
+- Everything else in the queue still pending, same ~1/day cadence.
+- Worth a quick sanity-check revisit in a few months once TransUnion's
+  rescaling finishes rolling out (June 2027 per their own timeline) —
+  the "current range (0–710)" column in this post's table will need
+  updating to reflect the new scale as the sole current one once the
+  transition is complete.
+- Pin image and X draft generated/committed but not yet manually posted
+  — same manual step as every prior post.
+
+---
+
+
 
 ### What was done
 Wrote and published the next pending budgeting keyword from the queue
