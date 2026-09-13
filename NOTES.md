@@ -12,6 +12,51 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-14 — Published today's post: "How Superannuation Works: Australia's Retirement Savings Explained"
+
+### What was done
+Wrote and published the next pending investing-basics keyword from the
+queue ("how superannuation works: Australia's retirement savings
+explained"). First non-country-specific post to cover a non-US/UK/Canada
+retirement system directly (Australian super), matching the pattern
+already set by the UK ISA and TFSA/RRSP posts.
+
+Verified current figures via web search before writing rather than
+trusting training-data numbers, since super rates/caps change by
+legislation: SG rate 12% (effective 1 July 2025, final scheduled
+increase, no further legislated rise), concessional contributions cap
+$32,500 for 2026–27 (up from $30,000), non-concessional cap $130,000 for
+2026–27 (up from $120,000, bring-forward $390,000), preservation age 60
+for anyone born after 30 June 1964, maximum contribution base $270,830.
+Worked example: $90,000 OTE → $10,800/year employer contribution →
+$324,000 over 30 years from contributions alone. Cited the ATO's key
+superannuation rates and thresholds page directly and flagged in the
+post itself that caps change by legislation and should be checked before
+relying on them near a cap. Cross-linked to
+`compound-interest-explained-simply` for the compounding-over-decades
+mechanic.
+
+**Pipeline run after approval (same flow as 2026-09-13):**
+- `node scripts/generate-hero.mjs how-superannuation-works-australias-retirement-savings-explained`
+  → `public/heroes/how-superannuation-works-australias-retirement-savings-explained.png`
+- `node scripts/generate-pin.mjs how-superannuation-works-australias-retirement-savings-explained`
+  → `public/pins/how-superannuation-works-australias-retirement-savings-explained.png`
+- `node scripts/generate-x-drafts.mjs how-superannuation-works-australias-retirement-savings-explained`
+  → added one section to `content-pipeline/x-drafts.md` (copy-paste
+  draft, not auto-posted, per the standing X-automation hold)
+- `content-pipeline/keyword-queue.json` — marked this keyword `published`
+  via the same targeted string-replace approach as
+  `scripts/generate-post.mjs` uses, to avoid reformatting the whole file
+- `npm run build` — clean, 45 pages
+- Committed and pushed directly to `main` (commit `bba39f3`); both
+  `Deploy to GitHub Pages` and `Close post reminder on publish` Actions
+  runs completed successfully.
+
+Normal human-in-the-loop flow throughout (draft brought to a chat
+session, reviewed and approved, then pipeline scripts run locally) — not
+the unattended `auto-publish-trial`/`generate-post.mjs` path, which
+remains closed per the 2026-08-29 entry below.
+
 ## 2026-09-13 — Published today's post: "Budgeting for Freelancers and Gig Workers"
 
 ### What was done
