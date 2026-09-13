@@ -72,6 +72,19 @@ approved) — the unattended `auto-publish-trial` window closed back on
   `how-to-budget-on-an-irregular-income`) to check whether the same
   US-centricity issue is sitting there too, now that it's been flagged
   once as a real pattern rather than a one-off.
+  **Decision (same session, later):** leaving
+  `how-to-budget-on-an-irregular-income` as-is for now rather than
+  rewriting it — it's already published and indexed with its current
+  (US-specific) framing. Instead, a **separate new post** covering the
+  same irregular-income budgeting ground but written for a global
+  audience (same treatment as this post's rewrite: universal mechanics,
+  country-specific tax/withholding details demoted to brief examples)
+  is needed as its own future queue item. Not added to
+  `content-pipeline/keyword-queue.json` yet since it doesn't cleanly fit
+  the one-keyword-one-post model (it's a global-audience companion to an
+  existing post, not a new keyword) — flagging here so it isn't lost;
+  decide the actual keyword/slug/cross-linking approach (companion post
+  vs. rewrite-in-place vs. something else) in a future session.
 
 ## 2026-09-12 — Published today's post: "How UK Credit Scores Work: Experian vs Equifax vs TransUnion"
 
