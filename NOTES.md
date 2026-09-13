@@ -12,6 +12,67 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-13 — Published today's post: "Budgeting for Freelancers and Gig Workers"
+
+### What was done
+Wrote and published the next pending budgeting-pillar keyword from the
+queue ("budgeting for freelancers and gig workers").
+
+**First draft was US-centric — caught and rewritten before publishing.**
+The initial pass leaned entirely on US mechanics (W-2 vs. 1099 framing,
+IRS Schedule SE terminology, a worked self-employment-tax calculation at
+15.3% of 92.35% of net earnings, the 2026 Social Security wage base).
+User feedback: none of that means anything to a reader outside the US,
+and the underlying tax/social-insurance infrastructure genuinely differs
+by country, not just the numbers. Rewrote around the universal mechanic
+instead — no employer to withhold tax or pay social contributions for
+you — with the US self-employment tax, UK Class 2/4 National Insurance,
+and generic EU self-employed social contributions each demoted to a
+single-line example rather than the backbone of the post. The worked
+example was changed from a specific SE-tax computation to a generic
+holdback-percentage mechanic (28% of a $2,000 invoice → $560 held back,
+$1,440 real spendable amount) that works the same regardless of which
+country's rate you plug in — the post explicitly tells the reader to
+confirm their own country's real combined rate rather than trusting any
+number in the post. Same structural bones survived (worked example,
+who-it's-for, common mistakes, cross-links) but "IRS," "Social
+Security," "SE tax," and "1099" are gone from the body.
+
+Cross-linked to `how-to-budget-on-an-irregular-income` (x2 — it's the
+closest existing post, covering the income-timing side of freelance
+budgeting while this one covers the tax/benefits-gap side) and
+`how-to-make-a-budget-for-beginners` (for the "not for you" redirect,
+since this post assumes the reader already knows they're self-employed).
+
+**Pipeline run after approval:**
+- `node scripts/generate-hero.mjs budgeting-for-freelancers-and-gig-workers`
+  → `public/heroes/budgeting-for-freelancers-and-gig-workers.png`
+- `node scripts/generate-pin.mjs budgeting-for-freelancers-and-gig-workers`
+  → `public/pins/budgeting-for-freelancers-and-gig-workers.png`
+- `node scripts/generate-x-drafts.mjs budgeting-for-freelancers-and-gig-workers`
+  → added one section to `content-pipeline/x-drafts.md` (still just a
+  copy-paste draft — not auto-posted, per the standing X-automation hold)
+- `content-pipeline/keyword-queue.json` — marked this keyword `published`
+
+This ran as the normal human-in-the-loop flow (draft brought to a chat
+session, reviewed, revised once on the US-centricity issue, then
+approved) — the unattended `auto-publish-trial` window closed back on
+2026-08-29 and was never re-enabled, so this wasn't that path.
+
+### Open items
+- `QUEUE.md`'s "Published" table still isn't actually being kept in
+  sync with `keyword-queue.json` (true for every prior post too, not
+  just this one) — left as-is rather than inventing a new practice
+  unilaterally; worth a decision on whether to start maintaining it or
+  just remove the table.
+- X draft for this post is written but not yet posted — needs a human
+  to actually copy it into X with the pin image attached.
+- Worth a pass over a couple of the *other* recent posts (the ones with
+  quarterly-estimated-tax / IRS-specific sections, e.g.
+  `how-to-budget-on-an-irregular-income`) to check whether the same
+  US-centricity issue is sitting there too, now that it's been flagged
+  once as a real pattern rather than a one-off.
+
 ## 2026-09-12 — Published today's post: "How UK Credit Scores Work: Experian vs Equifax vs TransUnion"
 
 ### What was done

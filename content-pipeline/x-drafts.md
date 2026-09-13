@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## budgeting-for-freelancers-and-gig-workers
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Budgeting for Freelancers and Gig Workers — Freelance and gig income comes with two problems a regular paycheck doesn't: nobody's withholding your taxes or contributions, and nobody's paying for your sick days. Here's how to budget around both, wherever you're based.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/budgeting-for-freelancers-and-gig-workers/
+```
+
 ## how-uk-credit-scores-work-experian-vs-equifax-vs-transunion
 
 **Post (attach the matching pin image from public/pins/):**
