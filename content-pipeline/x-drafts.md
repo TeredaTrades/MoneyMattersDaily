@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## multi-currency-budgeting-for-remote-workers
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Multi-Currency Budgeting for Remote Workers — How to actually build a budget when your income lands in one currency and your bills go out in another — a conservative-rate method, a worked example, and the mistakes that blow up a budget mid-month.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/multi-currency-budgeting-for-remote-workers/
+```
+
 ## how-superannuation-works-australias-retirement-savings-explained
 
 **Post (attach the matching pin image from public/pins/):**

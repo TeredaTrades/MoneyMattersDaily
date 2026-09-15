@@ -48,6 +48,8 @@ If your income and expenses are in different currencies, exchange rate swings fu
 - Hold a buffer in your spending currency so short-term swings don't force bad-timed conversions
 - Convert in batches rather than constantly, to average out volatility instead of chasing it
 
+For the actual month-to-month budgeting mechanic — what rate to plan around and how to size the buffer — see [multi-currency budgeting for remote workers](/blog/multi-currency-budgeting-for-remote-workers/).
+
 ## Taxes don't pause because you're moving
 
 Tax residency rules vary enormously by country and by how many days you spend where. The two things worth confirming before you leave, not after:
