@@ -12,6 +12,78 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-16 — Published today's post: "Multi-Currency Budgeting for Remote Workers"
+
+### What was done
+Wrote and published the next pending travel-finance keyword from the
+queue ("multi-currency budgeting for remote workers"). This session
+was run via Claude chat with a manually-provided GitHub PAT, same
+pattern as prior chat-based sessions.
+
+Deliberately scoped this to be distinct from the existing
+`managing-money-as-a-digital-nomad` post rather than a rehash: that
+post covers banking setup, currency risk at a high level, and taxes;
+this one covers the actual month-to-month budgeting mechanic — what
+exchange rate to plan around, how to size a currency buffer, and how
+often to rebudget. Core method: budget off a rate near the weak end of
+the currency pair's recent 6-12 month range (not today's rate), treat
+the difference on favorable months as buffer/savings rather than
+spendable, and only rebuild the budget when the real rate has moved
+outside that assumed range for a sustained period — not on every
+fluctuation. Worked example: $4,000/month USD paycheck budgeted in
+EUR, naive (today's-rate) approach vs. conservative-rate approach,
+showing a concrete shortfall the naive approach produces in a bad
+month. Also gave conversion fees their own short section as a budget
+line distinct from the exchange rate itself, rather than folding fees
+into the rate discussion.
+
+Added a reverse cross-link from `managing-money-as-a-digital-nomad`'s
+currency-risk section pointing to this new post for the budgeting
+mechanic, so the two posts reference each other in both directions.
+
+**Pin generation caught a real rendering bug**: the first `tableRows`
+draft used full-sentence labels/values ("Budget at a buffer rate" /
+"Absorbs normal swings"), and `generate-pin.mjs`'s table renderer has
+no width-aware wrapping — label and value text overlapped badly on
+the rendered PNG. Fixed by shortening to short label/value pairs
+("Today's rate" / "Risky", "Buffer rate" / "Safer", "Recheck" /
+"Monthly"), matching the length the existing working table examples
+(e.g. the UK credit-scores post) actually use. Worth noting in case
+a future post's table pin looks broken: check label/value length
+before assuming a code bug.
+
+**Pipeline run after approval:**
+- `node scripts/generate-hero.mjs multi-currency-budgeting-for-remote-workers`
+  → `public/heroes/multi-currency-budgeting-for-remote-workers.png`
+- `node scripts/generate-pin.mjs multi-currency-budgeting-for-remote-workers`
+  (run twice, second time after shortening `tableRows` per the bug
+  above) → `public/pins/multi-currency-budgeting-for-remote-workers.png`
+- `node scripts/generate-x-drafts.mjs multi-currency-budgeting-for-remote-workers`
+  → added one section to `content-pipeline/x-drafts.md` (copy-paste
+  draft, not auto-posted, per the standing X-automation hold)
+- `content-pipeline/keyword-queue.json` — marked this keyword
+  `published` via a single targeted string-replace, confirmed as a
+  one-line diff (17 pending → 16 pending)
+- `npm run build` — clean, 46 pages; `npm run content:depth-status`
+  confirms this post correctly not flagged pending (28 done, 5
+  pending — all pre-existing, none new)
+- Committed and pushed directly to `main` (commit `48b395d`); `Deploy
+  to GitHub Pages` and `Close post reminder on publish` Actions runs
+  both completed successfully.
+
+Normal human-in-the-loop flow throughout (draft reviewed in this
+session, then pipeline scripts run and pushed directly) — not the
+unattended `auto-publish-trial`/`generate-post.mjs` path, which
+remains closed per the 2026-08-29 entry below.
+
+### Open items
+- Pin image and X draft are generated/committed but **not yet
+  manually posted to Pinterest/X** — same manual step as every prior
+  post; this session had no Pinterest/X credentials, only the GitHub
+  PAT.
+- Everything else in the queue still pending, same ~1/day cadence
+  (16 pending).
+
 ## 2026-09-14 — Published today's post: "How Superannuation Works: Australia's Retirement Savings Explained"
 
 ### What was done
