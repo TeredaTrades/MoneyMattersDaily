@@ -55,6 +55,6 @@ Neither path is simply "better" — the RRSP path banks a tax saving today in ex
 
 ## Getting started
 
-The dollar limits above ($7,000 TFSA, $33,810 RRSP for 2026) are the maximums, not necessarily your personal room — RRSP room in particular depends on your own prior-year income and any pension adjustment. Your actual available room for both accounts is on your latest CRA Notice of Assessment and in CRA My Account, and that number is the one to plan around, not the headline figure.
+The dollar limits above ($7,000 TFSA, $33,810 RRSP for 2026) are the maximums, not necessarily your personal room — RRSP room in particular depends on your own prior-year income and any pension adjustment. Your actual available room for both accounts is on your latest CRA Notice of Assessment and in CRA My Account, and that number is the one to plan around, not the headline figure. If you'd rather see both accounts alongside your everyday spending in one place, [the best budgeting apps for Canadians compared](/blog/best-budgeting-apps-for-canadians-compared/) covers which apps actually show TFSA and RRSP contributions as their own category.
 
 *Last updated September 2026. TFSA and RRSP contribution limits reflect the 2026 figures confirmed by the CRA ($7,000 TFSA / $109,000 cumulative; $33,810 RRSP dollar cap) and the Home Buyers' Plan's $60,000 limit in effect since April 2024 — check canada.ca or CRA My Account for your personal numbers and any future changes.*

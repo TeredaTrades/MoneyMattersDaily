@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## best-budgeting-apps-for-canadians-compared
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Best Budgeting Apps for Canadians Compared (2026) — Most budgeting-app roundups are written for Americans and just assume US bank sync works fine up here. YNAB, KOHO, PocketSmith, Wealthica, and Wealthsimple actually connect to Canadian banks — here's who each one fits.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/best-budgeting-apps-for-canadians-compared/
+```
+
 ## multi-currency-budgeting-for-remote-workers
 
 **Post (attach the matching pin image from public/pins/):**
