@@ -12,6 +12,73 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-18 — Published today's post: "Best Budgeting Apps for Canadians Compared" (logged late)
+
+### What was done
+Wrote and published the next pending app-comparisons keyword from the
+queue ("best budgeting apps for Canadians compared"). Session run via
+Claude chat with a manually-provided GitHub PAT, same pattern as prior
+chat-based sessions.
+
+Deliberately scoped this around what the existing (US-first)
+`best-budgeting-apps-compared.md` post doesn't cover: real Canadian
+bank sync, CAD vs. USD pricing, and TFSA/RRSP visibility. Picked five
+apps for that specific angle — YNAB (zero-based, works with Canadian
+banks, but USD-only pricing and no TFSA/RRSP concept), KOHO
+(Canadian-built prepaid card with budgeting built in, but only tracks
+its own card), PocketSmith (calendar-based forecasting, NZ-built,
+flagged its own site's caveat about inconsistent Canadian bank feeds
+via Yodlee/Plaid), Wealthica (Canadian aggregator for net worth +
+registered accounts), and Wealthsimple's built-in tracker (free but
+existing-customers-only). Verified current pricing/positioning via web
+search rather than relying on training data, and deliberately left out
+a newer Canadian-built competitor whose only findable coverage was its
+own heavily promotional competitor-comparison pages, to avoid citing
+marketing claims as neutral fact.
+
+Added a reverse cross-link from `tfsa-vs-rrsp-canadas-tax-advantaged-accounts-explained`'s
+"Getting started" section pointing to this new post, so the two posts
+reference each other in both directions (same pattern as the
+2026-09-16 multi-currency post).
+
+**Pipeline run after drafting:**
+- `node scripts/generate-hero.mjs best-budgeting-apps-for-canadians-compared`
+  → `public/heroes/best-budgeting-apps-for-canadians-compared.png`
+- `node scripts/generate-pin.mjs best-budgeting-apps-for-canadians-compared`
+  (used `pinIcon: "mapleLeaf"` in frontmatter, same icon as the TFSA vs
+  RRSP post, since this is Canada-specific but not tied to a distinct
+  visual mode like a table or flow) → `public/pins/best-budgeting-apps-for-canadians-compared.png`
+  — checked the rendered PNG directly this time given the 2026-09-16
+  table-wrapping bug; no issues with the icon layout
+- `node scripts/generate-x-drafts.mjs best-budgeting-apps-for-canadians-compared`
+  → added one section to `content-pipeline/x-drafts.md`
+- `content-pipeline/keyword-queue.json` — marked this keyword
+  `published` via a single targeted string-replace (confirmed as a
+  one-line diff)
+- `npm run build` — clean, 47 pages; `npm run content:depth-status`
+  confirmed this post correctly not flagged pending (29 done, 5
+  pending — all pre-existing, none new)
+- Committed and pushed directly to `main` (commit `b77cab3`); `Deploy
+  to GitHub Pages` and `Close post reminder on publish` Actions runs
+  both completed successfully
+
+Also spot-checked the dormant `auto-publish-trial` workflow, since it
+fired on its 2026-09-17 cron: confirmed it correctly no-op'd (its
+`expiresAt` in `content-pipeline/auto-publish-trial.json` is
+2026-08-29, well past), no unattended post was created.
+
+### Open items
+- Pin image and X draft are generated/committed but **not yet
+  manually posted to Pinterest/X** — same manual step as every prior
+  post.
+- This entry was written a session late (during the 2026-09-19
+  session) — the work itself happened same-day on 2026-09-18, but
+  NOTES.md wasn't updated until the next session caught the gap. Worth
+  double-checking NOTES.md got updated at the end of a session before
+  treating a publish as fully wrapped up.
+- Everything else in the queue still pending, same ~1/day cadence (15
+  pending after this one).
+
 ## 2026-09-16 — Published today's post: "Multi-Currency Budgeting for Remote Workers"
 
 ### What was done
