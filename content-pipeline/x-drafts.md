@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## how-european-central-bank-rate-decisions-affect-your-money
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How European Central Bank Rate Decisions Affect Your Money — The ECB just raised its deposit rate to 2.50%, and most coverage stops at 'markets reacted.' Here's what actually moves in a euro-area household budget, and how the ECB's three rates differ from the Fed's.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-european-central-bank-rate-decisions-affect-your-money/
+```
+
 ## tax-residency-basics-for-digital-nomads
 
 **Post (attach the matching pin image from public/pins/):**
