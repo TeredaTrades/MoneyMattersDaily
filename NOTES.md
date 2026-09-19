@@ -12,6 +12,59 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-20 — Published today's post: "How European Central Bank Rate Decisions Affect Your Money"
+
+### What was done
+Wrote and published the next pending news-trends keyword from the
+queue ("how European Central Bank rate decisions affect your
+money"). Session run via Claude chat with a manually-provided GitHub
+PAT, same pattern as prior chat-based sessions.
+
+Timed well with an actual news hook: the ECB raised its deposit
+facility rate to 2.50% (from 2.25%) effective 16 September 2026 —
+verified via the ECB Data Portal and De Nederlandsche Bank's rate
+page, not training data. Structured as the euro-area counterpart to
+`what-fed-rate-decisions-mean-for-you`, but scoped around what's
+actually different from the Fed version rather than a straight port:
+the ECB's three separate rates (deposit facility, MRO, marginal
+lending) vs. the Fed's single target range, and Euribor as the
+transmission mechanism for variable-rate mortgages instead of a
+US-style variable APR. Included a worked example (a €200k
+Euribor-linked mortgage, verified with an actual amortization
+calculation rather than eyeballed numbers) and the market-implied
+67% probability of a further hike at the 29 October 2026 meeting,
+cited as a point-in-time estimate.
+
+Added a reverse cross-link from `what-fed-rate-decisions-mean-for-you`'s
+closing line pointing to this new post, same pattern as prior
+cross-link additions.
+
+**Pipeline run after drafting:**
+- `node scripts/generate-hero.mjs how-european-central-bank-rate-decisions-affect-your-money`
+  → `public/heroes/how-european-central-bank-rate-decisions-affect-your-money.png`
+- `node scripts/generate-pin.mjs how-european-central-bank-rate-decisions-affect-your-money`
+  (default news-trends megaphone icon, no override — checked the
+  rendered PNG directly, clean) → `public/pins/how-european-central-bank-rate-decisions-affect-your-money.png`
+- `node scripts/generate-x-drafts.mjs how-european-central-bank-rate-decisions-affect-your-money`
+  → added one section to `content-pipeline/x-drafts.md`; trimmed the
+  frontmatter description by a few characters after the first
+  generation produced an awkward mid-word truncation right at X's
+  280-char limit, then regenerated clean
+- `content-pipeline/keyword-queue.json` — marked this keyword
+  `published` via a single targeted string-replace
+- `npm run build` — clean, 49 pages; `npm run content:depth-status`
+  confirmed this post correctly not flagged pending (31 done, 5
+  pending — all pre-existing, none new)
+- Committed and pushed directly to `main` (commit `2c27981`)
+
+### Open items
+- Pin image and X draft are generated/committed but **not yet
+  manually posted to Pinterest/X** — same manual step as every prior
+  post; this session's user intended to post both manually with the
+  generated assets.
+- Everything else in the queue still pending, same ~1/day cadence (10
+  pending after this one).
+
 ## 2026-09-19 — Published today's post: "Tax Residency Basics for Digital Nomads"
 
 ### What was done
