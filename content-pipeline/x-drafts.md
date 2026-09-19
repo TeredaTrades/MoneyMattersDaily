@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## tax-residency-basics-for-digital-nomads
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Tax Residency Basics for Digital Nomads — 'Stay under 183 days and you owe nothing anywhere' is the most common digital-nomad tax myth, and it's wrong. Here's how tax residency actually gets decided, and why staying under the radar isn't a strategy.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/tax-residency-basics-for-digital-nomads/
+```
+
 ## best-budgeting-apps-for-canadians-compared
 
 **Post (attach the matching pin image from public/pins/):**

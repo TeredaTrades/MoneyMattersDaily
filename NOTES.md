@@ -12,6 +12,62 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-19 — Published today's post: "Tax Residency Basics for Digital Nomads"
+
+### What was done
+Wrote and published the next pending travel-finance keyword from the
+queue ("tax residency basics for digital nomads"). Session run via
+Claude chat with a manually-provided GitHub PAT, same pattern as
+prior chat-based sessions.
+
+Scoped as a genuine deep-dive distinct from the existing
+`managing-money-as-a-digital-nomad` post, which only flags tax
+residency briefly (confirm it, see an accountant) rather than
+explaining the mechanic. This post covers: why the 183-day rule is
+necessary-but-not-sufficient (permanent home, center of vital
+interests, habitual abode, and citizenship can all trigger residency
+below that threshold — UK Statutory Residence Test cited as the
+sharpest example), the OECD Article 4 treaty tie-breaker cascade and
+that it resolves taxing rights but not necessarily dual filing
+obligations, why "resident nowhere" is a documented claim rather than
+an automatic status, US-specific worldwide citizenship-based taxation
+and the FEIE (verified current 2026 figure — $132,900, confirmed via
+KPMG's citation of IRS Notice 2026-25 after finding conflicting
+$130,000 figures on lower-authority sites), and that digital nomad
+visas answer legal-stay questions, not tax-residency questions.
+Deliberately did not name specific countries' current visa/incentive
+programs in detail (e.g. Portugal's post-NHR regime) since that's a
+fast-moving, country-specific rabbit hole better suited to its own
+future post than a paragraph here.
+
+Added reverse cross-links in both directions: from
+`managing-money-as-a-digital-nomad`'s tax section, and from
+`multi-currency-budgeting-for-remote-workers`'s closing section (that
+post covers the currency-mechanics half of the same nomad lifestyle,
+this one covers the legal-residency half).
+
+**Pipeline run after drafting:**
+- `node scripts/generate-hero.mjs tax-residency-basics-for-digital-nomads`
+  → `public/heroes/tax-residency-basics-for-digital-nomads.png`
+- `node scripts/generate-pin.mjs tax-residency-basics-for-digital-nomads`
+  (default icon visual, no pinIcon override — checked the rendered
+  PNG directly, clean) → `public/pins/tax-residency-basics-for-digital-nomads.png`
+- `node scripts/generate-x-drafts.mjs tax-residency-basics-for-digital-nomads`
+  → added one section to `content-pipeline/x-drafts.md`
+- `content-pipeline/keyword-queue.json` — marked this keyword
+  `published` via a single targeted string-replace (confirmed as a
+  one-line diff)
+- `npm run build` — clean, 48 pages; `npm run content:depth-status`
+  confirmed this post correctly not flagged pending (30 done, 5
+  pending — all pre-existing, none new)
+
+### Open items
+- Pin image and X draft are generated/committed but **not yet
+  manually posted to Pinterest/X** — same manual step as every prior
+  post.
+- Everything else in the queue still pending, same ~1/day cadence (14
+  pending after this one).
+
 ## 2026-09-18 — Published today's post: "Best Budgeting Apps for Canadians Compared" (logged late)
 
 ### What was done
