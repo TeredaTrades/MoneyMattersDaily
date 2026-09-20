@@ -1,6 +1,7 @@
 ---
 import AdSlot from '../components/AdSlot.astro';
 import PillarIcon from '../components/PillarIcon.astro';
+import EmailSignup from '../components/EmailSignup.astro';
 
 const PILLARS: { slug: 'budgeting' | 'saving' | 'credit' | 'investing-basics' | 'app-comparisons' | 'travel-finance' | 'news-trends'; label: string }[] = [
   { slug: 'budgeting', label: 'Budgeting' },
@@ -142,6 +143,7 @@ const structuredData = [siteSchema, ...jsonLd];
     <AdSlot position="footer" />
 
     <footer class="site-footer">
+      <EmailSignup variant="footer" />
       <nav class="footer-links">
         <a href="/about/">About</a>
         <a href="/editorial-policy/">Editorial Policy</a>

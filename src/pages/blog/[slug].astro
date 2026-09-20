@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import BudgetDonut from '../../components/BudgetDonut.astro';
 import PillarIcon from '../../components/PillarIcon.astro';
+import EmailSignup from '../../components/EmailSignup.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
@@ -93,6 +94,7 @@ const articleJsonLd = {
     {illustration === 'budget-donut' && <BudgetDonut />}
     <Content />
     <AdSlot position="in-content" />
+    <EmailSignup variant="post" />
 
     {related.length > 0 && (
       <aside class="related">

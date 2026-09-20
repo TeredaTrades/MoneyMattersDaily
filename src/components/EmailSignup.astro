@@ -1,0 +1,137 @@
+---
+// Email capture via Buttondown's embeddable form — a plain HTML POST with
+// no JS required to submit, and no tracking script loaded (matches the
+// site's existing no-cookie-banner / GoatCounter-only analytics stance).
+//
+// SETUP: replace BUTTONDOWN_USERNAME below with the real username once
+// the Buttondown account exists (buttondown.com/api/emails/embed-subscribe/<username>).
+// Until then this form 404s on submit, so it's rendered but should not be
+// linked from anywhere public — flip via the `live` const once configured.
+const BUTTONDOWN_USERNAME = 'BUTTONDOWN_USERNAME';
+const live = false;
+
+interface Props {
+  variant: 'footer' | 'homepage' | 'post';
+}
+const { variant } = Astro.props;
+
+const COPY: Record<Props['variant'], { heading: string; blurb: string; cta: string }> = {
+  footer: {
+    heading: 'Get the next post by email',
+    blurb: 'One practical money guide, whenever a new one ships. No spam, unsubscribe anytime.',
+    cta: 'Subscribe',
+  },
+  homepage: {
+    heading: 'Get new guides in your inbox',
+    blurb: 'A plain-language money guide whenever we publish one — budgeting, saving, credit, and beginner investing. No spam, unsubscribe anytime.',
+    cta: 'Subscribe',
+  },
+  post: {
+    heading: 'Found this useful?',
+    blurb: 'Get the next guide like this one sent straight to your inbox. No spam, unsubscribe anytime.',
+    cta: 'Subscribe',
+  },
+};
+const { heading, blurb, cta } = COPY[variant];
+const formId = `bd-email-${variant}`;
+---
+
+<div class={`email-signup email-signup--${variant}`}>
+  <p class="email-signup-heading">{heading}</p>
+  <p class="email-signup-blurb">{blurb}</p>
+  {live ? (
+    <form
+      action={`https://buttondown.com/api/emails/embed-subscribe/${BUTTONDOWN_USERNAME}`}
+      method="post"
+      target="popupwindow"
+      onsubmit={`window.open('https://buttondown.com/confirm-subscription?tag=${BUTTONDOWN_USERNAME}', 'popupwindow')`}
+      class="email-signup-form"
+    >
+      <label for={formId} class="sr-only">Email address</label>
+      <input type="email" name="email" id={formId} placeholder="you@email.com" required />
+      <input type="hidden" value="1" name="embed" />
+      <button type="submit">{cta}</button>
+    </form>
+  ) : (
+    <p class="email-signup-soon">Signup opening soon.</p>
+  )}
+</div>
+
+<style>
+  .email-signup {
+    background: #f0f4f4;
+    border: 1px solid #dbe6e6;
+    border-radius: 10px;
+    padding: 1.1rem 1.25rem;
+    margin: 1.75rem 0;
+  }
+  .email-signup--footer {
+    background: transparent;
+    border: none;
+    border-top: 1px solid #2a5c5c;
+    border-radius: 0;
+    padding: 1.25rem 0 0;
+    margin: 1.25rem 0 0;
+  }
+  .email-signup-heading {
+    font-weight: 700;
+    margin: 0 0 0.3rem;
+    color: #1c4a4a;
+  }
+  .email-signup--footer .email-signup-heading {
+    color: #eaf2f2;
+  }
+  .email-signup-blurb {
+    font-size: 0.9rem;
+    color: #444;
+    margin: 0 0 0.75rem;
+  }
+  .email-signup--footer .email-signup-blurb {
+    color: #b9d0d0;
+  }
+  .email-signup-form {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .email-signup-form input[type='email'] {
+    flex: 1 1 14rem;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid #c7d6d6;
+    border-radius: 6px;
+    font-size: 0.95rem;
+  }
+  .email-signup-form button {
+    background: #1c4a4a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.55rem 1.1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .email-signup-form button:hover {
+    background: #163b3b;
+  }
+  .email-signup-soon {
+    font-size: 0.85rem;
+    color: #777;
+    font-style: italic;
+    margin: 0;
+  }
+  .email-signup--footer .email-signup-soon {
+    color: #8fb0b0;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>

@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PillarIcon from '../components/PillarIcon.astro';
+import EmailSignup from '../components/EmailSignup.astro';
 
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -19,6 +20,8 @@ const carouselPosts = posts.slice(0, 12);
 >
   <h1>Practical money guides, no jargon</h1>
   <p class="intro">Budgeting, saving, credit, and beginner investing — explained plainly, updated regularly.</p>
+
+  <EmailSignup variant="homepage" />
 
   {posts.length > 1 && (
     <>
