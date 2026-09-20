@@ -93,6 +93,68 @@ nothing 404s on submit. Once a Buttondown account is created, flip
 step, no other code changes needed. Committed and pushed to main
 (commit `0fcefd2`).
 
+## 2026-09-20 — Confirmed email signup working end-to-end (live subscriber test)
+
+Closed out the email-capture work with a real test rather than just
+trusting the build: user submitted a real address through the site's
+footer form, got Kit's default "check your email" success message,
+received the double opt-in confirmation email (from
+`contact@moneymattersdaily.money` via Kit's sending infrastructure),
+clicked through, and landed on Kit's "Subscription confirmed!" page.
+Confirmed double opt-in is expected behavior (not a bug) — standard
+across Kit/Buttondown/Mailchimp alike, exists for deliverability
+(keeps bots/typos/pranks off the list) and spam-law compliance
+(CAN-SPAM/GDPR), and is on by default. End-to-end flow is verified
+working; no code changes this entry, verification only. Test
+subscriber may be worth deleting from Kit's Subscribers tab before
+real traffic arrives, at the user's discretion.
+
+This closes the email-capture item from the engagement-boosting
+discussion below — everything on that list except backlinks/PR and
+Reddit-forum participation is now either live (email capture,
+Pinterest auto-publish via RSS) or was already running before this
+session (article cadence, cross-linking).
+
+## 2026-09-20 — Engagement-boosting strategy discussion (backlinks, social cadence, paid ads, email, trust signals)
+
+User asked for the best way to boost the site's engagement. Assessed
+that the site wasn't short on content (36 posts, 31 depth-reviewed)
+but was short on distribution, and laid out priorities in order:
+
+1. **Backlinks** — flagged as still at zero and unstarted since it was
+   first raised in August. Suggested digital-PR pitches timed to
+   reactive-evergreen posts (e.g. the Fed/ECB rate posts) while the
+   news hook is fresh, resource-page link building, and guest posts on
+   adjacent (non-competing) blogs.
+2. **Close the generate-vs-post gap on social** — pins and X drafts
+   were being generated for every post but X posting had consistently
+   lagged behind generation; recommended either committing to same-day
+   posting or batching a backlog session.
+3. **Revisit the Reddit/forum posting ban** — originally deferred in
+   August pending analytics + enough content depth to not look thin;
+   both conditions are now met (GoatCounter live, 31/36 posts
+   depth-reviewed), so reconsidered it as viable now, with the
+   caveat that it means answering real questions genuinely, not
+   dropping links.
+4. **Email capture** — flagged as the missing piece that turns
+   one-time visitors into repeat ones; this is what led directly into
+   the email-signup build documented below.
+5. **Trust signals** — a "Reviewed by" byline was previously deferred
+   pending a real reviewer process; suggested revisiting now that
+   there's enough content runway to make it meaningful.
+
+Separately, user asked about paying for impressions. Advised caution:
+personal-finance keyword CPCs (Google/Meta) are typically expensive
+relative to this site's likely display-ad RPM, so cold paid clicks
+into a site with no way to retain a visitor would likely lose money.
+Recommended a **small Pinterest Ads test** (~$30-50, one week, on an
+already-performing pin) as the one paid channel worth trying now,
+since it complements the existing organic Pinterest presence and has
+lower CPCs than Google/Meta for this niche; recommended holding off on
+Google/Meta Ads specifically until there's an email list or other way
+to retain paid-traffic value — which is what triggered building email
+capture next (see entries below).
+
 ## 2026-09-20 — Published today's post: "How European Central Bank Rate Decisions Affect Your Money"
 
 ### What was done
