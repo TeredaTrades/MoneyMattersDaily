@@ -12,6 +12,34 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-20 — Email signup went live: real Kit form wired in
+
+Walked through Kit's onboarding and form-creation flow live
+(screenshots from the user's browser, step by step): "No" on already
+using an email tool, "Blogger" as creator type, "Grow my list" as the
+goal, "Inline" display format (so Kit's own layout doesn't fight with
+the site's placements), "Clare" template (plainest available, least to
+strip visually). Caught and declined a card-required upsell modal for
+the Creator plan's $390/yr annual trial-to-paid flow — clicked "I'll
+do this later" instead, confirmed no card was ever entered, so the
+14-day trial referenced elsewhere in Kit's UI will just lapse to the
+free Newsletter plan with nothing charged.
+
+Pulled the real form ID (`9939797`) from the HTML-embed tab's
+`action="https://app.kit.com/forms/9939797/subscriptions"` — the
+account's Kit subdomain is `money-matters-daily.kit.com` (relevant
+mainly if a hosted landing page or the JS-embed variant is ever used
+instead; not used here). Set `KIT_FORM_ID = '9939797'` and `live =
+true` in `EmailSignup.astro`, rebuilt, confirmed the correct action
+URL and both variants render in the built `dist/index.html`, pushed to
+main (commit `f9de2f7`).
+
+**Signup is now fully live** on the homepage, site-wide footer, and
+end of every post — no remaining setup step. One dependency to keep in
+mind: the Kit form itself must stay in its "Save & Publish"ed state in
+the Kit dashboard, or the embed will start failing even though the
+site's code hasn't changed.
+
 ## 2026-09-20 — Swapped email signup from Buttondown to Kit (ConvertKit)
 
 Reconsidered the earlier Buttondown pick after comparing feature sets:
