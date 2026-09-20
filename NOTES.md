@@ -12,6 +12,31 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-20 — Swapped email signup from Buttondown to Kit (ConvertKit)
+
+Reconsidered the earlier Buttondown pick after comparing feature sets:
+Kit's free tier covers up to 10,000 subscribers vs. Buttondown's much
+smaller free cap, and gives room to grow into automation or a paid
+newsletter later without migrating providers. Traded away Buttondown's
+slightly simpler setup for that headroom.
+
+Rewrote `src/components/EmailSignup.astro` to use Kit's classic
+plain-HTML form embed rather than their JS-enhanced one — same
+no-added-tracking-script approach as before. Action URL is
+`https://app.kit.com/forms/<KIT_FORM_ID>/subscriptions`, field name
+`email_address`, no hidden fields needed (simpler than Buttondown's
+popup-window submit pattern). Verified the live-form markup renders
+correctly by temporarily flipping `live` to `true` with a placeholder
+form ID, checked the built HTML, then reverted to `live = false`
+before committing. Placement (homepage/footer/every post) unchanged.
+Pushed to main (commit `cf51c18`).
+
+**Still pending:** create the actual Kit account and a form (Grow >
+Landing Pages & Forms > new Form > HTML embed tab, to get the numeric
+form ID), then set `KIT_FORM_ID` and flip `live` to `true` — same
+one-step remaining setup as before, just for Kit instead of
+Buttondown.
+
 ## 2026-09-20 — Email signup component added (site-wide, placeholder pending Buttondown account)
 
 Built out email capture ahead of any paid-traffic spend, since sending
