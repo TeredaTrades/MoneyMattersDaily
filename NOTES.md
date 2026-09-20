@@ -12,6 +12,34 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-20 — Email signup component added (site-wide, placeholder pending Buttondown account)
+
+Built out email capture ahead of any paid-traffic spend, since sending
+paid clicks at a site with no way to retain a visitor beyond one
+pageview was flagged as the wrong order of operations. Chose
+Buttondown over ConvertKit/Mailchimp — free tier, plain-HTML embeddable
+form (no JS/tracking script needed), and fits the site's existing
+no-cookie-banner/GoatCounter-only privacy stance better than the
+heavier marketing-suite alternatives.
+
+Added `src/components/EmailSignup.astro`, a single component with
+three copy variants (`footer`, `homepage`, `post`) wired in three
+places: `BaseLayout.astro` footer (site-wide, every page), the
+homepage intro (`index.astro`), and the end of every blog post
+(`[slug].astro`, after the in-content ad, before "Keep reading").
+Confirmed via built HTML output that each page gets the right
+variant(s): homepage shows homepage+footer, every post shows
+post+footer, everything else (about/contact/etc.) shows just footer.
+
+**Not yet functional** — no Buttondown account exists yet, so the
+component ships with a `live = false` flag: it renders the heading and
+blurb but shows "Signup opening soon" instead of a real form, so
+nothing 404s on submit. Once a Buttondown account is created, flip
+`live` to `true` and set `BUTTONDOWN_USERNAME` in
+`EmailSignup.astro` to the real username — that's the only remaining
+step, no other code changes needed. Committed and pushed to main
+(commit `0fcefd2`).
+
 ## 2026-09-20 — Published today's post: "How European Central Bank Rate Decisions Affect Your Money"
 
 ### What was done
