@@ -7,14 +7,13 @@
 // submit) — this uses the plain-HTML fallback instead so the form works
 // even with the site's otherwise-minimal JS.
 //
-// SETUP: replace KIT_FORM_ID below with the real numeric form ID once a
-// Kit form exists (Grow > Landing Pages & Forms > new Form > HTML embed
-// tab — the ID is the number in the action URL,
-// app.kit.com/forms/<id>/subscriptions). Until then this form 404s on
-// submit, so it's rendered but should not be linked from anywhere public
-// — flip via the `live` const once configured.
-const KIT_FORM_ID = 'KIT_FORM_ID';
-const live = false;
+// SETUP: KIT_FORM_ID is set to the real form's numeric ID (from
+// app.kit.com/forms/<id>/subscriptions in the HTML embed tab), and
+// `live` is true — the form is functional. Kit's form must stay
+// published (Save & Publish in the form editor) for this to keep
+// working.
+const KIT_FORM_ID = '9939797';
+const live = true;
 
 interface Props {
   variant: 'footer' | 'homepage' | 'post';
