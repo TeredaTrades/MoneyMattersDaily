@@ -1,13 +1,19 @@
 ---
-// Email capture via Buttondown's embeddable form — a plain HTML POST with
-// no JS required to submit, and no tracking script loaded (matches the
-// site's existing no-cookie-banner / GoatCounter-only analytics stance).
+// Email capture via Kit's (formerly ConvertKit) classic HTML form embed —
+// a plain HTML POST with no JS SDK required to submit, and no tracking
+// script loaded (matches the site's existing no-cookie-banner /
+// GoatCounter-only analytics stance). Kit's default embed also offers a
+// JS-enhanced version (inline validation, no full-page redirect on
+// submit) — this uses the plain-HTML fallback instead so the form works
+// even with the site's otherwise-minimal JS.
 //
-// SETUP: replace BUTTONDOWN_USERNAME below with the real username once
-// the Buttondown account exists (buttondown.com/api/emails/embed-subscribe/<username>).
-// Until then this form 404s on submit, so it's rendered but should not be
-// linked from anywhere public — flip via the `live` const once configured.
-const BUTTONDOWN_USERNAME = 'BUTTONDOWN_USERNAME';
+// SETUP: replace KIT_FORM_ID below with the real numeric form ID once a
+// Kit form exists (Grow > Landing Pages & Forms > new Form > HTML embed
+// tab — the ID is the number in the action URL,
+// app.kit.com/forms/<id>/subscriptions). Until then this form 404s on
+// submit, so it's rendered but should not be linked from anywhere public
+// — flip via the `live` const once configured.
+const KIT_FORM_ID = 'KIT_FORM_ID';
 const live = false;
 
 interface Props {
@@ -41,15 +47,13 @@ const formId = `bd-email-${variant}`;
   <p class="email-signup-blurb">{blurb}</p>
   {live ? (
     <form
-      action={`https://buttondown.com/api/emails/embed-subscribe/${BUTTONDOWN_USERNAME}`}
+      action={`https://app.kit.com/forms/${KIT_FORM_ID}/subscriptions`}
       method="post"
-      target="popupwindow"
-      onsubmit={`window.open('https://buttondown.com/confirm-subscription?tag=${BUTTONDOWN_USERNAME}', 'popupwindow')`}
+      target="_blank"
       class="email-signup-form"
     >
       <label for={formId} class="sr-only">Email address</label>
-      <input type="email" name="email" id={formId} placeholder="you@email.com" required />
-      <input type="hidden" value="1" name="embed" />
+      <input type="email" name="email_address" id={formId} placeholder="you@email.com" required />
       <button type="submit">{cta}</button>
     </form>
   ) : (
