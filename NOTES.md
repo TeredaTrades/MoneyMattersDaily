@@ -12,16 +12,16 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
-## 2026-09-21 — Traffic snapshot logged (75 visits / 38 days)
+## 2026-09-21 — Traffic snapshot logged (75 visits / 38 days, end of week 6)
 
 Saved a GoatCounter screenshot (quarter view, 2026-08-15 to 2026-09-21)
 to `content-pipeline/analytics/2026-09-21-goatcounter-traffic.png` and
 wrote the matching `2026-09-21-traffic-summary.md`, same format as the
-three prior snapshots. Requested as "end of the 4th week," but flagged
-in the summary itself: the site launched 2026-08-15, so 38 days in
-lands closer to week 6 by the same counting the 09-06 ("week 3") and
-09-13 ("week 4") snapshots used — filed under today's date rather than
-reusing "week 4," to avoid colliding with the 09-13 snapshot.
+three prior snapshots. Originally requested as "end of the 4th week";
+corrected to **week 6** after the user confirmed the flag — the site
+launched 2026-08-15, so 38 days in lands there by the same counting
+the 09-06 ("week 3") and 09-13 ("week 4") snapshots used. Week 5 has
+no snapshot of its own; this one covers the gap.
 
 Headline read: growth has slowed (75 visits, up from 67 at 09-13 —
 roughly 0.9/day added, versus ~1.8/day in the stretch before that).

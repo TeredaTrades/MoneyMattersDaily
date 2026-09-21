@@ -1,15 +1,13 @@
-# Traffic snapshot — 2026-09-21
+# Traffic snapshot — 2026-09-21 (end of week 6)
 
 Source: GoatCounter (mmd.goatcounter.com), period 2026-08-15 to 2026-09-21 (38 days).
 Screenshot: `2026-09-21-goatcounter-traffic.png` in this folder.
 
-**Labeling note:** requested as "end of the 4th week," but the site
-launched 2026-08-15, and 38 days in is closer to the end of week 6 by
-the same 7-day counting used for the prior snapshots (2026-09-06 =
-"end of week 3," 2026-09-13 = "end of week 4"). Filed under today's
-date rather than a week label to avoid a collision with the 2026-09-13
-snapshot, which already claimed "week 4." Flagging in case a different
-week-count convention was intended.
+**Labeling correction:** originally requested as "end of the 4th
+week"; corrected to week 6, since the site launched 2026-08-15 and
+38 days in lands there by the same 7-day counting the 09-06 ("week 3")
+and 09-13 ("week 4") snapshots used. Week 5 has no snapshot of its own
+— this one covers the gap.
 
 ## Totals
 - 75 visits over 38 days (up from 67 over 29 days at the 2026-09-13 snapshot)
