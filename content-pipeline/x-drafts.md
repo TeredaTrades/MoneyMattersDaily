@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## managing-money-in-japan-as-an-expat-or-remote-worker
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Managing Money in Japan as an Expat or Remote Worker — Opening a bank account, reading your tax-residency status correctly, and moving money in and out of Japan — the parts that trip up newcomers most, with a worked example.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/managing-money-in-japan-as-an-expat-or-remote-worker/
+```
+
 ## financial-order-of-operations
 
 **Post (attach the matching pin image from public/pins/):**
