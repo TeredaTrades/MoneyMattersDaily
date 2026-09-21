@@ -12,6 +12,51 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-22 — Published today's post: "Managing Money in Japan as an Expat or Remote Worker"
+
+### What was done
+Wrote and published the next pending travel-finance keyword from the
+queue (index 35, first `pending` item after 35 straight `published`
+entries). Session run via Claude chat with a manually-provided GitHub
+PAT, same pattern as prior chat-based sessions.
+
+Researched current (2026) specifics via web search rather than relying
+on training data, since visa/banking rules in this space move fast:
+the digital nomad visa's actual scope (Designated Activities status,
+~¥10M income requirement, no residence card issued, generally
+non-renewable 6-month stay — narrower than people assume from
+Portugal/Spain-style comparisons), the residence-card + jūminhyō
+requirement that gates all Japanese bank accounts regardless of how
+long someone's been there, the now-outdated "6-month wait" myth (Japan
+Post Bank/Rakuten/Sony generally don't apply it), and Japan's actual
+tax-residency test — a non-permanent/permanent-resident split based on
+domicile and a five-year look-back, not the 183-day rule most nomads
+carry over from other countries. Structured around the specific
+mistake pattern (assuming rules from elsewhere transfer directly) with
+a worked example (a spouse-visa contractor navigating account opening
+and remittance timing) and a common-mistakes section.
+
+Added a reverse cross-link from `best-banking-apps-for-digital-nomads`'
+closing section pointing to the new post, since the digital nomad
+visa's no-residence-card gap makes Wise-style banking the default
+rather than a backup — same cross-linking pattern as prior publishes.
+
+Generated hero and pin (default `icon` pin visual — kept it simple
+since the post doesn't have a natural flow/table structure) via the
+standard template scripts, plus an X draft via `generate-x-drafts.mjs`.
+Regenerated the travel-finance Pinterest feed. Marked the keyword
+`published` in `content-pipeline/keyword-queue.json`.
+
+Ran a full `npm run build` before pushing anything — passed clean (51
+pages, no errors) — then pushed to `main` (commit `87dc064`).
+
+### Still open
+- X draft for this post is generated but not yet manually posted —
+  same generate-vs-post gap flagged in the 09-20 engagement-strategy
+  entry below.
+- Next pending keyword in the queue is index 36, "free budgeting
+  calculator templates compared" (app-comparisons).
+
 ## 2026-09-21 — Traffic snapshot logged (75 visits / 38 days, end of week 6)
 
 Saved a GoatCounter screenshot (quarter view, 2026-08-15 to 2026-09-21)
