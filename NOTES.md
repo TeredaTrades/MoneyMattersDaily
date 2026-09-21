@@ -12,6 +12,73 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-21 — Traffic snapshot logged (75 visits / 38 days)
+
+Saved a GoatCounter screenshot (quarter view, 2026-08-15 to 2026-09-21)
+to `content-pipeline/analytics/2026-09-21-goatcounter-traffic.png` and
+wrote the matching `2026-09-21-traffic-summary.md`, same format as the
+three prior snapshots. Requested as "end of the 4th week," but flagged
+in the summary itself: the site launched 2026-08-15, so 38 days in
+lands closer to week 6 by the same counting the 09-06 ("week 3") and
+09-13 ("week 4") snapshots used — filed under today's date rather than
+reusing "week 4," to avoid colliding with the 09-13 snapshot.
+
+Headline read: growth has slowed (75 visits, up from 67 at 09-13 —
+roughly 0.9/day added, versus ~1.8/day in the stretch before that).
+Home page still absorbing nearly all of the growth; no individual post
+has broken out. Ethiopia/US split (55%/33%) held roughly steady for
+the first time rather than swinging, which may mean it's stabilizing,
+though one reading isn't enough to confirm that. Still far too low a
+volume for any ad-network economics to mean anything.
+
+## 2026-09-21 — Published today's post: "The Beginner's Financial Order of Operations: Budget to Invest"
+
+### What was done
+Wrote and published the next pending keyword from the queue (budgeting
+pillar, index 34 of the priority-ordered list — the first `pending`
+item after 34 straight `published` entries). Session run via Claude
+chat with a manually-provided GitHub PAT, same pattern as prior
+chat-based sessions.
+
+Structured as the site's first "order of operations" piece: starter
+buffer → employer match → high-interest debt → full emergency fund →
+remaining tax-advantaged room → taxable investing → low-interest debt
+vs. more investing, each step justified rather than just listed.
+Flagged as US-centric on the tax-advantaged-account step specifically,
+and cross-linked out to the UK/Canada equivalents for those
+readers rather than assuming a US audience throughout. Included a
+worked $500/month example and a common-mistakes section
+(`depthReviewed: true`, `pinApproved: true` from the start, same
+two-tier-model shortcut used for prior full-depth posts).
+
+Added a reverse cross-link from `how-to-start-investing-with-little-
+money`'s intro (which already gestured at "order of operations"
+without fully covering it) pointing to this new, fuller post — same
+cross-linking pattern as prior publishes.
+
+Generated hero (`public/heroes/financial-order-of-operations.png`) and
+pin (`public/pins/financial-order-of-operations.png`, using the `flow`
+pin visual — `["Starter buffer", "Employer match", "High-interest
+debt", "Invest"]` — a good fit since the topic is literally a
+sequence, first post to use `flow` instead of the default `icon`) via
+the standard template scripts, plus an X draft via
+`generate-x-drafts.mjs`. Regenerated the Pinterest budgeting feed.
+Marked the keyword `published` in `content-pipeline/keyword-queue.json`.
+
+Ran a full `npm run build` before pushing anything — passed clean (50
+pages, no errors) — then pushed to `main` (commit `18da5aa`).
+
+### Still open
+- No Pinterest re-check yet on whether the 09-13 snapshot's first-ever
+  Pinterest referral (logged in `content-pipeline/analytics/`) has been
+  followed by a second one — see today's traffic snapshot above, not
+  yet as of this session.
+- X draft for this post is generated but not yet manually posted — same
+  generate-vs-post gap flagged in the 09-20 engagement-strategy entry
+  below.
+
+
+
 ## 2026-09-20 — Email signup went live: real Kit form wired in
 
 Walked through Kit's onboarding and form-creation flow live
