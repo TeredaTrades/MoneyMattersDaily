@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## financial-order-of-operations
+
+**Post (attach the matching pin image from public/pins/):**
+```
+The Beginner's Financial Order of Operations: Budget to Invest — Pay off debt, save, or invest — which comes first? Here's the actual sequence, in order, and why doing them in the wrong order quietly costs money.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/financial-order-of-operations/
+```
+
 ## how-european-central-bank-rate-decisions-affect-your-money
 
 **Post (attach the matching pin image from public/pins/):**

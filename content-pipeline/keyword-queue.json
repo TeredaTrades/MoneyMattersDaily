@@ -1,237 +1,237 @@
 [
-    {
-        "keyword": "how to make a budget for beginners",
-        "pillar": "budgeting",
-        "status": "published"
-    },
-    {
-        "keyword": "zero based budgeting explained",
-        "pillar": "budgeting",
-        "status": "published"
-    },
-    {
-        "keyword": "envelope budgeting method",
-        "pillar": "budgeting",
-        "status": "published"
-    },
-    {
-        "keyword": "how much should I have in an emergency fund",
-        "pillar": "saving",
-        "status": "published"
-    },
-    {
-        "keyword": "best high yield savings accounts explained",
-        "pillar": "saving",
-        "status": "published"
-    },
-    {
-        "keyword": "how to save money on a low income",
-        "pillar": "saving",
-        "status": "published"
-    },
-    {
-        "keyword": "how to build credit from scratch",
-        "pillar": "credit",
-        "status": "published"
-    },
-    {
-        "keyword": "what hurts your credit score",
-        "pillar": "credit",
-        "status": "published"
-    },
-    {
-        "keyword": "credit utilization explained",
-        "pillar": "credit",
-        "status": "published"
-    },
-    {
-        "keyword": "how to start investing with little money",
-        "pillar": "investing-basics",
-        "status": "published"
-    },
-    {
-        "keyword": "index funds explained for beginners",
-        "pillar": "investing-basics",
-        "status": "published"
-    },
-    {
-        "keyword": "compound interest explained simply",
-        "pillar": "investing-basics",
-        "status": "published"
-    },
-    {
-        "keyword": "best budgeting apps compared",
-        "pillar": "app-comparisons",
-        "status": "published"
-    },
-    {
-        "keyword": "best free investing apps compared",
-        "pillar": "app-comparisons",
-        "status": "published"
-    },
-    {
-        "keyword": "50 30 20 budget rule",
-        "pillar": "budgeting",
-        "status": "published"
-    },
-    {
-        "keyword": "best ways to automate your savings",
-        "pillar": "saving",
-        "status": "published"
-    },
-    {
-        "keyword": "best debt payoff apps compared",
-        "pillar": "app-comparisons",
-        "status": "published"
-    },
-    {
-        "keyword": "best net worth tracking apps compared",
-        "pillar": "app-comparisons",
-        "status": "published"
-    },
-    {
-        "keyword": "how to budget for long-term travel",
-        "pillar": "travel-finance",
-        "status": "published"
-    },
-    {
-        "keyword": "best banking apps for digital nomads",
-        "pillar": "travel-finance",
-        "status": "published"
-    },
-    {
-        "keyword": "how to manage money while traveling abroad",
-        "pillar": "travel-finance",
-        "status": "published"
-    },
-    {
-        "keyword": "what inflation reports mean for your budget",
-        "pillar": "news-trends",
-        "status": "published"
-    },
-    {
-        "keyword": "what stock market volatility means for your savings",
-        "pillar": "news-trends",
-        "status": "published"
-    },
-    {
-        "keyword": "UK ISAs explained: how tax-free saving works",
-        "pillar": "saving",
-        "status": "published"
-    },
-    {
-        "keyword": "what a government shutdown means for your paycheck",
-        "pillar": "news-trends",
-        "status": "published"
-    },
-    {
-        "keyword": "TFSA vs RRSP: Canada's tax-advantaged accounts explained",
-        "pillar": "investing-basics",
-        "status": "published"
-    },
-    {
-        "keyword": "how to budget on an irregular income",
-        "pillar": "budgeting",
-        "status": "published"
-    },
-    {
-        "keyword": "how UK credit scores work: Experian vs Equifax vs TransUnion",
-        "pillar": "credit",
-        "status": "published"
-    },
-    {
-        "keyword": "budgeting for freelancers and gig workers",
-        "pillar": "budgeting",
-        "status": "published"
-    },
-    {
-        "keyword": "how superannuation works: Australia's retirement savings explained",
-        "pillar": "investing-basics",
-        "status": "published"
-    },
-    {
-        "keyword": "multi-currency budgeting for remote workers",
-        "pillar": "travel-finance",
-        "status": "published"
-    },
-    {
-        "keyword": "best budgeting apps for Canadians compared",
-        "pillar": "app-comparisons",
-        "status": "published"
-    },
-    {
-        "keyword": "tax residency basics for digital nomads",
-        "pillar": "travel-finance",
-        "status": "published"
-    },
-    {
-        "keyword": "how European Central Bank rate decisions affect your money",
-        "pillar": "news-trends",
-        "status": "published"
-    },
-    {
-        "keyword": "the beginner's financial order of operations: budget to invest",
-        "pillar": "budgeting",
-        "status": "pending"
-    },
-    {
-        "keyword": "managing money in Japan as an expat or remote worker",
-        "pillar": "travel-finance",
-        "status": "pending"
-    },
-    {
-        "keyword": "free budgeting calculator templates compared",
-        "pillar": "app-comparisons",
-        "status": "pending"
-    },
-    {
-        "keyword": "EPF vs PPF: India's retirement savings basics explained",
-        "pillar": "saving",
-        "status": "pending"
-    },
-    {
-        "keyword": "debt payoff calculator explained",
-        "pillar": "app-comparisons",
-        "status": "pending"
-    },
-    {
-        "keyword": "best banking apps for Australians compared",
-        "pillar": "app-comparisons",
-        "status": "pending"
-    },
-    {
-        "keyword": "Japan's NISA program explained: tax-free investing basics",
-        "pillar": "investing-basics",
-        "status": "pending"
-    },
-    {
-        "keyword": "Thailand digital nomad visa and money basics: banking, taxes, and cost of living",
-        "pillar": "travel-finance",
-        "status": "pending"
-    },
-    {
-        "keyword": "Eurozone inflation reports explained: reading the HICP",
-        "pillar": "news-trends",
-        "status": "pending"
-    },
-    {
-        "keyword": "best money management apps for UPI and digital payments in India",
-        "pillar": "app-comparisons",
-        "status": "pending"
-    },
-    {
-        "keyword": "managing money in China: Alipay, WeChat Pay, and digital banking basics",
-        "pillar": "travel-finance",
-        "status": "pending"
-    },
-    {
-        "keyword": "managing money in Latin America as a digital nomad: banking and currency basics",
-        "pillar": "travel-finance",
-        "status": "pending"
-    },
-    {
-        "keyword": "mobile money in Africa: M-Pesa and digital banking basics explained",
-        "pillar": "travel-finance",
-        "status": "pending"
-    }
+  {
+    "keyword": "how to make a budget for beginners",
+    "pillar": "budgeting",
+    "status": "published"
+  },
+  {
+    "keyword": "zero based budgeting explained",
+    "pillar": "budgeting",
+    "status": "published"
+  },
+  {
+    "keyword": "envelope budgeting method",
+    "pillar": "budgeting",
+    "status": "published"
+  },
+  {
+    "keyword": "how much should I have in an emergency fund",
+    "pillar": "saving",
+    "status": "published"
+  },
+  {
+    "keyword": "best high yield savings accounts explained",
+    "pillar": "saving",
+    "status": "published"
+  },
+  {
+    "keyword": "how to save money on a low income",
+    "pillar": "saving",
+    "status": "published"
+  },
+  {
+    "keyword": "how to build credit from scratch",
+    "pillar": "credit",
+    "status": "published"
+  },
+  {
+    "keyword": "what hurts your credit score",
+    "pillar": "credit",
+    "status": "published"
+  },
+  {
+    "keyword": "credit utilization explained",
+    "pillar": "credit",
+    "status": "published"
+  },
+  {
+    "keyword": "how to start investing with little money",
+    "pillar": "investing-basics",
+    "status": "published"
+  },
+  {
+    "keyword": "index funds explained for beginners",
+    "pillar": "investing-basics",
+    "status": "published"
+  },
+  {
+    "keyword": "compound interest explained simply",
+    "pillar": "investing-basics",
+    "status": "published"
+  },
+  {
+    "keyword": "best budgeting apps compared",
+    "pillar": "app-comparisons",
+    "status": "published"
+  },
+  {
+    "keyword": "best free investing apps compared",
+    "pillar": "app-comparisons",
+    "status": "published"
+  },
+  {
+    "keyword": "50 30 20 budget rule",
+    "pillar": "budgeting",
+    "status": "published"
+  },
+  {
+    "keyword": "best ways to automate your savings",
+    "pillar": "saving",
+    "status": "published"
+  },
+  {
+    "keyword": "best debt payoff apps compared",
+    "pillar": "app-comparisons",
+    "status": "published"
+  },
+  {
+    "keyword": "best net worth tracking apps compared",
+    "pillar": "app-comparisons",
+    "status": "published"
+  },
+  {
+    "keyword": "how to budget for long-term travel",
+    "pillar": "travel-finance",
+    "status": "published"
+  },
+  {
+    "keyword": "best banking apps for digital nomads",
+    "pillar": "travel-finance",
+    "status": "published"
+  },
+  {
+    "keyword": "how to manage money while traveling abroad",
+    "pillar": "travel-finance",
+    "status": "published"
+  },
+  {
+    "keyword": "what inflation reports mean for your budget",
+    "pillar": "news-trends",
+    "status": "published"
+  },
+  {
+    "keyword": "what stock market volatility means for your savings",
+    "pillar": "news-trends",
+    "status": "published"
+  },
+  {
+    "keyword": "UK ISAs explained: how tax-free saving works",
+    "pillar": "saving",
+    "status": "published"
+  },
+  {
+    "keyword": "what a government shutdown means for your paycheck",
+    "pillar": "news-trends",
+    "status": "published"
+  },
+  {
+    "keyword": "TFSA vs RRSP: Canada's tax-advantaged accounts explained",
+    "pillar": "investing-basics",
+    "status": "published"
+  },
+  {
+    "keyword": "how to budget on an irregular income",
+    "pillar": "budgeting",
+    "status": "published"
+  },
+  {
+    "keyword": "how UK credit scores work: Experian vs Equifax vs TransUnion",
+    "pillar": "credit",
+    "status": "published"
+  },
+  {
+    "keyword": "budgeting for freelancers and gig workers",
+    "pillar": "budgeting",
+    "status": "published"
+  },
+  {
+    "keyword": "how superannuation works: Australia's retirement savings explained",
+    "pillar": "investing-basics",
+    "status": "published"
+  },
+  {
+    "keyword": "multi-currency budgeting for remote workers",
+    "pillar": "travel-finance",
+    "status": "published"
+  },
+  {
+    "keyword": "best budgeting apps for Canadians compared",
+    "pillar": "app-comparisons",
+    "status": "published"
+  },
+  {
+    "keyword": "tax residency basics for digital nomads",
+    "pillar": "travel-finance",
+    "status": "published"
+  },
+  {
+    "keyword": "how European Central Bank rate decisions affect your money",
+    "pillar": "news-trends",
+    "status": "published"
+  },
+  {
+    "keyword": "the beginner's financial order of operations: budget to invest",
+    "pillar": "budgeting",
+    "status": "published"
+  },
+  {
+    "keyword": "managing money in Japan as an expat or remote worker",
+    "pillar": "travel-finance",
+    "status": "pending"
+  },
+  {
+    "keyword": "free budgeting calculator templates compared",
+    "pillar": "app-comparisons",
+    "status": "pending"
+  },
+  {
+    "keyword": "EPF vs PPF: India's retirement savings basics explained",
+    "pillar": "saving",
+    "status": "pending"
+  },
+  {
+    "keyword": "debt payoff calculator explained",
+    "pillar": "app-comparisons",
+    "status": "pending"
+  },
+  {
+    "keyword": "best banking apps for Australians compared",
+    "pillar": "app-comparisons",
+    "status": "pending"
+  },
+  {
+    "keyword": "Japan's NISA program explained: tax-free investing basics",
+    "pillar": "investing-basics",
+    "status": "pending"
+  },
+  {
+    "keyword": "Thailand digital nomad visa and money basics: banking, taxes, and cost of living",
+    "pillar": "travel-finance",
+    "status": "pending"
+  },
+  {
+    "keyword": "Eurozone inflation reports explained: reading the HICP",
+    "pillar": "news-trends",
+    "status": "pending"
+  },
+  {
+    "keyword": "best money management apps for UPI and digital payments in India",
+    "pillar": "app-comparisons",
+    "status": "pending"
+  },
+  {
+    "keyword": "managing money in China: Alipay, WeChat Pay, and digital banking basics",
+    "pillar": "travel-finance",
+    "status": "pending"
+  },
+  {
+    "keyword": "managing money in Latin America as a digital nomad: banking and currency basics",
+    "pillar": "travel-finance",
+    "status": "pending"
+  },
+  {
+    "keyword": "mobile money in Africa: M-Pesa and digital banking basics explained",
+    "pillar": "travel-finance",
+    "status": "pending"
+  }
 ]

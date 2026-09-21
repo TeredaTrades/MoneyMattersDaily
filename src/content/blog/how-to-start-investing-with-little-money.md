@@ -11,6 +11,8 @@ depthReviewed: true
 
 The idea that investing requires a few thousand dollars to "get started" is left over from a version of brokerages that mostly doesn't exist anymore. Fractional shares mean $20 can buy a slice of an index fund or a single expensive stock. The real barrier for most people isn't the dollar amount — it's not knowing the order to do things in.
 
+The four-step version below covers the investing-specific slice of that order; see [the beginner's financial order of operations](/blog/financial-order-of-operations/) for the fuller sequence, including tax-advantaged accounts and the low-interest-debt-vs-investing trade-off that comes after this.
+
 ## The order that actually matters
 
 1. **Employer match first, if there is one.** A 401(k) match is an immediate, guaranteed return — often 50%–100% on whatever you contribute up to the match — before a single dollar is invested in anything. No index fund return competes with that.
