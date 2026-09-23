@@ -12,6 +12,37 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-23 — Added 11 keywords to the queue (credit-pillar gap fix)
+
+Queue review showed credit at only 4 posts total (all published, 0
+pending) against travel-finance at 10 and app-comparisons at 9.
+Proposed a batch skewed toward credit, checked it against the user's
+"not too US-centric" note, and swapped out three ideas that were
+US-only concepts before adding: credit freeze vs. credit lock (a US
+legal mechanism, no clean equivalent elsewhere) became "what actually
+makes up a credit score," CDs vs. HYSA became "term deposits vs
+high-yield savings accounts" (keeping the globally-used term, CD as
+an aside rather than the framing), and Roth vs. traditional IRA (pure
+US tax code) became Singapore's CPF — consistent with the UK/Canada/
+Australia/India/Japan retirement and tax-account posts already in the
+queue.
+
+Added, all `pending`:
+- credit: how to dispute an error on your credit report; secured
+  credit cards explained; does checking your own credit score hurt
+  it; what actually makes up a credit score (and what doesn't)
+- saving: how to build a sinking fund for irregular expenses; term
+  deposits vs high-yield savings accounts
+- budgeting: how to budget as a couple with separate finances;
+  6-month savings challenge templates that actually work
+- investing-basics: Singapore's CPF explained; what a target-date
+  fund actually does
+- news-trends: what a recession actually means for your personal
+  finances
+
+Queue is now 58 total, 21 pending. No build/publish this entry — just
+the queue file.
+
 ## 2026-09-23 — Published today's post: "Free Budgeting Calculator Templates Compared (2026)"
 
 ### What was done
