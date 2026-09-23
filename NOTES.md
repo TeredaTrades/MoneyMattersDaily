@@ -12,6 +12,44 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-23 — Published today's post: "Free Budgeting Calculator Templates Compared (2026)"
+
+### What was done
+Published the next pending keyword (index 36, app-comparisons pillar).
+Researched current free options via web search across several
+independent 2026 roundups rather than relying on training data, since
+free template availability and Tiller's pricing change: Google Sheets'
+built-in Monthly Budget template, Vertex42's Personal/Family Budget
+Spreadsheet, Aspire Budgeting (a complete free zero-based system in
+Google Sheets), Tiller's free static Foundation Template (deliberately
+distinguished from Tiller's paid ~$79-99/yr auto-bank-sync product,
+since multiple sources flagged that confusion), and NerdWallet's
+50/30/20 online calculator as the "one-time answer, not an ongoing
+system" contrast case. Framed the whole post around the
+calculator-vs-template distinction implied by the keyword itself,
+since conflating the two is the likely reason someone abandons
+budgeting after one session.
+
+Added reverse cross-link from `best-budgeting-apps-compared`'s closing
+section pointing to this post (spreadsheet templates as the non-app
+alternative), and this post links back to that one (apps as the fix
+once manual spreadsheet entry stops scaling) — same
+sister-post-in-both-directions pattern as the Japan post yesterday.
+
+Generated hero + pin (default `icon` pin visual, following the
+app-comparisons pillar's existing convention of not using a custom
+pinVisual) and X draft via the standard scripts. Regenerated all
+Pinterest feeds (app-comparisons feed now has 5 approved posts).
+Marked the keyword `published` in `content-pipeline/keyword-queue.json`.
+
+`npm run build` passed clean (52 pages) before pushing.
+
+### Still open
+- Same X-draft-generated-but-not-yet-manually-posted gap as every
+  prior entry.
+- Next pending keyword is index 37, "EPF vs PPF: India's retirement
+  savings basics explained" (pillar not yet checked).
+
 ## 2026-09-22 — Published today's post: "Managing Money in Japan as an Expat or Remote Worker"
 
 ### What was done

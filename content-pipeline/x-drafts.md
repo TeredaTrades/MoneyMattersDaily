@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## free-budgeting-calculator-templates-compared
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Free Budgeting Calculator Templates Compared (2026) — Google Sheets, Vertex42, Aspire Budgeting, Tiller's free template, and NerdWallet's 50/30/20 calculator — which free option actually fits how you want to budget.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/free-budgeting-calculator-templates-compared/
+```
+
 ## managing-money-in-japan-as-an-expat-or-remote-worker
 
 **Post (attach the matching pin image from public/pins/):**
