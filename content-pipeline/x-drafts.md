@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## epf-vs-ppf-indias-retirement-savings-basics-explained
+
+**Post (attach the matching pin image from public/pins/):**
+```
+EPF vs PPF: India's Retirement Savings Basics Explained — EPF is a mandatory salary-linked retirement account; PPF is a voluntary one anyone can open. Here's how the current interest rates, contribution rules, and lock-ins actually compare — and why most salaried Indians end up…
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/epf-vs-ppf-indias-retirement-savings-basics-explained/
+```
+
 ## free-budgeting-calculator-templates-compared
 
 **Post (attach the matching pin image from public/pins/):**

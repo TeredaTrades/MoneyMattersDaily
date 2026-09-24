@@ -12,6 +12,54 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-24 — Published today's post: "EPF vs PPF: India's Retirement Savings Basics Explained"
+
+### What was done
+Published the next pending keyword (index 37, saving pillar). Researched
+current 2026 figures via web search across several independent sources
+rather than relying on training data, since both rates move on their own
+schedules: EPF's 8.25% (EPFO, declared annually, holding since FY 2024-25),
+PPF's 7.1% (Ministry of Finance, revised quarterly), the 12%/12%
+contribution split with the EPS carve-out (only 3.67% of the employer's
+12% actually reaches EPF, the other 8.33% goes to a separate pension
+scheme), the ₹2.5 lakh EPF tax-free-interest threshold, and PPF's 15-year
+lock-in with partial withdrawals only from the 7th financial year — cross-
+checked across multiple sources since a few disagreed on the exact partial-
+withdrawal start year (6th vs 7th) before settling on the majority/EPFO-
+consistent answer.
+
+Framed the whole post around the "mandatory + employer-linked" vs.
+"voluntary + self-opened" distinction, since that's the actual decision
+point (most people don't choose between EPF and PPF — salaried employees
+get EPF automatically and separately decide whether to also open PPF).
+Included a worked example contrasting a salaried EPF saver's 30-year
+horizon against a self-employed PPF saver's 15-year lock-in at the same
+~8% ballpark rate, to make the horizon difference concrete rather than
+just stating it.
+
+Linked forward to `how-to-save-money-on-a-low-income` and two
+investing-basics posts (`index-funds-explained-for-beginners`,
+`how-to-start-investing-with-little-money`) as natural next steps; didn't
+force a reverse cross-link into an existing same-pillar post since none of
+the current saving-pillar posts (US-focused low-income saving, UK ISAs)
+were a natural fit for a reverse link into an India-specific retirement
+post.
+
+Generated hero + pin (`table` pinVisual, following the same pattern as the
+UK ISAs post — EPF rate / PPF rate / PPF lock-in as the three rows) and X
+draft via the standard scripts. Regenerated the saving pillar's Pinterest
+feed (now 6 approved posts). Marked the keyword `published` in
+`content-pipeline/keyword-queue.json`.
+
+`npm run build` passed clean (53 pages) before pushing.
+
+### Still open
+- Same X-draft-generated-but-not-yet-manually-posted gap as every prior
+  entry — draft is ready in `content-pipeline/x-drafts.md`, pin image at
+  `public/pins/epf-vs-ppf-indias-retirement-savings-basics-explained.png`.
+- Next pending keyword is index 38, "debt payoff calculator explained"
+  (app-comparisons).
+
 ## 2026-09-23 — Added 11 keywords to the queue (credit-pillar gap fix)
 
 Queue review showed credit at only 4 posts total (all published, 0
