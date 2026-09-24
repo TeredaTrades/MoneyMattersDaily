@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## debt-payoff-calculator-explained
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Debt Payoff Calculator Explained — What a debt payoff calculator actually does with snowball, avalanche, and hybrid math — plus an honest look at Undebt.it, Unbury.me, Ramsey's calculator, and Vertex42's spreadsheet.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/debt-payoff-calculator-explained/
+```
+
 ## epf-vs-ppf-indias-retirement-savings-basics-explained
 
 **Post (attach the matching pin image from public/pins/):**

@@ -9,7 +9,7 @@ pinApproved: false
 depthReviewed: false
 ---
 
-Debt payoff apps split into two real categories, and mixing them up is the most common reason people pick the wrong one. Some apps are dedicated payoff planners — you enter your balances and interest rates, pick a strategy, and the app shows your debt-free date. Others are budgeting or spending apps that treat debt payoff as one feature among many. Neither is "better" in the abstract; the right pick depends on whether your problem is not having a plan, or not knowing where your money goes each month. Pricing and features below are approximate and change; check each app's current site before signing up.
+Debt payoff apps split into two real categories, and mixing them up is the most common reason people pick the wrong one. Some apps are dedicated payoff planners — you enter your balances and interest rates, pick a strategy, and the app shows your debt-free date. Others are budgeting or spending apps that treat debt payoff as one feature among many. Neither is "better" in the abstract; the right pick depends on whether your problem is not having a plan, or not knowing where your money goes each month. Pricing and features below are approximate and change; check each app's current site before signing up. If you just want a one-time payoff date and don't need an app at all, [Debt Payoff Calculator Explained](/blog/debt-payoff-calculator-explained/) covers the free web calculators and spreadsheets that handle that without any sign-up.
 
 ## Undebt.it — best free option if you already have a plan
 
