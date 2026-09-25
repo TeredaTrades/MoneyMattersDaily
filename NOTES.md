@@ -12,6 +12,59 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-25 — Published today's post: "Debt Payoff Calculator Explained"
+
+### What was done
+Published the next pending keyword (index 38, app-comparisons pillar).
+Framed it as an explainer rather than a straight comparison, since the
+keyword itself ("...explained") is asking how the calculators work, not
+just which is best: opened with the shared month-by-month rollover
+mechanic every debt payoff calculator runs underneath, then snowball vs.
+avalanche vs. hybrid as the one real choice a user makes, before comparing
+four free tools — Undebt.it (most methods, free tracking), Unbury.me
+(simplest, no-account one-time answer), Ramsey's calculator (snowball
+only, opinionated by design), and Vertex42's spreadsheet (full formula
+visibility, no web app). Verified current average credit card APR via web
+search (~21% across all accounts, ~21.5% on interest-accruing balances,
+per Federal Reserve data as of Q1 2026) rather than reusing an older
+figure from memory, and avoided citing the sketchier SEO-mill calculator
+sites that turned up in search (cashlendy, debtmeltpro, payoffdebtcalc)
+in favor of naming actual named tools with a real track record.
+
+Cross-linked both directions with the existing `best-debt-payoff-apps-
+compared` post: this one points there for anyone who wants a bank-synced
+app instead of a manual-entry calculator, and added a reverse link from
+that post's intro pointing here for anyone who just wants a one-time date
+with no app.
+
+Generated hero + pin (`flow` pinVisual: List debts → Pick a method → See
+your date) via the standard scripts. First title attempt ("Debt Payoff
+Calculator Explained: How They Work and Which Free One to Use") clipped
+on the pin — same class of bug as the 09-05 flow-visual wrap issue, just
+from an overlong title this time rather than a bad wrap heuristic. Fixed
+by shortening the title to match the target keyword exactly ("Debt Payoff
+Calculator Explained") and regenerating; confirmed clean by viewing the
+PNG before committing. Generated X draft via the standard script.
+Regenerated the app-comparisons pillar's Pinterest feed. Marked the
+keyword `published` in `content-pipeline/keyword-queue.json`.
+
+`npm run build` passed clean (54 pages) before pushing directly to main;
+both `Deploy to GitHub Pages` and `Close post reminder on publish`
+Actions confirmed green afterward via the API.
+
+### Still open
+- Same X-draft-generated-but-not-yet-manually-posted gap as every prior
+  entry — draft is ready in `content-pipeline/x-drafts.md`, pin image at
+  `public/pins/debt-payoff-calculator-explained.png`.
+- Next pending keyword is index 39, "best banking apps for Australians
+  compared" (app-comparisons).
+- Worth a standing note for future sessions: when using a `flow` or
+  `table` pinVisual, check the actual title length against the pin's
+  rendered output before committing, not just the wrap-heuristic bug
+  fixed on 09-05 — a title that's simply too long for three lines clips
+  the same way a bad-wrap title does, and the fix (shorten the title) is
+  different from that bug's fix (reword one flow-step label).
+
 ## 2026-09-24 — Published today's post: "EPF vs PPF: India's Retirement Savings Basics Explained"
 
 ### What was done
