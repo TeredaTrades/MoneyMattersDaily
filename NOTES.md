@@ -3903,3 +3903,14 @@ best fits for a zero-traffic start):
   networks.
 - HTTPS enforcement pending cert auto-provision (check back in Pages
   settings).
+
+### 2026-09-26 — Published today's post
+- Published "Best Banking Apps for Australians Compared (2026)" (app-comparisons
+  pillar, keyword "best banking apps for Australians compared" marked published
+  in keyword-queue.json). Compares Up, ING, UBank, Macquarie, and the Big Four
+  on fees, savings-rate conditions, and app features; worked example shows what
+  a single missed bonus-rate condition costs vs an unconditional account.
+- Generated pin (table visual: no-conditions/best-app/highest-rate rows) and
+  in-post hero banner; both committed to public/pins and public/heroes.
+- Generated X draft (link-in-first-reply format) in content-pipeline/x-drafts.md.
+- Local build verified clean (55 pages) before pushing. Commit fa5a347.
