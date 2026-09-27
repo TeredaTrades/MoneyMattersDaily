@@ -33,7 +33,7 @@ The allowance doesn't roll over. If you only pay in £5,000 this tax year, you d
 
 **It's for:** anyone in the UK trying to decide whether to use an ISA at all, or which type fits a specific goal — an emergency fund, a house deposit, or long-term investing.
 
-**It's not for:** people outside the UK tax system, since ISAs are a UK-specific wrapper with no equivalent status abroad, or anyone already using their full £20,000 and wondering what comes next — that's a pensions/SIPP question, which works differently and isn't covered here.
+**It's not for:** people outside the UK tax system — ISAs are a UK-specific wrapper, though other countries run their own versions of the same idea (see this site's explainers on [Canada's TFSA](/blog/tfsa-vs-rrsp-canadas-tax-advantaged-accounts-explained/) and [Japan's NISA](/blog/japans-nisa-program-explained-tax-free-investing-basics/)) — or anyone already using their full £20,000 and wondering what comes next — that's a pensions/SIPP question, which works differently and isn't covered here.
 
 ## A worked example: splitting the allowance across two goals
 

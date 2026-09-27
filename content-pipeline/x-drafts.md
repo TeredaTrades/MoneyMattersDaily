@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## japans-nisa-program-explained-tax-free-investing-basics
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Japan's NISA Program Explained: Tax-Free Investing Basics — NISA lets investors in Japan keep all investment gains free of tax, permanently. Here's how the two account types work, the actual limits, and what changed for 2026.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/japans-nisa-program-explained-tax-free-investing-basics/
+```
+
 ## best-banking-apps-for-australians-compared
 
 **Post (attach the matching pin image from public/pins/):**
