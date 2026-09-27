@@ -16,7 +16,7 @@ them, so the image itself carries attribution even before the reply.
 
 **Post (attach the matching pin image from public/pins/):**
 ```
-Thailand Digital Nomad Visa and Money Basics: Banking, Taxes, and Cost of Living — The Destination Thailand Visa gets remote workers in the door, but banking has quietly gotten harder, the tax-residency test isn't what most guides say, and the two Thailands — local prices vs. t…
+Thailand Digital Nomad Visa and Money Basics — The DTV gets you in the door, but most banks now turn DTV holders away, the 180-day tax rule isn't a simple day count, and Chiang Mai has two very different price tags for the same city.
 ```
 
 **First reply (post right after, replying to your own post — no image needed):**
