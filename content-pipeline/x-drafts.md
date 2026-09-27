@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## thailand-digital-nomad-visa-and-money-basics
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Thailand Digital Nomad Visa and Money Basics: Banking, Taxes, and Cost of Living — The Destination Thailand Visa gets remote workers in the door, but banking has quietly gotten harder, the tax-residency test isn't what most guides say, and the two Thailands — local prices vs. t…
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/thailand-digital-nomad-visa-and-money-basics/
+```
+
 ## japans-nisa-program-explained-tax-free-investing-basics
 
 **Post (attach the matching pin image from public/pins/):**
