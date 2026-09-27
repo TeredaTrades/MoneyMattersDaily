@@ -12,7 +12,57 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
-## 2026-09-25 — Published today's post: "Debt Payoff Calculator Explained"
+## 2026-09-27 — Published today's post: "Japan's NISA Program Explained: Tax-Free Investing Basics"
+
+### What was done
+Published the next pending keyword (index 40, investing-basics pillar).
+Covered NISA's two-pillar structure (Tsumitate for scheduled fund
+investing, Growth for stocks/ETFs/lump sums), the actual post-2024-reform
+limits (¥1.2M/¥2.4M annual per pillar, ¥18M lifetime cap — the lifetime
+figure is the one that actually binds, not the annual one), the removal
+of the old system's 5/20-year tax-free expiry, the tax-residency
+requirement for foreign residents (and that gains become taxable again
+after permanently leaving Japan), and specifically called out the
+new-for-2026 development that NISA-style accounts reopened to children
+under 18 via the tax reform bills the National Diet passed March 31,
+2026 — flagged clearly as new, not a rehash of the 2024 redesign.
+Verified all figures via web search across several independent sources
+(RetireJapan, Nippon.com, Interactive Brokers Japan, a 2026-dated expat
+investing guide) rather than relying on training data, same bar as every
+prior country-specific figure on this site.
+
+Added reverse cross-links from both the UK ISA and TFSA vs RRSP posts,
+tying the three tax-advantaged-account explainers together. Also caught
+and fixed an overstated claim already sitting in the UK ISA post ("no
+equivalent status abroad") while adding its outbound link — worth a
+general reminder to read the sentence around a link before just
+inserting one, since it surfaced an unrelated small accuracy issue.
+
+Generated hero + pin (`table` pinVisual: Tsumitate/Growth/lifetime cap
+rows, same shape as the UK ISA post's pin) via the standard scripts;
+viewed the rendered PNG before committing per the standing note from the
+09-25 entry — clean, no clipping. Generated X draft via the standard
+script. Regenerated the investing-basics pillar's Pinterest feed (5 → 6
+approved posts). Marked the keyword `published` in
+`content-pipeline/keyword-queue.json`.
+
+`npm run build` passed clean (56 pages) before pushing directly to main;
+both `Deploy to GitHub Pages` and `Close post reminder on publish`
+Actions confirmed green afterward via the API.
+
+### Still open
+- Same X-draft-generated-but-not-yet-manually-posted gap as every prior
+  entry, by design (posting is manual, not automated) — draft is ready
+  in `content-pipeline/x-drafts.md`, pin image at
+  `public/pins/japans-nisa-program-explained-tax-free-investing-basics.png`.
+- Pinterest's RSS auto-publish takes up to ~24h to turn this into an
+  actual pin on the Investing Basics board — not a bug if it's not
+  showing up immediately, see the 2026-08-25 entry for the full check
+  order if it's still missing after a day.
+- Next pending keyword is index 41, "Thailand digital nomad visa and
+  money basics: banking, taxes, and cost of living" (travel-finance).
+
+
 
 ### What was done
 Published the next pending keyword (index 38, app-comparisons pillar).
