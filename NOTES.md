@@ -12,6 +12,28 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-29 — Open items: refresh Eurozone HICP numbers; auto-publish on pause
+
+### TODO: update the Eurozone HICP post once the new numbers are out
+`src/content/blog/eurozone-inflation-reports-explained-reading-the-hicp.md`
+carries August 2026 figures (Eurostat release of 2026-09-17). Update it
+once the actual new data is released: the September flash estimate on
+2026-10-02, and the full September release on 2026-10-16 (the flash can be
+revised, so the final release is the one to treat as settled). Things to
+change: headline rate, the four component rows and their contributions, the
+core figure, the national examples, the worked example's rates and totals
+(recompute the personal-inflation percentages), the "next release" dates in
+"Getting started", the Last updated line, and the pin's `tableRows` (then
+regenerate the pin with `npm run pin:generate -- <slug>` and view the PNG
+before committing). Set `updatedDate` in frontmatter.
+
+### Auto-publish: ON PAUSE TILL FURTHER NOTICE
+The unattended auto-publish idea is shelved at the owner's request.
+`content-pipeline/auto-publish-trial.json` now has `enabled: false` and a
+pause note, so the workflow skips even if someone edits the expiry date.
+Do not resume, re-enable, or extend it unless the owner explicitly asks.
+Normal flow stays: daily reminder, human-reviewed posts.
+
 ## 2026-09-29 — Published today's post: "Eurozone Inflation Reports Explained: Reading the HICP"
 
 ### What was done
