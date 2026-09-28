@@ -16,7 +16,7 @@ The monthly inflation report is a national average, not a receipt from your own 
 
 **It's for:** anyone who sees an inflation headline and wants to know what, if anything, to actually do with it.
 
-**It's not for:** deciding whether to raise variable-rate debt payoff urgency because of a Fed move — that's a related but separate decision covered in [what Fed rate decisions actually mean for your wallet](/blog/what-fed-rate-decisions-mean-for-you/).
+**It's not for:** deciding whether to raise variable-rate debt payoff urgency because of a Fed move — that's a related but separate decision covered in [what Fed rate decisions actually mean for your wallet](/blog/what-fed-rate-decisions-mean-for-you/). Euro-area readers will want the HICP version instead: [Eurozone inflation reports explained](/blog/eurozone-inflation-reports-explained-reading-the-hicp/).
 
 ## What the CPI report actually measures
 

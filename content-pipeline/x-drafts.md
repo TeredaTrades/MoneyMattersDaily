@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## eurozone-inflation-reports-explained-reading-the-hicp
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Eurozone Inflation Reports Explained: Reading the HICP — Euro-area inflation just hit 3.2%, but the headline hides a 14.3% energy jump and a much calmer core. Here's how to read a HICP release and what it means for your own budget.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/eurozone-inflation-reports-explained-reading-the-hicp/
+```
+
 ## thailand-digital-nomad-visa-and-money-basics
 
 **Post (attach the matching pin image from public/pins/):**

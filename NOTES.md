@@ -12,6 +12,50 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-29 — Published today's post: "Eurozone Inflation Reports Explained: Reading the HICP"
+
+### What was done
+Published the next pending keyword (index 42, news-trends pillar).
+Explained the HICP release format (flash vs. final, EA21 composition since
+Bulgaria joined 2026-01-01), the four component groups with their basket
+weights and contributions to the headline, headline vs. core, and the
+spread between national rates. Built the worked example from the real
+component table so the numbers hang together: a EUR 2,800/month household
+lands at ~3.6% personal inflation with a variable energy line vs. ~1.8% on
+a fixed-price energy contract.
+
+All figures verified against Eurostat's 2026-09-17 euro indicators release
+(August 2026 data): headline 3.2% (flash was 3.3%), July 2.9%, Aug 2025
+2.0%, energy 14.3% (weight 9.03%, contributing 1.29pp), services 3.0%,
+NEIG 1.2%, food/alcohol/tobacco 1.1%, core 2.4%. Weights and contributions
+come straight from the release tables. Next flash (September) is scheduled
+2026-10-02; next full release 2026-10-16 — both named in the post.
+
+Cross-linked both directions with the existing ECB rate-decisions post and
+the US CPI post (the latter now points euro-area readers here from its
+"not for" line).
+
+Hero + pin (`table` pinVisual: Headline 3.2% / Energy 14.3% / Core 2.4%)
+generated via the standard scripts; viewed the rendered PNG before
+committing per the 09-25 standing note — clean, no clipping. X draft
+generated via the standard script. news-trends Pinterest feed regenerated
+by the build. Marked the keyword `published` in
+`content-pipeline/keyword-queue.json`.
+
+### Still open
+- Same X-draft-generated-but-not-yet-manually-posted gap as every prior
+  entry, by design. Draft is in `content-pipeline/x-drafts.md`, pin image
+  at `public/pins/eurozone-inflation-reports-explained-reading-the-hicp.png`.
+- Post has time-sensitive numbers (August 2026 HICP). After the 2026-10-02
+  flash / 2026-10-16 release, the "Last updated" note and figures will be
+  stale — worth a refresh pass then.
+- Retroactive log: the 2026-09-28/29 "Thailand Digital Nomad Visa and Money
+  Basics" post (travel-finance, commit 36ad7a3, pubDate 2026-09-28, plus
+  follow-up 8acd743 tightening its X draft copy) was published without a
+  NOTES.md entry; logged here so the record is complete.
+- Next pending keyword is index 43, "best money management apps for UPI and
+  digital payments in India" (app-comparisons).
+
 ## 2026-09-27 — Published today's post: "Japan's NISA Program Explained: Tax-Free Investing Basics"
 
 ### What was done

@@ -57,6 +57,7 @@ That's about €27 a month, or roughly €320 a year, on this particular loan si
 - **If you're on a variable-rate mortgage**, check your specific reset date and reference tenor (6-month vs. 12-month Euribor) rather than assuming the change hits immediately — a 12-month reset means you're insulated from a single hike for up to a year.
 - **If you're holding euro cash savings**, this is the moment to compare your bank's rate against online-only competitors — legacy banks are historically slower to pass increases on to savers than to borrowers.
 - **If you're mortgage shopping**, watch the trend across two or three Governing Council meetings rather than reacting to any single decision — the October and December 2026 meetings will show whether this hike was a one-off or the start of a new tightening phase.
+- **If you want to see what's behind the ECB's inflation target**, [Eurozone inflation reports explained](/blog/eurozone-inflation-reports-explained-reading-the-hicp/) breaks down the monthly HICP release, including why energy and core inflation currently point in different directions.
 - **If you're not in the euro area at all**, this mostly matters as a currency-strength signal (higher rates tend to support the euro) rather than something that touches your own accounts directly.
 
 ## Common mistakes
