@@ -12,6 +12,53 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-09-30 — Published today's post: "Best Money Management Apps for UPI and Digital Payments in India (2026)"
+
+### What was done
+Published the next pending keyword (index 43, app-comparisons pillar).
+Framed around "paying vs. tracking are two jobs": PhonePe / Google Pay /
+Paytm as the payment layer, SMS-reading trackers (Money View, Axio, ET
+Money; Android only) and Jupiter (neobank) as the understanding layer.
+Key mechanics explained: limits belong to the bank account, not the app
+(Rs 1 lakh/day, commonly ~20 txns/24h, banks can be lower); every UPI
+debit triggers a bank SMS whichever app was used; UPI Lite PIN-free up to
+Rs 1,000/txn.
+
+Verified via web search (2026-09-30): August 2026 volume shares (PhonePe
+45.9%, Google Pay 32.4%, Paytm 8.1%, per Inc42/NPCI data); the UPI
+merchant discount rate framework effective 2026-10-15 (DFS FAQ of
+2026-09-15 as reported by Forbes/PIB: 0.4% on merchant payments above
+Rs 2,000 capped at Rs 300, P2P and <=Rs 2,000 free, small merchants up
+to Rs 1 lakh/month exempt, merchants barred from passing it on; PIL
+pending in the Supreme Court); NPCI 30% app-share cap deferred to
+2026-12-31. Card-on-bill-page convenience fees (Google Pay 0.5-1% + GST,
+PhonePe, Paytm platform fee) come from older secondary sources, so the
+post hedges them as "has carried / roughly" and shows a clearly
+illustrative Rs 6,000 bill example (Rs 35.40-70.80/bill, ~Rs 425-850/yr).
+Tracker feature claims are from SEO-style roundups, so they are kept
+general (SMS-based, Android-only, promotions caveat) rather than
+feature-by-feature.
+
+Reverse cross-links added to best-budgeting-apps-compared and
+epf-vs-ppf-indias-retirement-savings-basics-explained. Hero + pin
+(`table` pinVisual, "Rs" instead of the rupee glyph in tableRows to
+avoid font risk) generated via the standard scripts; pin viewed before
+committing, clean, no clipping. X draft generated, then hand-edited
+because the script's auto copy truncated mid-word ("c..."). Keyword
+marked `published`. `npm run build` passed (59 pages).
+
+### Still open
+- X draft ready in `content-pipeline/x-drafts.md` but not manually posted,
+  by design. Pin image at
+  `public/pins/best-money-management-apps-for-upi-and-digital-payments-in-india.png`.
+- Time-sensitive: re-check after 2026-10-15 (MDR live, any court
+  developments) and after the 2026-12-31 NPCI cap deadline; refresh
+  market-share figures.
+- Script issue worth fixing: generate-x-drafts.mjs still truncates long
+  descriptions mid-word (same class as the 09-27 Thailand fix).
+- Next pending keyword: index 44, "managing money in China: Alipay, WeChat
+  Pay, and digital banking basics" (travel-finance).
+
 ## 2026-09-29 — Open items: refresh Eurozone HICP numbers; auto-publish on pause
 
 ### TODO: update the Eurozone HICP post once the new numbers are out

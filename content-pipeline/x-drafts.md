@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## best-money-management-apps-for-upi-and-digital-payments-in-india
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Paying and tracking are two different jobs on UPI. PhonePe, Google Pay and Paytm do the paying; Money View, Axio or ET Money show where it went. UPI stays free for you, and the Oct 15 merchant fee doesn't change that. Full comparison:
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/best-money-management-apps-for-upi-and-digital-payments-in-india/
+```
+
 ## eurozone-inflation-reports-explained-reading-the-hicp
 
 **Post (attach the matching pin image from public/pins/):**
