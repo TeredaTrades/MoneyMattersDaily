@@ -65,4 +65,6 @@ A workable habit: once a week, pull up your card and cash spending, add it up, a
 
 Before you leave: set up the three-way split, log a travel notice for every card and every country on your route, and put a recurring weekly reminder in your phone to check spending against pace. None of this requires opening a new account or changing how you already manage money at home — it's entirely about being ready for the two things that actually go wrong on trips: a card that stops working, and a rate you didn't need to accept.
 
+Heading to mainland China specifically? Payments there run on QR codes, so see [managing money in China: Alipay, WeChat Pay, and digital banking basics](/blog/managing-money-in-china-alipay-wechat-pay-and-digital-banking-basics/).
+
 *Last updated September 2026.*

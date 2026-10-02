@@ -12,6 +12,41 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-02 — Published today's post: "Managing Money in China: Alipay, WeChat Pay, and Digital Banking Basics"
+
+### What was done
+Published the next pending keyword (index 44, travel-finance). Note: no post
+had gone out for 2026-10-01 (last publish before this was 2026-09-30), so
+that day was skipped; not back-filled.
+
+Verified via web search (2026-10-02): PBOC March 2024 announcement raising
+foreign-user mobile-payment limits from US$1,000 to US$5,000 per transaction
+and US$10,000 to US$50,000 per year (Xinhua / China Daily / gov.cn); State
+Council-backed guidance that cash and bank cards stay accepted (3-star+
+hotels, 4A/5A attractions); CNBC/Ant report of a lower unverified allowance
+(~US$2,000/yr on Alipay at the time). Travel-blog sources disagree on the
+foreign-card fee (3% above CNY 200 vs. waivers) and on bank-account
+requirements, so the post hedges both and tells readers to check in-app
+terms. P2P-transfer restriction on foreign-card accounts is from secondary
+sources and is worded as "reports say".
+
+Reverse cross-links added to how-to-manage-money-while-traveling-abroad and
+best-banking-apps-for-digital-nomads. Hero + pin (`table` pinVisual) via the
+standard scripts; pin viewed before committing, clean. X draft hand-edited
+(script truncated mid-word again). Keyword marked `published`.
+`npm run build` passed (60 pages).
+
+### Still open
+- X draft ready in `content-pipeline/x-drafts.md`, not manually posted, by
+  design. Pin at `public/pins/managing-money-in-china-alipay-wechat-pay-and-digital-banking-basics.png`.
+- Time-sensitive: re-check fee and limit terms in the Alipay/WeChat Pay apps
+  periodically; sources conflict on them.
+- Script issue still open: generate-x-drafts.mjs truncates long descriptions
+  mid-word.
+- Next pending keyword: index 45, "managing money in Latin America as a
+  digital nomad" (travel-finance).
+---
+
 ## 2026-09-30 — Published today's post: "Best Money Management Apps for UPI and Digital Payments in India (2026)"
 
 ### What was done

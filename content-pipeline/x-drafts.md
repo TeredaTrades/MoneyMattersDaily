@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## managing-money-in-china-alipay-wechat-pay-and-digital-banking-basics
+
+**Post (attach the matching pin image from public/pins/):**
+```
+China runs on QR codes, and foreign cards now work in both Alipay and WeChat Pay. Set up and verify before you land, link a no-foreign-fee card, and keep some cash as backup. Limits, fees, and when a local bank account is worth it:
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/managing-money-in-china-alipay-wechat-pay-and-digital-banking-basics/
+```
+
 ## best-money-management-apps-for-upi-and-digital-payments-in-india
 
 **Post (attach the matching pin image from public/pins/):**

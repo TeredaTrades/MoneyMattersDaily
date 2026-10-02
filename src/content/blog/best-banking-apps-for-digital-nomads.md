@@ -58,3 +58,5 @@ The honest answer for most full-time nomads is two accounts, not one: **a multi-
 Whatever you pick, test it with a small transfer and a small ATM withdrawal before relying on it for real income — fee structures and ATM networks both vary more in practice than any comparison table fully captures.
 
 Local rules can also override all of this: in Japan, for instance, most digital nomad visa holders can't open a local bank account at all, which makes a tool like Wise the default rather than a backup — see [managing money in Japan as an expat or remote worker](/blog/managing-money-in-japan-as-an-expat-or-remote-worker/) for the specifics.
+
+China is another place where local payment apps matter more than your card network; see [managing money in China: Alipay, WeChat Pay, and digital banking basics](/blog/managing-money-in-china-alipay-wechat-pay-and-digital-banking-basics/).
