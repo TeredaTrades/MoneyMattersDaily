@@ -59,4 +59,6 @@ A remote software contractor on a spouse visa moves to Japan, gets a residence c
 
 Register the address at the local ward office within 14 days of arrival, get the jūminhyō, and use it plus the residence card to open an account at a bank known to accept new arrivals — Japan Post Bank, Rakuten Bank, or Sony Bank, rather than assuming a megabank branch will. Figure out which tax-residency category applies given time already spent in Japan over the past ten years, and treat any decision to remit foreign income as a deliberate one rather than an automatic transfer. For the broader version of this — budgeting across currencies once money is moving regularly — see [multi-currency budgeting for remote workers](/blog/multi-currency-budgeting-for-remote-workers/).
 
+Heading to Latin America? See [managing money in Latin America as a digital nomad: banking and currency basics](/blog/managing-money-in-latin-america-as-a-digital-nomad-banking-and-currency-basics/).
+
 *Last updated September 2026. Visa requirements, bank policies, and tax rules change and vary by individual circumstance — this is general information, not personalized immigration or tax advice, so confirm current specifics with the relevant institution or a licensed professional before relying on them.*

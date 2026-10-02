@@ -63,4 +63,6 @@ This is genuinely one area worth a real accountant, not a blog post — the cost
 
 Before your first trip: open a fee-free banking option (or confirm you're actually not overpaying on the one you have), set a currency buffer, and confirm your home tax residency status. Everything else — travel insurance, remote-work visas, cost-of-living comparisons — matters, but those three get expensive fastest when ignored.
 
+Heading to Latin America? See [managing money in Latin America as a digital nomad: banking and currency basics](/blog/managing-money-in-latin-america-as-a-digital-nomad-banking-and-currency-basics/).
+
 *Last updated August 2026. Fee ranges above are illustrative of the typical structure of each account type, not a quote for any specific provider — providers change pricing frequently, so confirm current fees directly with the bank or fintech before choosing one. Tax residency rules are jurisdiction-specific and change; this isn't a substitute for advice from an accountant familiar with your specific home country and destination.*

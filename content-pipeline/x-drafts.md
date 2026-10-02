@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## managing-money-in-latin-america-as-a-digital-nomad-banking-and-currency-basics
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Latin America isn't one money system. Set up a multi-currency account and a no-fee card before you go, always decline "charge in dollars" at ATMs, and don't trust old Argentina cash advice. Banking and currency basics:
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/managing-money-in-latin-america-as-a-digital-nomad-banking-and-currency-basics/
+```
+
 ## managing-money-in-china-alipay-wechat-pay-and-digital-banking-basics
 
 **Post (attach the matching pin image from public/pins/):**

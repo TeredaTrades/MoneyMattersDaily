@@ -12,6 +12,40 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-03 — Published today's post: "Managing Money in Latin America as a Digital Nomad: Banking and Currency Basics"
+
+### What was done
+Published the next pending keyword (index 45, travel-finance). Framed around
+a country-agnostic setup (multi-currency account + no-foreign-fee card +
+fee-reimbursing ATM card) with the main habit being to decline dynamic
+currency conversion at ATMs/terminals, then brief country notes.
+
+Verified via web search (2026-10-03): Argentina lifted individual currency
+controls in April 2025 and 2026 guides put the official/blue/MEP gap at
+roughly 1-4% (sources differ on card-rate details, so the post hedges and
+says to check a current rate). Mexico bank-account requirements (resident
+card, CURP, often RFC, proof of address; some sources say CURP alone gives
+a limited basic account) are from secondary guides and are worded loosely.
+Nomad-visa income thresholds conflict widely between sources (Colombia
+~US$750-1,300, Brazil US$1,500 or US$18,000 savings, Costa Rica/Panama
+~US$3,000), so the post gives ranges and tells readers to verify with
+official immigration sites. DCC/ATM-fee claims are from expat guides.
+
+Reverse cross-links added to managing-money-in-japan-as-an-expat-or-remote-worker
+and managing-money-as-a-digital-nomad. Hero + pin (`table` pinVisual) via the
+standard scripts; pin viewed, clean. X draft hand-edited (script truncates
+mid-word). Keyword marked `published`.
+
+### Still open
+- X draft ready in `content-pipeline/x-drafts.md`, not manually posted, by
+  design. Pin at `public/pins/managing-money-in-latin-america-as-a-digital-nomad-banking-and-currency-basics.png`.
+- Time-sensitive: Argentina rates and all visa thresholds; refresh later.
+- Script issue still open: generate-x-drafts.mjs truncates long descriptions
+  mid-word.
+- Next pending keyword: index 46, "mobile money in Africa: M-Pesa and
+  digital banking basics explained" (travel-finance).
+---
+
 ## 2026-10-02 — Published today's post: "Managing Money in China: Alipay, WeChat Pay, and Digital Banking Basics"
 
 ### What was done
