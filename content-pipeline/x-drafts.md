@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## mobile-money-in-africa-m-pesa-and-digital-banking-basics-explained
+
+**Post (attach the matching pin image from public/pins/):**
+```
+In much of Africa, your phone number is your bank account. Register M-Pesa or MTN MoMo with your passport on day one, set your own PIN, and don't expect your wallet to work across borders. Mobile money basics:
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/mobile-money-in-africa-m-pesa-and-digital-banking-basics-explained/
+```
+
 ## managing-money-in-latin-america-as-a-digital-nomad-banking-and-currency-basics
 
 **Post (attach the matching pin image from public/pins/):**

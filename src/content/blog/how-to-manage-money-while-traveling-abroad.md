@@ -67,4 +67,6 @@ Before you leave: set up the three-way split, log a travel notice for every card
 
 Heading to mainland China specifically? Payments there run on QR codes, so see [managing money in China: Alipay, WeChat Pay, and digital banking basics](/blog/managing-money-in-china-alipay-wechat-pay-and-digital-banking-basics/).
 
+Heading to East or West Africa? Mobile money runs most everyday payments there; see [mobile money in Africa: M-Pesa and digital banking basics explained](/blog/mobile-money-in-africa-m-pesa-and-digital-banking-basics-explained/).
+
 *Last updated September 2026.*

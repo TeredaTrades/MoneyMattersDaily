@@ -12,6 +12,40 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-04 — Published today's post: "Mobile Money in Africa: M-Pesa and Digital Banking Basics Explained"
+
+### What was done
+Published the next pending keyword (index 46, travel-finance). Covers how
+mobile money works (SIM-linked wallet, agents, USSD), foreign-visitor setup
+(Kenya), limits/fees, why wallets don't travel across borders, backups, and
+common scams, with a worked example.
+
+Verified via web search (2026-10-04): GSMA 2026 report (about 2.3B registered
+accounts, over US$2T in 2025 transactions, Africa the largest share); Kenya
+M-Pesa caps KSh 250,000 per transaction / 500,000 per day / 500,000 balance
+(several 2026 guides; some visitor guides describe lower caps for lightly
+verified accounts, so the post hedges); foreign registration with passport at
+a Safaricom shop (agents may only register Kenyan ID, from secondary
+sources); Ethiopia telebirr tens of millions of users vs ~5.2M active M-Pesa
+users by end of 2025 (Capital Ethiopia, Rio Times). Cross-border and
+interoperability claims are worded as "reports say" (secondary sources).
+Scam section is general operator-warning guidance, no figures.
+
+Reverse cross-links added to how-to-manage-money-while-traveling-abroad and
+managing-money-in-latin-america-as-a-digital-nomad. Hero + pin (`table`
+pinVisual) via standard scripts; pin viewed, clean. X draft hand-edited
+(script truncates mid-word). Keyword marked `published`.
+
+### Still open
+- X draft ready in `content-pipeline/x-drafts.md`, not manually posted, by
+  design. Pin at `public/pins/mobile-money-in-africa-m-pesa-and-digital-banking-basics-explained.png`.
+- Time-sensitive: M-Pesa and telebirr limits/fees; refresh later.
+- Script issue still open: generate-x-drafts.mjs truncates long descriptions
+  mid-word.
+- Next pending keyword: index 47, "how to dispute an error on your credit
+  report" (first non-travel-finance item in this stretch).
+---
+
 ## 2026-10-03 — Published today's post: "Managing Money in Latin America as a Digital Nomad: Banking and Currency Basics"
 
 ### What was done

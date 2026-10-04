@@ -64,4 +64,6 @@ A freelance editor paid in US dollars plans six months split between Mexico City
 
 Open the receiving and spending accounts before you leave, test each with a small transaction, and tell your banks where you're traveling. Make declining home-currency conversion an automatic habit. Then check each country's current visa and tax rules directly with the official source before committing to a long stay. For habits that apply anywhere, see [how to manage money while traveling abroad](/blog/how-to-manage-money-while-traveling-abroad/), and for another region's version of this problem, [managing money in Japan as an expat or remote worker](/blog/managing-money-in-japan-as-an-expat-or-remote-worker/).
 
+For another region where local payment systems matter, see [mobile money in Africa: M-Pesa and digital banking basics explained](/blog/mobile-money-in-africa-m-pesa-and-digital-banking-basics-explained/).
+
 *Last updated October 2026. Exchange rates, bank requirements, visa thresholds, and tax rules in Latin America change often and differ by country, bank, and branch. This is general information, not personalized financial, legal, or immigration advice, so confirm current specifics with the relevant bank, immigration authority, or a licensed local adviser.*
