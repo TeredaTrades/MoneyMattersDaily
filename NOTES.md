@@ -12,6 +12,38 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-06 — Published today's post: "How to Dispute an Error on Your Credit Report (Step by Step)"
+
+### What was done
+Published the next pending keyword (index 47, credit pillar). No post had
+gone out 2026-10-05 (skipped, not back-filled). Covers pulling all three
+reports, gathering proof, disputing with both the bureau and the furnisher,
+the 30-day (sometimes 45-day) clock, the three possible outcomes, a worked
+example, and common mistakes.
+
+Verified via FTC and CFPB pages (2026-10-06): bureau generally has 30 days to
+investigate; furnishers generally must respond within 30 days; free updated
+report if anything changes; consumer statement option (bureau may charge a
+fee); free weekly reports at AnnualCreditReport.com permanent since
+2023-10-13; bureau dispute phone numbers/URLs as listed by CFPB. The 45-day
+extension is from the FCRA itself (not re-confirmed on a CFPB page this
+session), worded as "in some cases".
+
+Links out to what-hurts-your-credit-score, how-to-build-credit-from-scratch,
+credit-utilization-explained; reverse links added to the first two. Hero + pin (`flow` pinVisual) via standard scripts;
+first pin label "Get your reports" was edge-to-edge in its box, shortened to
+"Pull reports"; pin viewed, clean. X draft hand-edited (script truncates
+mid-word). Keyword marked `published`.
+
+### Still open
+- X draft ready in `content-pipeline/x-drafts.md`, not manually posted, by
+  design. Pin at `public/pins/how-to-dispute-an-error-on-your-credit-report.png`.
+- Time-sensitive: bureau contact details and deadlines; refresh later.
+- Script issue still open: generate-x-drafts.mjs truncates long descriptions
+  mid-word.
+- Next pending keyword: index 48, "secured credit cards explained".
+---
+
 ## 2026-10-04 — Published today's post: "Mobile Money in Africa: M-Pesa and Digital Banking Basics Explained"
 
 ### What was done

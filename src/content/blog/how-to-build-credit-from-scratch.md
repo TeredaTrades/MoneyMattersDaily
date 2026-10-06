@@ -38,7 +38,7 @@ Length of credit history is worth about 15% of a FICO score, and there's no shor
 - Don't skip straight to a large loan (like a car loan) to "build credit faster." Without an existing history, you'll likely be declined or offered a rate that reflects the risk you represent on paper, regardless of your actual reliability.
 - Don't assume a debit card or cash usage helps. Only accounts that report to Equifax, Experian, or TransUnion count. Debit activity is invisible to your credit file no matter how responsibly you spend.
 
-Once that first account is reporting, see [what actually hurts your credit score](/blog/what-hurts-your-credit-score/) for the mistakes — and myths — worth knowing as you build history.
+Once that first account is reporting, see [what actually hurts your credit score](/blog/what-hurts-your-credit-score/) for the mistakes — and myths — worth knowing as you build history. And if a report ever shows something that isn't yours, here's [how to dispute an error on your credit report](/blog/how-to-dispute-an-error-on-your-credit-report/).
 
 ## Realistic timeline
 
