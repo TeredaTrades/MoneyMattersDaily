@@ -14,7 +14,7 @@ Having no credit history is a different problem than having bad credit, but it p
 
 You need at least one account reporting to the credit bureaus before anything else can happen. Three realistic starting points:
 
-- **A secured credit card.** You put down a deposit (often $200–$500) that becomes your credit limit. Functionally it's a real credit card — it reports like one — the deposit just replaces the trust a lender doesn't have in you yet.
+- **A secured credit card.** You put down a deposit (often $200–$500) that becomes your credit limit. Functionally it's a real credit card — it reports like one — the deposit just replaces the trust a lender doesn't have in you yet. For what to look for and when to move on, see [secured credit cards explained](/blog/secured-credit-cards-explained-how-they-work-and-when-to-graduate/).
 - **A credit-builder loan.** Offered by credit unions and some online lenders. You "borrow" a small amount that sits in a locked account while you make payments on it; you get the money (plus what you paid in) at the end. You're paying to build a payment history, essentially.
 - **Becoming an authorized user** on a family member's card with a long, clean history. This can import their account history onto your report — but only if the card issuer reports authorized users, and only if their usage habits are actually good. Piggybacking on someone with high balances or late payments can hurt more than help.
 

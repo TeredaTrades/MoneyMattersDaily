@@ -12,6 +12,44 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-07 — Published today's post: "Secured Credit Cards Explained: How They Work and When to Graduate Off One"
+
+### What was done
+Published the next pending keyword (index 48, credit pillar). Covers how the
+deposit sets the limit (deposit is not a payment), what to look for (reports
+to all three bureaus, low/no annual fee, graduation path, refundable deposit),
+a use-it strategy (one small bill, autopay in full, low utilization), when and
+how to graduate (convert vs apply elsewhere), whether to close the card
+afterward, a worked example ($300 deposit, $30 bill, about 10% utilization),
+and common mistakes.
+
+Sources (2026-10-07): TD's secured-to-unsecured guide (6 to 12 months typical,
+some issuers auto-review after about 6 months, deposit returned as statement
+credit on conversion, only after closing if switching issuers, fair-range
+score around 580-669 as a common lender preference) and Experian's secured
+card explainer (deposit minimum often from $200, all-three-bureau reporting,
+annual fees from none up to roughly $35-$49). Two CFPB URLs tried for the
+basics returned the wrong page (mortgage insurance) or a 404, so no CFPB
+claims are made; all figures are hedged as varying by issuer.
+
+Reverse links added to how-to-build-credit-from-scratch and
+credit-utilization-explained; links out to those two plus
+what-hurts-your-credit-score and how-to-dispute-an-error-on-your-credit-report.
+Hero + pin (`table` pinVisual) via standard scripts; pin viewed, clean. X draft
+hand-edited (script truncates mid-word). Keyword marked `published`.
+
+### Still open
+- X draft ready in `content-pipeline/x-drafts.md`, not manually posted, by
+  design. Pin at `public/pins/secured-credit-cards-explained-how-they-work-and-when-to-graduate.png`.
+- Time-sensitive: issuer deposit minimums, fees, and graduation policies.
+- Script issue still open: generate-x-drafts.mjs truncates long descriptions
+  mid-word.
+- Process note: pushing works again as of 2026-10-06 (Claude GitHub App
+  installed on the TeredaTrades org; 10-06 post was initially blocked by the
+  session's git proxy).
+- Next pending keyword: index 49, "does checking your own credit score hurt it".
+---
+
 ## 2026-10-06 — Published today's post: "How to Dispute an Error on Your Credit Report (Step by Step)"
 
 ### What was done

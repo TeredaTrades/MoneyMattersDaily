@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## secured-credit-cards-explained-how-they-work-and-when-to-graduate
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Secured Credit Cards Explained: How They Work and When to Graduate Off One — A refundable deposit sets your limit, and the right card builds credit fast. What to look for and when to move on.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/secured-credit-cards-explained-how-they-work-and-when-to-graduate/
+```
+
 ## how-to-dispute-an-error-on-your-credit-report
 
 **Post (attach the matching pin image from public/pins/):**
