@@ -79,7 +79,7 @@ Sam has no credit history and opens a secured card with a $300 deposit, which gi
 - **Paying an annual fee for no reason.** No-fee options exist.
 - **Maxing out the card.** A $300 limit fills up fast, and high utilization hurts your score.
 - **Only paying the minimum.** Interest adds up quickly, and a balance doesn't help your score.
-- **Applying for several cards at once.** Each application can leave an inquiry on your report.
+- **Applying for several cards at once.** Each application can leave a hard inquiry on your report; see [soft vs. hard inquiries explained](/blog/does-checking-your-own-credit-score-hurt-it/).
 
 ## Getting started
 

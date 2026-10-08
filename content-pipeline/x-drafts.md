@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## does-checking-your-own-credit-score-hurt-it
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Does Checking Your Own Credit Score Hurt It? Soft vs. Hard Inquiries Explained — Checking your own credit never lowers your score. Applying for credit can. Here's the difference, and how to shop for a loan without the damage.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/does-checking-your-own-credit-score-hurt-it/
+```
+
 ## secured-credit-cards-explained-how-they-work-and-when-to-graduate
 
 **Post (attach the matching pin image from public/pins/):**

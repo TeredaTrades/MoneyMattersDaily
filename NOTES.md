@@ -12,6 +12,48 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-08 — Published today's post: "Does Checking Your Own Credit Score Hurt It? Soft vs. Hard Inquiries Explained"
+
+### What was done
+Published the next pending keyword (index 49, credit pillar). Covers the short
+answer (own checks are soft inquiries, zero effect), what counts as soft vs.
+hard, the typical hard-inquiry cost and how long it counts vs. how long it
+stays on the report, why bursts of applications cost more, the single-loan
+rate-shopping exception (do it inside 14 days to be safe), prequalification
+vs. applying, the credit-limit-increase gray area, a worked example, and
+common mistakes (including an unrecognized hard inquiry as a possible
+identity-theft sign, linked to the dispute post).
+
+Sources (2026-10-08): Bankrate hard vs. soft pull page (quotes FICO: for most
+people one inquiry costs fewer than five points; up to two years on the report;
+FICO counts the past 12 months), Finder (own checks are soft; roughly 5-10
+points per inquiry, a looser range), SuperMoney (rate-shopping windows: newer
+FICO 45 days, older FICO and VantageScore 14 days; cards/personal loans not
+bundled). Fetches of MyFICO, CFPB, FTC and Experian timed out waiting on a
+permission prompt (not a site failure), so no claims rest on those; the point
+cost is given as a range and the windows as "about". The existing
+what-hurts-your-credit-score post already covers the same ground briefly and
+is consistent with this one.
+
+Reverse links added to what-hurts-your-credit-score, how-to-build-credit-from-scratch
+and secured-credit-cards-explained. Hero + pin (`table` pinVisual) via standard
+scripts; pin viewed, clean. X draft hand-edited (script truncates mid-word).
+Keyword marked `published`.
+
+### Still open
+- X draft ready in `content-pipeline/x-drafts.md`, not manually posted, by
+  design. Pin at `public/pins/does-checking-your-own-credit-score-hurt-it.png`.
+- Time-sensitive: scoring-model rate-shopping windows and point impacts; a
+  primary-source recheck (MyFICO/CFPB) would tighten the hedged ranges.
+- Script issue still open: generate-x-drafts.mjs truncates long descriptions
+  mid-word.
+- credit-utilization-explained says a limit-increase request "usually" triggers
+  a soft inquiry while its mistakes section implies a hard one can occur; the
+  new post calls it issuer-dependent. Worth aligning that wording later.
+- Next pending keyword: index 50, "what actually makes up a credit score (and
+  what doesn't)".
+---
+
 ## 2026-10-07 — Published today's post: "Secured Credit Cards Explained: How They Work and When to Graduate Off One"
 
 ### What was done

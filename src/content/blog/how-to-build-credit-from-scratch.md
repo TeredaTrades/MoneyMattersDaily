@@ -34,7 +34,7 @@ Length of credit history is worth about 15% of a FICO score, and there's no shor
 
 ## What not to do
 
-- Don't apply for several cards or loans in a short window. Each hard inquiry dings your score slightly, and lenders read a cluster of recent applications as risk-seeking behavior, not credit-building behavior.
+- Don't apply for several cards or loans in a short window. Each hard inquiry dings your score slightly, and lenders read a cluster of recent applications as risk-seeking behavior, not credit-building behavior. Not sure which checks count? See [soft vs. hard inquiries explained](/blog/does-checking-your-own-credit-score-hurt-it/).
 - Don't skip straight to a large loan (like a car loan) to "build credit faster." Without an existing history, you'll likely be declined or offered a rate that reflects the risk you represent on paper, regardless of your actual reliability.
 - Don't assume a debit card or cash usage helps. Only accounts that report to Equifax, Experian, or TransUnion count. Debit activity is invisible to your credit file no matter how responsibly you spend.
 
