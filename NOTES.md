@@ -12,6 +12,55 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-08 (later) — Keyword queue reordered and refilled (8 → 40 pending)
+
+### Why
+Three credit posts in a row (dispute, secured cards, checking your score) after
+five travel-finance in a row: the queue had been built in pillar-sized chunks and
+posts were taken in file order. Only 8 pending keywords were left (about 8 days).
+
+### What was done
+- Reordered the 8 existing pending keywords and added 32 new ones across all
+  seven pillars; queue is now 40 pending (~40 days). The 50 published entries
+  are untouched. Order was checked by script: no pillar twice in a row, no theme
+  (crypto, commodities, prepaid/cards, payments, gift cards) within 3 days of
+  itself, and the next post is not credit.
+- New topics requested by the owner: crypto (what it is, bitcoin vs ethereum vs
+  stablecoins, storing it safely, reading crypto news, comparing exchanges),
+  NFTs, commodities (how to invest, gold, oil/commodity price swings), stock
+  market indices, ETFs vs mutual funds, dollar-cost averaging, multi-currency
+  wallets, digital wallets (Apple/Google Pay/PayPal), P2P payment apps, prepaid
+  cards, gift cards, travel cards (travel credit cards, prepaid travel vs travel
+  debit), international money transfers, ATMs abroad, dynamic currency
+  conversion, travel insurance, BNPL, prepaid vs debit vs credit, Fed rate
+  decisions, tariffs, falling currencies, savings in high-inflation countries,
+  money market accounts, holiday/gift budgeting, subscriptions.
+- Schema unchanged (`keyword`, `pillar`, `status` only), so daily-post-reminder
+  keeps working: it takes the first pending item in file order.
+
+### Writer guidance for the sensitive topics (YMYL)
+- Crypto, NFTs, commodities, indices and exchanges: educational only. No price
+  predictions, no "buy this" picks, no affiliate-style hype. Lead with risks
+  (volatility, scams, custody, no deposit insurance, tax treatment varies) and
+  say plainly that these can lose most or all of their value.
+- Regulation, tax and ETF/product facts are time-sensitive and vary by country:
+  verify against primary sources (regulator or official pages) the day of
+  writing, name the jurisdiction, and hedge anything secondary-sourced, same bar
+  as the CPI and ISA posts. Primary-source page fetches sometimes time out on a
+  permission prompt; retry or note the limitation in NOTES rather than guessing.
+- Comparison posts (wallets, prepaid cards, P2P apps, transfer services, crypto
+  exchanges): compare on criteria (fees, limits, availability, protections),
+  verify current fees from each provider's own page, and avoid declaring a
+  single "best".
+- Keep country-specific claims scoped to the country named; the site's audience
+  is increasingly non-US.
+
+### Still open
+- Index numbers in older entries ("next pending keyword: index N") refer to the
+  old file layout. Pending items now start at index 50 with the stock-market
+  indices post; use the first pending item, not an index.
+---
+
 ## 2026-10-08 — Published today's post: "Does Checking Your Own Credit Score Hurt It? Soft vs. Hard Inquiries Explained"
 
 ### What was done

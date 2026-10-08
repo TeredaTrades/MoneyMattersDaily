@@ -250,18 +250,8 @@
     "status": "published"
   },
   {
-    "keyword": "what actually makes up a credit score (and what doesn't)",
-    "pillar": "credit",
-    "status": "pending"
-  },
-  {
-    "keyword": "how to build a sinking fund for irregular expenses",
-    "pillar": "saving",
-    "status": "pending"
-  },
-  {
-    "keyword": "term deposits vs high-yield savings accounts: which fits which goal",
-    "pillar": "saving",
+    "keyword": "stock market indices explained: what the S&P 500, Dow Jones, and Nasdaq actually measure",
+    "pillar": "investing-basics",
     "status": "pending"
   },
   {
@@ -270,7 +260,122 @@
     "status": "pending"
   },
   {
+    "keyword": "digital wallets compared: Apple Pay vs Google Pay vs PayPal",
+    "pillar": "app-comparisons",
+    "status": "pending"
+  },
+  {
+    "keyword": "how to build a sinking fund for irregular expenses",
+    "pillar": "saving",
+    "status": "pending"
+  },
+  {
+    "keyword": "how to use ATMs abroad without overpaying in fees",
+    "pillar": "travel-finance",
+    "status": "pending"
+  },
+  {
+    "keyword": "what is cryptocurrency: a beginner's guide to how it works and the risks",
+    "pillar": "investing-basics",
+    "status": "pending"
+  },
+  {
+    "keyword": "what the Federal Reserve does and how its rate decisions affect your money",
+    "pillar": "news-trends",
+    "status": "pending"
+  },
+  {
+    "keyword": "gift cards and your budget: how they work, hidden fees, and scams to avoid",
+    "pillar": "budgeting",
+    "status": "pending"
+  },
+  {
+    "keyword": "what actually makes up a credit score (and what doesn't)",
+    "pillar": "credit",
+    "status": "pending"
+  },
+  {
+    "keyword": "ETFs vs mutual funds: what's the difference and which fits you",
+    "pillar": "investing-basics",
+    "status": "pending"
+  },
+  {
+    "keyword": "best multi-currency wallets compared: one account for several currencies",
+    "pillar": "app-comparisons",
+    "status": "pending"
+  },
+  {
+    "keyword": "how to read crypto news without getting burned: hype, scams, and regulation basics",
+    "pillar": "news-trends",
+    "status": "pending"
+  },
+  {
+    "keyword": "money market accounts explained: how they differ from savings accounts",
+    "pillar": "saving",
+    "status": "pending"
+  },
+  {
+    "keyword": "dynamic currency conversion: why to decline it and how to avoid it",
+    "pillar": "travel-finance",
+    "status": "pending"
+  },
+  {
+    "keyword": "how to invest in commodities: the main ways to get exposure and the risks",
+    "pillar": "investing-basics",
+    "status": "pending"
+  },
+  {
     "keyword": "6-month savings challenge templates that actually work",
+    "pillar": "budgeting",
+    "status": "pending"
+  },
+  {
+    "keyword": "best prepaid cards compared: fees, limits, and who they suit",
+    "pillar": "app-comparisons",
+    "status": "pending"
+  },
+  {
+    "keyword": "what a recession actually means for your personal finances",
+    "pillar": "news-trends",
+    "status": "pending"
+  },
+  {
+    "keyword": "how to store crypto safely: wallets, exchanges, and common scams",
+    "pillar": "investing-basics",
+    "status": "pending"
+  },
+  {
+    "keyword": "travel credit cards explained: points, miles, and foreign transaction fees",
+    "pillar": "travel-finance",
+    "status": "pending"
+  },
+  {
+    "keyword": "term deposits vs high-yield savings accounts: which fits which goal",
+    "pillar": "saving",
+    "status": "pending"
+  },
+  {
+    "keyword": "buy now pay later explained: how it works and how it affects your credit",
+    "pillar": "credit",
+    "status": "pending"
+  },
+  {
+    "keyword": "bitcoin vs ethereum vs stablecoins: what's the difference",
+    "pillar": "investing-basics",
+    "status": "pending"
+  },
+  {
+    "keyword": "best peer-to-peer payment apps compared: Venmo, Cash App, Zelle, and PayPal",
+    "pillar": "app-comparisons",
+    "status": "pending"
+  },
+  {
+    "keyword": "what a falling currency means for your savings and everyday prices",
+    "pillar": "news-trends",
+    "status": "pending"
+  },
+  {
+    "keyword": "how to budget for the holidays and gift-giving without debt",
     "pillar": "budgeting",
     "status": "pending"
   },
@@ -280,13 +385,68 @@
     "status": "pending"
   },
   {
+    "keyword": "prepaid travel cards vs travel debit cards: which to carry abroad",
+    "pillar": "travel-finance",
+    "status": "pending"
+  },
+  {
+    "keyword": "how to protect your savings in a high-inflation country",
+    "pillar": "saving",
+    "status": "pending"
+  },
+  {
+    "keyword": "best international money transfer services compared",
+    "pillar": "app-comparisons",
+    "status": "pending"
+  },
+  {
+    "keyword": "how gold prices work and the main ways to own gold",
+    "pillar": "investing-basics",
+    "status": "pending"
+  },
+  {
+    "keyword": "how tariffs affect prices and your household budget",
+    "pillar": "news-trends",
+    "status": "pending"
+  },
+  {
+    "keyword": "how to find and cut subscription costs you've forgotten about",
+    "pillar": "budgeting",
+    "status": "pending"
+  },
+  {
+    "keyword": "NFTs explained: what they are, how they work, and what to know before buying",
+    "pillar": "investing-basics",
+    "status": "pending"
+  },
+  {
+    "keyword": "prepaid vs debit vs credit cards: key differences and when to use each",
+    "pillar": "credit",
+    "status": "pending"
+  },
+  {
+    "keyword": "travel insurance explained: what's covered, what isn't, and when you need it",
+    "pillar": "travel-finance",
+    "status": "pending"
+  },
+  {
     "keyword": "what a target-date fund actually does",
     "pillar": "investing-basics",
     "status": "pending"
   },
   {
-    "keyword": "what a recession actually means for your personal finances",
+    "keyword": "how to compare crypto exchanges: fees, security, and regulation",
+    "pillar": "app-comparisons",
+    "status": "pending"
+  },
+  {
+    "keyword": "how oil and commodity price swings reach your wallet",
     "pillar": "news-trends",
+    "status": "pending"
+  },
+  {
+    "keyword": "dollar-cost averaging explained: does investing a fixed amount regularly work",
+    "pillar": "investing-basics",
     "status": "pending"
   }
 ]
