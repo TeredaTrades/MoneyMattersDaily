@@ -12,7 +12,7 @@ An index fund isn't a clever investment. That's the point. It's a basket of stoc
 
 ## What you're actually buying
 
-Take an S&P 500 index fund as the clearest example. It holds roughly 500 of the largest US companies, weighted by size — so it owns a bit of Apple, a bit of a small-cap regional bank, a bit of everything in between, automatically rebalanced as company sizes shift. You never have to decide whether to sell Company A and buy Company B. The index does that for you, mechanically, based on rules, not opinions.
+Take an S&P 500 index fund as the clearest example. It holds roughly 500 of the largest US companies, weighted by size — so it owns a bit of Apple, a bit of a small-cap regional bank, a bit of everything in between, automatically rebalanced as company sizes shift. You never have to decide whether to sell Company A and buy Company B. The index does that for you, mechanically, based on rules, not opinions. For what the big indexes actually measure and how they differ, see [stock market indices explained](/blog/stock-market-indices-explained-sp-500-dow-jones-and-nasdaq/).
 
 ## Why "boring" beats "smart" here
 

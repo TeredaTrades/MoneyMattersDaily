@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## stock-market-indices-explained-sp-500-dow-jones-and-nasdaq
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Stock Market Indices Explained: S&P 500, Dow Jones, and Nasdaq — Same two stocks, same moves, opposite headlines. Here's what each index tracks and why weighting changes the number.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/stock-market-indices-explained-sp-500-dow-jones-and-nasdaq/
+```
+
 ## does-checking-your-own-credit-score-hurt-it
 
 **Post (attach the matching pin image from public/pins/):**

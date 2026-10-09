@@ -12,6 +12,46 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-09 — Published today's post: "Stock Market Indices Explained: S&P 500, Dow Jones, and Nasdaq"
+
+### What was done
+Published the first item of the reordered queue (investing-basics). Covers what
+an index is (a list plus a weighting rule, not something you can buy), the
+S&P 500 / Dow / Nasdaq Composite / Nasdaq-100, a worked two-stock example of
+price weighting vs size weighting giving opposite headlines (+3.0% vs -2.1%),
+what size weighting means (concentration, tech tilt), index funds/ETFs as the
+way to invest, a short international note (FTSE 100, Nikkei 225, Nifty 50,
+Sensex), how to read index numbers (percent not points, dividends usually
+excluded from headline levels), and common mistakes.
+
+Sources (2026-10-09): Wikipedia pages for the S&P 500, Dow Jones Industrial
+Average, Nasdaq Composite and Nasdaq-100 (tertiary). Attempts at primary
+sources (S&P Dow Jones Indices, SEC Investor.gov) timed out on a permission
+prompt, Investopedia was blocked, and Bankrate errored, so the post sticks to
+stable construction facts, says "roughly 500" / "30" / "thousands of
+securities", and deliberately quotes no index levels, divisor values or market-cap
+thresholds. A primary-source recheck (S&P DJI methodology pages) would tighten it.
+
+Pin gotcha: pin titles are the post title wrapped at 18 chars and hard-capped
+at 5 lines, so a long title is silently clipped (the first long title lost
+"Measure"). Shortened the title to fit 4 lines; keep titles to about 60
+characters, or add a `pinTitle` override to generate-pin.mjs later.
+
+Reverse links added to index-funds-explained-for-beginners and
+what-stock-market-volatility-means-for-your-savings; links out to those plus
+how-to-start-investing-with-little-money. Hero + pin (`table` pinVisual) via
+standard scripts; pin viewed, clean after the title fix. X draft hand-edited.
+Keyword marked `published`.
+
+### Still open
+- X draft ready in `content-pipeline/x-drafts.md`, not manually posted, by
+  design. Pin at `public/pins/stock-market-indices-explained-sp-500-dow-jones-and-nasdaq.png`.
+- Script issues still open: generate-x-drafts.mjs truncates mid-word; pin
+  titles over 5 lines are clipped.
+- Next pending keyword: "how to budget as a couple with separate finances"
+  (budgeting).
+---
+
 ## 2026-10-08 (later) — Keyword queue reordered and refilled (8 → 40 pending)
 
 ### Why
