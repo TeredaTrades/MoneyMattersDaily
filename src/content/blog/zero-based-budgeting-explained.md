@@ -100,4 +100,6 @@ If you're on a stable salary and a simpler method has been working, there's no r
 
 Don't try to predict every category perfectly in month one. Build the budget, live with it for a few weeks, then adjust categories that were clearly too tight or too loose. If you haven't tracked spending at all yet, start with [a basic budget](/blog/how-to-make-a-budget-for-beginners/) first — zero-based budgeting is easier to build once you already know where your money tends to go.
 
+Sharing expenses with a partner? The same approach works for a joint pot of bills and goals. See [how to budget as a couple with separate finances](/blog/how-to-budget-as-a-couple-with-separate-finances/).
+
 *Last updated August 2026. The worked examples above use illustrative category splits for a renter with average-market housing costs — your own rent/mortgage share will vary by location, and that's the category to adjust first when adapting these numbers to your own budget.*

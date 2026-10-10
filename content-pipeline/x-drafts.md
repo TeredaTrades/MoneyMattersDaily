@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## how-to-budget-as-a-couple-with-separate-finances
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How to Budget as a Couple With Separate Finances — Keep your own accounts and still run shared money smoothly. Decide what's shared, pick a fair split (even when incomes differ), and check in monthly.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-budget-as-a-couple-with-separate-finances/
+```
+
 ## stock-market-indices-explained-sp-500-dow-jones-and-nasdaq
 
 **Post (attach the matching pin image from public/pins/):**

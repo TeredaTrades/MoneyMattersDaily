@@ -61,4 +61,6 @@ At $200/paycheck (biweekly), reaching the full 6-month target takes about 18 mon
 
 This applies to most working households. It's less relevant if you have guaranteed income regardless of employment status (certain pensions, some disability income) or very low fixed costs and a genuine safety net elsewhere (family who could cover a gap). If you're behind on essential bills right now, building an emergency fund isn't the right first move — that's a cash-flow problem to address directly (see [how to save money on a low income](/blog/how-to-save-money-on-a-low-income/) for that situation, or contact 211.org for local assistance).
 
+If you and a partner keep separate finances, decide together how a shared cushion is sized and held. See [how to budget as a couple with separate finances](/blog/how-to-budget-as-a-couple-with-separate-finances/).
+
 *Last updated August 2026. High-yield savings rates move with the broader interest rate environment — check current rates before assuming a specific number.*

@@ -59,4 +59,6 @@ If rent alone is $1,200 and utilities/groceries/insurance/transportation push "n
 
 This works well as a first structured budget — simple enough to start immediately, without needing to track spending by category the way [zero-based budgeting](/blog/zero-based-budgeting-explained/) or the [envelope method](/blog/envelope-budgeting-method/) require. It fits less well in high-cost-of-living areas without the adjustment above, and it's less precise than category-level methods if you're trying to fix a specific overspending habit rather than set a general structure.
 
+Budgeting with a partner but keeping separate accounts? See [how to budget as a couple with separate finances](/blog/how-to-budget-as-a-couple-with-separate-finances/) for ways to split shared costs fairly.
+
 *Last updated August 2026.*

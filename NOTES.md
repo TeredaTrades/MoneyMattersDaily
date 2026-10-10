@@ -12,6 +12,45 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-10 — Published today's post: "How to Budget as a Couple With Separate Finances"
+
+### What was done
+Published the next pending keyword (budgeting). Covers who it is and isn't for
+(including a short safety note for controlling or coercive money situations),
+agreeing what counts as shared, four split methods (equal, proportional to
+income, by category, yours/mine/ours), a worked example (take-home 3,000 and
+2,000, shared costs 2,500: equal split takes 41.7% vs 62.5% of take-home,
+proportional takes 50% each), account setup with automatic transfers, shared
+goals, a monthly check-in, debt/credit/legal basics, and common mistakes.
+
+Sources: none fetched. Attempts at FDIC joint-account coverage and a CFPB
+joint-account page returned an error and the wrong page, so the post makes no
+deposit-insurance or legal specifics and words joint-account liability and
+credit-file points as "generally" / "varies by bank and country". It is a
+how-to based on common practice, so no time-sensitive figures need refreshing.
+
+Pin: first flow labels "Set up accounts" and "Monthly check-in" ran edge to
+edge and the arrow touched the third box (same bug as 10-06); changed to
+"Open accounts" and "Review monthly". Rule of thumb: keep flow labels to about
+14 characters or fewer.
+
+Reverse links added to 50-30-20-budget-rule-explained,
+zero-based-budgeting-explained and how-much-emergency-fund (new line before the
+footer); links out to those plus best-ways-to-automate-your-savings,
+best-budgeting-apps-compared and how-to-build-credit-from-scratch. Hero + pin
+(`flow` pinVisual) via standard scripts; pin viewed after the label fix. X
+draft hand-edited. Keyword marked `published`.
+
+### Still open
+- X draft ready in `content-pipeline/x-drafts.md`, not manually posted, by
+  design. Pin at `public/pins/how-to-budget-as-a-couple-with-separate-finances.png`.
+- Script issues still open: generate-x-drafts.mjs truncates mid-word; pin titles
+  over 5 lines are clipped; flow labels over about 14 characters crowd the box.
+- Next pending keyword: "digital wallets compared: Apple Pay vs Google Pay vs
+  PayPal" (app-comparisons). Needs current fees/availability checked on each
+  provider's own pages.
+---
+
 ## 2026-10-09 — Published today's post: "Stock Market Indices Explained: S&P 500, Dow Jones, and Nasdaq"
 
 ### What was done
