@@ -12,6 +12,57 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-11 (later) — Writer reminder: go beyond the mainstream payment apps (owner request)
+
+### Reminder for future articles
+When an article touches payment apps, wallets, cards or money transfer, do not
+stop at the mainstream names (Apple Pay, Google Pay/Wallet, PayPal, Venmo, Cash
+App, Zelle). Also cover lesser-known options, and specifically apps that work
+with **different currencies, both fiat and non-fiat (crypto/stablecoins)**. The
+10-11 digital wallets post covers only the big three; the owner wants later
+posts to widen the field.
+
+### Queued posts this applies to
+- best multi-currency wallets compared: one account for several currencies
+- best peer-to-peer payment apps compared: Venmo, Cash App, Zelle, and PayPal
+- best international money transfer services compared
+- best prepaid cards compared / prepaid travel cards vs travel debit cards /
+  prepaid vs debit vs credit cards
+- how to compare crypto exchanges, how to store crypto safely, what is
+  cryptocurrency (include crypto payment options where relevant)
+- gift cards and your budget (digital/gift-card payment options)
+- Also worth weaving into any future travel-finance, remittance or "managing
+  money in <country>" post.
+
+### What to include (candidates to research, not endorsements)
+- **Multi-currency fiat accounts and transfer services:** e.g. Wise, Revolut,
+  Payoneer, Skrill, Neteller, Remitly, WorldRemit. Compare on supported
+  currencies, fees and exchange-rate margin, limits, who can open an account,
+  and protections.
+- **Regional and local wallets/rails:** e.g. M-Pesa, telebirr (Ethiopia, which
+  matches the site's audience), UPI (India), PIX (Brazil), GCash (Philippines),
+  Alipay and WeChat Pay (China). Several already have posts here; link to them.
+- **Non-fiat (crypto and stablecoin) payment options:** wallet apps, exchange-based
+  payment features, stablecoins (e.g. USDC, USDT) used for payments or transfers.
+  Same YMYL bar as the crypto posts: risk-forward, no price predictions or
+  picks, explain custody, volatility, scams, the on/off-ramp fees and that
+  regulation and tax treatment vary by country.
+- Bridge products that mix both (fiat accounts that also hold crypto, or
+  crypto-funded cards): flag clearly which part is regulated and insured and
+  which is not.
+
+### Verification rules
+- Availability, licensing, supported currencies and fees change often and differ
+  by country: check each provider's own pages the day of writing and name the
+  country. If a provider's fee or country page cannot be fetched (this has
+  happened with PayPal and others), do not quote figures; describe fees
+  qualitatively and say so in NOTES.
+- A provider being on this list is not a recommendation. Compare on criteria,
+  avoid a single "best", and note anything unavailable in the reader's country.
+- Consider a follow-up post, "digital wallets beyond Apple Pay, Google Pay and
+  PayPal", to cover what the 10-11 article left out (not queued yet).
+---
+
 ## 2026-10-11 — Published today's post: "Digital Wallets Compared: Apple Pay vs Google Pay vs PayPal"
 
 ### What was done
