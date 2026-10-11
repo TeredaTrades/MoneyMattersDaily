@@ -69,4 +69,6 @@ Heading to mainland China specifically? Payments there run on QR codes, so see [
 
 Heading to East or West Africa? Mobile money runs most everyday payments there; see [mobile money in Africa: M-Pesa and digital banking basics explained](/blog/mobile-money-in-africa-m-pesa-and-digital-banking-basics-explained/).
 
+Using your phone to pay abroad? See [digital wallets compared: Apple Pay vs Google Pay vs PayPal](/blog/digital-wallets-compared-apple-pay-vs-google-pay-vs-paypal/) for how each works and where availability varies.
+
 *Last updated September 2026.*

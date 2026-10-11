@@ -12,6 +12,54 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-11 — Published today's post: "Digital Wallets Compared: Apple Pay vs Google Pay vs PayPal"
+
+### What was done
+Published the next pending keyword (app-comparisons). Framed as card holders
+(Apple Pay, Google's wallet: store your existing cards) vs an account (PayPal:
+its own balance/bank/card funding). Side-by-side table on devices, what it
+holds, card protection, buyer protection, in-store, availability, and fees; a
+section per wallet with who it fits (no single "best"); a worked example of
+combining them; security habits; common mistakes. Explains Google's confusing
+naming (Wallet app for tap-to-pay, "Google Pay" as the checkout option, and
+standalone UPI app in India, linked to the UPI post).
+
+Sources (2026-10-11), provider pages: Apple Support (devices; Face ID/Touch ID/
+passcode; "not available in all markets") and Apple's Apple Pay security page
+(device account number kept in the Secure Element, merchant never gets the real
+card number, Apple does not store the original card numbers); Google Wallet
+help (tap to pay needs a supported country, card and NFC; a virtual card is
+created for eligible cards; rooted or uncertified phones can fail setup);
+PayPal's "how PayPal works" page (stores payment methods, funding from balance
+/bank/cards, Purchase Protection on eligible purchases, PayPal Debit Card
+in stores, fintech not a bank, FDIC only for certain USD balances, services
+vary by country).
+
+Not verified: PayPal's fee tables (fee page blocked by a security check; the
+help page didn't contain them) and Google's Pay-vs-Wallet explainer (page
+error). The post therefore gives NO fee figures, says fees "depend on what you
+do and where you are", and points to PayPal's fee page. Apple/Google/PayPal
+supported-country lists were not fetched, so availability is described
+generally.
+
+Reverse links added to best-money-management-apps-for-upi-and-digital-payments-in-india,
+managing-money-in-china-alipay-wechat-pay-and-digital-banking-basics and
+how-to-manage-money-while-traveling-abroad (new line before the footer); links
+out to the UPI, China, Africa mobile money and travel posts. Hero + pin
+(`table` pinVisual) via standard scripts; pin viewed, clean. X draft
+hand-edited. Keyword marked `published`.
+
+### Still open
+- X draft ready in `content-pipeline/x-drafts.md`, not manually posted, by
+  design. Pin at `public/pins/digital-wallets-compared-apple-pay-vs-google-pay-vs-paypal.png`.
+- Time-sensitive: wallet availability, features and PayPal fees; refresh with
+  PayPal's fee page and Apple/Google country lists when they can be fetched.
+- Script issues still open: generate-x-drafts.mjs truncates mid-word; pin titles
+  over 5 lines are clipped; flow labels over about 14 characters crowd the box.
+- Next pending keyword: "how to build a sinking fund for irregular expenses"
+  (saving).
+---
+
 ## 2026-10-10 — Published today's post: "How to Budget as a Couple With Separate Finances"
 
 ### What was done

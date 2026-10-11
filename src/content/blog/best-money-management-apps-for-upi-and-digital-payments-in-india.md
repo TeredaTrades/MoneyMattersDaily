@@ -86,4 +86,6 @@ If your card returns about 1% in rewards on that spend, a 1% fee plus GST (about
 - **Treating a payment app's transaction history as a budget.** History shows what happened; a budget is a limit you set beforehand. Pair the tracker with a simple monthly target, and once you know your real monthly surplus, see [EPF vs PPF: India's Retirement Savings Basics Explained](/blog/epf-vs-ppf-indias-retirement-savings-basics-explained/) for where long-term savings can go.
 - **Approving a "collect" request you didn't expect.** You enter your UPI PIN only to send money, never to receive it; an unexpected request asking for your PIN is a scam pattern.
 
+Outside India, Google Pay and other wallets work differently. See [digital wallets compared: Apple Pay vs Google Pay vs PayPal](/blog/digital-wallets-compared-apple-pay-vs-google-pay-vs-paypal/).
+
 *Last updated September 2026. UPI limits, app fees, and the merchant discount rate framework (effective October 15, 2026, and subject to a pending court challenge) can change; NPCI's 30% per-app market share cap is also scheduled for review by December 31, 2026. Market-share figures reflect August 2026 data. Confirm current limits and fees in your bank's and app's own terms before relying on them.*

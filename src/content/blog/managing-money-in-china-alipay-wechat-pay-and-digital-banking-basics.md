@@ -71,4 +71,6 @@ A remote worker plans four weeks in Shanghai. Two weeks before leaving, they ins
 
 Install and verify both apps at home, link a no-foreign-fee card, and carry a physical card and some yuan as backup. For general habits that apply in any country, see [how to manage money while traveling abroad](/blog/how-to-manage-money-while-traveling-abroad/).
 
+For how the Western wallets compare, see [digital wallets compared: Apple Pay vs Google Pay vs PayPal](/blog/digital-wallets-compared-apple-pay-vs-google-pay-vs-paypal/).
+
 *Last updated October 2026. Payment limits, fees, and account requirements in China change often and are applied differently by app, bank, and branch. This is general information, not personalized financial, legal, or immigration advice, so confirm current terms in the apps and with your bank before relying on them.*

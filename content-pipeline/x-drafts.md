@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## digital-wallets-compared-apple-pay-vs-google-pay-vs-paypal
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Digital Wallets Compared: Apple Pay vs Google Pay vs PayPal — Two are card holders, one is an account of its own. Here's how they differ on devices, security, protections, and availability.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/digital-wallets-compared-apple-pay-vs-google-pay-vs-paypal/
+```
+
 ## how-to-budget-as-a-couple-with-separate-finances
 
 **Post (attach the matching pin image from public/pins/):**
