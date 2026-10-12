@@ -63,4 +63,6 @@ This applies to most working households. It's less relevant if you have guarante
 
 If you and a partner keep separate finances, decide together how a shared cushion is sized and held. See [how to budget as a couple with separate finances](/blog/how-to-budget-as-a-couple-with-separate-finances/).
 
+Know the costs that are coming, not just the ones that aren't? Pair this with [how to build a sinking fund for irregular expenses](/blog/how-to-build-a-sinking-fund-for-irregular-expenses/), which covers predictable but lumpy bills so they don't drain your emergency cushion.
+
 *Last updated August 2026. High-yield savings rates move with the broader interest rate environment — check current rates before assuming a specific number.*

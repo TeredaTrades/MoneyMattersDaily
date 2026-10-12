@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## how-to-build-a-sinking-fund-for-irregular-expenses
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How to Build a Sinking Fund for Irregular Expenses — Car insurance, gifts, and annual fees aren't emergencies, but they still wreck a monthly budget. Spread each one across the year so the bill is already paid when it arrives.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-build-a-sinking-fund-for-irregular-expenses/
+```
+
 ## digital-wallets-compared-apple-pay-vs-google-pay-vs-paypal
 
 **Post (attach the matching pin image from public/pins/):**

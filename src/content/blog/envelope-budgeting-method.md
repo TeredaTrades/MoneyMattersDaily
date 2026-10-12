@@ -67,4 +67,6 @@ If dining out runs dry with four days left in the period, that's the signal to c
 
 This fits best for anyone whose overspending shows up in small, repeated purchases rather than one large expense — the "death by a thousand cuts" pattern in dining out, discretionary shopping, or entertainment. It's less useful for fixed costs (rent, loan payments) that don't need a spending limit, and less useful on its own for someone who hasn't yet figured out how much should go to savings versus spending in the first place — that decision belongs to a top-level method like [zero-based budgeting](/blog/zero-based-budgeting-explained/) or [50/30/20](/blog/50-30-20-budget-rule-explained/), with envelopes layered on top.
 
+Envelopes work well for lumpy costs too. See [how to build a sinking fund for irregular expenses](/blog/how-to-build-a-sinking-fund-for-irregular-expenses/) for how to size each one.
+
 *Last updated August 2026.*

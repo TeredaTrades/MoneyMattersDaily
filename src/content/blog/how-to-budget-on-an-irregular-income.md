@@ -70,4 +70,6 @@ In a $5,100 month, the extra $2,900 over the floor doesn't become discretionary 
 
 Pull the last 6–12 months of actual income, find the realistic floor, and build one month's fixed-cost budget around that number before touching anything else. The buffer and the re-budgeting habit both take real time to build — the floor-based budget is the one change that starts protecting you immediately, even before either of those exists yet.
 
+Bills that arrive irregularly are a separate problem from income that does. [How to build a sinking fund for irregular expenses](/blog/how-to-build-a-sinking-fund-for-irregular-expenses/) shows how to spread them across the year.
+
 *Last updated September 2026. Quarterly estimated tax deadlines and the IRS safe-harbor thresholds reflect the 2026 tax year — confirm current figures at irs.gov before relying on them for your own filing.*

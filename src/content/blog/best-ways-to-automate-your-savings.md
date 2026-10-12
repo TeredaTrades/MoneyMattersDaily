@@ -58,4 +58,6 @@ Put that same $50/month into a [high-yield savings account](/blog/high-yield-sav
 
 If nothing is automated yet, set up one recurring transfer this week — even $25 — timed for a day or two after your next payday. Everything else in this guide (the split, the round-ups, the amount increases) is easier to add once that first transfer has run without causing a problem.
 
+One good use for automation: a recurring transfer into a sinking fund for annual and seasonal bills. See [how to build a sinking fund for irregular expenses](/blog/how-to-build-a-sinking-fund-for-irregular-expenses/).
+
 *Last updated August 2026.*

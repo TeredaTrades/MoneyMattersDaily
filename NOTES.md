@@ -12,6 +12,13 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-12 — How to Build a Sinking Fund for Irregular Expenses (saving)
+
+- Published `how-to-build-a-sinking-fund-for-irregular-expenses`, `table` pin (Emergency/Sinking fund/Monthly). Pin checked, nothing clipped. X draft hand-edited.
+- Sources: none used. Amounts are illustrative and currency-neutral; no rates or legal claims.
+- Reverse links added in: how-much-emergency-fund, how-to-budget-on-an-irregular-income, best-ways-to-automate-your-savings, envelope-budgeting-method.
+- Next pending: how to use ATMs abroad without overpaying in fees (travel-finance).
+
 ## 2026-10-11 (later) — Writer reminder: go beyond the mainstream payment apps (owner request)
 
 ### Reminder for future articles
