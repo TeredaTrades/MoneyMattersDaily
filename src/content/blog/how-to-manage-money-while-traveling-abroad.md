@@ -71,4 +71,6 @@ Heading to East or West Africa? Mobile money runs most everyday payments there; 
 
 Using your phone to pay abroad? See [digital wallets compared: Apple Pay vs Google Pay vs PayPal](/blog/digital-wallets-compared-apple-pay-vs-google-pay-vs-paypal/) for how each works and where availability varies.
 
+Need cash on the road? See [how to use ATMs abroad without overpaying in fees](/blog/how-to-use-atms-abroad-without-overpaying-in-fees/) for the three charges to watch and how to decline the conversion offer.
+
 *Last updated September 2026.*

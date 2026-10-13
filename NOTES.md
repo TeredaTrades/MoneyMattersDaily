@@ -12,6 +12,16 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-13 — How to Use ATMs Abroad Without Overpaying in Fees (travel-finance)
+
+- Published `how-to-use-atms-abroad-without-overpaying-in-fees` (keyword index 54), `table` pin (Machine fee/Bank fees/Conversion). Pin viewed, nothing clipped. X draft hand-edited.
+- Structure: three costs (operator fee, bank fees, exchange rate), decline DCC / pay local, fewer larger withdrawals, choosing machines, checking your own bank first, which card for cash (credit card cash advances flagged), mention of agent/QR systems in Africa/China, common mistakes.
+- Sources (2026-10-13): Wise "Using ATMs abroad" (updated July 2024: operator surcharge, 1-3% bank conversion, DCC advice, HSBC 2.75% example not used in post); Wise Euronet guide (fee often around EUR 4, markup up to 13%, a competitor's claim, hedged in post); NerdWallet debit-card foreign transaction fees (1-3%, ATM fees up to about $5 plus percentage, premium accounts up to $35/month). Did not fetch any bank's or Visa/Mastercard's own pages, and the first-party searches (CFPB, networks) returned no usable pages. Worked-example markups (5-10%) are labelled illustrative, not sourced.
+- Wise and Revolut are named only as examples of multi-currency cards, with no fee figures and a read-current-terms caveat. Per the 10-11 writer reminder, a fuller multi-currency/crypto comparison is left to the queued multi-currency wallets post.
+- Reverse links added in: how-to-manage-money-while-traveling-abroad, best-banking-apps-for-digital-nomads, multi-currency-budgeting-for-remote-workers.
+- Time-sensitive: fee ranges and provider terms; refresh against a bank's or card network's own pages when they can be fetched.
+- Next pending: what is cryptocurrency: a beginner's guide to how it works and the risks (investing-basics).
+
 ## 2026-10-12 — How to Build a Sinking Fund for Irregular Expenses (saving)
 
 - Published `how-to-build-a-sinking-fund-for-irregular-expenses`, `table` pin (Emergency/Sinking fund/Monthly). Pin checked, nothing clipped. X draft hand-edited.

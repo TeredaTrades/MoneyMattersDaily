@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## how-to-use-atms-abroad-without-overpaying-in-fees
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How to Use ATMs Abroad Without Overpaying in Fees — One foreign withdrawal can carry three charges: the machine's fee, your bank's fees, and the exchange rate. Always decline the ATM's "convert for you" offer and pay in local currency.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-use-atms-abroad-without-overpaying-in-fees/
+```
+
 ## how-to-build-a-sinking-fund-for-irregular-expenses
 
 **Post (attach the matching pin image from public/pins/):**
