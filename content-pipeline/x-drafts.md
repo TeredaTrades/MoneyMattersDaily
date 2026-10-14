@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## what-is-cryptocurrency-how-it-works-and-the-risks
+
+**Post (attach the matching pin image from public/pins/):**
+```
+What Is Cryptocurrency? How It Works and the Risks — Crypto is generally not insured, rarely reversible, and its value can swing fast. Scams are where many people lose money. Plain-language basics before you put anything near it.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/what-is-cryptocurrency-how-it-works-and-the-risks/
+```
+
 ## how-to-use-atms-abroad-without-overpaying-in-fees
 
 **Post (attach the matching pin image from public/pins/):**

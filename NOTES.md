@@ -12,6 +12,16 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-14 — What Is Cryptocurrency? How It Works and the Risks (investing-basics)
+
+- Published `what-is-cryptocurrency-how-it-works-and-the-risks` (keyword index 55), `table` pin (Insured/Reversible/Value). Title shortened from the keyword so the pin stays at 4 lines. Pin viewed, clean. X draft hand-edited.
+- Framed per the YMYL writer guidance: educational only, risks as prominent as mechanics, no price predictions, no coin picks, no affiliate language. Includes a scam warning-sign list, custody, no reversal, taxes (US as one example, others told to check their own country), a short stablecoin/payments pointer, and a "if you're curious" section.
+- Sources (2026-10-14), primary: FTC consumer advice "What to know about cryptocurrency and scams" (BCP staff, June 5, 2025: definition, not backed or insured by a government, payments generally irreversible, public blockchain, scam patterns and warning signs); SEC Investor.gov crypto assets spotlight (definition, wallets store keys not assets, Form D is not SEC approval, false registration claims); IRS digital assets page (property not currency, reporting, 1099-DA from Jan 1 2025, page updated Sep 2 2026); bitcoin.org "how it works" (ledger, keys, 10-60 min first confirmation, mining).
+- Not verified: FDIC page failed to load, CFPB page returned the wrong article, and Investor.gov's glossary page was empty. The no-deposit-insurance point rests on the FTC's "not backed or insured by a government" wording and is hedged ("generally"). No market figures, supply caps or prices are quoted.
+- Reverse links added in: index-funds-explained-for-beginners, stock-market-indices-explained-sp-500-dow-jones-and-nasdaq, best-free-investing-apps-compared. Forward links to the queued crypto-storage, bitcoin-vs-ethereum-vs-stablecoins and multi-currency wallets posts are NOT in yet; add them when those publish.
+- Time-sensitive: US tax details (1099-DA, form questions) and the regulatory picture; refresh when the IRS/SEC pages change.
+- Next pending: what the Federal Reserve does and how its rate decisions affect your money (news-trends).
+
 ## 2026-10-13 — How to Use ATMs Abroad Without Overpaying in Fees (travel-finance)
 
 - Published `how-to-use-atms-abroad-without-overpaying-in-fees` (keyword index 54), `table` pin (Machine fee/Bank fees/Conversion). Pin viewed, nothing clipped. X draft hand-edited.
