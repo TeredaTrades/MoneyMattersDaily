@@ -12,6 +12,17 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-15 — What the Fed Does and How It Affects Your Money (news-trends)
+
+- Published `what-the-federal-reserve-does-and-how-rate-decisions-affect-your-money` (keyword index 56), `flow` pin (Fed sets rate / Banks adjust / Reaches you; labels kept under 14 chars). Title shortened from the keyword for the pin. Pin viewed, clean (news-trends accent text is dimmer than other pillars, existing palette, not changed). X draft hand-edited to fit 280.
+- Overlap decision: the site already had `what-fed-rate-decisions-mean-for-you` (2026-08-19, short wallet-level piece, no depthReviewed). This post is positioned as the broader explainer (what the Fed is, mandate, tools, the Sept 2026 decision, transmission table, worked example) and links to the older post for the short version; both now cross-link. Not merged or rewritten. Possible follow-up: refresh the older post with current figures or fold it in, owner's call.
+- Facts, all primary (federalreserve.gov, fetched 2026-10-15): FOMC statement 2026-09-16 (target range raised 1/4 point to 3-3/4 to 4 percent, 12-0 vote, "inflation remains elevated", "ample reserves"); Chair Warsh press conference 2026-09-16 (Aug total PCE about 3.6%, core PCE about 3.2%, unemployment about 4.1%, "removed a dose of accommodation"); H.15 for 2026-10-13 (effective fed funds 3.88%, prime 7.00%, 3-month Treasury 4.26%, 10-year 5.21%); FOMC calendar page updated 2026-10-07 (next meetings Oct 27-28, Dec 8-9); Fed "monetary policy goals and how it works" page (dual mandate, 2% PCE, tools, $3.7T asset purchases) and FOMC page (12 members, 8 meetings, Board handles discount rate and reserve requirements).
+- Not used: the press conference mentioned CPI "about 2.4 percent", which doesn't obviously match the July BLS figures in the 09-06 inflation post, so the post uses PCE only and doesn't quote CPI. No mortgage-rate or credit-card APR figures were fetched, so none are quoted; the mortgage point is made with Treasury yields and hedged. SEP projections and dot plot deliberately left out (avoid forecasting). Fed's own openmarket.htm page hit a permission prompt and wasn't needed.
+- Worked-example amounts (5,000 balance, 10,000 savings, quarter-point) are illustrative and labelled.
+- Reverse links added in: what-fed-rate-decisions-mean-for-you, what-inflation-reports-mean-for-your-budget, how-european-central-bank-rate-decisions-affect-your-money, high-yield-savings-accounts-explained.
+- Time-sensitive: refresh after the Oct 27-28 FOMC meeting (rate range, H.15 figures, the "next meetings" paragraph, and the 3.75-4% mention in the X draft).
+- Next pending: gift cards and your budget: how they work, hidden fees, and scams to avoid (budgeting).
+
 ## 2026-10-14 — What Is Cryptocurrency? How It Works and the Risks (investing-basics)
 
 - Published `what-is-cryptocurrency-how-it-works-and-the-risks` (keyword index 55), `table` pin (Insured/Reversible/Value). Title shortened from the keyword so the pin stays at 4 lines. Pin viewed, clean. X draft hand-edited.

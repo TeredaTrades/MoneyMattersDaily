@@ -67,4 +67,6 @@ Everything else — one month's headline number, a single category swing that do
 
 Next time an inflation report makes headlines, skip the national number and spend five minutes running the same category-by-category exercise as the worked example above, using your own last month's spending. If your personal rate is close to the national one, there's nothing to change. If it's meaningfully higher and concentrated in one or two categories, that's your actual signal — and it's specific enough to act on, which "inflation is 3.4%" never was.
 
+For how the Fed responds to inflation, and which inflation measure it targets, see [what the Fed does and how it affects your money](/blog/what-the-federal-reserve-does-and-how-rate-decisions-affect-your-money/).
+
 *Last updated September 2026. CPI figures reflect the U.S. Bureau of Labor Statistics' release for the 12 months ending July 2026 and will change with each new monthly release — check bls.gov/cpi for the current figure rather than relying on the number above indefinitely.*

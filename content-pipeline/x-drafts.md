@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## what-the-federal-reserve-does-and-how-rate-decisions-affect-your-money
+
+**Post (attach the matching pin image from public/pins/):**
+```
+What the Fed Does and How It Affects Your Money — The Fed raised rates to 3.75-4% on Sept 16. What it is, what it's trying to do, and how a decision in Washington reaches your loans, savings and paycheck.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/what-the-federal-reserve-does-and-how-rate-decisions-affect-your-money/
+```
+
 ## what-is-cryptocurrency-how-it-works-and-the-risks
 
 **Post (attach the matching pin image from public/pins/):**

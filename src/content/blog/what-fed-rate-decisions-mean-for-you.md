@@ -31,3 +31,5 @@ The Fed sets a target range for the rate banks charge each other overnight. That
 - If you're mortgage shopping, track the trend over months, not the reaction to any single Fed meeting.
 
 Rate decisions are one of the few financial news events that map onto real numbers in your own accounts — worth understanding the mechanism once, rather than re-parsing the headlines every time. If you're dealing with the euro-area version of this instead, [how European Central Bank rate decisions affect your money](/blog/how-european-central-bank-rate-decisions-affect-your-money/) covers the same idea with the ECB's three-rate system and Euribor-linked mortgages.
+
+Want the bigger picture of who the Fed is, what it's trying to do, and the September 2026 rate decision? See [what the Fed does and how it affects your money](/blog/what-the-federal-reserve-does-and-how-rate-decisions-affect-your-money/).

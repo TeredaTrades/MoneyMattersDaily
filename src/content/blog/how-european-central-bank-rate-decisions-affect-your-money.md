@@ -70,4 +70,6 @@ That's about €27 a month, or roughly €320 a year, on this particular loan si
 
 Find your mortgage or savings contract and check two things: which reference rate it's actually pegged to (and at what tenor), and when its next reset date falls. That tells you whether a given Governing Council decision is something to act on now or simply something to watch until your own reset arrives. For the currency-mechanics side of managing money across borders in the euro area and beyond, [multi-currency budgeting for remote workers](/blog/multi-currency-budgeting-for-remote-workers/) covers the budgeting side of the same picture.
 
+For the US side, including who sets Fed policy and the tools it uses, see [what the Fed does and how it affects your money](/blog/what-the-federal-reserve-does-and-how-rate-decisions-affect-your-money/).
+
 *Last updated September 2026. Rate figures (deposit facility 2.50%, MRO 2.65%, marginal lending 2.90%) reflect the ECB's decision effective 16 September 2026, per the ECB Data Portal. The 67% probability for the 29 October 2026 meeting is a market-implied estimate at time of writing and will have shifted by the time you're reading this — check the ECB's own announcements for the current rate rather than relying on the figures above indefinitely.*
