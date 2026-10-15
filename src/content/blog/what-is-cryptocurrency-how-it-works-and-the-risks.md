@@ -103,4 +103,6 @@ Nothing here says you must or mustn't touch crypto. If you're only curious, a se
 
 If you do nothing else, remember three things: crypto is generally not insured or reversible, its value can swing hard, and the most common way people lose money is a scam. Read a regulator's guide, decide in advance how much, if anything, you're willing to lose, and ignore anyone who promises a return.
 
+Gift cards are the other payment method scammers push most; see [gift cards and your budget: fees, rules, and scams](/blog/gift-cards-and-your-budget-fees-rules-and-scams/).
+
 *Last updated October 2026. Descriptions come from the US Federal Trade Commission (consumer advice page dated June 2025), the US SEC's Investor.gov crypto assets page, bitcoin.org, and the IRS digital assets page (updated September 2026). Rules, taxes and products vary by country and change often, nothing here predicts any price, and this is general information, not personalized financial advice.*

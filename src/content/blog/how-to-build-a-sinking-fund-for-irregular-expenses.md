@@ -121,4 +121,6 @@ When the expense comes, pay it from the sinking fund, not from your regular spen
 
 Spend 30 minutes with your last year of statements. List the irregular costs, estimate each yearly total, divide by 12, and add them up. Open or label a separate account, set up one automatic transfer for the total, and pay the next big bill from it. If the total feels too high, begin with the three largest bills and add the rest as your budget allows.
 
+Buying gift cards for the holidays? See [gift cards and your budget: fees, rules, and scams](/blog/gift-cards-and-your-budget-fees-rules-and-scams/) for what to check before you pay.
+
 *Last updated October 2026. The example uses made-up amounts in no particular currency, and interest rates, fees, and account features vary by bank and country. This is general information, not personalized financial advice.*

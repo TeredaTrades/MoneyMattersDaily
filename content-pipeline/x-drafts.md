@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## gift-cards-and-your-budget-fees-rules-and-scams
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Gift Cards and Your Budget: Fees, Rules, and Scams — Gift cards are for gifts. Anyone who asks you to pay with one is a scammer. Plus what US rules say about expiry and fees, and how to budget for them.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/gift-cards-and-your-budget-fees-rules-and-scams/
+```
+
 ## what-the-federal-reserve-does-and-how-rate-decisions-affect-your-money
 
 **Post (attach the matching pin image from public/pins/):**

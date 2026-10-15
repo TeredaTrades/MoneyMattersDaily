@@ -69,4 +69,6 @@ This fits best for anyone whose overspending shows up in small, repeated purchas
 
 Envelopes work well for lumpy costs too. See [how to build a sinking fund for irregular expenses](/blog/how-to-build-a-sinking-fund-for-irregular-expenses/) for how to size each one.
 
+Gift cards work like small envelopes of their own, with fees and expiry terms worth knowing; see [gift cards and your budget: fees, rules, and scams](/blog/gift-cards-and-your-budget-fees-rules-and-scams/).
+
 *Last updated August 2026.*

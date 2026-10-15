@@ -71,4 +71,6 @@ That $690 isn't automatically "extra" — step 3 above is deciding where it goes
 
 This is for anyone building a budget from scratch for the first time, regardless of income level — the process works the same whether take-home pay is $2,000 or $8,000/month. If you've already got a working budget and want a more structured system, [zero-based budgeting](/blog/zero-based-budgeting-explained/) or the [envelope method](/blog/envelope-budgeting-method/) are better next steps than starting over here.
 
+Gift cards you give or receive belong in your budget too; see [gift cards and your budget: fees, rules, and scams](/blog/gift-cards-and-your-budget-fees-rules-and-scams/).
+
 *Last updated August 2026.*

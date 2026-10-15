@@ -12,6 +12,17 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-16 — Gift Cards and Your Budget: Fees, Rules, and Scams (budgeting)
+
+- Published `gift-cards-and-your-budget-fees-rules-and-scams` (keyword index 57), `table` pin (Treat it as/Fees/Asked to pay). Title shortened from the keyword for the pin (3 lines). Pin viewed, clean. X draft hand-edited.
+- Framed as US-rules post with an explicit "other countries and some states differ" note. Sections: types of cards, what Regulation E says, fees that still exist (with a made-up worked example), using gift cards in a budget, the "gift cards are for gifts" scam rule (stories, warning signs, what to do if you paid), buying safely, mistakes.
+- Sources (2026-10-16), primary: CFPB's presentation of 12 CFR 1005.20 (definitions, 5-year funds rule, inactivity fees only after one year of no activity and one per month, disclosures on the card, exclusions, applies to products sold on/after 2010-08-22); FTC "Avoiding and Reporting Gift Card Scams" (published 2026-01-28, modified 2026-06-09: why scammers use gift cards, stories, warning signs, what to do, Apple/Google can freeze a card); FTC holiday gift card tips (undated page: stickers, receipt, terms, auction sites); FTC Feb 2024 checkout alert; CFPB Dec 2012 blog (archived, so used only for store vs network-branded cards, lost-card handling and the closed-retailer caution, flagged as older).
+- Not used: the first three fetches (FTC scams page, FTC gift cards page, CFPB ask page) errored on the original URLs; the working URLs came from search. FTC's 2021 data-spotlight loss figures were fetched but deliberately left out as stale. The "card rack tampering" idea came only from a 2019 reader comment on an FTC page, not FTC advice, so the post only repeats the FTC's check-stickers/PIN-not-exposed tip. No UK/EU/Canada rules were researched. The 10-11 writer reminder (multi-currency/crypto options) was considered; it doesn't fit gift cards much, so the only crypto link is a cross-link to the scam-pattern overlap.
+- Worked-example amounts (50 card, 5 purchase fee, 2 monthly inactivity fee) are made up and labelled.
+- Reverse links added in: how-to-build-a-sinking-fund-for-irregular-expenses, envelope-budgeting-method, how-to-make-a-budget-for-beginners, what-is-cryptocurrency-how-it-works-and-the-risks. Forward link to the queued holiday-budget post is NOT in (not published yet); add when it ships.
+- Time-sensitive: scam guidance and Regulation E are stable but re-check the FTC page if it is revised; holiday timing makes this a good post to re-share in November.
+- Next pending: what actually makes up a credit score (and what doesn't) (credit).
+
 ## 2026-10-15 — What the Fed Does and How It Affects Your Money (news-trends)
 
 - Published `what-the-federal-reserve-does-and-how-rate-decisions-affect-your-money` (keyword index 56), `flow` pin (Fed sets rate / Banks adjust / Reaches you; labels kept under 14 chars). Title shortened from the keyword for the pin. Pin viewed, clean (news-trends accent text is dimmer than other pillars, existing palette, not changed). X draft hand-edited to fit 280.
