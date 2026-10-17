@@ -12,6 +12,12 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-17 (evening) — GoatCounter weekly snapshot saved; Bing follow-up
+
+- Saved `content-pipeline/analytics/2026-10-17-traffic-summary.md` plus two screenshots (`2026-10-17-goatcounter-traffic.png`, `...-locations.png`). The browser tab strip and address bar were cropped off first because the repo is public and a tab title showed an unrelated email subject. Earlier snapshots in that folder were not re-checked for the same issue.
+- This snapshot is a 7-day window (2026-10-10 to 10-17), not cumulative like the 08-31 to 09-21 ones. Headline: 19 visits, zero from Ethiopia, spread across nine pages, Bing out-referred Google (3 vs 1), no Pinterest referral, none of the 10-13 to 10-17 posts visited yet. 6 of the 8 visits to the digital-wallets post were one burst with no referrer.
+- Follow-ups listed in the summary: submit `https://moneymattersdaily.money/sitemap.xml` to Bing Webmaster Tools (owner asked how; not confirmed done), check Google Search Console indexing for the five newest posts, consider GoatCounter's skip-own-visits setting.
+
 ## 2026-10-17 (later) — New queued post + writer brief: "is the cheaper gas station worth the detour" (saving)
 
 ### What was done
