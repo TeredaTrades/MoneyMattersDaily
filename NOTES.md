@@ -12,6 +12,33 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-17 (later) — New queued post + writer brief: "is the cheaper gas station worth the detour" (saving)
+
+### What was done
+- Added keyword "is the cheaper gas station worth the detour? how to work it out, and how fuel pricing differs by country" (pillar `saving`) as the NEXT pending item, ahead of "ETFs vs mutual funds" (move it down if preferred). Queue is now 91 entries, schema unchanged.
+- Origin: an unsolicited outreach email (2026-10-12) from a developer of a fuel-price app asked for a mention and link. Owner chose not to feature it. The topic was kept as an independent article. **Do not link to that app or any commercial price app**; official public tools (WA FuelWatch, Regie essence Quebec, Germany's MTS-K transparency data) are fine to name.
+- Owner's own starting assumption was that pump prices are identical within a country, which is a common one and a good opening hook. He asked to explore how this differs by country.
+
+### Research already done (2026-10-17, re-verify on the day of writing)
+- **US (EIA):** regional gaps are real. 2025 annual regular-grade averages by region ran from about $2.68/gal (Gulf Coast) to $4.09 (West Coast). EIA's stated reasons for differences: state/local taxes, distance from supply, supply disruptions, retail competition, environmental fuel programs. EIA also says even nearby stations can price differently because of traffic, rent, supply sources, ownership (refiner-owned vs independent) and operating costs. Retail price split (2025): crude about 51%, taxes about 17%, distribution and marketing about 18%, refining about 14% (EIA chart, mapping inferred from layout). Federal gas tax 18.40 c/gal; state taxes/fees averaged 33.55 c/gal as of Jan 2026.
+- **Germany:** the "12 o'clock rule" (KPAnG, in force 2026-04-01) lets stations raise prices only once a day, at noon; cuts unrestricted. ZEW early evidence (28-day window, about 15,000 stations from the MTS-K): gasoline margins up about 5-6 c/l, diesel no significant effect, "increased price transparency but failed to reduce price levels"; margins lower from about 4am to noon, higher after noon. Practical tip for readers: before-noon fill-ups.
+- **Austria:** a March 2026 report (bluewin, 2026-03-16) says increases were limited to once a day for about 15 years, then to Mon/Wed/Fri at noon, described as limited to one month and criticised by the ÖAMTC. Status after that is UNVERIFIED; check before quoting.
+- **Western Australia (FuelWatch):** retailers must notify next-day prices by 2pm; prices are locked for 24 hours from 6am the next day; tomorrow's prices are published by 2:30pm; listed prices are standard cash prices (no supermarket-docket discounts).
+- **Quebec:** Regie essence Quebec (the province's energy board map) launched 2026-04-15 with real-time prices at over 2,000 stations; retailers must update within five minutes; fines $1,000-$4,000 for first offences. A 2024 government-commissioned study (economist Robert Clark) found prices notably higher in Quebec City, the Gaspesie and the Cote-Nord.
+- **India:** the central excise is uniform nationwide but state VAT/levies differ, which a May 2026 government note calls the biggest reason for variation between states (e.g. Andhra Pradesh about 31% VAT plus extras; several states at or below Rs 102/litre for petrol). Oil marketing companies revise prices; there were increases on May 15, 19 and 23, 2026. Source is a government note defending policy, so attribute it.
+- **Kenya (EPRA):** maximum pump prices set monthly, differ by town. Review 2025-06-15 to 07-14: Super Petrol Nairobi 177.32, Mombasa 174.01 (lowest), Kisumu 177.28, Nakuru 176.47, Eldoret 177.28 KSh/L, incl. 16% VAT. A good example of a regulated market that still has town-level differences (reason for the town gaps not stated in the source, so don't assert one).
+- **Ethiopia (owner's home market):** prices are government-set by the Ministry of Trade and Regional Integration and change in steps, not station by station. 2025-2026 steps seen in reports: petrol 98.98 birr/l (Jan 2025), 132.18 (2026-03-10), 142.41 (2026-04-01), 167.50 (reported 2026-05-04, in a "latest price schedule circulated to fuel retailers"). The government says it subsidises part of the gap and that the 2026 hikes followed the Hormuz closure and supply disruption. Reports in 2025 gave official prices specifically for Addis Ababa and described shortages with black-market prices that varied by location (about 225 birr/l in Amhara cities, about 300 in Afar, versus an official 101 for gasoil in March 2025). UNVERIFIED: whether official prices differ slightly by town (the ministry's older statements could not be fetched, robots-blocked). Do not quote any Ethiopian price as "current"; say they are announced by the ministry and change often.
+
+### Suggested structure for the post
+1. Hook: "Aren't gas prices the same everywhere in a country?" Sometimes yes (government-set), often no.
+2. Why prices differ within a country (taxes, distance from supply, competition, ownership, time of day) with the EIA points above.
+3. How other countries handle it (short country table: who sets the price, how often it changes, what drivers can check), with "as of" dates and hedges.
+4. The break-even math, currency- and unit-neutral: savings = (price gap per litre) x (litres bought); detour cost = (extra km) x (litres per km) x (price). Worked example with made-up numbers, then a rule of thumb. Include time value, wear, safety, and discounts (loyalty cards, card fees, premium vs regular).
+5. If your country sets one price (e.g. government-set), the saving is in other places: fill-up timing, avoiding black-market fuel, driving habits, not detouring for a small gap.
+6. Mistakes, getting started.
+- Pin: a `table` pin or `flow`; keep title around 50 characters. Keep claims dated and sourced; no app links.
+- Time-sensitive: every country item above (Germany rule, Austria rule, Ethiopian steps, Kenyan caps, India VAT).
+
 ## 2026-10-17 — What Makes Up a Credit Score (and What Doesn't) (credit)
 
 - Published `what-makes-up-a-credit-score-and-what-doesnt` (keyword index 58), `table` pin (Payment history 35% / Amounts owed 30% / Income Not in it). Title shortened from the keyword for the pin (3 lines). Pin viewed, nothing clipped. X draft hand-edited.
