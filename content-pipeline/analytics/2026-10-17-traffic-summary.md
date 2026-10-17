@@ -1,14 +1,16 @@
-# Traffic snapshot — 2026-10-17 (weekly view, not cumulative)
+# Traffic snapshot — 2026-10-17 (weekly view, plus cumulative view since launch)
 
 Source: GoatCounter (mmd.goatcounter.com), dashboard range 2026-10-10 to 2026-10-17 ("1 week ago–Today", "19 out of 19 visits shown").
 Screenshots in this folder (browser tab strip and address bar cropped off before saving):
 - `2026-10-17-goatcounter-traffic.png` — pages, totals, referrers, browsers, systems
 - `2026-10-17-goatcounter-traffic-locations.png` — scrolled view: totals, referrers, browsers, systems, locations, sizes
+- `2026-10-17-goatcounter-cumulative.png` — cumulative view 2026-08-15 to 2026-10-17 (pages, totals, referrers only; the lower half with locations, browsers and sizes was not captured)
 
-**Not comparable one-to-one with earlier snapshots.** The 08-31, 09-06, 09-13 and
-09-21 snapshots were cumulative since launch (2026-08-15). This one is a single
-7-day window, so there is no cumulative total here. There is also no snapshot
-between 2026-09-21 and 2026-10-10, so the pace in between is unknown.
+**Two views in this snapshot.** The first part below is a single 7-day window
+(2026-10-10 to 10-17), which is not comparable one-to-one with the 08-31 to 09-21
+snapshots because those were cumulative since launch (2026-08-15). The cumulative
+view for 2026-08-15 to 2026-10-17 is in its own section at the end and does
+continue that series. There is no snapshot between 2026-09-21 and 2026-10-10.
 
 ## Totals
 - 19 visits in the 7-day window (about 2.7/day), against about 2.0/day on average
@@ -73,3 +75,42 @@ between 2026-09-21 and 2026-10-10, so the pace in between is unknown.
 - Submit the sitemap (`https://moneymattersdaily.money/sitemap.xml`, also listed in robots.txt) to Bing Webmaster Tools, since Bing already out-refers Google. Owner asked how on 2026-10-17; not yet confirmed done.
 - Check Google Search Console page indexing for the five posts from 2026-10-13 to 2026-10-17 (no visits yet).
 - Consider GoatCounter's setting to skip your own browser's visits so future snapshots reflect readers only.
+
+---
+
+# Cumulative view, 2026-08-15 to 2026-10-17 (about 63 days)
+
+Screenshot: `2026-10-17-goatcounter-cumulative.png` (dashboard shows "92 out of 128 visits shown"; the pages list is truncated at "Show more" and the page is cut off below the referrers list).
+
+## Totals
+- 128 visits in about 63 days (about 2.0/day). Up from 75 at 2026-09-21: +53 visits in roughly 26 days, still about 2.0/day.
+- Taking the 19 visits of the last week out of that, the roughly 19 days between 09-21 and 10-09 added about 34 (about 1.8/day), so this week's 2.7/day is a small uptick, not a step change.
+
+## Top pages (92 of 128 visits shown; the "(new)" tags only mean the prior comparison period predates the site)
+- `/` (home) — 54
+- `/blog/eurozone-inflation-reports-explained-reading-the-hicp` — 9 (appears as one spike on the chart, roughly at the end of September)
+- `/blog/digital-wallets-compared-apple-pay-vs-google-pay-vs-paypal` — 8
+- `/blog/best-ways-to-automate-your-savings` — 5
+- `/blog/best-debt-payoff-apps-compared` — 5
+- `/budgeting` — 3
+- `/blog/best-banking-apps-for-australians-compared` — 2
+- `/blog/thailand-digital-nomad-visa-and-money-basics` — 2
+- `/blog/how-european-central-bank-rate-decisions-affect-your-money` — 2
+- `/blog/what-stock-market-volatility-means-for-your-savings` — 2
+- 36 further visits are on pages hidden behind "Show more".
+
+## Top referrers (list cut off after the fifth row)
+- (unknown/direct) — 59% (75)
+- Google — 5% (7)
+- www.bing.com — 5% (7)
+- chatgpt.com — 3% (4)
+- t.co — 1% (1)
+- Rows below t.co are not in the screenshot, so Pinterest and any other referrers cannot be read from this capture. Earlier snapshots recorded 1 Pinterest visit.
+
+## Read
+- The home page's share fell from 61% (46 of 75 at 09-21) to 42% (54 of 128). Only 8 of the 53 visits added since 09-21 went to the home page; the other 45 went to other pages. That is the clearest change since launch: article pages are now getting most of the new visits.
+- Google went from 2 to 7 visits and chatgpt.com from 2 to 4 since 09-21. Bing, absent from the earlier snapshots, is at 7 (3 of them in the last week). Google plus Bing together are 14 visits (11% of the total).
+- t.co is X's link shortener, so that 1 visit is the first sign of a click coming from an X post. X posting is manual by design, so this reflects a tweeted link, not automation.
+- The eurozone inflation post (9) and digital wallets post (8) are the top two blog pages, and each shows a one-time burst rather than a steady trickle. Cause unknown from this view, so neither is read as a breakout post.
+- Several international posts have visits (Australia banking apps, Thailand, ECB), consistent with the international keyword batch from 2026-09-06 being found, but visit countries are not visible in this capture.
+- Volume (128 visits over about 2 months, about 2/day) is still far below any threshold where ad-network fill-rate or RPM comparisons would mean anything. Same conclusion as every prior snapshot.
