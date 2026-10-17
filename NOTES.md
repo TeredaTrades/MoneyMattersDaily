@@ -12,6 +12,18 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-17 — What Makes Up a Credit Score (and What Doesn't) (credit)
+
+- Published `what-makes-up-a-credit-score-and-what-doesnt` (keyword index 58), `table` pin (Payment history 35% / Amounts owed 30% / Income Not in it). Title shortened from the keyword for the pin (3 lines). Pin viewed, nothing clipped. X draft hand-edited.
+- Overlap decision: `what-hurts-your-credit-score` (2026-08-23) already has the 35/30/15/10/10 table. This post is positioned as the broader explainer: what a score is (FTC), the five FICO categories with FICO's own caveats, VantageScore's influence labels (no numbers), the full FICO "what's not in your score" list, why lenders still see income, score bands, and what to do. Both now cross-link.
+- Sources (2026-10-17), primary: FICO "what's in your credit score" (page showed "Updated October 2026": 35/30/15/10/10, only inquiries from last 12 months count and stay on report two years, importance may vary by person, UltraFICO exception); FICO "what's not in your credit score" (undated: protected characteristics, age, income/employment, location, account interest rate, child support, consumer-initiated/promotional/administrative/employer inquiries, non-bankruptcy public records, credit counseling); FICO "what is a FICO score" (300-850 bands, multiple versions); FTC "Credit Scores" (published 2023-11-07, modified 2026-05-05: 300-850, FICO most used by lenders, insurers and phone companies use scores, models differ, free reports weekly at AnnualCreditReport.com, free score offers may need a subscription); VantageScore consumer page (influence labels only, undated, may be 2023 content).
+- Not used / limits: VantageScore's knowledge-center URL errored (working URL found via search); the VantageScore page gave no numeric weights or score range, so none are claimed. FICO's pages don't mention debit cards or rent, so the post makes no claim about either. No UK/other-country scoring beyond a link to the existing UK post.
+- Possible follow-up (not changed): `credit-utilization-explained` says (frontmatter description) that utilization "is 30% of your FICO score"; FICO's 30% category is "amounts owed", which covers total debt as well as how much available credit is used. The new post words it accurately; consider softening the older description. Also `what-hurts-your-credit-score` labels the 30% row "Amounts owed (utilization)" and gives a fixed "60-110 point" late-payment drop that this post doesn't repeat or verify.
+- Pin legibility: the credit and news-trends pillar accents render dim on the teal background, so table values ("35%", "Not in it"), the pillar subtitle and the footer URL are low contrast. Existing palette (scripts/lib/visual-kit.mjs), not changed; worth reviewing if pins are meant to be read on a phone.
+- Reverse links added in: what-hurts-your-credit-score, credit-utilization-explained, does-checking-your-own-credit-score-hurt-it, how-to-build-credit-from-scratch. (An earlier attempt to add one inside an italic footer was caught and redone before commit.)
+- Time-sensitive: FICO weights/bands and the FTC page; low risk, re-check if FICO updates its education pages.
+- Next pending: ETFs vs mutual funds: what's the difference and which fits you (investing-basics).
+
 ## 2026-10-16 — Gift Cards and Your Budget: Fees, Rules, and Scams (budgeting)
 
 - Published `gift-cards-and-your-budget-fees-rules-and-scams` (keyword index 57), `table` pin (Treat it as/Fees/Asked to pay). Title shortened from the keyword for the pin (3 lines). Pin viewed, clean. X draft hand-edited.

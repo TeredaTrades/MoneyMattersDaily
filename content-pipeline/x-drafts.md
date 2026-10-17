@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## what-makes-up-a-credit-score-and-what-doesnt
+
+**Post (attach the matching pin image from public/pins/):**
+```
+What Makes Up a Credit Score (and What Doesn't) — Payment history and amounts owed make up about 65% of a FICO Score. Income, age and where you live aren't in it at all. Here's the full list of what goes in and what stays out.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/what-makes-up-a-credit-score-and-what-doesnt/
+```
+
 ## gift-cards-and-your-budget-fees-rules-and-scams
 
 **Post (attach the matching pin image from public/pins/):**

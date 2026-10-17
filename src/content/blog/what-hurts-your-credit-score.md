@@ -57,4 +57,6 @@ Credit scoring has picked up some real changes recently that didn't exist a few 
 
 [AnnualCreditReport.com](https://www.annualcreditreport.com) provides free yearly reports from all three bureaus — Equifax, Experian, and TransUnion — and is the only site authorized by federal law for this, unlike many lookalike "free credit score" sites that exist to sell something else. Checking there doesn't affect your score, per the myth above. If something on a report looks wrong, see [how to dispute an error on your credit report](/blog/how-to-dispute-an-error-on-your-credit-report/).
 
+For the full picture of what a score is built from, including how VantageScore describes it and the complete list of what's left out, see [what makes up a credit score (and what doesn't)](/blog/what-makes-up-a-credit-score-and-what-doesnt/).
+
 *Last updated August 2026. FICO factor weights and dollar thresholds referenced here reflect the current scoring model as of this writing and can shift over time — confirm current details directly with FICO, Experian, Equifax, or TransUnion before relying on any single figure, including these.*

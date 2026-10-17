@@ -43,3 +43,5 @@ Once that first account is reporting, see [what actually hurts your credit score
 ## Realistic timeline
 
 You can typically get an initial score within 3–6 months of your first reporting account. A genuinely solid file — the kind that gets you approved for an unsecured card, a decent auto loan rate, or a mortgage pre-approval — usually takes 1–2 years of consistent on-time payments and low utilization. There's no way to compress this much further; the system is deliberately built to reward time and consistency over activity.
+
+To see exactly what a score is made of before you start building one, see [what makes up a credit score (and what doesn't)](/blog/what-makes-up-a-credit-score-and-what-doesnt/).

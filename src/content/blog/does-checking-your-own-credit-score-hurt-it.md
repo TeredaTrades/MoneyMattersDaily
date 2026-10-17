@@ -85,4 +85,6 @@ Priya wants to know where she stands before buying a car. She checks her score i
 
 Check your own credit freely. AnnualCreditReport.com is the official source for free reports from Equifax, Experian, and TransUnion, and the bureaus have offered them weekly on a permanent basis since October 2023. Space out new applications, and keep any loan shopping inside a tight window. To build the habits that matter more than inquiries, start with [how to build credit from scratch](/blog/how-to-build-credit-from-scratch/) and [credit utilization explained](/blog/credit-utilization-explained/).
 
+For the full list of inquiries and other items a FICO Score ignores, see [what makes up a credit score (and what doesn't)](/blog/what-makes-up-a-credit-score-and-what-doesnt/).
+
 *Last updated October 2026. Point impacts, look-back periods, and rate-shopping windows vary by scoring model and version and can change. This is general information for US consumers, not personalized financial advice. Confirm details with the lender or scoring provider before relying on any single figure.*
