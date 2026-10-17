@@ -4,7 +4,8 @@ Source: GoatCounter (mmd.goatcounter.com), dashboard range 2026-10-10 to 2026-10
 Screenshots in this folder (browser tab strip and address bar cropped off before saving):
 - `2026-10-17-goatcounter-traffic.png` — pages, totals, referrers, browsers, systems
 - `2026-10-17-goatcounter-traffic-locations.png` — scrolled view: totals, referrers, browsers, systems, locations, sizes
-- `2026-10-17-goatcounter-cumulative.png` — cumulative view 2026-08-15 to 2026-10-17 (pages, totals, referrers only; the lower half with locations, browsers and sizes was not captured)
+- `2026-10-17-goatcounter-cumulative.png` — cumulative view 2026-08-15 to 2026-10-17 (pages, totals, referrers)
+- `2026-10-17-goatcounter-cumulative-locations.png` — lower half of the cumulative view: referrers, browsers, systems, locations
 
 **Two views in this snapshot.** The first part below is a single 7-day window
 (2026-10-10 to 10-17), which is not comparable one-to-one with the 08-31 to 09-21
@@ -114,3 +115,22 @@ Screenshot: `2026-10-17-goatcounter-cumulative.png` (dashboard shows "92 out of 
 - The eurozone inflation post (9) and digital wallets post (8) are the top two blog pages, and each shows a one-time burst rather than a steady trickle. Cause unknown from this view, so neither is read as a breakout post.
 - Several international posts have visits (Australia banking apps, Thailand, ECB), consistent with the international keyword batch from 2026-09-06 being found, but visit countries are not visible in this capture.
 - Volume (128 visits over about 2 months, about 2/day) is still far below any threshold where ad-network fill-rate or RPM comparisons would mean anything. Same conclusion as every prior snapshot.
+
+## Cumulative lower half (added later the same day; screenshot `2026-10-17-goatcounter-cumulative-locations.png`)
+
+### Referrers (full list)
+- (unknown) 75, Google 7, www.bing.com 7, chatgpt.com 4, t.co 1, pinterest 1. Campaigns: nothing.
+
+### Locations (128 visits)
+- Ethiopia 46 (36%), United States 42 (33%), Canada 5, Australia 4, Czechia 3, Latvia 3, Philippines 3, France 2, Netherlands 2, Russia 2, Taiwan 2
+- One each: Argentina, Brazil, Chile, Denmark, United Kingdom, Guinea-Bissau, Indonesia, India, Iceland, Mexico, Malaysia, Pakistan, Poland, Vietnam
+
+### Browsers / Systems
+- Chrome 106 (83%), Safari 20 (16%), Firefox 1, unknown 1
+- Windows 53 (41%), Android 34 (27%), macOS 17 (13%), iOS 16 (13%), Linux 8 (6%)
+
+### Read
+- Ethiopia is 46 of 128 (36%) cumulative, yet had 0 visits in the last 7 days. The 09-21 snapshot had Ethiopia at 55-57% of 75 (roughly 41-43 visits), so at most a handful were added since. Almost all Ethiopia traffic predates 2026-10-10, consistent with it being mostly the owner's own visits. Excluding Ethiopia, the site has about 82 visits in 63 days (about 1.3/day).
+- The US is the largest outside audience (42, 33%), and 9 of the 128 visits (7%) come from Canada and Australia combined; nine more countries with 2-3 visits each show scattered international reach, not a concentration.
+- The one Pinterest referral is still the only one on record, despite the pin pipeline. Pinterest is not yet a measurable channel.
+- Settings check (2026-10-17): GoatCounter "Ignore IPs" is now set to one address and data retention is 0 (never delete). Ignoring takes effect only for new visits; it does not remove past ones. If the ISP changes the IP, the filter stops working, so the per-browser disable link is the sturdier option. From the next snapshot on, Ethiopia counts should reflect readers only, so compare future snapshots against the 82 non-Ethiopia baseline.
