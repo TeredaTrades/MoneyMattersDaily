@@ -69,4 +69,6 @@ Next time an inflation report makes headlines, skip the national number and spen
 
 For how the Fed responds to inflation, and which inflation measure it targets, see [what the Fed does and how it affects your money](/blog/what-the-federal-reserve-does-and-how-rate-decisions-affect-your-money/).
 
+For a closer look at one everyday price that moves a lot, see [is the cheaper gas station worth the detour?](/blog/is-the-cheaper-gas-station-worth-the-detour/), which covers why fuel prices differ and how to weigh a detour.
+
 *Last updated September 2026. CPI figures reflect the U.S. Bureau of Labor Statistics' release for the 12 months ending July 2026 and will change with each new monthly release — check bls.gov/cpi for the current figure rather than relying on the number above indefinitely.*

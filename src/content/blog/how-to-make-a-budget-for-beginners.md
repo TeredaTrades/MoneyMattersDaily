@@ -73,4 +73,6 @@ This is for anyone building a budget from scratch for the first time, regardless
 
 Gift cards you give or receive belong in your budget too; see [gift cards and your budget: fees, rules, and scams](/blog/gift-cards-and-your-budget-fees-rules-and-scams/).
 
+If fuel is a big line in your budget, [is the cheaper gas station worth the detour?](/blog/is-the-cheaper-gas-station-worth-the-detour/) shows how to tell whether chasing a lower pump price actually saves money.
+
 *Last updated August 2026.*

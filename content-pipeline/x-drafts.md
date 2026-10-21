@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## is-the-cheaper-gas-station-worth-the-detour
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Is the Cheaper Gas Station Worth the Detour? — Fuel prices differ by country, and sometimes by street. Here's why, how a few countries handle it, and the quick math for whether driving to a cheaper station actually saves money.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/is-the-cheaper-gas-station-worth-the-detour/
+```
+
 ## what-makes-up-a-credit-score-and-what-doesnt
 
 **Post (attach the matching pin image from public/pins/):**

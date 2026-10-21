@@ -69,4 +69,6 @@ This isn't a reason to prioritize retirement savings over an emergency fund if y
 
 Pick exactly one item from the high-impact/low-effort corner of the table above — a subscription audit or a fee-free account switch — and do it this week before touching anything harder. The staged order matters more than the total amount: a small win that actually happens beats a bigger plan that doesn't.
 
+Drive to save on fuel? Check the math first in [is the cheaper gas station worth the detour?](/blog/is-the-cheaper-gas-station-worth-the-detour/), because a small price gap often disappears once you count the extra driving.
+
 *Last updated August 2026. Saver's Credit income limits and figures referenced here are for the 2026 tax year and adjust annually — confirm current-year limits directly with the IRS before relying on them.*
