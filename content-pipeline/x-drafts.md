@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## etfs-vs-mutual-funds-whats-the-difference-and-which-fits-you
+
+**Post (attach the matching pin image from public/pins/):**
+```
+ETFs vs. Mutual Funds: What's the Difference? — Both pool money into a basket of investments, but they're priced, bought, and taxed differently. Here's how each works, what trading costs look like, and which fits your situation.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/etfs-vs-mutual-funds-whats-the-difference-and-which-fits-you/
+```
+
 ## is-the-cheaper-gas-station-worth-the-detour
 
 **Post (attach the matching pin image from public/pins/):**

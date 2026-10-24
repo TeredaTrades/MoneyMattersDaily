@@ -58,3 +58,5 @@ Ask what you're optimizing for first: **learning, convenience, or being left alo
 One thing that doesn't change across any of these: all are SIPC-member brokerages, meaning your securities are protected up to $500,000 (including $250,000 in cash) if the brokerage itself fails. That protects against the company going under — it does not protect against your investments losing value, which is a normal and expected part of investing, not a flaw in the app you picked.
 
 Some of these apps also offer crypto trading. It carries risks that stocks and funds don't, including no deposit insurance, rarely reversible payments and common scams; see [what is cryptocurrency: how it works and the risks](/blog/what-is-cryptocurrency-how-it-works-and-the-risks/) first.
+
+Not sure whether to buy an ETF or a mutual fund through one of these apps? See [ETFs vs. mutual funds: what's the difference](/blog/etfs-vs-mutual-funds-whats-the-difference-and-which-fits-you/).

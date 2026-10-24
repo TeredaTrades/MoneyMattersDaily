@@ -60,7 +60,7 @@ Size-weighted indexes like the S&P 500 and the Nasdaq Composite give more influe
 
 ## You can't buy an index, but you can buy a fund that tracks one
 
-An index is only a calculation. To invest in one, you buy an **index fund or ETF** that holds the same stocks in similar proportions. That's what people mean by "investing in the S&P 500." The fund's results will be close to the index's but slightly lower because of fees. For how these funds work and why many beginners choose them, see [index funds explained for beginners](/blog/index-funds-explained-for-beginners/).
+An index is only a calculation. To invest in one, you buy an **index fund or ETF** that holds the same stocks in similar proportions. That's what people mean by "investing in the S&P 500." The fund's results will be close to the index's but slightly lower because of fees. For how these funds work and why many beginners choose them, see [index funds explained for beginners](/blog/index-funds-explained-for-beginners/), and for how the ETF and mutual fund versions of the same index differ, see [ETFs vs. mutual funds](/blog/etfs-vs-mutual-funds-whats-the-difference-and-which-fits-you/).
 
 ## Indexes around the world
 

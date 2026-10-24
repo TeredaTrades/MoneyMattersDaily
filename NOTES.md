@@ -12,6 +12,18 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-24 — ETFs vs. Mutual Funds: What's the Difference? (investing-basics)
+
+- Published `etfs-vs-mutual-funds-whats-the-difference-and-which-fits-you` (keyword index 60), `table` pin (Mutual fund / ETF / Both), hero, X draft hand-shortened (script output was ~275 chars). Pin and hero viewed, nothing clipped. No post went out 2026-10-22 or 10-23 (skipped, not back-filled). Last publish before this was 10-21.
+- Sources (2026-10-24, all fetched): SEC/Investor.gov "Characteristics of Mutual Funds and Exchange-Traded Funds" (NAV once a day vs market price, ETFs typically fewer capital gains distributions due to in-kind exchanges, no tax difference inside 401(k)/IRA, both can be active or passive), SEC "Updated Investor Bulletin: ETFs" 2023-02-23 (bid-ask spread as a hidden cost, premium/discount, tighter spreads for more liquid ETFs), SEC glossary entry for ETF, and FINRA "ETF vs. Mutual Fund" (annual expense ratios on both, mutual funds may add other fees, ETF commissions, investor controls when gains are realised).
+- Deliberately NOT stated: any current expense ratios, fund minimums, or "all brokers are commission-free". The post says some brokers charge commissions and some don't (best-free-investing-apps-compared says the big US brokers charge $0 on ETFs). Leveraged/inverse ETFs are only flagged as risky with a pointer to the SEC's separate bulletin; that bulletin was not fetched. Part-share/fractional buying is mentioned as "check your broker", not asserted.
+- Worked example (cost for $200/month, $5 commission, 0.05% vs 0.75% expense ratio on $10,000, $59.95/$60.00 quote) uses made-up figures, labelled as such and checked in code.
+- US-rules framing with a closing pointer to the NISA, UK ISA and TFSA/RRSP posts for other countries.
+- Reverse links added in: index-funds-explained-for-beginners, best-free-investing-apps-compared, stock-market-indices-explained (inline). The post links out to those plus compound-interest-explained-simply, how-to-start-investing-with-little-money, what-stock-market-volatility-means-for-your-savings and the three account posts.
+- Process note: the clone lived at /root/MoneyMattersDaily while the first Write call went to /home/claude/..., so the post file had to be moved into the repo before hero/pin generation. Use the clone's absolute path.
+- Time-sensitive: little. No numbers quoted as current; revisit only if SEC/FINRA guidance changes.
+- Next pending: best multi-currency wallets compared (app-comparisons). The 2026-10-11 standing direction applies: go beyond mainstream apps and cover lesser-known options, including fiat and non-fiat (crypto/stablecoin) currencies, with the YMYL crypto guidance.
+
 ## 2026-10-21 — Is the Cheaper Gas Station Worth the Detour? (saving)
 
 - Published `is-the-cheaper-gas-station-worth-the-detour` (keyword index 59), `table` pin (You save / It costs / Also count), hero, hand-edited X draft. Pin viewed, nothing clipped. No post went out 2026-10-18, 19 or 20 (skipped, not back-filled). Last publish before this was 10-17.

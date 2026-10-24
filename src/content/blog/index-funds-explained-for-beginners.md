@@ -37,3 +37,5 @@ There's also a real difference between fund types worth naming: a **total market
 This isn't a guarantee. The market can and does drop 20%, 30%, occasionally more, and an index fund drops with it — there's no floor. What history does show is that broad market index funds have recovered from every prior downturn and gone on to new highs, given enough time. "Enough time" is the actual requirement here, more than any specific fund choice: money you'll need within the next 3–5 years generally doesn't belong in stocks, indexed or not.
 
 Curious about crypto instead? It's a very different kind of asset, with no insurance and a long list of scams; see [what is cryptocurrency: how it works and the risks](/blog/what-is-cryptocurrency-how-it-works-and-the-risks/) before putting any money near it.
+
+Once you've decided on an index fund, you'll find it sold as both a mutual fund and an ETF. The differences are in how they're bought, priced, and taxed; see [ETFs vs. mutual funds: what's the difference](/blog/etfs-vs-mutual-funds-whats-the-difference-and-which-fits-you/).
