@@ -64,3 +64,5 @@ Pull up the last 6–12 months of your specific currency pair, pick a rate near 
 Cash withdrawals are one more place conversion costs hide; see [how to use ATMs abroad without overpaying in fees](/blog/how-to-use-atms-abroad-without-overpaying-in-fees/).
 
 *Last updated September 2026. Exchange rate ranges and fee figures above are illustrative of typical recent behavior for a major currency pair and typical multi-currency account pricing, not a quote for any specific currency pair, provider, or point in time — check current rates and your own account's actual fee schedule before building a real budget around them.*
+
+To compare the accounts you might hold these currencies in, see [multi-currency wallets compared: one account, several currencies](/blog/best-multi-currency-wallets-compared-one-account-for-several-currencies/).

@@ -95,3 +95,5 @@ In some places the everyday alternative to a bank ATM isn't a different machine,
 Before your next trip, look up your card's foreign ATM fee, foreign transaction fee, and daily limit, and decide whether you'd rather pay the cost, switch cards, or use a travel-focused account. At the machine, read the fee screen, choose the local currency, and take out a sensible amount in one go rather than several. That's most of the savings, and none of it takes more than a few seconds.
 
 *Last updated October 2026. Fees, limits, and provider terms change often and differ by bank, card, and country, and the figures quoted here come from the providers' own guides and NerdWallet at the time of writing. Check your own bank's current fee schedule before you travel. This is general information, not personalized financial advice.*
+
+If you hold several currencies in one account, see [multi-currency wallets compared](/blog/best-multi-currency-wallets-compared-one-account-for-several-currencies/) for what to check before you rely on it abroad.

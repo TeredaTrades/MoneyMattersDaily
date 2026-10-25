@@ -62,3 +62,5 @@ Local rules can also override all of this: in Japan, for instance, most digital 
 China is another place where local payment apps matter more than your card network; see [managing money in China: Alipay, WeChat Pay, and digital banking basics](/blog/managing-money-in-china-alipay-wechat-pay-and-digital-banking-basics/).
 
 Planning to withdraw cash abroad? See [how to use ATMs abroad without overpaying in fees](/blog/how-to-use-atms-abroad-without-overpaying-in-fees/).
+
+For a wider comparison that includes Payoneer, local wallets and stablecoins, see [multi-currency wallets compared](/blog/best-multi-currency-wallets-compared-one-account-for-several-currencies/).

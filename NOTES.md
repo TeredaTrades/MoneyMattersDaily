@@ -12,6 +12,17 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-25 — Multi-Currency Wallets Compared (app-comparisons)
+
+- Published `best-multi-currency-wallets-compared-one-account-for-several-currencies` (keyword index 61), `table` pin (Fiat account / Stablecoin / Always), hero, hand-shortened X draft. Pin viewed before commit. No post went out 2026-10-22 or 10-23 earlier (see 10-24 entry); 10-24 post was ETFs vs mutual funds.
+- Followed the 10-11 writer reminder: three families (fiat multi-currency accounts, local/regional wallets, stablecoin/crypto), compared on criteria with no single "best".
+- Sources (2026-10-25, fetched): Wise US borderless page (40 hold/convert currencies, 20 receiving, card at mid-market, "not an FDIC-insured bank", balance protection NOT stated; no fee schedule), Payoneer multi-currency page (10 currencies listed, USD receiving 0-1%, free in US/UK/India/Japan/S Korea/Thailand, no conversion fee amount, fund protection and licensing NOT stated), Revolut help page en-DE (weekend 1%/0.5%/none by plan, fair-usage 0.5% over EUR 1,000 on Standard, 200 exchanges per 24h incl crypto; no markup info). Revolut en-GB help page and revolut.com did not load, so the post says the UK terms may differ. MoFo GENIUS Act alert (reserves, redemption, monthly reserve disclosure, no interest, not a deposit, effective earlier of 18 months after enactment or 120 days after final regs, earliest likely Q1 2027) and a Motley Fool headline dated 2026-09-02 (deadlines missed, rules delayed; body did not load).
+- Not verified/left out: Skrill, Neteller, Remitly, telebirr, GCash, PIX details; any Wise/Revolut exchange-rate markup; Wise safeguarding specifics; Investor.gov crypto custody page (not on the fetch allowlist). The stablecoin section is deliberately general and points to the existing crypto post. The GENIUS Act enactment date was inferred from 2025 sources, not fetched, so the post says "the 2025 law".
+- Worked example (1,000 paid; 3% / 1% / 0.5% margins; 1% weekend fee; 12 invoices) is made up, labelled, and checked in code.
+- Reverse links added in: best-banking-apps-for-digital-nomads, multi-currency-budgeting-for-remote-workers, digital-wallets-compared, how-to-use-atms-abroad, what-is-cryptocurrency. Forward links to queued crypto-storage / stablecoins posts not added (not published).
+- Time-sensitive: Revolut fee tiers, Payoneer fee/currency lists, Wise currency counts, GENIUS Act timing. Refresh after final stablecoin regulations land.
+- Next pending: how to read crypto news without getting burned (news-trends).
+
 ## 2026-10-24 — ETFs vs. Mutual Funds: What's the Difference? (investing-basics)
 
 - Published `etfs-vs-mutual-funds-whats-the-difference-and-which-fits-you` (keyword index 60), `table` pin (Mutual fund / ETF / Both), hero, X draft hand-shortened (script output was ~275 chars). Pin and hero viewed, nothing clipped. No post went out 2026-10-22 or 10-23 (skipped, not back-filled). Last publish before this was 10-21.
