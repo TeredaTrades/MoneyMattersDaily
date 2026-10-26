@@ -17,7 +17,7 @@ Running log of setup decisions and open items. Newest entries at top.
 - Owner imported moneymattersdaily.money into Bing Webmaster Tools from Google Search Console (verification carried over; role Administrator). The import showed 0 sitemaps for this site, so the sitemap was submitted by hand: `https://moneymattersdaily.money/sitemap.xml`, last submit 2026-10-26, status "Processing", 0 errors, 0 warnings, 0 URLs discovered yet (normal at first).
 - Google Search Console already had the same sitemap: submitted 2026-08-18, last read 2026-10-24, Success, 76 discovered pages (the sitemap now lists 78). The domain property is `sc-domain:moneymattersdaily.money`. Earlier "sitemap not submitted in GSC" suspicion was wrong; Bing's import list just showed 0.
 - Confirmed later the same day (10-26): Bing status changed to Success, last crawl 2026-10-26, 78 URLs discovered, 0 errors/warnings, matching the 78-page sitemap. Nothing left to do for the sitemap on either engine.
-- Follow-ups: check Search Console Pages for the newest posts; skip-own-visits setting in GoatCounter still open.
+- Follow-ups: check Search Console Pages for the newest posts.
 - GoatCounter skip-own-visits is ALREADY DONE (checked 2026-10-26 in Settings: Ignore IPs = 196.188.230.167, set by the owner; exact-IP match only, so re-add if his IP changes; it is not known when it was saved, so earlier Ethiopia counts may include his own visits). Remove it from any follow-up list.
 
 ## 2026-10-26 (later) — GoatCounter cumulative snapshot saved
