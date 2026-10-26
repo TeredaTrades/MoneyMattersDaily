@@ -12,6 +12,24 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-26 (end of session) — Index of what was done 2026-10-24 to 10-26, plus working notes for the next session
+
+### Posts published (all pushed straight to main, Deploy + Close post reminder green)
+- 10-24 ETFs vs. Mutual Funds (d53adb1, keyword 60); 10-25 Multi-Currency Wallets Compared (e56ca17, keyword 61); 10-26 How to Read Crypto News Without Getting Burned (d294322, keyword 62). Next pending keyword: money market accounts explained (saving), then dynamic currency conversion (travel-finance). Queue after today: 62 published, 29 pending before the 10-26 post, so 28 pending now. Site: 65 posts, 78 built pages (pages = posts plus home, pillar and other static pages; the build count is a health check, not the article count).
+
+### Other changes
+- Analytics: 2026-10-26 GoatCounter cumulative snapshot saved (301c907); skip-own-visits already set (Ignore IPs); Bing Webmaster Tools set up by import from Google Search Console and sitemap submitted, status Success with 78 URLs (Google sitemap already Success since 08-18).
+- Stale-item refresh (aa16c01): Eurozone HICP post to September data (3.8%), UPI post corrected for NPCI's 10-13 deferral of the merchant fee, credit wording softened, credit/news-trends pin accent contrast fixed (see the entry below this one for detail).
+
+### Open items (not done)
+- Fed post refresh after the Oct 27-28 FOMC; owner's decision on merging the two Fed posts; EPRA refresh mid-November; UPI recheck (post-Diwali date, Supreme Court follow-up, NPCI cap review by 12-31); Search Console indexing check for the newest posts; optional IndexNow for Bing; "under 10% stops dragging the score" claim in what-hurts-your-credit-score unverified; two hand-edited-looking pin/hero sets (what-inflation-reports-mean-for-your-budget, what-stock-market-volatility-means-for-your-savings) still use the old dim accent; the Eurozone X draft in x-drafts.md still quotes 3.2%/14.3%.
+
+### Working notes for next session
+- The clone in the cloud workspace was /root/MoneyMattersDaily; write files there, not under /home/claude. The owner supplies a fresh PAT each session. Pushing needed the repo attached to the session with push access (add_repo with access push); before that the git proxy refused with 403. `gh` GraphQL is blocked, use the REST API. GitHub API access works only for repos attached to the session; only MoneyMattersDaily was attached, and it has no open issues or PRs.
+- The owner's account lists these other repos (not attached, open tasks unchecked): teredatrades-news-scraper, Bejirond, GetGuaz, Amanstravels, kimudev, teredatrades-website, tallybook-app, Premarket-analysis-postmarket-journal-tool, teredatrades-market-data, teredatrades-calendar-extractor-backend, LTX-2 (fork).
+- Fetch limits seen: revolut.com and its en-GB help page, investor.gov crypto custody alert, moneylife.in and the live moneymattersdaily.money pages were not fetchable in some sessions; use search-result URLs or note the gap in the post's sourcing.
+- Commit messages and PR bodies end with the session attribution lines supplied in the session.
+
 ## 2026-10-26 (later) — Stale-item cleanup: Eurozone refresh, UPI correction, credit wording, pin contrast
 
 Owner asked to work through the open items from the NOTES follow-up lists. Done today:
