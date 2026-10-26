@@ -12,6 +12,11 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-26 (later) — GoatCounter cumulative snapshot saved
+
+- Saved `content-pipeline/analytics/2026-10-26-traffic-summary.md` plus two screenshots (`2026-10-26-goatcounter-cumulative.png`, `...-cumulative-locations.png`). The browser tab strip and address bar were cropped off first (the tab strip showed an email subject); the cropped images were viewed before commit. The dashboard's "Sites:" bar and a truncated `contact@` link remain visible at the top of the first image.
+- Headline: 205 visits 2026-08-15 to 10-26 (128 on 10-17). One 56-visit burst across several pages probably a crawler or single visitor, so the recent rate is somewhere between 2 and 8.6 a day. US 44%, Ethiopia 22%; Google 11, Bing 8, chatgpt.com 4, Pinterest 1.
+
 ## 2026-10-26 — How to Read Crypto News Without Getting Burned (news-trends)
 
 - Published `how-to-read-crypto-news-without-getting-burned` (keyword index 62), `table` pin (Urgency / Guaranteed / One tip), hero, hand-shortened X draft. Pin viewed. Previous post 10-25 (multi-currency wallets); nothing skipped.
