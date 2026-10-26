@@ -12,6 +12,12 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-26 (later) — Bing Webmaster Tools set up; sitemap submitted
+
+- Owner imported moneymattersdaily.money into Bing Webmaster Tools from Google Search Console (verification carried over; role Administrator). The import showed 0 sitemaps for this site, so the sitemap was submitted by hand: `https://moneymattersdaily.money/sitemap.xml`, last submit 2026-10-26, status "Processing", 0 errors, 0 warnings, 0 URLs discovered yet (normal at first).
+- Google Search Console already had the same sitemap: submitted 2026-08-18, last read 2026-10-24, Success, 76 discovered pages (the sitemap now lists 78). The domain property is `sc-domain:moneymattersdaily.money`. Earlier "sitemap not submitted in GSC" suspicion was wrong; Bing's import list just showed 0.
+- Follow-ups: recheck Bing in a day or two (status should become Success with about 78 URLs); check Search Console Pages for the newest posts; skip-own-visits setting in GoatCounter still open.
+
 ## 2026-10-26 (later) — GoatCounter cumulative snapshot saved
 
 - Saved `content-pipeline/analytics/2026-10-26-traffic-summary.md` plus two screenshots (`2026-10-26-goatcounter-cumulative.png`, `...-cumulative-locations.png`). The browser tab strip and address bar were cropped off first (the tab strip showed an email subject); the cropped images were viewed before commit. The dashboard's "Sites:" bar and a truncated `contact@` link remain visible at the top of the first image.
