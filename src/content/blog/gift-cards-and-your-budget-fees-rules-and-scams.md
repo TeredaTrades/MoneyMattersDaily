@@ -130,3 +130,5 @@ For another case where urgency and an unusual payment method are the giveaway, t
 Do three things this week. Gather every gift card you have, note each balance and any fee or expiration terms, and plan to use the oldest first. Before you buy cards as gifts, read the terms printed on the card and add any purchase fee to your gift category. And tell anyone in your family who might be targeted that a request to pay with a gift card means stop, hang up, and call someone you trust.
 
 *Last updated October 2026. Rules come from the CFPB's presentation of 12 CFR 1005.20 (Regulation E) and its older consumer guidance (2012, archived); scam guidance comes from FTC consumer advice pages (the main page published January 2026, last modified June 2026). Federal rules apply in the US, states and other countries differ, and issuer terms vary, so check the card and your local consumer agency. Amounts in the examples are made up. This is general information, not personalized financial advice.*
+
+Crypto has its own version of these pressure tactics; see [how to read crypto news without getting burned](/blog/how-to-read-crypto-news-without-getting-burned/).

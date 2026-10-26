@@ -129,3 +129,5 @@ On one payment, the gap between the first and last is about 25 dollars. Over 12 
 For more on the surrounding pieces, see [best banking apps for digital nomads](/blog/best-banking-apps-for-digital-nomads/), [multi-currency budgeting for remote workers](/blog/multi-currency-budgeting-for-remote-workers/), [how to use ATMs abroad without overpaying in fees](/blog/how-to-use-atms-abroad-without-overpaying-in-fees/) and [digital wallets compared: Apple Pay vs. Google Pay vs. PayPal](/blog/digital-wallets-compared-apple-pay-vs-google-pay-vs-paypal/).
 
 *Last updated October 2026. Provider details come from each provider's own pages (Wise, Payoneer, Revolut's German help page) and a law-firm summary of the GENIUS Act. Fees, supported currencies, protections and regulations change often and differ by country, so confirm current terms before you act. No provider is endorsed here. This is general education, not financial, legal or tax advice, and crypto can lose value.*
+
+If crypto headlines are what draw you to stablecoins, read [how to read crypto news without getting burned](/blog/how-to-read-crypto-news-without-getting-burned/) first.

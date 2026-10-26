@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## how-to-read-crypto-news-without-getting-burned
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How to Read Crypto News Without Getting Burned — Some crypto "news" is built to make you act fast. Here's how to tell news from promotion, spot pump-and-dump patterns, and read regulation headlines.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-read-crypto-news-without-getting-burned/
+```
+
 ## best-multi-currency-wallets-compared-one-account-for-several-currencies
 
 **Post (attach the matching pin image from public/pins/):**

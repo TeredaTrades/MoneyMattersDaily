@@ -59,3 +59,5 @@ Everything else — a single volatile week, a VIX print a few points higher than
 If a volatility headline is making you check your account balance, use it as a prompt to check two things instead: whether the money in question has a timeline of a few years or a few decades, and whether your stock/bond split still matches that timeline. If both check out, the headline isn't actually about you — it's just noise, however loud it gets on a given week. For the related question of what's driving the underlying economic backdrop, see [what inflation reports actually mean for your budget](/blog/what-inflation-reports-mean-for-your-budget/).
 
 *Last updated September 2026. VIX and S&P 500 figures reflect closing levels in early September 2026 and will change day to day — check cboe.com/tradable-products/vix for the current reading rather than relying on the numbers above indefinitely.*
+
+For reading fast-moving crypto headlines specifically, see [how to read crypto news without getting burned](/blog/how-to-read-crypto-news-without-getting-burned/).

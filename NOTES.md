@@ -12,6 +12,16 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-26 — How to Read Crypto News Without Getting Burned (news-trends)
+
+- Published `how-to-read-crypto-news-without-getting-burned` (keyword index 62), `table` pin (Urgency / Guaranteed / One tip), hero, hand-shortened X draft. Pin viewed. Previous post 10-25 (multi-currency wallets); nothing skipped.
+- Followed the crypto YMYL guidance: educational, no predictions, no coin picks, no exchange recommendations; "FooCoin" in the worked example is invented.
+- Sources (2026-10-26, fetched): CFTC "Beware Virtual Currency Pump-and-Dump Schemes" advisory (red flags, chat-group mechanics, advice; page shows NO date, noted in the footer), CFTC release 8936-24 dated 2024-07-30 (relationship confidence/"pig butchering", fund-recovery scams, money mules), Kelley Drye 2017-11-14 (SEC warning on undisclosed paid promotion, quote on "nature, source, and amount of compensation"), Motley Fool 2023-03-24 (SEC charged eight celebrities; six settled for $400,000 without admitting or denying; the page did not name the rule cited). Reused GENIUS Act timing from the 10-25 post (MoFo summary + Motley Fool 2026-09-02 delay headline). SEC press release 2023-59 and the SEC 2017 statement were NOT fetched, so SEC facts are attributed to the secondary sources.
+- FTC crypto scam page and Investor.gov alerts did not surface in search/fetch, so they are not cited. No current loss statistics used.
+- Reverse links added in: what-is-cryptocurrency, gift-cards-and-your-budget, what-stock-market-volatility-means-for-your-savings, best-multi-currency-wallets-compared.
+- Time-sensitive: GENIUS Act timing sentence; regulator tools/phone numbers not quoted (only "CFTC lists a complaint line").
+- Next pending: money market accounts explained: how they differ from savings accounts (saving).
+
 ## 2026-10-25 — Multi-Currency Wallets Compared (app-comparisons)
 
 - Published `best-multi-currency-wallets-compared-one-account-for-several-currencies` (keyword index 61), `table` pin (Fiat account / Stablecoin / Always), hero, hand-shortened X draft. Pin viewed before commit. No post went out 2026-10-22 or 10-23 earlier (see 10-24 entry); 10-24 post was ETFs vs mutual funds.

@@ -108,3 +108,5 @@ Gift cards are the other payment method scammers push most; see [gift cards and 
 *Last updated October 2026. Descriptions come from the US Federal Trade Commission (consumer advice page dated June 2025), the US SEC's Investor.gov crypto assets page, bitcoin.org, and the IRS digital assets page (updated September 2026). Rules, taxes and products vary by country and change often, nothing here predicts any price, and this is general information, not personalized financial advice.*
 
 For how stablecoin wallets compare with regulated multi-currency accounts, see [multi-currency wallets compared](/blog/best-multi-currency-wallets-compared-one-account-for-several-currencies/).
+
+To judge the headlines and group-chat tips you'll run into, see [how to read crypto news without getting burned](/blog/how-to-read-crypto-news-without-getting-burned/).
