@@ -26,14 +26,17 @@ export const PILLAR_LABELS = {
   'news-trends': 'NEWS & TRENDS',
 };
 
+// credit and news-trends used midTeal (#5b8a8a), only about 2.6:1 against the
+// background, so pin values, subtitle and footer URL were hard to read. They
+// now use lightTeal (about 5.6:1), changed 2026-10-26.
 export const PILLAR_ACCENTS = {
   budgeting: PALETTE.gold,
   saving: PALETTE.lightTeal,
-  credit: PALETTE.midTeal,
+  credit: PALETTE.lightTeal,
   'investing-basics': PALETTE.gold,
   'app-comparisons': PALETTE.lightTeal,
   'travel-finance': PALETTE.gold,
-  'news-trends': PALETTE.midTeal,
+  'news-trends': PALETTE.lightTeal,
 };
 
 // ---------------------------------------------------------------------------

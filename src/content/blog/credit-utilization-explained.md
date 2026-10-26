@@ -1,7 +1,8 @@
 ---
 title: "Credit Utilization Explained: The Number That Moves Your Score Fastest"
-description: "Credit utilization is 30% of your FICO score and resets every billing cycle, making it the fastest lever you have. Here's how it's actually calculated — per-card, overall, and by statement date — with worked examples."
+description: "Credit utilization sits inside the amounts-owed part of your FICO score (30% of the total) and resets every billing cycle, making it one of the fastest levers you have. Here's how it's actually calculated — per-card, overall, and by statement date — with worked examples."
 pubDate: 2026-08-24
+updatedDate: 2026-10-26
 targetKeyword: "credit utilization explained"
 pillar: "credit"
 draft: false

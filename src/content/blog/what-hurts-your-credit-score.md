@@ -2,6 +2,7 @@
 title: "What Actually Hurts Your Credit Score (and What's Just a Myth)"
 description: "Credit scores run on a weighted formula, not intuition — and some of the most common 'credit tips' people follow are myths that do nothing or actively backfire. Here's what really moves the number, ranked by weight."
 pubDate: 2026-08-23
+updatedDate: 2026-10-26
 targetKeyword: "what hurts your credit score"
 pillar: "credit"
 draft: false
@@ -16,16 +17,16 @@ Most credit advice treats every mistake as equally damaging, but a FICO score is
 | Factor | Weight | What it actually measures |
 |---|---|---|
 | **Payment history** | 35% | Whether you've paid on time — the single biggest lever |
-| **Amounts owed (utilization)** | 30% | Balance vs. credit limit, per card and overall |
+| **Amounts owed (includes utilization)** | 30% | Balances vs. credit limits, per card and overall, plus how much you owe in total |
 | **Length of credit history** | 15% | Age of your oldest, newest, and average account |
 | **Credit mix** | 10% | Whether you have both revolving (cards) and installment (loans) credit |
 | **New credit** | 10% | Recent hard inquiries and newly opened accounts |
 
-Payment history and utilization together are 65% of the score. That's most of it, and both respond to the same two habits: pay on time, keep balances low relative to limits.
+Payment history and amounts owed (which includes utilization) together are 65% of the score. That's most of it, and both respond to the same two habits: pay on time, keep balances low relative to limits.
 
 ## What actually hurts it
 
-- **A payment 30+ days late.** This is the single worst common mistake — a 30-day-late payment can drop a score by 60–110 points and stays on the report for seven years. One late payment after a long clean history hurts less than the same late payment during an already-rocky stretch, but it's never nothing.
+- **A payment 30+ days late.** This is the single worst common mistake — a 30-day-late payment can drop a score sharply, by an amount that depends on your starting score and history, and it stays on the report for seven years. One late payment after a long clean history hurts less than the same late payment during an already-rocky stretch, but it's never nothing.
 - **High utilization.** Under 30% is the usual guideline, under 10% is where it stops dragging the score at all. This resets every billing cycle, so it's the fastest-moving factor — a change shows up within about a month, in either direction.
 - **Closing your oldest card.** This is a two-part hit: it shortens your average account age (length of history) and removes available credit, which raises utilization on whatever's left — even if you never used the card. Almost always net-negative, even when the reason for closing it feels responsible.
 - **Applying for several credit products in a short window.** Each hard inquiry is a small ding on its own, but a cluster of them close together reads to a scoring model as risk-seeking behavior, not comparison shopping — with one specific exception below.

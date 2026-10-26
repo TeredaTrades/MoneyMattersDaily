@@ -1,7 +1,8 @@
 ---
 title: "Best Money Management Apps for UPI and Digital Payments in India (2026)"
-description: "PhonePe, Google Pay, and Paytm move your money; Money View, Axio, ET Money, and Jupiter help you understand it. Here's how to pick one of each, what UPI actually costs you, and what the new merchant fee changes (and doesn't)."
+description: "PhonePe, Google Pay, and Paytm move your money; Money View, Axio, ET Money, and Jupiter help you understand it. Here's how to pick one of each, what UPI actually costs you, and what the merchant fee (now postponed) changes and doesn't."
 pubDate: 2026-09-30
+updatedDate: 2026-10-26
 targetKeyword: "best money management apps for UPI and digital payments in India"
 pillar: "app-comparisons"
 draft: false
@@ -46,17 +47,17 @@ This is where you actually see what you spend. The main options fall into two st
 
 **Manual or budget-first apps.** If you'd rather set monthly limits yourself than review auto-categorised history, a manual tracker with envelopes or category budgets works, at the cost of typing. The general comparison of how those work is in [Best Budgeting Apps Compared](/blog/best-budgeting-apps-compared/); note that many US-first budgeting apps can't read Indian UPI activity automatically.
 
-## What UPI actually costs you, and what changes on October 15
+## What UPI actually costs you, and the merchant fee that was postponed
 
-For consumers the honest answer is: nothing on UPI itself. RBI has said transactions remain free for users, and that is the basis for everything above. What changes from **October 15, 2026** is on the merchant side, per the Department of Financial Services' FAQ published on September 15:
+For consumers the honest answer is: nothing on UPI itself. RBI has said transactions remain free for users, and that is the basis for everything above. A fee on some merchant payments was set to start on **October 15, 2026**, per the Department of Financial Services' FAQ published on September 15, but on **October 13 NPCI deferred it**, citing the festive season. NPCI said it will be implemented "immediately post Diwali" on a date to be notified separately, and no date had been announced when this post was updated. A source quoted by Business Standard said the fee structure itself isn't changing. Here is what the September framework says:
 
 - Person-to-person transfers stay free.
 - Merchant payments up to ₹2,000 stay free.
 - Above ₹2,000, merchants pay 0.4%, capped at ₹300 (the cap applies from ₹75,000 and up), with flat or lower rates for some categories such as railways, telecom, insurance, fuel, utilities, and securities purchases.
 - Small merchants receiving up to ₹1 lakh a month are exempt.
-- Merchants are not allowed to pass the charge on to you, and the government has told banks to make sure they don't. A petition against the framework is already before the Supreme Court, so details could still shift.
+- Merchants are not allowed to pass the charge on to you, and the government has told banks to make sure they don't. A petition against the framework is before the Supreme Court, which on 28 September declined to stay it and asked the Centre, RBI and NPCI to respond, so details could still shift.
 
-The practical takeaway: if a shop asks for an extra "UPI charge" on top of the price after October 15, that is not how the rule is meant to work. Keep the receipt and raise it with the merchant or your bank.
+The practical takeaway: once the fee starts, if a shop asks for an extra "UPI charge" on top of the price, that is not how the rule is meant to work. Keep the receipt and raise it with the merchant or your bank.
 
 ## A worked example: the bill-payment fee that isn't UPI
 
@@ -88,4 +89,4 @@ If your card returns about 1% in rewards on that spend, a 1% fee plus GST (about
 
 Outside India, Google Pay and other wallets work differently. See [digital wallets compared: Apple Pay vs Google Pay vs PayPal](/blog/digital-wallets-compared-apple-pay-vs-google-pay-vs-paypal/).
 
-*Last updated September 2026. UPI limits, app fees, and the merchant discount rate framework (effective October 15, 2026, and subject to a pending court challenge) can change; NPCI's 30% per-app market share cap is also scheduled for review by December 31, 2026. Market-share figures reflect August 2026 data. Confirm current limits and fees in your bank's and app's own terms before relying on them.*
+*Last updated 26 October 2026. UPI limits, app fees, and the merchant discount rate framework (originally due 15 October 2026, deferred by NPCI on 13 October to a date still to be notified, and subject to a pending court challenge) can change; NPCI's 30% per-app market share cap is also scheduled for review by December 31, 2026. Market-share figures reflect August 2026 data. Confirm current limits and fees in your bank's and app's own terms before relying on them.*
