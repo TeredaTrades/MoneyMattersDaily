@@ -12,6 +12,13 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-27 — Money Market Accounts Explained: How They Differ From Savings (saving)
+
+- Published `money-market-accounts-explained-how-they-differ-from-savings-accounts` (keyword index 63), `table` pin (Insured / Checks / Rate), hero, hand-shortened X draft. Pin viewed (5-line title fits). Previous post 10-26; nothing skipped. Reverse link added from high-yield-savings-accounts-explained.
+- Sources (2026-10-27, fetched): FDIC "Understanding deposit insurance" ($250,000 per depositor, per insured bank, per ownership category; MMDAs covered; BankFind), Federal Reserve press release 2020-04-24 (six-per-month limit deleted from the "savings deposit" definition; page does not say whether banks may keep their own limits or mention MMDAs), Morrison Foerster 2020-04-28 summary (rule covers savings and money market accounts, permissive, some institutions may keep a numeric limit), Investor.gov money market fund bulletin dated 2024-11-04 (not FDIC-insured, may break the buck, bank MMDAs are insured), Bankrate MMA vs MMF page (MMAs often have debit card/checks).
+- Rates are rounded and illustrative: Bankrate's national-average MMA table showed about 0.45% (6/18) and top APYs about 3.5-3.9% (June 2026). The Bankrate page was internally inconsistent (header dated 2026-10-27 with 0.47% but table ending 6/18), so no precise current average was quoted. The monitorbankrates page for 10-22 did not load. A 2009 depositaccounts.com article still describes the old six-per-month rule as current, so it was NOT used.
+- Gap: NCUA's own page was not fetched this session; the post's "$250,000" for credit unions rests on general knowledge and the existing high-yield savings post, not a fresh NCUA source. The post tells readers to check their account's own transfer-limit terms. Next pending keyword: dynamic currency conversion (travel-finance), index 64.
+
 ## 2026-10-26 (end of session) — Index of what was done 2026-10-24 to 10-26, plus working notes for the next session
 
 ### Posts published (all pushed straight to main, Deploy + Close post reminder green)

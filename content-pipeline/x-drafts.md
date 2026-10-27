@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## money-market-accounts-explained-how-they-differ-from-savings-accounts
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Money Market Accounts Explained: How They Differ From Savings — Same insurance as savings, but often with a debit card or checks. How it compares to a savings account, and why a money market fund is a different thing.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/money-market-accounts-explained-how-they-differ-from-savings-accounts/
+```
+
 ## how-to-read-crypto-news-without-getting-burned
 
 **Post (attach the matching pin image from public/pins/):**

@@ -62,6 +62,8 @@ The advertised APY is the headline, but it's rarely the only thing that determin
 4. **Confirm transfer speed** if you might need the money on short notice.
 5. **Open it and set up a recurring transfer** from checking — the account only helps if money actually lands in it.
 
+Wondering how a money market account compares? See [money market accounts explained](/blog/money-market-accounts-explained-how-they-differ-from-savings-accounts/).
+
 Why bank savings rates move when the Fed acts: see [what the Fed does and how it affects your money](/blog/what-the-federal-reserve-does-and-how-rate-decisions-affect-your-money/).
 
 *Last updated August 2026. Rates referenced here are illustrative of the general environment at time of writing, not a specific recommendation — high-yield savings rates move with the Federal Reserve's target rate and change between when this was written and when you read it. Check current rates directly with the bank or credit union before opening an account.*
