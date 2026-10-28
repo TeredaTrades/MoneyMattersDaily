@@ -12,6 +12,13 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-28 — Dynamic Currency Conversion: Why to Decline It (travel-finance)
+
+- Published `dynamic-currency-conversion-why-to-decline-it-and-how-to-avoid-it` (keyword index 64), `table` pin (Choose / Decline / Check; 3-line title fits), hero, X draft kept as generated (about 235 characters). Previous post 10-27; nothing skipped. Reverse links added from how-to-manage-money-while-traveling-abroad and how-to-use-atms-abroad-without-overpaying-in-fees. Build clean (80 pages).
+- Sources (2026-10-28, fetched): Visa traveler page on DCC (merchants/ATMs must not choose for you, must show both amounts, rate and fees, no font/color nudging; report pressure to the issuer), NerdWallet foreign transaction vs currency conversion fees (FTF about 3%; card network rates comparable to market, DCC considerably worse; 2016 study), Card Ratings (3-5% DCC markup, separate from and on top of FTF, hotel and ATM advice, about $30 per $1,000), OneMileAtATime (July 2026: 12.95% ATM example, card DCC 1-5% but "often more than 3%" elsewhere, so the source is internally inconsistent), Wise ATM guide (examples about 6-7% over mid-market), European Parliament summary of Regulation (EU) 2019/518 (markup over ECB reference rate, applied from 15 Dec 2019; summary does not say it covers merchant-offered DCC at terminals or ATMs, so the post says not to assume protection).
+- Not used: Doctor of Credit (dated 2014; its "Discover and Amex don't use DCC" claim is old and unverified, so left out). The Bankrate DCC page did not load. The worked example is run in code with an assumed 1 EUR = $1.15 and labelled illustrative (rows: $230.00, $236.90, $236.90, $241.50, $248.74). The "void and re-run" tip is general practice, hedged in the post.
+- Writer reminder (10-11) applied via a short multi-currency account / crypto-card section with no fee figures. Next pending keyword: how to invest in commodities (investing-basics), index 65; apply the crypto/commodity YMYL guidance (risk-forward, no predictions or picks).
+
 ## 2026-10-27 — Money Market Accounts Explained: How They Differ From Savings (saving)
 
 - Published `money-market-accounts-explained-how-they-differ-from-savings-accounts` (keyword index 63), `table` pin (Insured / Checks / Rate), hero, hand-shortened X draft. Pin viewed (5-line title fits). Previous post 10-26; nothing skipped. Reverse link added from high-yield-savings-accounts-explained.

@@ -29,7 +29,7 @@ A cash withdrawal abroad looks like one transaction, but it can carry three sepa
 
 At many foreign ATMs you'll be offered a choice, worded something like "withdraw in your home currency" or "let us convert for you." This is dynamic currency conversion (DCC). If you accept, the ATM's operator picks the exchange rate, and it has no reason to make that rate generous. If you decline and are charged in the local currency, your own bank or card network converts the money, which is usually closer to the market rate.
 
-The practical rule, which the guides from Wise and Euronet-focused coverage agree on: **always choose the local currency, and decline the offered conversion.** The screen often makes the home-currency option look like the helpful default. It isn't.
+The practical rule, which the guides from Wise and Euronet-focused coverage agree on: **always choose the local currency, and decline the offered conversion.** The screen often makes the home-currency option look like the helpful default. It isn't. More on how it works and what it costs in our [dynamic currency conversion explained](/blog/dynamic-currency-conversion-why-to-decline-it-and-how-to-avoid-it/).
 
 Wise's guide to one large ATM operator (Euronet) says its conversion markup can reach up to 13% over the market rate. That's one provider's claim about a company it competes with, so treat the exact number with caution. The direction is consistent across sources, though: the ATM's own conversion tends to cost more than your bank's.
 

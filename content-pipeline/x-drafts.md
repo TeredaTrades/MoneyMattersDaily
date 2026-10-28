@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## dynamic-currency-conversion-why-to-decline-it-and-how-to-avoid-it
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Dynamic Currency Conversion: Why to Decline It — When a card terminal or ATM abroad asks whether to pay in your home currency, saying yes usually costs extra. Here's how dynamic currency conversion works, what it costs, and how to say no.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/dynamic-currency-conversion-why-to-decline-it-and-how-to-avoid-it/
+```
+
 ## money-market-accounts-explained-how-they-differ-from-savings-accounts
 
 **Post (attach the matching pin image from public/pins/):**

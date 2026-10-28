@@ -40,7 +40,7 @@ If a bank doesn't offer a travel notice feature at all (some smaller banks don't
 
 At many card terminals and ATMs abroad, you'll be asked: pay in [local currency] or in your home currency? Choosing your home currency is called dynamic currency conversion (DCC), and it almost always uses a worse exchange rate than your card network's own conversion — the merchant or ATM operator sets that rate themselves, with no obligation to match the market rate.
 
-**Always choose to pay in the local currency.** Your card network then converts it at its own rate, which is typically much closer to the real (mid-market) exchange rate.
+**Always choose to pay in the local currency.** Your card network then converts it at its own rate, which is typically much closer to the real (mid-market) exchange rate. For the full picture, see our [dynamic currency conversion explained](/blog/dynamic-currency-conversion-why-to-decline-it-and-how-to-avoid-it/).
 
 A worked example: buying something priced at 100 EUR on a card with no foreign transaction fee, with a real mid-market rate of 1 EUR = $1.08 USD.
 - **Decline DCC, pay in EUR**: card network converts at close to the real rate → roughly **$108–$109** charged.
