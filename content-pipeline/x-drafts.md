@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## how-to-invest-in-commodities-the-main-ways-to-get-exposure-and-the-risks
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How to Invest in Commodities: The Main Ways and the Risks — Physical metal, futures funds, notes or producer stocks: each route works differently, and a commodity fund may not follow the price in the headlines. Here's what each holds and what can go wrong.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-invest-in-commodities-the-main-ways-to-get-exposure-and-the-risks/
+```
+
 ## dynamic-currency-conversion-why-to-decline-it-and-how-to-avoid-it
 
 **Post (attach the matching pin image from public/pins/):**

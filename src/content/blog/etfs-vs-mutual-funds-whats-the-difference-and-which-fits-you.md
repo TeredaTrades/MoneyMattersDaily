@@ -126,4 +126,6 @@ There's no universal answer, but these situations point in different directions:
 
 Outside the US, funds, taxes, and account types differ. If you're in Japan, the UK, or Canada, see [Japan's NISA program](/blog/japans-nisa-program-explained-tax-free-investing-basics/), [UK ISAs explained](/blog/uk-isas-explained-how-tax-free-saving-works/), or [TFSA vs. RRSP](/blog/tfsa-vs-rrsp-canadas-tax-advantaged-accounts-explained/) for how those accounts work, and check which fund types your broker offers.
 
+For funds that hold futures or physical metal instead of stocks, see [how to invest in commodities](/blog/how-to-invest-in-commodities-the-main-ways-to-get-exposure-and-the-risks/).
+
 *Last updated October 2026. Based on SEC investor education materials (Investor.gov) and FINRA's investor guidance on ETFs and mutual funds. Fees, broker policies, and tax rules change and differ by country, and this post deliberately quotes no current fund fees or prices. This is general education for a broad audience, not personalized investment advice, and investments can lose value.*

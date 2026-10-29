@@ -105,6 +105,8 @@ If you do nothing else, remember three things: crypto is generally not insured o
 
 Gift cards are the other payment method scammers push most; see [gift cards and your budget: fees, rules, and scams](/blog/gift-cards-and-your-budget-fees-rules-and-scams/).
 
+Another high-risk asset class that behaves differently from its headline price is covered in [how to invest in commodities](/blog/how-to-invest-in-commodities-the-main-ways-to-get-exposure-and-the-risks/).
+
 *Last updated October 2026. Descriptions come from the US Federal Trade Commission (consumer advice page dated June 2025), the US SEC's Investor.gov crypto assets page, bitcoin.org, and the IRS digital assets page (updated September 2026). Rules, taxes and products vary by country and change often, nothing here predicts any price, and this is general information, not personalized financial advice.*
 
 For how stablecoin wallets compare with regulated multi-currency accounts, see [multi-currency wallets compared](/blog/best-multi-currency-wallets-compared-one-account-for-several-currencies/).

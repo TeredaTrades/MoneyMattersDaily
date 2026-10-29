@@ -12,6 +12,12 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-29 — How to Invest in Commodities: The Main Ways and the Risks (investing-basics)
+
+- Published `how-to-invest-in-commodities-the-main-ways-to-get-exposure-and-the-risks` (keyword index 65), `table` pin (Physical / Futures funds / Producer stocks; 4-line title fits, viewed clean), hero, X draft hand-shortened. Previous post 10-28; nothing skipped. Reverse links added from etfs-vs-mutual-funds and what-is-cryptocurrency.
+- Sources (2026-10-29, fetched): CFTC customer advisory on commodity ETPs and funds (undated page, written around the 2020 pandemic: futures not ownership, roll costs, tracking error, commodity-specific risks, check operator registration, be skeptical of recession-outperformance claims), FINRA Regulatory Notice 20-14 (2020-05-15: ETPs track futures not spot, contango/backwardation, leveraged/inverse unsuitable for buy-and-hold), SEC Investor Bulletin on ETNs (2015-12-01: unsecured issuer debt, credit risk, daily reset, premium/discount to indicative value), etf.com tax page (undated, uses old rates, so NO tax rates quoted; post only says treatment varies by structure and country).
+- Gaps: all three primary sources are 2015-2020, so the post says so in its footer and quotes no current prices, fees or rates. Bankrate's how-to-invest-in-commodities URL returned an unrelated index page and was not used. Physical-metal dealer spread/storage points are general knowledge, not sourced. The roll-cost example is labelled made-up. Followed the 10-08 YMYL guidance (risk-forward, no predictions or picks). Gold is its own queued post (index 81), so gold-specific detail was left for it. Next pending keyword: 6-month savings challenge templates (budgeting), index 66.
+
 ## 2026-10-28 — Dynamic Currency Conversion: Why to Decline It (travel-finance)
 
 - Published `dynamic-currency-conversion-why-to-decline-it-and-how-to-avoid-it` (keyword index 64), `table` pin (Choose / Decline / Check; 3-line title fits), hero, X draft kept as generated (about 235 characters). Previous post 10-27; nothing skipped. Reverse links added from how-to-manage-money-while-traveling-abroad and how-to-use-atms-abroad-without-overpaying-in-fees. Build clean (80 pages).
