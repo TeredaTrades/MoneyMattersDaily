@@ -12,6 +12,13 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-30 — 6-Month Savings Challenge Templates That Actually Work (budgeting)
+
+- Published `6-month-savings-challenge-templates-that-actually-work` (keyword index 66), `table` pin (Ladder / Flat / Percent; 4-line title fits, viewed clean), hero, X draft hand-shortened (script truncated mid-sentence). Previous post 10-29; nothing skipped. Reverse links added from how-to-build-a-sinking-fund-for-irregular-expenses and best-ways-to-automate-your-savings. Build clean (82 pages).
+- Sources (2026-10-30, fetched): NerdWallet 52-week challenge guide (last updated 2025-01-03: $1 to $52 = $1,378, reverse version may earn slightly more, fee-free account, emergency fund first, deposit what you can if a week is missed), Chase 52-week page (undated: reverse avoids big holiday deposits, fixed $26.50/week matches the total, automate, slips-of-paper variant), CFPB Project Catalyst announcement (Dec 2014: pilot of a separate savings sub-account on a prepaid card; reports no results, so the post says so). Bankrate's page was only a teaser and was not used.
+- All template totals computed in code and labelled illustrative (26-week +$2 ladder = $702, +$1 = $351, +$5 = $1,755; flat $20-$50/week = $520-$1,300; monthly $50 ladder = $1,050; 1-6% of $3,000 take-home = $630). No savings rates or fees quoted. Deliberately stated that no study of completion rates was found, so no "doubles your savings" style claims.
+- Next pending keyword: best prepaid cards compared (app-comparisons), index 67. Apply the 10-11 standing direction (lesser-known options, fiat and non-fiat) and the multi-currency framing.
+
 ## 2026-10-29 — How to Invest in Commodities: The Main Ways and the Risks (investing-basics)
 
 - Published `how-to-invest-in-commodities-the-main-ways-to-get-exposure-and-the-risks` (keyword index 65), `table` pin (Physical / Futures funds / Producer stocks; 4-line title fits, viewed clean), hero, X draft hand-shortened. Previous post 10-28; nothing skipped. Reverse links added from etfs-vs-mutual-funds and what-is-cryptocurrency.

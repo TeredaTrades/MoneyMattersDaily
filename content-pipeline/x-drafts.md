@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## 6-month-savings-challenge-templates-that-actually-work
+
+**Post (attach the matching pin image from public/pins/):**
+```
+6-Month Savings Challenge Templates That Actually Work — Five plans with the totals worked out: weekly ladder, reverse ladder, flat amount, monthly ladder and percent of pay. Plus how to pick one you can afford at the finish.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/6-month-savings-challenge-templates-that-actually-work/
+```
+
 ## how-to-invest-in-commodities-the-main-ways-to-get-exposure-and-the-risks
 
 **Post (attach the matching pin image from public/pins/):**

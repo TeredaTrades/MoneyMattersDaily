@@ -60,4 +60,6 @@ If nothing is automated yet, set up one recurring transfer this week — even $2
 
 One good use for automation: a recurring transfer into a sinking fund for annual and seasonal bills. See [how to build a sinking fund for irregular expenses](/blog/how-to-build-a-sinking-fund-for-irregular-expenses/).
 
+If you want a plan with a start, an amount and a finish line to automate, see [6-month savings challenge templates that actually work](/blog/6-month-savings-challenge-templates-that-actually-work/).
+
 *Last updated August 2026.*

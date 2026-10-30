@@ -123,4 +123,6 @@ Spend 30 minutes with your last year of statements. List the irregular costs, es
 
 Buying gift cards for the holidays? See [gift cards and your budget: fees, rules, and scams](/blog/gift-cards-and-your-budget-fees-rules-and-scams/) for what to check before you pay.
 
+If you're also saving toward an open-ended goal rather than a known bill, a fixed-schedule plan can help too; see [6-month savings challenge templates that actually work](/blog/6-month-savings-challenge-templates-that-actually-work/).
+
 *Last updated October 2026. The example uses made-up amounts in no particular currency, and interest rates, fees, and account features vary by bank and country. This is general information, not personalized financial advice.*
