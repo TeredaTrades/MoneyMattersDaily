@@ -12,6 +12,14 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-31 — Best Prepaid Cards Compared: Fees, Limits, and Who They Suit (app-comparisons)
+
+- Published `best-prepaid-cards-compared-fees-limits-and-who-they-suit` (keyword index 67), `table` pin (Fees / Register / Insured?; 4-line title fits, viewed clean), hero, X draft hand-shortened (script output had a stray "19-" prefix and was long). Previous post 10-30; nothing skipped. Reverse links added from gift-cards-and-your-budget and best-multi-currency-wallets-compared.
+- Sources (2026-10-31, fetched): CFPB "types of fees prepaid cards charge" (fee list; short-form packaging chart; last reviewed 2024-10-31), CFPB "Is the money on my prepaid card FDIC insured" (look for "Your funds are eligible for FDIC insurance"; registration generally needed; pooled account; last reviewed 2023-08-28), CFPB "Choose the right card" (registration, error resolution for registered/payroll/some government benefit cards, gift cards lack the rule's protections, packaging being phased in; modified 2024-12-12), Orrick summary of the final rule (published 2016-10-25: short/long form, Regulation E, overdraft/credit structure).
+- Gaps: the CFPB "know your rights" page had no content and the FDIC prepaid page did not load, so FDIC points rest on the CFPB page only. CFPB calls it the "2019 prepaid rule" while Orrick (2016) gives a 2017 effective date, so the post gives no effective date and says to check current rules. No real card names, fees or limits quoted. The "prepaid doesn't build credit" line is general knowledge, not sourced. Crypto-funded and travel/multi-currency sections are deliberately general (10-11 standing direction), with no product recommendations; the crypto-card point is unsourced beyond the earlier posts.
+- Worked example is made up and run in code (Card A $5/month vs Card B $1/purchase; equal at 5 purchases; yearly $60 vs $36 at 3/month and $240 at 20/month).
+- Next pending keyword: what a recession actually means for your personal finances (news-trends); 23 pending. Keep the news-trends rule: cite current figures only from fetched sources.
+
 ## 2026-10-30 — 6-Month Savings Challenge Templates That Actually Work (budgeting)
 
 - Published `6-month-savings-challenge-templates-that-actually-work` (keyword index 66), `table` pin (Ladder / Flat / Percent; 4-line title fits, viewed clean), hero, X draft hand-shortened (script truncated mid-sentence). Previous post 10-29; nothing skipped. Reverse links added from how-to-build-a-sinking-fund-for-irregular-expenses and best-ways-to-automate-your-savings. Build clean (82 pages).

@@ -85,7 +85,7 @@ The trade-offs are real, so be risk-forward about it:
 - **On-ramp and off-ramp costs.** Turning local money into a stablecoin and back usually involves exchange fees, spreads and sometimes bank charges. Those can erase the savings.
 - **Rules and taxes vary by country.** In some places using or converting crypto is restricted or taxed in ways that surprise people. Check local rules first.
 
-Some apps bridge both worlds, such as fiat accounts that also hold crypto or cards funded from crypto. When you see one, ask which part is regulated and protected and which part isn't, because the answer is usually different for each.
+Some apps bridge both worlds, such as fiat accounts that also hold crypto or cards funded from crypto. When you see one, ask which part is regulated and protected and which part isn't, because the answer is usually different for each. For single-currency prepaid cards, see [best prepaid cards compared](/blog/best-prepaid-cards-compared-fees-limits-and-who-they-suit/).
 
 ## A worked example
 

@@ -28,7 +28,7 @@ A gift card is a stored amount of money you pay for in advance. The details depe
 - **Digital gift cards.** Electronic codes. The federal rule says coverage isn't limited to plastic, so electronic codes that entitle you to redeem a specified amount are generally covered.
 - **Loyalty, reward, and promotional cards.** Issued through a rewards or promotional program. These are treated differently: they must be labeled "Reward" or "Promotional" and carry certain disclosures, but several of the consumer protections below don't fully apply.
 
-One more category trips people up: a reloadable prepaid card that isn't marketed or labeled as a gift card is generally outside the federal gift card rule. The CFPB notes that these can charge fees such as monthly service fees right away.
+One more category trips people up: a reloadable prepaid card that isn't marketed or labeled as a gift card is generally outside the federal gift card rule. The CFPB notes that these can charge fees such as monthly service fees right away. [Best prepaid cards compared](/blog/best-prepaid-cards-compared-fees-limits-and-who-they-suit/) covers how to weigh those fees.
 
 ## What the US rules say
 
