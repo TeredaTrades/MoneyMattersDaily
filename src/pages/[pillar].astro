@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { isLive } from '../lib/published.mjs';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PillarIcon from '../components/PillarIcon.astro';
 
@@ -76,7 +77,7 @@ const label = PILLARS[pillar];
 const metaDescription = PILLAR_META_DESCRIPTIONS[pillar];
 const intro = PILLAR_INTROS[pillar];
 
-const allPosts = await getCollection('blog', ({ data }) => !data.draft && data.pillar === pillar);
+const allPosts = await getCollection('blog', ({ data }) => isLive(data) && data.pillar === pillar);
 const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 

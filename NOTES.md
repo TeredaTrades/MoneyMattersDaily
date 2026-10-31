@@ -12,6 +12,29 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-31 (later) — Scheduled publishing built: write ahead, posts go live on their pubDate
+
+**Why:** frequent power outages on the owner's side skipped days (the old flow only published when a push happened that day). Writing and publishing are now decoupled, with no paid API and no unattended generation.
+
+**How it works**
+- A post is live when `draft` is false AND its `pubDate` has arrived (midnight UTC of that date). The rule is one function, `src/lib/published.mjs` (`isLive`), used by the homepage, pillar pages, `blog/[slug]` and the Pinterest feed generator. Past or today's dates behave exactly as before. The sitemap walks the built pages, so it follows automatically.
+- `scripts/prune-unpublished-assets.mjs` (runs in `postbuild`) deletes `dist/pins/<slug>.png` and `dist/heroes/<slug>.png` for posts not live yet, so scheduled images are not reachable by URL early. It prints the list of scheduled posts on every build.
+- `deploy.yml` now also runs on a daily cron, `15 3 * * *` UTC (06:15 Addis Ababa), so a post dated D goes live in that morning's build with nobody at the keyboard. GitHub cron can run some minutes late, and GitHub pauses scheduled workflows after about 60 days with no repo activity (not a worry while we push regularly).
+- `daily-post-reminder.yml` no longer asks "was a file added today"; it runs `scripts/post-live-today.mjs` ("does a non-draft post carry today's pubDate?"). `close-post-reminder.yml` is unchanged.
+- Test `SITE_NOW=YYYY-MM-DD npm run build` (or the same variable on `post-live-today.mjs`) pretends it is that date. Tested 2026-10-31 with a dummy post dated 2099-01-01: hidden from the page tree, pins, heroes, sitemap, homepage, pillar page and feed on a normal build, and present with `SITE_NOW=2099-01-02`. Dummy removed; build is back to 83 pages.
+
+**How to write ahead (checklist for a batch session)**
+1. Write each post as usual, but set `pubDate` to its go-live date (one post per day, in queue order, starting from the first day with no live post). Everything else (hero, pin, hand-edited X draft, reverse links, keyword-queue `published`, NOTES entry) is done at write time.
+2. Mark the keyword `published` in the queue when the post is written, so the queue order keeps moving. Reverse links added now may point to posts that are not live yet; only link to posts that go live earlier or on the same day, or the link will 404 until its date.
+3. Push to main. The push deploy leaves future posts out; the daily 03:15 UTC deploy adds each one on its date. After a batch, check the build log line "scheduled posts not yet live: N".
+4. Only batch evergreen posts. News and time-sensitive posts (Binance hack, stockpile advice, Dangote IPO, AI IPOs, recession, anything quoting current figures) are written the day before or the day of, and re-verified. Keep a buffer of about one week for finance topics, not longer.
+5. A scheduled post can be edited any time before its date (change `pubDate` to move it).
+
+**Known limits**
+- The repo is public, so a scheduled post's markdown, `x-drafts.md` entry and `keyword-queue.json` are readable on GitHub before the date. Only the live site hides it.
+- The X draft file lists scheduled posts early; post them on the day. Pinterest feed entries appear only once live, so pins publish on schedule via the feed (still about 24h later on Pinterest's side).
+- Skipped days from before this change are not back-filled (existing policy).
+
 ## 2026-10-31 (later) — Queued three timely investing posts: Dangote IPO, AI company IPOs, tokenization (54 pending)
 
 - Owner asked to add the Dangote IPO, the upcoming AI-company IPOs and recent country tokenization moves. All three are pillar investing-basics. Placement: Dangote right after the stockpile post (3rd in line), AI IPOs right after the travel-credit-cards post, tokenization at the END (evergreen explainer). The rest of the queue was not reordered. 54 pending.

@@ -28,16 +28,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Check for a post published today
+      - name: Check for a post live today
         id: check
+        # With scheduled publishing, files are often committed days ahead, so
+        # "a file was added today" no longer means "a post went out today".
+        # Instead: does any non-draft post carry today's pubDate?
         run: |
-          TODAY=$(date -u +%Y-%m-%d)
-          FOUND=$(git log --since="${TODAY}T00:00:00Z" --name-only --diff-filter=A --pretty=format: -- 'src/content/blog/*.md' | grep -v '^$' | head -1 || true)
-          if [ -n "$FOUND" ]; then
-            echo "posted=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "posted=false" >> "$GITHUB_OUTPUT"
-          fi
+          echo "posted=$(node scripts/post-live-today.mjs)" >> "$GITHUB_OUTPUT"
 
       - name: Get next pending keyword
         id: next

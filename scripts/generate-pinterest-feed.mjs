@@ -14,6 +14,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
+import { isLive } from '../src/lib/published.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -52,7 +53,7 @@ const allPosts = fs
     const { data } = matter(raw);
     return { slug: path.basename(f, '.md'), ...data };
   })
-  .filter((p) => !p.draft && p.pinApproved)
+  .filter((p) => isLive(p) && p.pinApproved)
   .filter((p) => {
     const pinExists = fs.existsSync(path.join(PINS_DIR, `${p.slug}.png`));
     if (!pinExists) {

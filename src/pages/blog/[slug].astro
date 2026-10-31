@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
+import { isLive } from '../../lib/published.mjs';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import BudgetDonut from '../../components/BudgetDonut.astro';
@@ -7,7 +8,7 @@ import PillarIcon from '../../components/PillarIcon.astro';
 import EmailSignup from '../../components/EmailSignup.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  const posts = await getCollection('blog', ({ data }) => isLive(data));
   return posts.map((post) => ({
     params: { slug: post.id },
     props: { post },
@@ -17,7 +18,7 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 
-const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const allPosts = await getCollection('blog', ({ data }) => isLive(data));
 const samePillar = allPosts.filter((p) => p.id !== post.id && p.data.pillar === post.data.pillar);
 const otherPillar = allPosts.filter((p) => p.id !== post.id && p.data.pillar !== post.data.pillar);
 const related = [...samePillar, ...otherPillar]

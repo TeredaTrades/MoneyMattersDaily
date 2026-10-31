@@ -3,6 +3,11 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Scheduled publishing: posts with a future pubDate are skipped by the build
+  # (src/lib/published.mjs). This daily rebuild makes them go live on their
+  # date with nobody at the keyboard. 03:15 UTC = 06:15 in Addis Ababa.
+  schedule:
+    - cron: '15 3 * * *'
   workflow_dispatch:
 
 permissions:

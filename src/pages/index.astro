@@ -1,10 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
+import { isLive } from '../lib/published.mjs';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PillarIcon from '../components/PillarIcon.astro';
 import EmailSignup from '../components/EmailSignup.astro';
 
-const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const allPosts = await getCollection('blog', ({ data }) => isLive(data));
 const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const [featured, ...rest] = posts;
 
