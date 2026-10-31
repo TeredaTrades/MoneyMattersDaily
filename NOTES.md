@@ -12,6 +12,11 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-31 (later) — Queue extended by 12 Africa/Asia, crypto and travel topics (51 pending)
+
+- Owner asked for more Africa/Asia-focused, crypto and travel topics, WITHOUT reordering the existing queue. Appended 12 after the previous 14, interleaved by pillar. Africa: rotating savings groups (ekub/chama/susu), how to send money to Africa, currency controls and foreign-currency accounts. Asia and Middle East: GCash and Maya (Philippines), Vietnam nomad money, opening a UAE bank account as an expat. Crypto: proof of reserves (follows the Binance post), how to send crypto safely, getting paid in crypto as a freelancer. Travel: cash-heavy countries, hotel/rental-car card holds abroad, tourist money scams.
+- Writer reminders: all country-specific posts need real-source verification on the day (regulator/central-bank or official pages first; say plainly when a source could not be fetched); no remittance or wallet fee figures unless fetched that day; crypto posts follow the 10-08 YMYL guidance (risk-forward, no picks or predictions); savings-group post should cover how they work and the risks (organizer trust, no deposit insurance, no legal recourse in some places) without claiming legal specifics per country that were not sourced.
+
 ## 2026-10-31 (later) — Queue extended by 14 evergreen topics (39 pending)
 
 - Owner asked for more article topics. Appended 14 to the END of the queue, interleaved so no two neighbours share a pillar: credit 3 (card interest/APR, balance transfers, credit freeze and identity theft), app-comparisons 2 (expense-splitting apps, savings apps), saving 2 (house down payment, savings buckets), news-trends 2 (bank failures and deposit insurance, first 30 days after a layoff), budgeting 2 (grocery costs, monthly money review), investing-basics 2 (bonds and interest rates, robo-advisors), travel-finance 1 (card lost/frozen/blocked abroad). Checked against all published and pending keywords for overlap; none duplicated.
