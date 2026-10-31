@@ -12,6 +12,11 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-10-31 (later) — Queue extended by 14 evergreen topics (39 pending)
+
+- Owner asked for more article topics. Appended 14 to the END of the queue, interleaved so no two neighbours share a pillar: credit 3 (card interest/APR, balance transfers, credit freeze and identity theft), app-comparisons 2 (expense-splitting apps, savings apps), saving 2 (house down payment, savings buckets), news-trends 2 (bank failures and deposit insurance, first 30 days after a layoff), budgeting 2 (grocery costs, monthly money review), investing-basics 2 (bonds and interest rates, robo-advisors), travel-finance 1 (card lost/frozen/blocked abroad). Checked against all published and pending keywords for overlap; none duplicated.
+- Writer reminders: country-specific posts need real-source verification; for the frozen-card and expense-splitting/savings-app posts the 10-11 standing direction applies (include lesser-known options and apps that handle several currencies, fiat and crypto, with the crypto YMYL guidance). The bank-failure post should state deposit-insurance limits only from the regulator's own page, per country.
+
 ## 2026-10-31 (later) — Queued: emergency stockpile advice, 3-day kit on a budget (news-trends), with a research brief
 
 - Owner asked to queue a post on the wave of government "stock up on supplies" advice. Inserted as keyword "emergency stockpile advice: how to build a 3-day kit on a budget" right after the Binance post (ahead of the recession post). 25 pending after this.
