@@ -12,6 +12,15 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-11-01 — The Binance Hack Explained: What Happened and What It Means for You (news-trends)
+
+- Published `the-binance-hack-explained-what-happened-and-what-it-means-for-you` (keyword index 68, first of the queued news items), `table` pin (Stolen / Cause / Lesson; 4-line title fits, viewed clean), hero, X draft hand-shortened (script output was 278 characters). Previous post 10-31; nothing skipped. Reverse links added from how-to-read-crypto-news-without-getting-burned and what-is-cryptocurrency. Written the day of, as planned, with a snapshot line "as of the morning of Nov 1 (UTC)".
+- Sources: the owner supplied screenshots of Binance Square (Binance News profile: phased-withdrawal announcement, "$6B already covered", PoR snapshot and ZK proof due Tue Nov 3 UTC, new PoR wallet addresses, replenishment 80% to 90% to 95%, FBI attribution post, CZ posts incl. a faked chat screenshot), the CNBC article (published 2026-10-31 12:03 EDT, updated 18:27 EDT) and Reuters (2026-11-01 09:49 GMT+3, updated). Fetched earlier (2026-10-31/11-01): TRM Labs post 2026-10-29, Cointelegraph live timeline (last modified 10-30 20:44 UTC), Forbes 10-30, Yahoo Finance 10-30 (x2), Analytics Insight 10-31. Binance's own pages were NOT fetchable (allowlist), so Binance statements are read from the screenshots.
+- Key judgment calls: attribution is now FBI-stated (late Sat 10-31), with Reuters noting a Trump remark that the US was "still not certain"; cause kept as preliminary (laptop plus "additional points of breach", TRM's EIP-7702 / signing-infrastructure theory labelled as TRM's assessment); "covered" explained as replaced with Binance's own money (SAFU about $1B, half to be used, futures insurance fund, treasury), NOT recovered; frozen about $3B is not recovered. The coverage table (80/90/95% of $6.3B) and the 48% frozen share were computed in code and labelled illustrative. Scale table is CNBC's chart. Source conflicts (6.3 vs 6.36bn; first phase "15 networks" vs "15 cryptoassets") are stated in the post, not resolved.
+- Left out on purpose: market prices and moves, any prediction, any exchange recommendation, the separate B14g/CORE incident (no link to Binance established), anything about named individuals beyond their public statements.
+- REFRESH after: later withdrawal phases, the full zero-knowledge proof of reserves (Binance says Tue 2026-11-03 UTC; Cointelegraph earlier said Monday), Binance's full incident report, and the 100% coverage announcement. Update the "Last updated" footer, the coverage table and the "What is still unknown" list when you do.
+- Next pending in queue order: emergency stockpile advice (write the day of; Japan's request is due 2026-11-02), then the Dangote IPO, then recession. 53 pending after this post.
+
 ## 2026-10-31 (later) — Scheduled publishing built: write ahead, posts go live on their pubDate
 
 **Why:** frequent power outages on the owner's side skipped days (the old flow only published when a push happened that day). Writing and publishing are now decoupled, with no paid API and no unattended generation.

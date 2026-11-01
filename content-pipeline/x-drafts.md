@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## the-binance-hack-explained-what-happened-and-what-it-means-for-you
+
+**Post (attach the matching pin image from public/pins/):**
+```
+The Binance Hack Explained — What happened, what's confirmed vs unconfirmed, how Binance says it's covering the loss, and what it means if you keep crypto on an exchange. Snapshot as of Nov 1.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/the-binance-hack-explained-what-happened-and-what-it-means-for-you/
+```
+
 ## best-prepaid-cards-compared-fees-limits-and-who-they-suit
 
 **Post (attach the matching pin image from public/pins/):**

@@ -61,7 +61,7 @@ Its advice: research the coins, the companies behind them and the claims, don't 
 
 ## Scams that arrive as friendly messages
 
-Not every trap is a headline. A common one starts with a message from a stranger who seems friendly and slowly steers you toward a "great" crypto platform. The CFTC calls this a relationship confidence scam, also known as "pig butchering," and in a July 2024 advisory it warned that victims are often targeted again, by fake "fund recovery" services.
+Not every trap is a headline. A common one starts with a message from a stranger who seems friendly and slowly steers you toward a "great" crypto platform. The CFTC calls this a relationship confidence scam, also known as "pig butchering," and in a July 2024 advisory it warned that victims are often targeted again, by fake "fund recovery" services. A recent example of how a big incident draws scams is in [The Binance hack explained](/blog/the-binance-hack-explained-what-happened-and-what-it-means-for-you/).
 
 Its advice, in plain terms:
 
