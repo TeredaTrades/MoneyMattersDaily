@@ -12,6 +12,14 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-11-02 — How to Build a 3-Day Emergency Kit on a Budget (news-trends)
+
+- Published `how-to-build-a-3-day-emergency-kit-on-a-budget` (keyword index 69, the emergency stockpile item), `table` pin (Water / Time / Pace; 3-line title fits, viewed clean), hero, X draft hand-shortened (script output was too long; now 191 characters). Previous post 11-01; nothing skipped. Reverse links added from how-much-emergency-fund and how-to-build-a-sinking-fund-for-irregular-expenses.
+- Sources fetched today: Latin Times (UK Be Ready launch 2026-10-22, three days, 3 L water per person per day, cash, gradual buying, ministers say no specific threat), IBTimes (Japan: request planned 2026-11-02 at the disaster agency launch, at least three days and a week preferred, disaster reasons not war), Business Today 2026-10-27 (Japan and UK, scenarios cited), news.save.ch (Swiss FONES calculator, undated), Eugene OR city budget-kit guide (1 gallon per person per day, 3 days, build over time, reuse soda bottles, replace non-commercial water about every 6 months). NOT fetchable: gov.uk, Ready.gov (allowlist), Express & Star cost article, ready.dc.gov kit page text. So quantities come from secondary reports and a US city guide, and the post says so in its footer.
+- Judgment calls: no cost figures quoted (none verified); sample six-week plan and the 36 L household-of-four sum are labelled illustrative/computed; the Pentagon FORTRESS, Russian trawler and Volt Typhoon items from the 10-31 brief were left out (unverified); the Newsweek country map from the brief was not re-fetched, so no per-country day counts beyond UK, Japan, Swiss and US-city guidance are stated. One fetched article named a UK Defence Secretary and a "1,000 days" remark that don't match the 10-31 brief; left out as unverified.
+- Japan's request was PLANNED for today; no source confirming it was actually issued or its final wording was found. REFRESH: confirm the Japan request and wording, check gov.uk Be Ready and Ready.gov pages for current quantities when reachable, update the "Last updated" footer.
+- Next pending in queue order: the Dangote refinery IPO (time-sensitive, write the day of or the day before), then recession. 52 pending after this post.
+
 ## 2026-11-01 — The Binance Hack Explained: What Happened and What It Means for You (news-trends)
 
 - Published `the-binance-hack-explained-what-happened-and-what-it-means-for-you` (keyword index 68, first of the queued news items), `table` pin (Stolen / Cause / Lesson; 4-line title fits, viewed clean), hero, X draft hand-shortened (script output was 278 characters). Previous post 10-31; nothing skipped. Reverse links added from how-to-read-crypto-news-without-getting-burned and what-is-cryptocurrency. Written the day of, as planned, with a snapshot line "as of the morning of Nov 1 (UTC)".

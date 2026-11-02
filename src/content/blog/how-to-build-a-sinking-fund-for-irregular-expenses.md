@@ -125,4 +125,6 @@ Buying gift cards for the holidays? See [gift cards and your budget: fees, rules
 
 If you're also saving toward an open-ended goal rather than a known bill, a fixed-schedule plan can help too; see [6-month savings challenge templates that actually work](/blog/6-month-savings-challenge-templates-that-actually-work/).
 
+Preparing for outages, storms or disrupted shops? [How to build a 3-day emergency kit on a budget](/blog/how-to-build-a-3-day-emergency-kit-on-a-budget/) shows how to add supplies slowly without draining your cushion.
+
 *Last updated October 2026. The example uses made-up amounts in no particular currency, and interest rates, fees, and account features vary by bank and country. This is general information, not personalized financial advice.*

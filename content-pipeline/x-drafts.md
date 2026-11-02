@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## how-to-build-a-3-day-emergency-kit-on-a-budget
+
+**Post (attach the matching pin image from public/pins/):**
+```
+The UK has told households to keep 3 days of supplies, and Japan is about to ask the same. What governments actually say, and how to build a basic kit slowly and cheaply without panic-buying.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-build-a-3-day-emergency-kit-on-a-budget/
+```
+
 ## the-binance-hack-explained-what-happened-and-what-it-means-for-you
 
 **Post (attach the matching pin image from public/pins/):**

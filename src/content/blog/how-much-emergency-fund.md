@@ -65,4 +65,6 @@ If you and a partner keep separate finances, decide together how a shared cushio
 
 Know the costs that are coming, not just the ones that aren't? Pair this with [how to build a sinking fund for irregular expenses](/blog/how-to-build-a-sinking-fund-for-irregular-expenses/), which covers predictable but lumpy bills so they don't drain your emergency cushion.
 
+Preparing for outages, storms or disrupted shops? [How to build a 3-day emergency kit on a budget](/blog/how-to-build-a-3-day-emergency-kit-on-a-budget/) shows how to add supplies slowly without draining your cushion.
+
 *Last updated August 2026. High-yield savings rates move with the broader interest rate environment — check current rates before assuming a specific number.*
