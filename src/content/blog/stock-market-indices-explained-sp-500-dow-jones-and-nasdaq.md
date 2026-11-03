@@ -88,4 +88,6 @@ If you're new to investing, you don't need to pick a favorite index. Learn what 
 
 Crypto has no equivalent of an index of companies behind it, which is part of why it behaves so differently; see [what is cryptocurrency: how it works and the risks](/blog/what-is-cryptocurrency-how-it-works-and-the-risks/).
 
+New listings arrive in markets all the time; [the Dangote refinery IPO explained](/blog/the-dangote-refinery-ipo-explained-how-a-mega-ipo-works/) walks through how a very large one works and what its small free float means.
+
 *Last updated October 2026. Index membership, weighting rules, and methodology can change, and this post deliberately avoids quoting current index levels. This is general education for a broad audience, not personalized investment advice, and investments can lose value. Check the index provider's website for current rules before relying on any detail.*

@@ -128,4 +128,6 @@ Outside the US, funds, taxes, and account types differ. If you're in Japan, the 
 
 For funds that hold futures or physical metal instead of stocks, see [how to invest in commodities](/blog/how-to-invest-in-commodities-the-main-ways-to-get-exposure-and-the-risks/).
 
+For a current example of a single large listing that investors are weighing against funds, see [the Dangote refinery IPO explained](/blog/the-dangote-refinery-ipo-explained-how-a-mega-ipo-works/).
+
 *Last updated October 2026. Based on SEC investor education materials (Investor.gov) and FINRA's investor guidance on ETFs and mutual funds. Fees, broker policies, and tax rules change and differ by country, and this post deliberately quotes no current fund fees or prices. This is general education for a broad audience, not personalized investment advice, and investments can lose value.*

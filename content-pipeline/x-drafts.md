@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## the-dangote-refinery-ipo-explained-how-a-mega-ipo-works
+
+**Post (attach the matching pin image from public/pins/):**
+```
+The Dangote Refinery IPO Explained — Africa's biggest share sale has closed and orders reportedly hit ~3x the target. What's confirmed, what isn't, and how a mega IPO works for ordinary investors.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/the-dangote-refinery-ipo-explained-how-a-mega-ipo-works/
+```
+
 ## how-to-build-a-3-day-emergency-kit-on-a-budget
 
 **Post (attach the matching pin image from public/pins/):**
