@@ -12,6 +12,42 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## term-deposits-vs-high-yield-savings-accounts-which-fits-which-goal
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Term deposit (CD) or high-yield savings? One locks in a rate, the other stays flexible. How they differ, a worked example, and which fits which goal.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/term-deposits-vs-high-yield-savings-accounts-which-fits-which-goal/
+```
+
+## travel-credit-cards-explained-points-miles-and-foreign-transaction-fees
+
+**Post (attach the matching pin image from public/pins/):**
+```
+A travel credit card can save money abroad or cost you more than it returns. How points, miles and fees work, plus a simple break-even check.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/travel-credit-cards-explained-points-miles-and-foreign-transaction-fees/
+```
+
+## how-to-store-crypto-safely-wallets-exchanges-and-common-scams
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Where your crypto lives matters as much as what you hold. Wallets vs exchanges, who holds the keys, and the scams that follow every big hack.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-store-crypto-safely-wallets-exchanges-and-common-scams/
+```
+
 ## the-dangote-refinery-ipo-explained-how-a-mega-ipo-works
 
 **Post (attach the matching pin image from public/pins/):**
