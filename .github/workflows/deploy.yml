@@ -6,8 +6,12 @@ on:
   # Scheduled publishing: posts with a future pubDate are skipped by the build
   # (src/lib/published.mjs). This daily rebuild makes them go live on their
   # date with nobody at the keyboard. 03:15 UTC = 06:15 in Addis Ababa.
+  # GitHub often delays or drops scheduled runs (seen 2026-11-04), so there are
+  # three backup times. Re-running is harmless: each run rebuilds the same site.
   schedule:
     - cron: '15 3 * * *'
+    - cron: '15 4 * * *'
+    - cron: '15 5 * * *'
   workflow_dispatch:
 
 permissions:

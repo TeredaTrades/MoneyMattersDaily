@@ -12,9 +12,9 @@ name: Auto-publish trial (unattended, time-boxed)
 # version of the site "felt AI-generated" and the fix was editorial, not
 # tooling). Requested as a short, explicit trial — not a new default.
 
+# DISABLED 2026-11-04: trial shelved, so the daily schedule is removed.
+# Manual trigger only (workflow_dispatch).
 on:
-  schedule:
-    - cron: '0 14 * * *' # same time as the normal reminder check
   workflow_dispatch: {} # allow manual trigger for testing
 
 permissions:
