@@ -1,7 +1,7 @@
 ---
 title: "Travel Credit Cards Explained: Points, Miles, and Fees"
 description: "A travel credit card can save money abroad or quietly cost you more than it returns. Here is how points, miles, annual fees and foreign transaction fees work, and a simple way to check whether a card pays for itself."
-pubDate: 2026-11-05
+pubDate: 2026-11-06
 targetKeyword: "travel credit cards explained: points, miles, and foreign transaction fees"
 pillar: "travel-finance"
 draft: false
@@ -107,4 +107,4 @@ A travel credit card is not the only way to spend abroad cheaply. A multi-curren
 5. **Pay the balance in full every month,** or skip rewards cards entirely.
 6. **Decline home-currency conversion** every time you are asked abroad.
 
-*Last updated November 5, 2026. Based on The Points Guy's guide to foreign transaction fees (published June 2025, modified July 2025, so its fee details may have changed) and Credit Karma's international travel cards article (updated October 30, 2026). Card terms, fees, rewards and issuer policies change often and differ by country; this post names no current offers, quotes no per-point values, and recommends no card. I could not open the US Consumer Financial Protection Bureau's pages while writing this. The worked example uses invented figures. This is general education, not personalized financial advice.*
+*Last updated November 6, 2026. Based on The Points Guy's guide to foreign transaction fees (published June 2025, modified July 2025, so its fee details may have changed) and Credit Karma's international travel cards article (updated October 30, 2026). Card terms, fees, rewards and issuer policies change often and differ by country; this post names no current offers, quotes no per-point values, and recommends no card. I could not open the US Consumer Financial Protection Bureau's pages while writing this. The worked example uses invented figures. This is general education, not personalized financial advice.*

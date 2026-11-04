@@ -1,7 +1,7 @@
 ---
 title: "Term Deposits vs High-Yield Savings: Which Fits Which Goal"
 description: "A term deposit (or CD) locks in a rate for a set time, while a high-yield savings account stays flexible but its rate can change. Here is how they differ, a worked example, and how to match each to a goal."
-pubDate: 2026-11-06
+pubDate: 2026-11-07
 targetKeyword: "term deposits vs high-yield savings accounts: which fits which goal"
 pillar: "saving"
 draft: false
@@ -97,4 +97,4 @@ GOBankingRates says CD funds are typically available without a penalty for a sho
 5. **Check deposit insurance** for your country and your balance.
 6. **Set a reminder** a few weeks before any maturity date.
 
-*Last updated November 6, 2026. Based on GOBankingRates' CD vs. savings account guide (April 13, 2026) and Vanguard's comparison of high-yield savings, CDs and money market funds (June 13, 2025). Rates, penalties, minimums, insurance limits and tax treatment change and differ by bank and country; this post quotes no current rates and recommends no bank. I could not open the FDIC's or the US Consumer Financial Protection Bureau's pages while writing this, so the insurance figure comes from Vanguard's article; check your own regulator's page. The worked example uses invented, simplified figures. This is general education, not personalized financial advice.*
+*Last updated November 7, 2026. Based on GOBankingRates' CD vs. savings account guide (April 13, 2026) and Vanguard's comparison of high-yield savings, CDs and money market funds (June 13, 2025). Rates, penalties, minimums, insurance limits and tax treatment change and differ by bank and country; this post quotes no current rates and recommends no bank. I could not open the FDIC's or the US Consumer Financial Protection Bureau's pages while writing this, so the insurance figure comes from Vanguard's article; check your own regulator's page. The worked example uses invented, simplified figures. This is general education, not personalized financial advice.*

@@ -85,7 +85,7 @@ Nothing here says you must or mustn't touch crypto. If you're only curious, a se
 - **Learn first, spend later.** Read the regulator pages (the FTC, the SEC's Investor.gov, or your own country's equivalent) before you read any promoter.
 - **Treat any money you put in as money you could lose entirely.** Decide that limit before you start, and don't borrow to buy.
 - **Use established, regulated platforms where you live,** and check how they hold your assets and what protection, if any, applies.
-- **Secure your accounts:** a unique password, two-factor authentication, and never share a recovery phrase or private key with anyone.
+- **Secure your accounts:** a unique password, two-factor authentication, and never share a recovery phrase or private key with anyone. For how wallets, exchanges and keys differ, see [how to store crypto safely](/blog/how-to-store-crypto-safely-wallets-exchanges-and-common-scams/).
 - **Walk away from pressure.** Real opportunities don't expire in an hour.
 - **Keep records** of what you buy, sell and send, since tax rules in many places require them.
 

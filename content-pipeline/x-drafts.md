@@ -12,6 +12,42 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## best-peer-to-peer-payment-apps-compared-venmo-cash-app-zelle-and-paypal
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Peer-to-Peer Payment Apps Compared: Venmo, Cash App, Zelle and PayPal — Venmo, Cash App, Zelle and PayPal compared on how they work, speed, where fees appear and what happens when a payment goes wrong. Plus options beyond the big four.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/best-peer-to-peer-payment-apps-compared-venmo-cash-app-zelle-and-paypal/
+```
+
+## bitcoin-vs-ethereum-vs-stablecoins-whats-the-difference
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Bitcoin vs. Ethereum vs. Stablecoins: What's the Difference? — Bitcoin, Ethereum and stablecoins all get called crypto, but they do different jobs and fail in different ways. A plain comparison, and what to check first. Educational only, not advice.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/bitcoin-vs-ethereum-vs-stablecoins-whats-the-difference/
+```
+
+## buy-now-pay-later-explained-how-it-works-and-how-it-affects-your-credit
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Buy Now, Pay Later Explained: How It Works and How It Affects Your Credit — Buy now, pay later is often 0% if you pay on time. Here is how it works, how small plans stack up, and what it can do to your credit.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/buy-now-pay-later-explained-how-it-works-and-how-it-affects-your-credit/
+```
+
 ## term-deposits-vs-high-yield-savings-accounts-which-fits-which-goal
 
 **Post (attach the matching pin image from public/pins/):**
@@ -34,6 +70,18 @@ A travel credit card can save money abroad or cost you more than it returns. How
 **First reply (post right after, replying to your own post — no image needed):**
 ```
 https://moneymattersdaily.money/blog/travel-credit-cards-explained-points-miles-and-foreign-transaction-fees/
+```
+
+## what-a-recession-actually-means-for-your-personal-finances
+
+**Post (attach the matching pin image from public/pins/):**
+```
+What a Recession Actually Means for Your Personal Finances — A recession is a broad, lasting drop in economic activity, not just a bad month. Here is how it is defined, what it usually does to jobs, prices and savings, and a calm checklist you can start on today.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/what-a-recession-actually-means-for-your-personal-finances/
 ```
 
 ## how-to-store-crypto-safely-wallets-exchanges-and-common-scams

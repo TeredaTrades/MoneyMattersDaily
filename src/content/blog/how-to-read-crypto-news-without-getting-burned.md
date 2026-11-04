@@ -124,5 +124,6 @@ The first four checks all fail. The right move isn't a clever trade. It's to do 
 2. **Use the checklist above** on any story that makes you want to act.
 3. **Write down your limits first:** how much, if anything, you'd put in, and what would make you stop.
 4. **Report suspected fraud** to your local regulator or police. In the US, the CFTC lists a complaint line and web page for this.
+5. **If a headline is about a hack or a scam wave,** read [how to store crypto safely](/blog/how-to-store-crypto-safely-wallets-exchanges-and-common-scams/) for how custody works and which scams follow big news.
 
 *Last updated October 2026. Based on the CFTC's pump-and-dump advisory and July 2024 fraud release, plus secondary reports of SEC actions (Kelley Drye, 2017; Motley Fool, 2023), and a law-firm summary of the GENIUS Act. The CFTC advisory page shows no publication date. Laws, rules and enforcement change and differ by country. This is general education, not financial, legal or tax advice, and crypto can lose value.*
