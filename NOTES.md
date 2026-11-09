@@ -12,6 +12,14 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-11-09 — GoatCounter cumulative snapshot saved (267 visits)
+
+- Saved three cropped GoatCounter screenshots and a summary to `content-pipeline/analytics/` (`2026-11-09-traffic-summary.md`). Tab strip and address bar cropped off before saving, since the repo is public.
+- 267 visits in 87 days: up from 128 (10-17) and 205 (10-26). About 4.4/day since 10-26. The 56-visit single-hour outlier (likely a crawler, between 10-17 and 10-26) is still in the data, so the real rate is somewhat lower.
+- Search referrals growing: Google 21, Bing 15 (Bing sitemap submitted 10-26), chatgpt.com 4. Pinterest still about zero.
+- Audience skews desktop (56% monitors, 6% Linux), which hints at some bot traffic. Ad-network conclusion unchanged: too early for Media.net; revenue at this volume would be negligible on any network.
+- Open: check GoatCounter's per-hour view for the outlier day to confirm it is a crawler.
+
 ## 2026-11-04 — Scheduled deploy didn't fire (fixed), batch 2 written ahead, crypto-storage reverse links
 
 - **Scheduled deploy skipped.** The 03:15 UTC cron did NOT run on 11-04 (no scheduled run at all by 07:20 UTC), so the crypto-storage post (pubDate 11-04) was not live. The previous day's scheduled run had started at 10:50 UTC, about 7.5 hours late. GitHub delays or drops cron runs. Fixed by hand (workflow_dispatch, run succeeded 07:24 UTC) and in code (commit 57bcb9e): `deploy.yml` now has crons at 03:15, 04:15 and 05:15 UTC. Re-running is harmless: each run rebuilds the same site from the same files, and nothing in `.github/workflows` triggers off a deploy (close-post-reminder is push-only, pin-preview and x-draft are PR-only). The auto-publish-trial workflow's daily 14:00 UTC schedule was removed in the same commit (manual `workflow_dispatch` only); the trial stays shelved.
