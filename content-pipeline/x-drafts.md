@@ -36,6 +36,18 @@ Bitcoin vs. Ethereum vs. Stablecoins: What's the Difference? — Bitcoin, Ethere
 https://moneymattersdaily.money/blog/bitcoin-vs-ethereum-vs-stablecoins-whats-the-difference/
 ```
 
+## why-tech-stocks-and-crypto-are-falling-together
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Why Tech Stocks and Crypto Are Falling Together — The Nasdaq had its worst day since April 2025 on Nov 5, and bitcoin hit its lowest level since August. What's behind it, and what it means for your money.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/why-tech-stocks-and-crypto-are-falling-together/
+```
+
 ## buy-now-pay-later-explained-how-it-works-and-how-it-affects-your-credit
 
 **Post (attach the matching pin image from public/pins/):**

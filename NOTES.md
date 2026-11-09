@@ -12,6 +12,13 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-11-09 — Why Tech Stocks and Crypto Are Falling Together (news-trends)
+
+- Owner asked for a same-day article on why tech stocks and crypto are in a "slight downward move". Published `why-tech-stocks-and-crypto-are-falling-together` (news-trends, pubDate 2026-11-09), written the day of and labelled as a snapshot as of the afternoon of 11-09 UTC. Hero, `table` pin (viewed clean), hand-shortened X draft, queue entry added as published (not one of the pending keywords), reverse links from the volatility, recession and crypto-news posts.
+- Framing note: the stock move was not "slight" (Nasdaq about -5.5% on Thu 11-05, worst day since April 2025), so the title and text say so plainly. Bitcoin's drop was milder (about -1% over 24h on 11-09, near $75,000; low about $73,761 late 11-08).
+- Sources fetched: Fox Business 11-05 and 11-06 coverage (index moves, Nvidia -9.26%, SOX -12%, the AI/data-center/midterm explanation, eToro and Argent quotes; the 11-05 page's text and tables disagreed, text used and cross-checked against headlines), CoinDesk 11-09 (BTC low, >$1B liquidations: longs $913M, ETH $448M vs BTC $272M, Nvidia board investigation, Rubio on Iran talks), Fortune 11-09 (BTC about -1%, ETH about -5%, XRP about -12% on the week, Bitwise and Ned Davis quotes, June low below $60,000), TheStreet 11-09 (Nvidia down about 5%, indexes up), federalreserve.gov 10-28 (held 3.75-4.00%, 10-2, two dissenters wanted a hike), BYDFi CPI preview 11-04 (secondary: Oct CPI Tue 11-10 8:30 ET, December hike odds about 73-77%). NOT readable: CNN explainer, NBC, Bloomberg (headlines only), Quartz, Morningstar, bls.gov (allowlist). Neutral on politics; Nvidia intelligence-link reports labelled unconfirmed; no predictions or picks.
+- To refresh: after the 11-10 CPI report and the 12-08/09 FOMC; Nvidia investigation outcome; whether the rebound held. Also: the bitcoin-vs-ethereum post (scheduled 11-09) and P2P post (11-10) are separate scheduled posts and unchanged.
+
 ## 2026-11-09 — GoatCounter cumulative snapshot saved (267 visits)
 
 - Saved three cropped GoatCounter screenshots and a summary to `content-pipeline/analytics/` (`2026-11-09-traffic-summary.md`). Tab strip and address bar cropped off before saving, since the repo is public.
