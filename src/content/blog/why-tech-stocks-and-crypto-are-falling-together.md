@@ -1,7 +1,7 @@
 ---
 title: "Why Tech Stocks and Crypto Are Falling Together"
 description: "US tech stocks had their worst day since April 2025 on November 5, and bitcoin slid to its lowest level since August. Here is what is behind it, what is confirmed, and what it means for your own money."
-pubDate: 2026-11-09
+pubDate: 2026-11-10
 targetKeyword: "why tech stocks and crypto are falling together"
 pillar: "news-trends"
 draft: false

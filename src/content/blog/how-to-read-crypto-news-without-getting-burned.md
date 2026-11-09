@@ -121,7 +121,7 @@ The first four checks all fail. The right move isn't a clever trade. It's to do 
 ## Getting started
 
 1. **Pick two or three sources** that report with named authors and links, and a regulator's site for your country.
-2. **Use the checklist above** on any story that makes you want to act. A recent case study is [why tech stocks and crypto are falling together](/blog/why-tech-stocks-and-crypto-are-falling-together/), where several causes were cited and sources disagreed.
+2. **Use the checklist above** on any story that makes you want to act.
 3. **Write down your limits first:** how much, if anything, you'd put in, and what would make you stop.
 4. **Report suspected fraud** to your local regulator or police. In the US, the CFTC lists a complaint line and web page for this.
 5. **If a headline is about a hack or a scam wave,** read [how to store crypto safely](/blog/how-to-store-crypto-safely-wallets-exchanges-and-common-scams/) for how custody works and which scams follow big news.

@@ -1,7 +1,7 @@
 ---
 title: "Peer-to-Peer Payment Apps Compared: Venmo, Cash App, Zelle and PayPal"
 description: "Venmo, Cash App, Zelle and PayPal all send money to friends, but they differ in how they work, how fast money arrives, where fees appear and what happens when something goes wrong. A criteria-based comparison, plus options beyond the big four."
-pubDate: 2026-11-10
+pubDate: 2026-11-11
 targetKeyword: "best peer-to-peer payment apps compared: Venmo, Cash App, Zelle, and PayPal"
 pillar: "app-comparisons"
 draft: false
@@ -96,4 +96,4 @@ The four above are built mainly for the US. If you live elsewhere, or deal in ot
 5. **Read the provider's current fee and protection pages,** since figures here are not quoted.
 6. **Only send to people you know,** and double-check the recipient every time.
 
-*Last updated November 10, 2026. Based on three comparison articles: WealthVieu's "Zelle vs. Venmo vs. PayPal vs. Cash App" (published March 12, 2026, updated October 25, 2026), Primeway Federal Credit Union's comparison (undated, titled 2026) and eco.com's Zelle vs Venmo comparison (October 2026). The providers' own fee, limit and protection pages (Zelle, Venmo, Cash App, PayPal) were not available while writing this and the CFPB's pages were not used, so the comparison is secondhand, the sources disagree on some figures and none are quoted here, and this post recommends no app. Fees, limits, protection policies and tax thresholds change and differ by bank and country. The worked example uses invented figures. This is general education, not personalized financial advice.*
+*Last updated November 11, 2026. Based on three comparison articles: WealthVieu's "Zelle vs. Venmo vs. PayPal vs. Cash App" (published March 12, 2026, updated October 25, 2026), Primeway Federal Credit Union's comparison (undated, titled 2026) and eco.com's Zelle vs Venmo comparison (October 2026). The providers' own fee, limit and protection pages (Zelle, Venmo, Cash App, PayPal) were not available while writing this and the CFPB's pages were not used, so the comparison is secondhand, the sources disagree on some figures and none are quoted here, and this post recommends no app. Fees, limits, protection policies and tax thresholds change and differ by bank and country. The worked example uses invented figures. This is general education, not personalized financial advice.*

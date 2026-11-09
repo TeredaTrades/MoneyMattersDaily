@@ -12,6 +12,12 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-11-09 (later) — Rescheduled two posts; evergreen batch started
+
+- Owner hadn't realised the 11-09 post was already live (the scheduled bitcoin-vs-ethereum post), so `why-tech-stocks-and-crypto-are-falling-together` was moved to pubDate 2026-11-10 and the P2P apps post from 11-10 to 2026-11-11 (its footer date updated). The why-tech post is a snapshot as of 11-09 UTC afternoon and mentions the 11-10 CPI report as upcoming; if the deploy runs late on 11-10 it may need a one-line refresh once the report is out.
+- The three reverse links added earlier from the volatility, recession and crypto-news posts to the why-tech post were REMOVED so they don't 404 before go-live. Re-add them after it goes live on 11-10 (volatility: end of Getting started; recession: after the Getting started list; crypto-news: Getting started step 2).
+- Batch of four evergreen posts planned for 11-12 to 11-15: holiday budgeting, prepaid vs travel debit cards, protecting savings in a high-inflation country, forgotten subscriptions. Research started (CFPB 2017 holiday spending plan, Kiplinger 2025-11-18 gift budget with NRF survey figures, Wise AU 2026-01-29 travel card guide, CHOICE 2025-09 travel money cards, Cointelegraph 2022 stablecoin piece, Chime 2026-02-13 subscriptions); posts not yet written.
+
 ## 2026-11-09 — Why Tech Stocks and Crypto Are Falling Together (news-trends)
 
 - Owner asked for a same-day article on why tech stocks and crypto are in a "slight downward move". Published `why-tech-stocks-and-crypto-are-falling-together` (news-trends, pubDate 2026-11-09), written the day of and labelled as a snapshot as of the afternoon of 11-09 UTC. Hero, `table` pin (viewed clean), hand-shortened X draft, queue entry added as published (not one of the pending keywords), reverse links from the volatility, recession and crypto-news posts.

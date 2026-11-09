@@ -97,6 +97,4 @@ The point is not that these numbers are typical. It is that you can work out you
 4. Review one fixed cost this week.
 5. Look up how unemployment benefits work where you live, so you know the steps before you need them.
 
-For what a sharp market drop looks like in practice, see [why tech stocks and crypto are falling together](/blog/why-tech-stocks-and-crypto-are-falling-together/).
-
 *Last updated November 4, 2026. Based on the NBER's business cycle dating FAQ (definition, criteria, and its view of the two-quarter rule), the US Bureau of Economic Analysis' advance Q3 2026 GDP release (October 29, 2026), the US Bureau of Labor Statistics' September 2026 Employment Situation (October 2, 2026), CMC Markets' UK recession guide (April 2026, updated May 2026), SoFi's recession preparation guide (June 2026) and the US Department of Labor's unemployment insurance page. Economic figures are preliminary and can be revised, and the October jobs report is due November 6. The point that NBER dates recessions after the fact is general background rather than taken from a single page. The worked example uses invented figures. This is general education, not a forecast and not personalized financial advice.*
