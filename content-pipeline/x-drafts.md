@@ -12,6 +12,54 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## how-to-find-and-cut-subscription-costs-youve-forgotten-about
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How to Find and Cut Subscriptions You've Forgotten About — A simple audit: find every recurring charge, decide what to keep, and cancel the rest with proof.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-find-and-cut-subscription-costs-youve-forgotten-about/
+```
+
+## how-to-protect-your-savings-in-a-high-inflation-country
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How to Protect Your Savings in a High-Inflation Country — The main options, what each one risks, and how to compare them without chasing hype.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-protect-your-savings-in-a-high-inflation-country/
+```
+
+## prepaid-travel-cards-vs-travel-debit-cards-which-to-carry-abroad
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Prepaid Travel Cards vs. Travel Debit Cards — How they differ, which fees to check, and a worked cost comparison.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/prepaid-travel-cards-vs-travel-debit-cards-which-to-carry-abroad/
+```
+
+## how-to-budget-for-the-holidays-and-gift-giving-without-debt
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How to Budget for the Holidays and Gift-Giving Without Debt — Set the total, split it by person, pay with money set aside, and track it.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-budget-for-the-holidays-and-gift-giving-without-debt/
+```
+
 ## best-peer-to-peer-payment-apps-compared-venmo-cash-app-zelle-and-paypal
 
 **Post (attach the matching pin image from public/pins/):**
@@ -24,18 +72,6 @@ Peer-to-Peer Payment Apps Compared: Venmo, Cash App, Zelle and PayPal — Venmo,
 https://moneymattersdaily.money/blog/best-peer-to-peer-payment-apps-compared-venmo-cash-app-zelle-and-paypal/
 ```
 
-## bitcoin-vs-ethereum-vs-stablecoins-whats-the-difference
-
-**Post (attach the matching pin image from public/pins/):**
-```
-Bitcoin vs. Ethereum vs. Stablecoins: What's the Difference? — Bitcoin, Ethereum and stablecoins all get called crypto, but they do different jobs and fail in different ways. A plain comparison, and what to check first. Educational only, not advice.
-```
-
-**First reply (post right after, replying to your own post — no image needed):**
-```
-https://moneymattersdaily.money/blog/bitcoin-vs-ethereum-vs-stablecoins-whats-the-difference/
-```
-
 ## why-tech-stocks-and-crypto-are-falling-together
 
 **Post (attach the matching pin image from public/pins/):**
@@ -46,6 +82,18 @@ Why Tech Stocks and Crypto Are Falling Together — The Nasdaq had its worst day
 **First reply (post right after, replying to your own post — no image needed):**
 ```
 https://moneymattersdaily.money/blog/why-tech-stocks-and-crypto-are-falling-together/
+```
+
+## bitcoin-vs-ethereum-vs-stablecoins-whats-the-difference
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Bitcoin vs. Ethereum vs. Stablecoins: What's the Difference? — Bitcoin, Ethereum and stablecoins all get called crypto, but they do different jobs and fail in different ways. A plain comparison, and what to check first. Educational only, not advice.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/bitcoin-vs-ethereum-vs-stablecoins-whats-the-difference/
 ```
 
 ## buy-now-pay-later-explained-how-it-works-and-how-it-affects-your-credit
