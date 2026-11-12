@@ -12,6 +12,18 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## prepaid-travel-cards-vs-travel-debit-cards-which-to-carry-abroad
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Prepaid Travel Cards vs. Travel Debit Cards — How they differ, which fees to check, and a worked cost comparison.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/prepaid-travel-cards-vs-travel-debit-cards-which-to-carry-abroad/
+```
+
 ## how-to-find-and-cut-subscription-costs-youve-forgotten-about
 
 **Post (attach the matching pin image from public/pins/):**
@@ -36,16 +48,16 @@ How to Protect Your Savings in a High-Inflation Country — The main options, wh
 https://moneymattersdaily.money/blog/how-to-protect-your-savings-in-a-high-inflation-country/
 ```
 
-## prepaid-travel-cards-vs-travel-debit-cards-which-to-carry-abroad
+## jensen-huang-resigns-from-nvidia-what-it-means-for-investors
 
 **Post (attach the matching pin image from public/pins/):**
 ```
-Prepaid Travel Cards vs. Travel Debit Cards — How they differ, which fees to check, and a worked cost comparison.
+Jensen Huang Resigns From Nvidia: What It Means for Investors — what's confirmed, what's only reported, what the stock did, and what a leadership shock means for your portfolio.
 ```
 
 **First reply (post right after, replying to your own post — no image needed):**
 ```
-https://moneymattersdaily.money/blog/prepaid-travel-cards-vs-travel-debit-cards-which-to-carry-abroad/
+https://moneymattersdaily.money/blog/jensen-huang-resigns-from-nvidia-what-it-means-for-investors/
 ```
 
 ## how-to-budget-for-the-holidays-and-gift-giving-without-debt

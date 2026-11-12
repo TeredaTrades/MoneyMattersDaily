@@ -1,7 +1,7 @@
 ---
 title: "Prepaid Travel Cards vs. Travel Debit Cards"
 description: "Both let you spend abroad without carrying much cash, but they work differently and cost differently. Here is how a prepaid travel money card compares with a low-fee debit card, which fees to check, and which fits which trip."
-pubDate: 2026-11-13
+pubDate: 2026-11-16
 targetKeyword: "prepaid travel cards vs travel debit cards which to carry abroad"
 pillar: "travel-finance"
 draft: false
