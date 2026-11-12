@@ -26,24 +26,25 @@ This post is a snapshot **as of the evening of Thursday, November 12, 2026 (UTC)
 - **Oct 29.** The New York Times reported that Huang had a close relationship with an executive at Megaspeed, a Singapore-based AI infrastructure company that US and Singapore authorities have investigated over possible chip export violations. TechCrunch's timeline says the Times reported that US officials had looked into the executive and the company for more than a year. Nvidia's spokesperson said the interactions were not unusual and that meeting customers is part of a CEO's job.
 - **Nov 5.** Three Republican chairs of House committees asked Huang for a closed-door briefing on his ties to Chinese intelligence, according to TechCrunch.
 - **Nov 8.** Nvidia's board announced an independent investigation, overseen by independent directors with outside counsel, after press reports that Huang had been the target of a foreign intelligence effort. The board said it had no reason to believe national security or Nvidia's secrets were compromised, and that Huang supported the review. The same day, Nvidia published Huang's letter to employees. In it he apologized and said he had been unfaithful to his wife. He named no one and did not address the intelligence claims beyond saying he supports the investigation and will cooperate. President Trump said he had not spoken with Huang and that he should stay on as CEO.
-- **Nov 9.** Huang pulled out of two scheduled speaking events, and Nvidia shares fell more than 5%, according to AP reporting cited by TechCrunch.
+- **Nov 9.** Huang pulled out of two scheduled speaking events. Nvidia shares fell more than 4% by the BBC's account and more than 5% by AP's, and the BBC put the one-day loss at about $250 billion in market value. A proposed shareholder class action filed in California against Nvidia and Huang alleges they concealed his ties to the executive; those are claims in a lawsuit, not findings. President Trump said he had spoken to Huang by phone, that Huang told him he had no idea the executive was a spy, and that he knew the FBI was looking into the matter. He gave no details, and the FBI declined to comment to the BBC. China's foreign ministry called the claims groundless, according to the BBC.
 - **Nov 10.** The independent directors said they had hired former acting US Attorney for the Southern District of New York Joon H. Kim and his firm, Wachtell, Lipton, Rosen & Katz, to run the investigation.
-- **Nov 11.** The Wall Street Journal reported that the board was preparing to remove Huang, and shares fell about 8% after hours. The New York Times reported a further personal allegation that Nvidia, Huang and the person named have not confirmed. This post does not repeat it. The committee chair who made the briefing request said on Fox Business that Huang would likely be subpoenaed if he declined it.
-- **Nov 12.** Nvidia announced the resignation. A regulatory filing says the board accepted it on November 11, per TechCrunch. The announcement gives no reason and does not quote Huang.
+- **Nov 11.** The Wall Street Journal reported that the board was preparing to remove Huang, and shares fell about 8% after hours. The New York Times reported a further personal allegation that Nvidia, Huang and the person named have not confirmed, and the Journal's account of the resignation also refers to two affairs. This post does not repeat the details. The committee chair who made the briefing request said on Fox Business that Huang would likely be subpoenaed if he declined it.
+- **Nov 12.** Nvidia announced the resignation. Nvidia's SEC filing (a Form 8-K, which I read directly) says the board accepted it on November 11 and named Kress and Jones the same day. Neither the filing nor the announcement gives a reason, and the announcement does not quote Huang.
 
 ## What is confirmed, and what is only reported
 
 | Question | Status | Source |
 |---|---|---|
-| Did Huang resign? | Confirmed | Nvidia press release and SEC filing |
+| Did Huang resign? | Confirmed | Nvidia press release and SEC filing, both read directly |
 | Who runs Nvidia now? | Confirmed: CFO Colette Kress is interim CEO and stays CFO | Nvidia |
 | Who chairs the board? | Confirmed: Harvey C. Jones, the first person to hold the role | Nvidia |
-| Did Huang admit to an affair? | Confirmed in his own letter to staff on Nov 8 | Nvidia's newsroom, read directly |
+| Did Huang admit to an affair? | Confirmed in his own letter to staff on Nov 8. The letter names no one, but the NYT, WSJ, CNBC and BBC all report it concerns the Megaspeed executive | Nvidia's newsroom, read directly; the outlets named |
 | Did the board open an investigation? | Confirmed on Nov 8, with outside counsel named on Nov 10; the Nov 12 release doesn't mention it | Nvidia |
-| Was Huang targeted by Chinese intelligence? | Alleged by press reports, not confirmed; the board says it sees no sign secrets were compromised | New York Times and others; Nvidia board |
+| Was Huang targeted by Chinese intelligence? | Alleged, not confirmed. The NYT reports US officials concluded the executive was a Chinese intelligence asset; China's foreign ministry denies it, and the board says it sees no sign secrets were compromised | New York Times, BBC; Nvidia board |
 | Did a business network tied to that executive buy about $7.5B of Nvidia chips, some banned? | Reported by The Information, unconfirmed | The Information |
 | Did Nvidia's chips get diverted through Megaspeed? | Nvidia says it has no reason to believe so | Nvidia |
-| Is the FBI involved? | One live blog says Trump said so; I couldn't confirm it elsewhere | Yahoo Finance live blog |
+| Is the FBI involved? | Trump said he knows the FBI is looking into it, with no details; the FBI declined to comment | BBC |
+| Was Nvidia sued? | A proposed shareholder class action in California names Nvidia and Huang; these are allegations only | BBC |
 
 Three cautions about that table.
 
@@ -53,6 +54,12 @@ Three cautions about that table.
 
 **Personal details are not the story for investors.** Beyond what Huang himself acknowledged, other personal allegations have been reported and aren't confirmed, so they are left out here.
 
+## Why investors care beyond the headlines: export controls
+
+Separate from the personal story, the New York Times reported on November 10 that the executive's company, Megaspeed, bought billions of dollars of Nvidia's advanced AI chips between 2024 and 2026, and that Nvidia named it a cloud partner in 2023. The Times also reported that in late 2024 a US Commerce Department official inspected a Megaspeed data center to check that delivered chips were on site, and found some Nvidia equipment still in boxes, which raised concerns it was being shipped in or out and not installed. Singapore's authorities, per the Times, have said they are still investigating Megaspeed. The Times says that Alibaba became Megaspeed's dominant customer, per a person familiar with the business, and Alibaba didn't comment to CNBC.
+
+Nvidia declined to comment to the Times and has said it has no reason to believe its products were diverted. The sources I read report no charges against anyone. For investors, the point is that US limits on selling the most advanced chips to China are a business risk for Nvidia on their own, whoever runs the company.
+
 ## What the stock did
 
 The moves came in steps, and the first number often wasn't the last.
@@ -60,7 +67,7 @@ The moves came in steps, and the first number often wasn't the last.
 | Date | Move | Source |
 |---|---|---|
 | Nov 5 | Fell about 9% in a broad tech selloff | Fox Business, via [why tech stocks and crypto are falling together](/blog/why-tech-stocks-and-crypto-are-falling-together/) |
-| Nov 9 | Fell more than 5% after the admission | AP, via TechCrunch |
+| Nov 9 | Fell more than 4% (BBC) or more than 5% (AP) after the admission; the BBC put the loss at about $250B | BBC; AP via TechCrunch |
 | Nov 11 (after hours) | Fell about 8% on the Journal's report | TechCrunch |
 | Nov 12 (open) | Opened near $151, about 13% below the prior close of $173.73 | TradingView chart |
 | Nov 12 (low) | About $148.80, roughly 14% down, a new 52-week low | TradingView; CNBC |
@@ -68,7 +75,7 @@ The moves came in steps, and the first number often wasn't the last.
 
 CNBC reported that for much of Thursday Nvidia was on track to close below $4 trillion in market value for the first time since July 2025, but it finished just above that line. After hours it traded near $167. For scale, the close is about 32% below the $243.37 high on the same chart, set in early October.
 
-Other stocks moved too. Yahoo reported that neocloud companies such as CoreWeave and Nebius fell hardest while Broadcom and AMD rose. CNBC reported that Chinese AI stocks slid, with Alibaba down about 7% in Hong Kong on reports that it was a Megaspeed customer. Those reports are unconfirmed, and Alibaba didn't comment.
+Other stocks moved too. Yahoo reported that neocloud companies such as CoreWeave and Nebius fell hardest while Broadcom and AMD rose. CNBC reported that Chinese AI stocks slid, with Alibaba down about 7% in Hong Kong on reports that it was a Megaspeed customer. The Times reported the same, citing a person familiar with the business. Alibaba didn't comment.
 
 Analysts split. These are opinions, not facts:
 
@@ -82,7 +89,7 @@ Analysts split. These are opinions, not facts:
 - **Earnings on Tuesday, November 17.** Nvidia says it will report as scheduled after the market closes.
 - **A permanent CEO.** The board says it is searching and will consider internal and external candidates. No date.
 - **The investigation.** The board's November 8 investigation is not mentioned in the resignation release, so what happens to it is unclear.
-- **Testimony.** CNBC's live coverage reports that Huang has agreed to testify before Congress before Thanksgiving (Nov 26). I only saw its headline and video title, so the date, forum and terms are unconfirmed.
+- **Congress.** On Nov 5 committee chairs asked for a closed-door briefing, and as of Nov 9 the BBC said it was unclear whether Huang would appear. CNBC's live coverage now reports that he has agreed to testify before Congress before Thanksgiving (Nov 26). I only saw that headline and video title, so the date, forum and terms are unconfirmed.
 - **Congress and the Justice Department.** Lawmakers from both parties have asked questions, and the New York Times reported that the Justice Department has taken over the federal probe of Megaspeed. Nothing I read reports charges.
 
 ## What a leadership shock means for investors
@@ -129,4 +136,4 @@ So even a dramatic day for one stock is a small dent in a diversified fund, but 
 4. **Avoid decisions in the first hours** of a breaking story, when facts change fastest.
 5. **For the bigger picture,** see [what stock market volatility means for your savings](/blog/what-stock-market-volatility-means-for-your-savings/).
 
-*Last updated November 12, 2026 (UTC evening). This post was written the day of the announcement and uses the sources available then, so figures and details will change. Statements are attributed to: Nvidia's newsroom (the board statement and Huang's message of November 8, the independent directors' statement of November 10 and the CEO transition release of November 12, all read directly through screenshots), a TradingView daily chart of NVDA for November 12 supplied by the site owner, CNBC's live coverage of November 12 (read through screenshots), TechCrunch's timeline (November 12) and Yahoo Finance's live blog (November 12). Claims first reported by the New York Times, The Wall Street Journal, The Information, Bloomberg and AP are relayed through TechCrunch, Yahoo Finance and CNBC rather than read at the source, and are attributed as reported. The SEC filing itself was not read, so its acceptance date comes from TechCrunch, and CNN could not be read. The worked example uses invented figures and is not Nvidia's weight in any fund. The point about key-person risk is general education. Stocks can fall as well as rise and you can lose money; this is not personalized financial advice.*
+*Last updated November 12, 2026 (UTC evening). This post was written the day of the announcement and uses the sources available then, so figures and details will change. Statements are attributed to: Nvidia's newsroom (the board statement and Huang's message of November 8, the independent directors' statement of November 10 and the CEO transition release of November 12, read through screenshots), Nvidia's Form 8-K for the November 11 event (read directly), a TradingView daily chart of NVDA for November 12 supplied by the site owner, the New York Times (November 10 article), the Wall Street Journal (November 12, opening paragraphs only), the BBC (article on Trump's remarks and the FBI), CNBC's live coverage of November 12, TechCrunch's timeline (November 12) and Yahoo Finance's live blog (November 12). The newspaper and BBC pages were read through screenshots, in part. Claims from The Information, Bloomberg, the Financial Times and AP are relayed through TechCrunch, Yahoo Finance and CNBC rather than read at the source, and are attributed as reported. CNN could not be read. The worked example uses invented figures and is not Nvidia's weight in any fund. The point about key-person risk is general education. Stocks can fall as well as rise and you can lose money; this is not personalized financial advice.*
