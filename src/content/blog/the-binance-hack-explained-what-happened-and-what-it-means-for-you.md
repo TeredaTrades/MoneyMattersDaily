@@ -1,7 +1,8 @@
 ---
 title: "The Binance Hack Explained: What Happened and What It Means for You"
-description: "About $6.3 billion was taken from Binance's hot wallets on October 29, the largest crypto theft on record. Here is what is confirmed, what is still unknown, how Binance says it is covering the loss, and what it means if you keep crypto on an exchange."
+description: "About $6.3 billion was taken from Binance's hot wallets on October 29, the largest crypto theft on record. Here is what is confirmed, what is still unknown, how Binance says it has now covered the loss, what its new proof of reserves does and does not show, and what it means if you keep crypto on an exchange."
 pubDate: 2026-11-01
+updatedDate: 2026-11-12
 targetKeyword: "the binance hack explained: what happened and what it means for crypto users"
 pillar: "news-trends"
 draft: false
@@ -13,7 +14,19 @@ tableRows: [{"label": "Stolen", "value": "About $6.3B"}, {"label": "Cause", "val
 
 On the evening of Thursday, October 29, 2026, roughly $6.3 billion in crypto was taken from Binance, the world's largest crypto exchange. It is the biggest crypto theft on record, by a wide margin. Within three days the story went from "possible security issue" to withdrawals suspended, frozen funds, an FBI statement and a restart plan.
 
-This post is a snapshot **as of the morning of Sunday, November 1, 2026 (UTC)**. The story was still moving as it was written, so some details below will change. It explains what is known, who is saying it, what is still unclear, and what the episode means for anyone who keeps crypto on an exchange. It makes no predictions about prices and recommends no coins or exchanges.
+The post was first written on **Sunday, November 1, 2026 (UTC)** and updated on **Thursday, November 12, 2026 (UTC)**. The timeline and the first-week sections below are the original snapshot, kept as written. The update directly below has the latest. The story was still moving, so some details will change. It explains what is known, who is saying it, what is still unclear, and what the episode means for anyone who keeps crypto on an exchange. It makes no predictions about prices and recommends no coins or exchanges.
+
+## Update, November 12: Binance says coverage is complete
+
+On November 12, Binance told users in an email, and posted on X, that it has now completed coverage of the assets affected by the October 29 incident. Both are Binance's own statements, and this section reads them from screenshots of that email and post. Here is what they say, and what they leave open.
+
+- **Coverage.** Binance says it committed more than $6.34 billion of company funds to cover the losses, and bought the affected tokens through market and over-the-counter (OTC) channels. It says this was funded by a partial use of SAFU, a part of its Futures insurance fund (the part above the level its risk-management framework requires), and its own corporate treasury. It also says it will top SAFU back up to about $1 billion. As before, "covered" means Binance replaced the tokens with its own money. It does not mean the stolen funds came back.
+- **A new proof of reserves.** Binance says it took a new snapshot at 00:00 UTC on November 12, covering 198 tokens, and that it is on its proof-of-reserves page. The full zero-knowledge proof, which lets you check your own balance, is still being generated. Binance says that takes about 40 to 50 hours because of the computing involved, which puts it roughly between late November 13 and November 14 UTC. Binance says that once it is out, users will be able to verify that their assets are backed at least 1:1. Until it is out, the snapshot is a claim you can't yet check yourself.
+- **Withdrawals.** Binance says it is still reopening withdrawals in phases and will share updates when they are confirmed. The email gives no dates.
+- **Delisted tokens.** Binance says a very small number of the affected tokens are ones it no longer supports. It says these will be handled under its delisting process, that holders will be covered, and that people with questions should contact customer support.
+- **Scams.** Binance repeats that it will never ask for your password, one-time codes or seed phrase, and tells users to follow only its official channels for verified updates.
+
+**What isn't answered.** The email and post don't explain how the attacker got in, don't say how much of the stolen money has been frozen or recovered, and don't mention the proof of reserves that Binance had said was due on November 3, so I can't say from these sources what happened to it. The full incident report promised earlier hasn't appeared in anything I've seen.
 
 ## Who this is for, and who it isn't
 
@@ -58,13 +71,14 @@ On Saturday, Binance said it had replenished about 90% of the stolen assets, and
 
 CNBC made a point worth repeating: this does **not** mean Binance recovered 90% of the money from the attacker. It means Binance bought replacement tokens with its own money. According to Binance and Reuters, that money came from its **Secure Asset Fund for Users (SAFU)**, a reserve Binance keeps for security incidents, part of its futures insurance fund, and its corporate treasury. Reuters reported the SAFU holds about $1 billion, that a co-CEO said half of it would be used, and that Binance has committed to refilling it to about $1 billion. Binance has also said it set aside about $6.34 billion of company funds.
 
-Using the reported percentages, here is what they imply on a $6.3 billion loss. These are rounded and illustrative.
+By November 12, Binance said coverage was complete (see the update above). The table below is the original week-one picture, kept to show how fast the gap closed. Using the reported percentages, here is what they implied on a $6.3 billion loss. These are rounded and illustrative.
 
 | Reported coverage | Replaced | Still to replace |
 |---|---|---|
 | About 80% (Oct 30) | About $5.0 billion | About $1.3 billion |
 | About 90% (Oct 31) | About $5.7 billion | About $0.6 billion |
 | About 95% (Nov 1) | About $6.0 billion | About $0.3 billion |
+| Complete (Nov 12, per Binance) | All affected assets | None, per Binance |
 
 The point isn't the exact figures. It's that **the safety net here is a company's own money and its own promise.** It is not a government guarantee like bank deposit insurance, and it worked because Binance had very large reserves. A smaller platform may not.
 
@@ -90,7 +104,7 @@ This is general education, not a call to move your money. The lessons apply to e
 
 **2. Deposit insurance generally doesn't apply.** Crypto held on an exchange is generally not covered by bank deposit insurance. Some platforms make their own promises, like Binance's SAFU. Read exactly what is promised, by whom, and what backs it.
 
-**3. Reserves and proof matter.** Binance says it published a fresh proof-of-reserves snapshot, taken at 00:00 UTC on October 31, with a full zero-knowledge proof, which lets users check their own balances, due on Tuesday, November 3. It also said it moved all withdrawals to new wallet addresses that it added to that page. A proof of reserves is the exchange's own publication, and a snapshot is a moment in time, so it is useful evidence but not an independent guarantee.
+**3. Reserves and proof matter.** Binance first said it had published a proof-of-reserves snapshot taken at 00:00 UTC on October 31, with a full zero-knowledge proof due on November 3. On November 12 it announced a newer snapshot, taken at 00:00 UTC that day and covering 198 tokens, with the full proof still being generated. It had also said it moved all withdrawals to new wallet addresses that it added to the page. A proof of reserves is the exchange's own publication, and a snapshot is a moment in time, so it is useful evidence but not an independent guarantee.
 
 **4. Keep only what you need on an exchange.** Yahoo Finance's guide for Binance users suggested keeping on the exchange only what you need for trading and moving long-term holdings to a wallet where you control the keys. Self-custody has its own risks, including lost keys and fake wallets, so it isn't automatically safer. For a plain-language guide to wallets, keys and the trade-offs, see [how to store crypto safely](/blog/how-to-store-crypto-safely-wallets-exchanges-and-common-scams/). For how wallets compare, see [multi-currency wallets compared](/blog/best-multi-currency-wallets-compared-one-account-for-several-currencies/).
 
@@ -110,13 +124,14 @@ Basic habits help: use a unique password and two-factor authentication on every 
 ## What is still unknown
 
 - **How the attacker got in,** and whether other platforms are exposed to the same weakness.
-- **How much is recoverable.** Frozen funds still have to be returned, and the attacker is reported to hold a large amount beyond issuers' reach.
-- **When every withdrawal phase will reopen.** Binance said withdrawals would resume in stages. Binance describes the first phase as covering 15 networks with selected assets (Reuters calls it 15 cryptoassets), and I couldn't find dates for the later phases in the sources I could read.
-- **What the full report and proof of reserves will show.**
+- **How much is recoverable.** Binance covering the loss does not change what happens to the stolen money. Frozen funds still have to be returned, and the attacker is reported to hold a large amount beyond issuers' reach.
+- **When every withdrawal phase will reopen.** Binance said withdrawals would resume in stages. Binance describes the first phase as covering 15 networks with selected assets (Reuters calls it 15 cryptoassets), and the November 12 email still gives no dates for the later phases.
+- **What the full report and the zero-knowledge proof will show.** The proof is expected around November 13 to 14 UTC, and the report has no date.
 
 ## Common mistakes
 
-- **Reading "95% covered" as "95% recovered."** It means replaced with Binance's own money.
+- **Reading "covered" as "recovered."** It means replaced with Binance's own money.
+- **Treating a snapshot as a finished proof.** A proof-of-reserves snapshot is the exchange's own claim until the full proof is out and you can check your own balance against it.
 - **Treating one source as final.** Figures differed across Binance, TRM, Chainalysis and the news reports, and early numbers changed.
 - **Clicking "recovery" or "compensation" links.** They are a common scam after a hack.
 - **Moving everything in a panic.** A rushed move can mean mistakes, fees or a fake wallet. Decide calmly.
@@ -128,6 +143,6 @@ Basic habits help: use a unique password and two-factor authentication on every 
 2. **Decide how much you could afford to lose** on any one platform, and compare it with what's there.
 3. **Secure your accounts:** unique passwords, two-factor authentication, and a note of the official URL.
 4. **Read the platform's own statements,** not forwards or screenshots, and expect them to change.
-5. **Check back after the full report** and the proof of reserves, then decide what, if anything, to change.
+5. **Check back after the zero-knowledge proof is published** and again after the full incident report, then decide what, if anything, to change.
 
-*Last updated November 1, 2026 (UTC morning). This post was written the day the withdrawal restart began and uses the sources available then, so figures and details will change. Statements and figures are attributed to: Binance (its posts and updates on Binance Square and X, October 30 to November 1), the FBI (statement of October 31, as reported by Binance Square and CNBC), Reuters (November 1), CNBC (October 31), Cointelegraph's live timeline (last modified October 30), TRM Labs (October 29), Forbes (October 30) and Yahoo Finance (October 30). The percentages and dollar amounts in the coverage table were calculated for this post from the reported percentages and are rounded and illustrative. The points on deposit insurance, proofs of reserves and scams are general education rather than sourced to a single page. Binance's own announcement pages were read through screenshots. Crypto is volatile and carries a risk of total loss; this is not personalized financial advice.*
+*First published November 1, 2026 (UTC morning) and updated November 12, 2026 (UTC evening). Everything above the November 12 update is the original snapshot and uses the sources available then, so figures and details will change. Statements and figures are attributed to: Binance (its posts and updates on Binance Square and X, October 30 to November 1, and its email to users and X post of November 12), the FBI (statement of October 31, as reported by Binance Square and CNBC), Reuters (November 1), CNBC (October 31), Cointelegraph's live timeline (last modified October 30), TRM Labs (October 29), Forbes (October 30) and Yahoo Finance (October 30). The percentages and dollar amounts in the coverage table were calculated for this post from the reported percentages and are rounded and illustrative. The points on deposit insurance, proofs of reserves and scams are general education rather than sourced to a single page. Binance's own announcement pages, and the November 12 email and X post, were read through screenshots. Crypto is volatile and carries a risk of total loss; this is not personalized financial advice.*

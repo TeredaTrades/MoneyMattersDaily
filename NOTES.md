@@ -12,6 +12,13 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-11-12 — Binance hack post updated with Binance's completion email and X post
+
+- Owner supplied three screenshots (Binance's email to users and its X post, 11-12) and asked to use them as the update. Added an "Update, November 12" section near the top of `the-binance-hack-explained-what-happened-and-what-it-means-for-you` and set `updatedDate: 2026-11-12`. The original 11-01 snapshot text is kept, with the intro, coverage table (new "Complete" row), proof-of-reserves point, unknowns, mistakes, getting-started step 5, description and footer adjusted.
+- What Binance says (own statements, read from screenshots only): coverage of affected assets complete; more than $6.34B of company funds committed, tokens bought via market and OTC channels, funded by partial SAFU deployment, part of the Futures insurance fund above its required level, and corporate treasury; SAFU to be replenished to about $1B; new PoR snapshot 2026-11-12 00:00 UTC covering 198 tokens; full zero-knowledge proof takes about 40-50 hours (so roughly 11-13 to 11-14 UTC); withdrawals still reopening in phases, no dates; a very small number of delisted tokens affected, holders covered via the delisting process; standard anti-scam warning.
+- Not answered by those sources and left explicit in the post: how the attacker got in, how much is frozen or recovered, what happened to the ZK proof Binance said was due 11-03, the full incident report. The post says it can't tell from these sources what happened to the 11-03 proof.
+- To refresh: when the ZK proof is published (about 11-13/14 UTC), when later withdrawal phases are confirmed, and when the full incident report lands. No pin or X draft change needed (pin table unchanged).
+
 ## 2026-11-10 — Evergreen batch 3 written and scheduled (4 posts, 11-12 to 11-15)
 
 - Owner asked to continue after a usage-limit pause. Wrote and scheduled (pubDate): holiday budgeting `how-to-budget-for-the-holidays-and-gift-giving-without-debt` (budgeting, 11-12), `prepaid-travel-cards-vs-travel-debit-cards-which-to-carry-abroad` (travel-finance, 11-13), `how-to-protect-your-savings-in-a-high-inflation-country` (saving, 11-14), `how-to-find-and-cut-subscription-costs-youve-forgotten-about` (budgeting, 11-15). Each has hero, pin (viewed clean; saving pin accent is low-contrast but readable), hand-shortened X draft, worked example with invented numbers, queue entry marked published. Queue is now 40 pending. Schedule now: why-tech 11-10, P2P 11-11, then these four; nothing is written for 11-16 onward.
