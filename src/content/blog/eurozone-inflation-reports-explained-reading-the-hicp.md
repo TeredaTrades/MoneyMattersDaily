@@ -1,8 +1,8 @@
 ---
 title: "Eurozone Inflation Reports Explained: Reading the HICP"
-description: "Euro-area inflation just hit 3.8%, but the headline hides an 18.9% energy jump and a calmer core of 2.5%. Here's how to read a HICP release and what it means for your own budget."
+description: "Euro-area inflation rose to 4.0% in October, a three-year high, and the headline hides a 20.8% energy jump and a calmer core of 2.5%. Here's how to read a HICP release and what it means for your own budget."
 pubDate: 2026-09-29
-updatedDate: 2026-10-26
+updatedDate: 2026-11-13
 targetKeyword: "Eurozone inflation reports explained: reading the HICP"
 pillar: "news-trends"
 draft: false
@@ -15,7 +15,11 @@ tableRows:
   - { label: "Core HICP", value: "2.5%" }
 ---
 
-Euro-area inflation was 3.8% in September 2026, up from 3.2% in August and 2.2% a year earlier. That single number is what most headlines carry, and it's the least useful part of the release. The same report shows energy prices up 18.9% while services inflation, the biggest part of the basket, was 3.2%, and those two facts point in very different directions for a household budget. Here's how to read a Eurostat inflation release properly, and what to do with it.
+Euro-area inflation was 3.8% in September 2026, up from 3.2% in August and 2.2% a year earlier, and Eurostat's early estimate for October, published on November 4, put it at 4.0%, the highest in more than three years. That single number is what most headlines carry, and it's the least useful part of the release. The same report shows energy prices up 18.9% while services inflation, the biggest part of the basket, was 3.2%, and those two facts point in very different directions for a household budget. Here's how to read a Eurostat inflation release properly, and what to do with it.
+
+## Update, November 13: the October flash estimate
+
+Eurostat's flash estimate for October 2026, as reported by GMK Center, showed euro-area inflation at **4.0%**, up from 3.8% in September. Energy rose 20.8% over the year (18.9% in September), non-energy industrial goods 1.2% (1.1%), and core inflation, which leaves out the volatile items, was unchanged at **2.5%**. I couldn't find the October rates for services or food in the source I read. The pattern is the same as September: the headline is being pushed up by energy while core is steady. Everything below, including the table and the worked example, uses September's figures, the latest month with a full breakdown. A flash estimate can be revised in the final release, which Eurostat schedules for November 18.
 
 ## Who this is for — and who it isn't
 
@@ -97,6 +101,6 @@ Two caveats on the example. The 18.9% is an average across electricity, gas, and
 
 ## Getting started
 
-Open Eurostat's latest inflation release (it's free and the summary table is on the first screen) and do two things: find your country's row, and find the energy row. Then take last month's actual spending, split it into the four groups above, and multiply each by its annual rate the way the worked example does. It takes about ten minutes and gives you a personal inflation figure that's specific enough to act on. The next release is the flash estimate for October, scheduled for 4 November 2026, followed by the full October figures on 18 November. If you also earn or spend across currencies, [multi-currency budgeting for remote workers](/blog/multi-currency-budgeting-for-remote-workers/) covers the budgeting side of that.
+Open Eurostat's latest inflation release (it's free and the summary table is on the first screen) and do two things: find your country's row, and find the energy row. Then take last month's actual spending, split it into the four groups above, and multiply each by its annual rate the way the worked example does. It takes about ten minutes and gives you a personal inflation figure that's specific enough to act on. The October flash estimate came out on 4 November (4.0%), and the full October figures are due on 18 November. The November flash estimate follows at the start of December. If you also earn or spend across currencies, [multi-currency budgeting for remote workers](/blog/multi-currency-budgeting-for-remote-workers/) covers the budgeting side of that.
 
-*Last updated 26 October 2026. Figures reflect Eurostat's euro indicators release of 16 October 2026 (September 2026 data, euro area of 21 members) and will change with each monthly release. Check Eurostat's inflation page for the current figures rather than relying on the numbers above indefinitely.*
+*First published 29 September 2026 and updated 13 November 2026. The table and worked example reflect Eurostat's euro indicators release of 16 October 2026 (September 2026 data, euro area of 21 members). The October flash figures come from GMK Center's report (5 November 2026) of the Eurostat estimate, not from Eurostat's own page, which I could not read. The November flash timing is general, not a confirmed date. Figures will change with each monthly release. Check Eurostat's inflation page for the current figures rather than relying on the numbers above indefinitely.*

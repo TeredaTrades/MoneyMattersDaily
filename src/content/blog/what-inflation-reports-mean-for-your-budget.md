@@ -3,6 +3,7 @@ title: "What Inflation Reports Actually Mean for Your Budget"
 description: "The monthly CPI report gets a headline number, but that number isn't your grocery bill. Here's how to read an inflation report and what to actually change in your budget because of it."
 pubDate: 2026-09-06
 targetKeyword: "what inflation reports mean for your budget"
+updatedDate: 2026-11-13
 pillar: "news-trends"
 draft: false
 pinApproved: true
@@ -20,7 +21,7 @@ The monthly inflation report is a national average, not a receipt from your own 
 
 ## What the CPI report actually measures
 
-The Consumer Price Index (CPI), published monthly by the U.S. Bureau of Labor Statistics, tracks the price of a fixed "basket" of goods and services — housing, food, transportation, medical care, and more — weighted by how much the average urban household spends on each category. As of the most recent release, annual CPI inflation was 3.4% for the 12 months ending July 2026, with core CPI (which strips out food and energy) at 2.5% over the same period.
+The Consumer Price Index (CPI), published monthly by the U.S. Bureau of Labor Statistics, tracks the price of a fixed "basket" of goods and services — housing, food, transportation, medical care, and more — weighted by how much the average urban household spends on each category. The latest full year-over-year figure is 3.7% for the 12 months ending September 2026, up from 3.4% in August, as ABC News reported. The October report, released on November 10, showed prices up 0.4% in the month, above the 0.3% economists expected, with core CPI (which strips out food and energy) up 0.3% and shelter up 0.3%, per Stockanalysis's summary of the release. ABC News reported that no year-over-year rate was published for October, because the Bureau of Labor Statistics did not collect October 2025 prices during last year's government shutdown, so the usual comparison doesn't exist. That gap is itself a good reminder that headline numbers depend on how they are built.
 
 Two numbers get reported every month, and they answer different questions:
 - **Year-over-year (annual) rate** — how much prices have risen compared to the same month last year. This is the headline number.
@@ -30,7 +31,7 @@ A single month-over-month uptick getting headline treatment as "inflation is bac
 
 ## Why your personal inflation rate is different from the headline
 
-CPI is a national average across a fixed basket. Your household's actual cost increase depends entirely on what you spend money on and where you live — a renter in a city with fast-rising rents experiences something very different from a homeowner with a fixed-rate mortgage and no monthly housing cost changes at all, even though both are looking at the same 3.4% headline number.
+CPI is a national average across a fixed basket. Your household's actual cost increase depends entirely on what you spend money on and where you live — a renter in a city with fast-rising rents experiences something very different from a homeowner with a fixed-rate mortgage and no monthly housing cost changes at all, even though both are looking at the same 3.7% headline number.
 
 This isn't a flaw in the CPI — it's not trying to be your personal number, it's tracking the country as a whole. The gap between "national CPI" and "what I'm actually spending more on" is the reason a budget line-by-line check matters more than the headline itself.
 
@@ -40,13 +41,13 @@ Say your monthly spending breaks down roughly like this, and you want to check y
 
 | Category | Monthly spend | This year's price change | Dollar impact |
 |---|---|---|---|
-| Rent | $1,500 | +6% | +$90 |
+| Rent | $1,500 | +8% | +$120 |
 | Groceries | $500 | +3% | +$15 |
 | Gas/transport | $200 | -2% | -$4 |
 | Everything else | $800 | +2% | +$16 |
-| **Total** | **$3,000** | — | **+$117** |
+| **Total** | **$3,000** | — | **+$147** |
 
-That's a personal inflation rate of about **3.9%** ($117 ÷ $3,000) — noticeably higher than the 3.4% national headline, driven almost entirely by one category (rent) rising faster than the national average. Someone with a fixed mortgage and the same grocery and transport changes would land closer to 1%. Same national report, very different personal numbers — because the weight each category carries in your own budget isn't the same as its weight in the national basket.
+That's a personal inflation rate of about **4.9%** ($147 ÷ $3,000) — noticeably higher than the 3.7% national headline, driven almost entirely by one category (rent) rising faster than the national average. Someone with a fixed mortgage and the same grocery and transport changes would land closer to 1%. Same national report, very different personal numbers — because the weight each category carries in your own budget isn't the same as its weight in the national basket.
 
 ## What to actually do when a new report comes out
 
@@ -65,10 +66,10 @@ Everything else — one month's headline number, a single category swing that do
 
 ## Getting started
 
-Next time an inflation report makes headlines, skip the national number and spend five minutes running the same category-by-category exercise as the worked example above, using your own last month's spending. If your personal rate is close to the national one, there's nothing to change. If it's meaningfully higher and concentrated in one or two categories, that's your actual signal — and it's specific enough to act on, which "inflation is 3.4%" never was.
+Next time an inflation report makes headlines, skip the national number and spend five minutes running the same category-by-category exercise as the worked example above, using your own last month's spending. If your personal rate is close to the national one, there's nothing to change. If it's meaningfully higher and concentrated in one or two categories, that's your actual signal — and it's specific enough to act on, which "inflation is 3.7%" never was.
 
 For how the Fed responds to inflation, and which inflation measure it targets, see [what the Fed does and how it affects your money](/blog/what-the-federal-reserve-does-and-how-rate-decisions-affect-your-money/).
 
 For a closer look at one everyday price that moves a lot, see [is the cheaper gas station worth the detour?](/blog/is-the-cheaper-gas-station-worth-the-detour/), which covers why fuel prices differ and how to weigh a detour.
 
-*Last updated September 2026. CPI figures reflect the U.S. Bureau of Labor Statistics' release for the 12 months ending July 2026 and will change with each new monthly release — check bls.gov/cpi for the current figure rather than relying on the number above indefinitely.*
+*First published September 2026 and updated November 13, 2026. The 3.7% figure for the 12 months to September 2026 and the October details come from ABC News (November 10, 2026) and Stockanalysis's summary of the BLS release (November 10, 2026); I did not read the BLS release itself. The next CPI report, for November, is due December 10, 2026, per Stockanalysis. The worked example uses invented numbers. CPI figures will change with each new monthly release — check bls.gov/cpi for the current figure rather than relying on the number above indefinitely.*

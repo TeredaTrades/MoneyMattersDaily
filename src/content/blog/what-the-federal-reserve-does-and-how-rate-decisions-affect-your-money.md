@@ -1,8 +1,9 @@
 ---
 title: "What the Fed Does and How It Affects Your Money"
-description: "The Federal Reserve raised its target rate on September 16, 2026. Here's what the Fed actually is, what it's trying to do, which tools it uses, and how a decision in Washington reaches your loans, savings, and paycheck."
+description: "The Federal Reserve raised its target rate in September 2026 and held it in October. Here's what the Fed actually is, what it's trying to do, which tools it uses, and how a decision in Washington reaches your loans, savings, and paycheck."
 pubDate: 2026-10-15
 targetKeyword: "what the Federal Reserve does and how its rate decisions affect your money"
+updatedDate: 2026-11-13
 pillar: "news-trends"
 draft: false
 pinApproved: true
@@ -11,7 +12,7 @@ pinVisual: "flow"
 flowSteps: ["Fed sets rate", "Banks adjust", "Reaches you"]
 ---
 
-On September 16, 2026, the Federal Reserve raised its target interest rate by a quarter of a percentage point, to a range of 3¾ to 4 percent. If you only saw the headline, you may have wondered what the Fed is, why it was raising rates while prices were already high, and whether any of it touches you. This post answers those three questions in order: what the Fed is and what it's trying to do, what it did and why, and how the effect travels from a committee room to your own accounts.
+On September 16, 2026, the Federal Reserve raised its target interest rate by a quarter of a percentage point, to a range of 3¾ to 4 percent, and on October 28 it left the range unchanged. If you only saw the headline, you may have wondered what the Fed is, why it was raising rates while prices were already high, and whether any of it touches you. This post answers those three questions in order: what the Fed is and what it's trying to do, what it did and why, and how the effect travels from a committee room to your own accounts.
 
 ## Who this is for, and who it isn't
 
@@ -26,7 +27,7 @@ The Federal Reserve is the central bank of the United States. The Fed describes 
 Two groups matter here:
 
 - **The Board of Governors,** seven members in Washington. The Fed says the Board is responsible for the discount rate and for reserve requirements.
-- **The Federal Open Market Committee (FOMC),** the group that actually votes on rates. By the Fed's description it has twelve members: the seven governors, the president of the Federal Reserve Bank of New York, and four of the other eleven Reserve Bank presidents, who rotate in for one-year terms. The FOMC holds eight regularly scheduled meetings a year.
+- **The Federal Open Market Committee (FOMC),** the group that actually votes on rates. By the Fed's description it has twelve members: the seven governors, the president of the Federal Reserve Bank of New York, and four of the other eleven Reserve Bank presidents, who rotate in for one-year terms. The FOMC has held eight regularly scheduled meetings a year, though one report on its October decision says it will reduce the number from 2027, which I couldn't confirm.
 
 The Fed isn't Congress, and it doesn't set taxes or government spending. It also doesn't set your mortgage rate, your credit card rate, or your bank's savings rate. It sets one very short-term rate and lets the rest of the financial system react to it.
 
@@ -50,7 +51,13 @@ The FOMC voted 12 to 0 to raise the target range by a quarter point, to 3¾ to 4
 
 In his press conference, Chair Warsh put the Fed's own estimates of August total PCE inflation at about 3.6 percent over twelve months and core PCE (which leaves out food and energy) at about 3.2 percent, against a 2 percent goal, with unemployment around 4.1 percent. He described the move as removing "a dose of accommodation" so financial and credit conditions fit the Committee's objectives.
 
-So the Fed raised rates because inflation was above its goal and the job market was holding up, not because the economy was struggling. The next scheduled meetings are October 27 to 28 and December 8 to 9. What the Committee decides then depends on data that hasn't been released yet, so this post won't guess.
+So the Fed raised rates because inflation was above its goal and the job market was holding up, not because the economy was struggling.
+
+## What happened on October 28, 2026
+
+At its next meeting the FOMC held the target range at 3¾ to 4 percent, by a vote of 10 to 2. Governor Lisa Cook and Cleveland Fed President Beth Hammack voted against the decision because they wanted another quarter-point increase. The statement said inflation "remains elevated," described economic activity as growing strongly, and said job gains had matched workforce growth, with the unemployment rate little changed.
+
+So the Fed paused after one rise, with two members of the committee wanting to keep going. The next scheduled meeting is December 8 to 9. ABC News reported on November 10 that CME's FedWatch tool, which tracks what futures markets are pricing in, put the odds of another quarter-point rise in December at about 82 percent. That is market pricing, not a Fed decision or a forecast from this blog, and it can change quickly with new data. The jobs and inflation reports covered in [what inflation reports actually mean for your budget](/blog/what-inflation-reports-mean-for-your-budget/) feed into that debate.
 
 ## Why raising rates is the tool for high inflation
 
@@ -102,4 +109,4 @@ A quarter point is small on any one balance. Several increases in a row, or a la
 
 Look at the three or four rates in your own life: any variable-rate debt, your savings account, and any loan you're about to take. Note which ones are tied to the Fed or the prime rate and which are fixed. That tells you whether a decision matters to you, and by about how much, before the next headline lands.
 
-*Last updated October 2026. Policy figures come from the Federal Reserve's September 16, 2026 FOMC statement and press conference, its H.15 release for October 13, 2026, its FOMC calendar (updated October 7, 2026), and its pages describing monetary policy and the FOMC. Rates, inflation estimates, and meeting dates change; check federalreserve.gov for the latest. The examples use made-up amounts. This is general information, not personalized financial advice.*
+*First published October 2026 and updated November 13, 2026. Policy figures come from the Federal Reserve's September 16, 2026 FOMC statement and press conference, its October 28, 2026 FOMC statement, its H.15 release for October 13, 2026, its FOMC calendar (updated October 7, 2026), and its pages describing monetary policy and the FOMC. The December rate-rise odds and the note about fewer meetings from 2027 come from news reports (ABC News, November 10, 2026; Nation Thailand, October 2026), not from the Fed. Rates, inflation estimates, and meeting dates change; check federalreserve.gov for the latest. The examples use made-up amounts. This is general information, not personalized financial advice.*

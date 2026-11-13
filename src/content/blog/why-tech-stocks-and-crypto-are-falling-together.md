@@ -3,6 +3,7 @@ title: "Why Tech Stocks and Crypto Are Falling Together"
 description: "US tech stocks had their worst day since April 2025 on November 5, and bitcoin slid to its lowest level since August. Here is what is behind it, what is confirmed, and what it means for your own money."
 pubDate: 2026-11-10
 targetKeyword: "why tech stocks and crypto are falling together"
+updatedDate: 2026-11-13
 pillar: "news-trends"
 draft: false
 pinApproved: true
@@ -13,7 +14,13 @@ tableRows: [{"label": "Nasdaq, Nov 5", "value": "-5.5%"}, {"label": "Bitcoin", "
 
 Tech stocks and crypto have both slid in the past week, and the stock move was bigger than "slight." On Thursday, November 5, 2026, the Nasdaq Composite closed about 5.5% lower, its worst day since April 2025, according to Fox Business. Bitcoin fell to a seven-week low the same day, and slipped again over the weekend to about $73,800, its lowest level since August, according to CoinDesk. By Monday, stocks were bouncing while crypto was still choppy.
 
-This post is a snapshot **as of the afternoon of Monday, November 9, 2026 (UTC)**. It explains what is behind the moves, who is saying what, and what is still unclear. It makes no predictions about prices and recommends no stocks or coins.
+This post was written as a snapshot **on the afternoon of Monday, November 9, 2026 (UTC)** and updated on **November 13** with the update directly below. The sections after it are the original snapshot. It explains what is behind the moves, who is saying what, and what is still unclear. It makes no predictions about prices and recommends no stocks or coins.
+
+## Update, November 13: what happened since
+
+- **Nvidia.** Its CEO Jensen Huang resigned on November 12, after the reports mentioned below. Nvidia's shares closed that day down 4.34% at $166.19, after falling as much as about 14% at the low, and the Nasdaq and S&P 500 each closed less than 0.4% lower, according to CNN. Some of the reports remain unconfirmed. The full story, with what is confirmed and what isn't, is in [Jensen Huang resigns from Nvidia: what it means for investors](/blog/jensen-huang-resigns-from-nvidia-what-it-means-for-investors/).
+- **Inflation.** The US October consumer-price report came out on November 10. Prices rose 0.4% in the month, above the 0.3% economists expected, according to ABC News. ABC News also reported that traders priced about an 82% chance of a rate rise at the Fed's December meeting, up from the 73% to 77% in the preview quoted below. That is market pricing, not a Fed decision. The Fed's next meeting is December 8 to 9.
+- **Bitcoin and the rest of the market.** I haven't updated these since November 9, so check a current source before relying on the prices below.
 
 ## Who this is for, and who it isn't
 
@@ -28,7 +35,7 @@ All figures are as reported by the outlets named. Index moves are rounded.
 - **Thursday, Nov 5.** The Nasdaq Composite fell about 5.5% and the S&P 500 about 4.4%, and the Dow lost roughly 1,800 points (about 3.4%), according to Fox Business. Fox said the Nasdaq was in correction territory, meaning at least 10% below its October 6 record close. Reports put the wipe-out in market value at roughly $2.3 to $2.5 trillion. Nvidia fell about 9%, the Philadelphia semiconductor index fell more than 12%, and data-center companies such as IREN, Applied Digital and Nebius each fell more than 14%.
 - **Same day, crypto.** Bitcoin dropped below $76,000, a seven-week low, with reports of ETF outflows, according to Bloomberg's headline (I could not read the article).
 - **Friday, Nov 6.** A partial rebound: the Nasdaq rose about 1.1% and chip stocks jumped, while the Dow slipped about 0.5%. The October jobs report showed 165,000 new jobs against an economist forecast of 65,000, with unemployment at 4.1%, per Fox Business.
-- **Weekend, Nov 7-8.** Two headlines hit risk appetite. Nvidia's board said it opened an independent investigation after reports about CEO Jensen Huang, including whether he was targeted by a foreign intelligence service. Nvidia said it has no reason to believe national security or company secrets were compromised. The intelligence reports are unconfirmed. Separately, US-Iran talks stalled, and Secretary of State Marco Rubio called Iran's demands "outrageous."
+- **Weekend, Nov 7-8.** Two headlines hit risk appetite. Nvidia's board said it opened an independent investigation after reports about CEO Jensen Huang, including whether he was targeted by a foreign intelligence service. Nvidia said it has no reason to believe national security or company secrets were compromised. Some of the intelligence reports remained unconfirmed (see the update above). Separately, US-Iran talks stalled, and Secretary of State Marco Rubio called Iran's demands "outrageous."
 - **Late Sunday, Nov 8.** Bitcoin touched about $73,761, then recovered above $75,000. Ether fell below $2,100 before bouncing to about $2,144. More than $1 billion of leveraged crypto positions were liquidated in 24 hours, according to CoinGlass data cited by CoinDesk.
 - **Monday, Nov 9.** TheStreet reported the Nasdaq and S&P 500 up, while Nvidia was down roughly 5%.
 
@@ -76,8 +83,8 @@ The loss is smaller than either headline number because the savings account did 
 ## What is still unknown
 
 - **How much of the stock drop was politics, AI worries, the Fed or forced selling.** Different sources weight them differently.
-- **What Nvidia's investigation will find,** and how much the unconfirmed reports matter to the company.
-- **What inflation does next.** The US October consumer-price report is due Tuesday, November 10 at 8:30 a.m. Eastern, and it could move rate expectations, according to BYDFi's preview.
+- **What Nvidia's investigation will find, and who runs the company next.** Huang has resigned and CFO Colette Kress is interim CEO; the board's investigation and a Justice Department inquiry into chip diversion are still open. See [the Nvidia post](/blog/jensen-huang-resigns-from-nvidia-what-it-means-for-investors/).
+- **What inflation does next.** The October report is out (see the update above); the November report is due December 10, the day after the Fed's December meeting, according to Stockanalysis.
 - **Whether the bounce lasts.** Stocks rose Friday and Monday, but nobody can say whether it holds.
 
 ## Common mistakes
@@ -85,7 +92,7 @@ The loss is smaller than either headline number because the savings account did 
 - **Treating one day as a trend.** The Nasdaq's worst day in over a year was followed by gains, and one move says little about the next.
 - **Assuming crypto protects you from stocks.** This week it didn't.
 - **Reading a quote as a forecast.** "The bottom is in" and "support at $70,000" are opinions. Nobody knows.
-- **Trading on rumors.** The intelligence reports about Nvidia are unconfirmed, and early reports in fast-moving stories often change. See [how to read crypto news without getting burned](/blog/how-to-read-crypto-news-without-getting-burned/).
+- **Trading on rumors.** Several of the intelligence reports about Nvidia were unconfirmed when they moved the stock, and early reports in fast-moving stories often change. See [how to read crypto news without getting burned](/blog/how-to-read-crypto-news-without-getting-burned/).
 - **Panic-selling money you won't need for years.** If your timeline hasn't changed, a headline hasn't changed it.
 
 ## Getting started
@@ -96,4 +103,4 @@ The loss is smaller than either headline number because the savings account did 
 4. **Pick sources you can verify,** such as the Fed's own statements, and treat social media and price talk with caution.
 5. **Write down any change you'd make** and sleep on it before acting.
 
-*Last updated November 9, 2026 (UTC afternoon). Written on the day with the sources available then, so figures will change. Sources: Fox Business (November 5 and 6 market coverage; its Nov 5 page contained conflicting figures between text and tables, so I used the text and cross-checked headlines), CoinDesk (November 9), Fortune (November 9), TheStreet (November 9), the Federal Reserve's October 28 statement (federalreserve.gov) and BYDFi's October CPI preview (November 4, a secondary source: the December rate-rise odds and the CPI release time come from it, and Fortune also named Tuesday for the report), and the headlines of Bloomberg, CNN and FXStreet pieces I could not read in full. The CNN and NBC explainers could not be fetched. The worked example is invented, and the percentage above June's bitcoin low was calculated for this post. The explanations of correlation, leverage and rate effects are general education rather than sourced to one page. Crypto is volatile and carries a risk of total loss. This is not personalized financial advice.*
+*First written November 9, 2026 (UTC afternoon) and updated November 13, 2026 for the Nvidia, inflation and rate-odds items only; everything else is the November 9 snapshot, so figures will change. The November 13 update draws on CNN's live coverage of November 12, ABC News (November 10) and Stockanalysis (November 10). Sources: Fox Business (November 5 and 6 market coverage; its Nov 5 page contained conflicting figures between text and tables, so I used the text and cross-checked headlines), CoinDesk (November 9), Fortune (November 9), TheStreet (November 9), the Federal Reserve's October 28 statement (federalreserve.gov) and BYDFi's October CPI preview (November 4, a secondary source: the December rate-rise odds and the CPI release time come from it, and Fortune also named Tuesday for the report), and the headlines of Bloomberg, CNN and FXStreet pieces I could not read in full. The CNN and NBC explainers could not be fetched. The worked example is invented, and the percentage above June's bitcoin low was calculated for this post. The explanations of correlation, leverage and rate effects are general education rather than sourced to one page. Crypto is volatile and carries a risk of total loss. This is not personalized financial advice.*
