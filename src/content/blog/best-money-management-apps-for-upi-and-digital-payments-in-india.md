@@ -2,7 +2,7 @@
 title: "Best Money Management Apps for UPI and Digital Payments in India (2026)"
 description: "PhonePe, Google Pay, and Paytm move your money; Money View, Axio, ET Money, and Jupiter help you understand it. Here's how to pick one of each, what UPI actually costs you, and what the merchant fee (now postponed) changes and doesn't."
 pubDate: 2026-09-30
-updatedDate: 2026-10-26
+updatedDate: 2026-11-16
 targetKeyword: "best money management apps for UPI and digital payments in India"
 pillar: "app-comparisons"
 draft: false
@@ -43,6 +43,8 @@ This is where you actually see what you spend. The main options fall into two st
 
 **SMS-reading trackers (Android only).** Money View, Axio (formerly Walnut), and ET Money read the bank SMS your phone receives and categorise each payment, which is how they capture UPI spending from every app at once without any bank login. The trade-offs are real: they need SMS access, which is a privacy decision you should make knowingly, several of them pair the tracker with loan or investment promotions, and iPhones don't allow apps to read SMS, so this approach mostly doesn't work on iOS. Of the three, Money View is the most commonly recommended for plain tracking with broader money tools; ET Money suits people who also invest in mutual funds through the same app.
 
+**If you're on an iPhone.** The three SMS trackers above won't work, which leaves iPhone users with fewer options. One alternative is [Pocket Clear](https://apps.apple.com/us/app/id6757503402), a small expense tracker for iPhone, iPad, Mac and Android. According to its developer and its App Store listing, the basic version is free and ad-free, keeps your data on your device, and never asks for a bank login or SMS access. It supports UPI by letting you log a payment by hand, and on iPhone you can set up an optional Shortcuts automation that logs bank debit texts for you (Android uses payment notifications instead). Paid features such as cloud sync are extra. The developer contacted us about this post; we have not been paid or given a free upgrade, and we have not tested it with a live UPI account, so treat the description above as the developer's, not our verdict. Check the app's privacy details and what any automation can read before you set it up.
+
 **Neobank apps, like Jupiter.** Jupiter builds spend categories into the app from activity on its own account. The tracking is polished, but it's most useful once a meaningful share of your spending runs through that account, so it's a choice about where you bank, not just which app you install.
 
 **Manual or budget-first apps.** If you'd rather set monthly limits yourself than review auto-categorised history, a manual tracker with envelopes or category budgets works, at the cost of typing. The general comparison of how those work is in [Best Budgeting Apps Compared](/blog/best-budgeting-apps-compared/); note that many US-first budgeting apps can't read Indian UPI activity automatically.
@@ -77,7 +79,7 @@ If your card returns about 1% in rewards on that spend, a 1% fee plus GST (about
 - **Paytm** — for people who already use its wallet or services; read the fee line on each bill.
 - **Money View, Axio, or ET Money** — for Android users who want zero-effort tracking of all UPI spending and are comfortable granting SMS access.
 - **Jupiter** — for people willing to move a meaningful share of spending into that account in exchange for built-in categorisation.
-- **Not a fit:** anyone on iOS expecting an SMS tracker to work the way it does on Android, or anyone who wants one app to be both the wallet and the analyst.
+- **Not a fit:** anyone on iOS expecting an SMS tracker to work the way it does on Android (see the iPhone note above for one alternative), or anyone who wants one app to be both the wallet and the analyst.
 
 ## Common mistakes
 
@@ -89,4 +91,4 @@ If your card returns about 1% in rewards on that spend, a 1% fee plus GST (about
 
 Outside India, Google Pay and other wallets work differently. See [digital wallets compared: Apple Pay vs Google Pay vs PayPal](/blog/digital-wallets-compared-apple-pay-vs-google-pay-vs-paypal/).
 
-*Last updated 26 October 2026. UPI limits, app fees, and the merchant discount rate framework (originally due 15 October 2026, deferred by NPCI on 13 October to a date still to be notified, and subject to a pending court challenge) can change; NPCI's 30% per-app market share cap is also scheduled for review by December 31, 2026. Market-share figures reflect August 2026 data. Confirm current limits and fees in your bank's and app's own terms before relying on them.*
+*iPhone tracker note added 16 November 2026; the rest was last updated 26 October 2026. UPI limits, app fees, and the merchant discount rate framework (originally due 15 October 2026, deferred by NPCI on 13 October to a date still to be notified, and subject to a pending court challenge) can change; NPCI's 30% per-app market share cap is also scheduled for review by December 31, 2026. Market-share figures reflect August 2026 data. Confirm current limits and fees in your bank's and app's own terms before relying on them.*
