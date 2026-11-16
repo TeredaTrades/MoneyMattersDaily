@@ -12,6 +12,102 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## how-rotating-savings-groups-work-ekub-chama-susu-and-what-to-watch-out-for
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Friends put the same amount in a pot every month and take turns receiving it. How ekub, chama and susu groups work, what happens if someone stops paying, and what to check before you join.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-rotating-savings-groups-work-ekub-chama-susu-and-what-to-watch-out-for/
+```
+
+## singapores-cpf-explained-how-the-central-provident-fund-works
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Singapore's CPF is a compulsory savings scheme for retirement, housing and healthcare. How contributions split across the accounts, how the interest works, and when you can withdraw.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/singapores-cpf-explained-how-the-central-provident-fund-works/
+```
+
+## how-to-compare-crypto-exchanges-fees-security-and-regulation
+
+**Post (attach the matching pin image from public/pins/):**
+```
+There is no single best crypto exchange, and an exchange is not a bank. A criteria-based way to compare platforms on licensing, custody, fees and risk.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-compare-crypto-exchanges-fees-security-and-regulation/
+```
+
+## what-a-target-date-fund-actually-does
+
+**Post (attach the matching pin image from public/pins/):**
+```
+A target-date fund picks your mix of shares and bonds and makes it safer as retirement gets closer. How the glide path works and which fees to check.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/what-a-target-date-fund-actually-does/
+```
+
+## international-money-transfer-services-compared-how-to-choose
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Banks, transfer apps, cash pickup, mobile wallets and stablecoins all move money across borders at very different real costs. A way to compare them before you send.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/international-money-transfer-services-compared-how-to-choose/
+```
+
+## how-gold-prices-work-and-the-main-ways-to-own-gold
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Gold pays no interest. Its price moves on real interest rates, central bank buying, fear and currency worries. What drives it, and how bars, ETFs and mining stocks differ.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-gold-prices-work-and-the-main-ways-to-own-gold/
+```
+
+## prepaid-vs-debit-vs-credit-cards-key-differences-and-when-to-use-each
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Prepaid, debit and credit cards look the same at checkout but differ in where the money comes from and what happens if something goes wrong. How to pick the right one for each situation.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/prepaid-vs-debit-vs-credit-cards-key-differences-and-when-to-use-each/
+```
+
+## travel-insurance-explained-whats-covered-what-isnt-and-when-you-need-it
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Travel insurance repays specific, listed losses, not every trip problem. What the main coverages do, what policies commonly leave out, and when it's worth buying.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/travel-insurance-explained-whats-covered-what-isnt-and-when-you-need-it/
+```
+
 ## prepaid-travel-cards-vs-travel-debit-cards-which-to-carry-abroad
 
 **Post (attach the matching pin image from public/pins/):**
