@@ -12,6 +12,12 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-11-18 — Chime agency reply and Pocket Clear confirmation
+
+- **Pocket Clear:** developer Aravind Srinivas replied 11-16 (09:27 local) to the follow-up email: he read the iPhone-tracker note in the UPI apps post and says it is accurate, nothing to correct. No change to the post; no inclusion promise, free Pro offer still declined.
+- **Chime:** Drew Sullivan replied 11-17 (16:13) and now signs as AirOps, "coordinating this campaign on behalf of Chime" (earlier emails came from chime-editorial.com; agency name and a named Chime contact still to be confirmed). They want a clearly labeled sponsored mention inside the existing "Best Ways to Automate Your Savings" guide (recurring transfers and round-ups section), agree to separation from editorial rankings, rel="sponsored", balanced comparisons or risk notes, claim verification, and owner writing or approving copy; no suggested copy yet. They did NOT give a budget, fee, schedule or duration; they asked for ours.
+- **Owner's position:** separate, standalone post labeled "Sponsored", not an insertion into an existing guide (conflicts with the current editorial-policy/About wording that says no payment for coverage; those pages must change before any paid piece goes live). Reply drafted 11-18 (not confirmed sent): asks for their budget range first, agency/contact confirmation, and written terms (no Chime approval beyond fact-checking, right to decline unverifiable claims, agreed live period, payment terms and schedule). Nothing agreed.
+
 ## 2026-11-13 (later) — Stale-post refresh: recession, inflation, Fed explainer, Eurozone, why-tech, volatility
 
 - Owner asked which earlier posts needed checking, then to do the four most stale plus the Nvidia reverse links. All edited posts got `updatedDate: 2026-11-13` (volatility post: one added link only, no date change).
