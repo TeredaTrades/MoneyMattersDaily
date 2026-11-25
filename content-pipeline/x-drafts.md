@@ -48,6 +48,18 @@ How to Save for a House Down Payment, Step by Step — Set a target price, add 2
 https://moneymattersdaily.money/blog/how-to-save-for-a-house-down-payment-a-step-by-step-plan/
 ```
 
+## jensen-huang-returns-to-nvidia-what-it-means-for-investors
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Jensen Huang Returns to Nvidia: What It Means for Investors — Reinstated Nov 23, the stock jumped about 31% in a day. What Nvidia confirms, what is only reported, what is still under investigation, and what a swing like this means for your own money.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/jensen-huang-returns-to-nvidia-what-it-means-for-investors/
+```
+
 ## how-credit-card-interest-works-apr-grace-periods-and-how-to-avoid-paying-it
 
 **Post (attach the matching pin image from public/pins/):**

@@ -3,7 +3,7 @@ title: "What the Fed Does and How It Affects Your Money"
 description: "The Federal Reserve raised its target rate in September 2026 and held it in October. Here's what the Fed actually is, what it's trying to do, which tools it uses, and how a decision in Washington reaches your loans, savings, and paycheck."
 pubDate: 2026-10-15
 targetKeyword: "what the Federal Reserve does and how its rate decisions affect your money"
-updatedDate: 2026-11-13
+updatedDate: 2026-11-25
 pillar: "news-trends"
 draft: false
 pinApproved: true
@@ -57,7 +57,7 @@ So the Fed raised rates because inflation was above its goal and the job market 
 
 At its next meeting the FOMC held the target range at 3¾ to 4 percent, by a vote of 10 to 2. Governor Lisa Cook and Cleveland Fed President Beth Hammack voted against the decision because they wanted another quarter-point increase. The statement said inflation "remains elevated," described economic activity as growing strongly, and said job gains had matched workforce growth, with the unemployment rate little changed.
 
-So the Fed paused after one rise, with two members of the committee wanting to keep going. The next scheduled meeting is December 8 to 9. ABC News reported on November 10 that CME's FedWatch tool, which tracks what futures markets are pricing in, put the odds of another quarter-point rise in December at about 82 percent. That is market pricing, not a Fed decision or a forecast from this blog, and it can change quickly with new data. The jobs and inflation reports covered in [what inflation reports actually mean for your budget](/blog/what-inflation-reports-mean-for-your-budget/) feed into that debate.
+So the Fed paused after one rise, with two members of the committee wanting to keep going. The next scheduled meeting is December 8 to 9. ABC News reported on November 10 that CME's FedWatch tool, which tracks what futures markets are pricing in, put the odds of another quarter-point rise in December at about 82 percent. By Monday, November 23, Decrypt reported that FedWatch had raised that to 96.2 percent for the December 9 decision, with no chance priced for a half-point rise, and CoinDesk reported that Governor Christopher Waller had floated a larger rise earlier that week, which I have not seen in the Fed's own words. That is market pricing, not a Fed decision or a forecast from this blog, and it can change quickly with new data. The jobs and inflation reports covered in [what inflation reports actually mean for your budget](/blog/what-inflation-reports-mean-for-your-budget/) feed into that debate.
 
 ## Why raising rates is the tool for high inflation
 
@@ -109,4 +109,4 @@ A quarter point is small on any one balance. Several increases in a row, or a la
 
 Look at the three or four rates in your own life: any variable-rate debt, your savings account, and any loan you're about to take. Note which ones are tied to the Fed or the prime rate and which are fixed. That tells you whether a decision matters to you, and by about how much, before the next headline lands.
 
-*First published October 2026 and updated November 13, 2026. Policy figures come from the Federal Reserve's September 16, 2026 FOMC statement and press conference, its October 28, 2026 FOMC statement, its H.15 release for October 13, 2026, its FOMC calendar (updated October 7, 2026), and its pages describing monetary policy and the FOMC. The December rate-rise odds and the note about fewer meetings from 2027 come from news reports (ABC News, November 10, 2026; Nation Thailand, October 2026), not from the Fed. Rates, inflation estimates, and meeting dates change; check federalreserve.gov for the latest. The examples use made-up amounts. This is general information, not personalized financial advice.*
+*First published October 2026 and updated November 13 and November 25, 2026 (the November 25 change covers the December rate-rise odds only). Policy figures come from the Federal Reserve's September 16, 2026 FOMC statement and press conference, its October 28, 2026 FOMC statement, its H.15 release for October 13, 2026, its FOMC calendar (updated October 7, 2026), and its pages describing monetary policy and the FOMC. The December rate-rise odds and the note about fewer meetings from 2027 come from news reports (ABC News, November 10, 2026; Decrypt, November 23, 2026; CoinDesk, November 20, 2026; Nation Thailand, October 2026), not from the Fed. Rates, inflation estimates, and meeting dates change; check federalreserve.gov for the latest. The examples use made-up amounts. This is general information, not personalized financial advice.*

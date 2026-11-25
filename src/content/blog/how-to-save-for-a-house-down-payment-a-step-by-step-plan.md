@@ -1,7 +1,7 @@
 ---
 title: "How to Save for a House Down Payment, Step by Step"
 description: "How much do you actually need for a down payment, and how do you get there? A step-by-step plan: set a target price, add closing costs, divide by months, automate the transfer, and keep your emergency fund separate."
-pubDate: 2026-11-26
+pubDate: 2026-11-27
 targetKeyword: "how to save for a house down payment: a step-by-step plan"
 pillar: "saving"
 draft: false
