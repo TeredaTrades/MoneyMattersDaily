@@ -48,6 +48,18 @@ How to Save for a House Down Payment, Step by Step — Set a target price, add 2
 https://moneymattersdaily.money/blog/how-to-save-for-a-house-down-payment-a-step-by-step-plan/
 ```
 
+## bitcoin-breaks-its-cycle-low-what-it-means-for-your-money
+
+**Post (attach the matching pin image from public/pins/):**
+```
+Bitcoin Breaks Its Cycle Low: What It Means for Your Money — It touched about $55,000 on Nov 21, below the level many treated as the bottom. What is confirmed, what the four-year cycle theory can't tell you, and what a 50%+ fall means for your own money.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/bitcoin-breaks-its-cycle-low-what-it-means-for-your-money/
+```
+
 ## jensen-huang-returns-to-nvidia-what-it-means-for-investors
 
 **Post (attach the matching pin image from public/pins/):**

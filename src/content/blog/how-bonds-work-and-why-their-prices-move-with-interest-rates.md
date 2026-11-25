@@ -1,7 +1,7 @@
 ---
 title: "How Bonds Work and Why Prices Move With Interest Rates"
 description: "A bond is a loan you make to a government or company. Here is how coupons, maturity and face value work, why bond prices fall when interest rates rise, what duration means, and the main risks, with a worked example."
-pubDate: 2026-11-29
+pubDate: 2026-11-30
 targetKeyword: "how bonds work and why their prices move when interest rates change"
 pillar: "investing-basics"
 draft: false

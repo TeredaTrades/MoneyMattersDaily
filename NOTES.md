@@ -12,6 +12,14 @@
 
 Running log of setup decisions and open items. Newest entries at top.
 
+## 2026-11-25 (night) — Bitcoin "breaks its cycle low" post scheduled for 11-27
+
+- **New post** `bitcoin-breaks-its-cycle-low-what-it-means-for-your-money` (news-trends, pubDate 2026-11-27). Snapshot as of Nov 25 UTC; latest price ~$58.6K-$58.9K (JournalArta, Cryptonomist, both still moving). Refresh the figures on the day if the price has moved a lot.
+- **Read:** U.Today (11-22, $55,081 low, cycle theory + caveats), Crypto Briefing via TradingView (11-20), JournalArta and Cryptonomist (11-25), plus the earlier CoinDesk/Decrypt/KuCoin reads. **Not read:** Fortune price pages, BitcoinWorld (blocked), fund-flow data. Prices and ETF outflow figures differ across sources and are stated as such.
+- **Kept out:** price predictions, buy/sell calls. No Anthropic mention, so no disclosure line needed.
+- **Schedule shifted again:** Huang return 11-26, Bitcoin 11-27, down payment 11-28, groceries 11-29, bonds 11-30. Nothing written from 12-01.
+- **After go-live (11-27):** link to it from `why-tech-stocks-and-crypto-are-falling-together` and the crypto basics posts.
+
 ## 2026-11-25 (evening) — Huang return post for 11-26, schedule shifted, stale-post updates
 
 - **Schedule change:** owner asked for a new post on Jensen Huang's return for tomorrow, so batch 5 moved back a day: 11-26 Huang return (news-trends, same-day style), 11-27 down payment, 11-28 groceries, 11-29 bonds (pubDates edited; nothing else about those three changed). Nothing is written for 11-30 onward.

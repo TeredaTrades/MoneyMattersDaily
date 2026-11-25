@@ -1,7 +1,7 @@
 ---
 title: "How to Cut Grocery Costs Without Extreme Couponing"
 description: "Groceries are one of the few budget lines you control every week. Here is what the USDA says a household of each size spends on food, and practical ways to lower the bill: planning, a list with quantities, smarter bulk buying, and wasting less."
-pubDate: 2026-11-28
+pubDate: 2026-11-29
 targetKeyword: "how to cut grocery costs without extreme couponing"
 pillar: "budgeting"
 draft: false
