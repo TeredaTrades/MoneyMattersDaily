@@ -12,6 +12,54 @@ pin image from public/pins/ attached), then reply to your own post with
 just the link. The pin images already have the site domain printed on
 them, so the image itself carries attribution even before the reply.
 
+## how-bonds-work-and-why-their-prices-move-with-interest-rates
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How Bonds Work and Why Prices Move With Interest Rates — A bond is a loan. Here is how coupons and maturity work, why prices fall when rates rise, why longer bonds move more, and the main risks, with a worked example.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-bonds-work-and-why-their-prices-move-with-interest-rates/
+```
+
+## how-to-cut-grocery-costs-without-extreme-couponing
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How to Cut Grocery Costs Without Extreme Couponing — What the USDA says households spend on food, and practical ways to lower the bill: plan around what you have, shop with a list, buy bulk only for what you'll finish, waste less.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-cut-grocery-costs-without-extreme-couponing/
+```
+
+## how-to-save-for-a-house-down-payment-a-step-by-step-plan
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How to Save for a House Down Payment, Step by Step — Set a target price, add 2-5% for closing costs, divide by months, automate the transfer, and keep your emergency fund separate. A worked example for a $300,000 home.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-to-save-for-a-house-down-payment-a-step-by-step-plan/
+```
+
+## how-credit-card-interest-works-apr-grace-periods-and-how-to-avoid-paying-it
+
+**Post (attach the matching pin image from public/pins/):**
+```
+How Credit Card Interest Works (and How to Avoid Paying It) — Interest is calculated daily, but pay the full balance by the due date and most cards charge none. Here is what APR means, how the grace period works, and what a carried balance really costs.
+```
+
+**First reply (post right after, replying to your own post — no image needed):**
+```
+https://moneymattersdaily.money/blog/how-credit-card-interest-works-apr-grace-periods-and-how-to-avoid-paying-it/
+```
+
 ## how-rotating-savings-groups-work-ekub-chama-susu-and-what-to-watch-out-for
 
 **Post (attach the matching pin image from public/pins/):**

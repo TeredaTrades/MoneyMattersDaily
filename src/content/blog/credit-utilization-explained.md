@@ -24,7 +24,7 @@ Both are scored, and both matter independently. A single card at 90% utilization
 
 Utilization isn't based on what's owed the moment before a payment is due — it's based on the balance on the **statement closing date**, which is typically report to the bureaus a few days later. That date is usually 3–4 weeks *before* the due date, not the due date itself.
 
-**Worked example:** A card has a $5,000 limit. Statement closes on the 18th of the month with a $2,400 balance reported — 48% utilization, which shows up on the credit report regardless of what happens next. The due date is the 12th of the following month. Paying the full $2,400 in full by that due date avoids interest entirely, but the 48% utilization was already reported and sits on the file until the next statement closes with a lower balance.
+**Worked example:** A card has a $5,000 limit. Statement closes on the 18th of the month with a $2,400 balance reported — 48% utilization, which shows up on the credit report regardless of what happens next. The due date is the 12th of the following month. Paying the full $2,400 in full by that due date avoids interest entirely (see [how credit card interest works](/blog/how-credit-card-interest-works-apr-grace-periods-and-how-to-avoid-paying-it/) for why), but the 48% utilization was already reported and sits on the file until the next statement closes with a lower balance.
 
 This is why someone can pay their card in full every single month, carry zero interest, and still show high utilization — the balance that gets reported is a snapshot, not an average, and it's taken well before the bill is actually due.
 

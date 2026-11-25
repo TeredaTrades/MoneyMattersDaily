@@ -36,7 +36,7 @@ Payment history and amounts owed (which includes utilization) together are 65% o
 
 - **Checking your own score.** This is always a soft inquiry, no matter how often you do it. Zero effect, not "a small effect" — genuinely zero. For the full soft-vs-hard breakdown, see [does checking your own credit score hurt it](/blog/does-checking-your-own-credit-score-hurt-it/).
 - **Income.** Not a scoring input at all. It matters to a lender deciding whether to approve you, but it isn't part of the FICO calculation itself.
-- **Carrying a balance instead of paying in full.** FICO doesn't reward carrying debt — paying in full is simply better, with no upside to leaving a balance on purpose. This one costs real interest for no scoring benefit.
+- **Carrying a balance instead of paying in full.** FICO doesn't reward carrying debt — paying in full is simply better, with no upside to leaving a balance on purpose. This one costs real interest for no scoring benefit. See [how credit card interest works](/blog/how-credit-card-interest-works-apr-grace-periods-and-how-to-avoid-paying-it/) for how that interest is calculated and how the grace period protects you.
 - **Rate-shopping for a mortgage, auto loan, or student loan.** Multiple hard inquiries for the *same type* of loan within a short window (typically 14–45 days, depending on the model) count as a single inquiry, not several. This is the exception to the "avoid multiple applications" rule above — it only applies to installment-loan shopping, not to opening several credit cards in the same window.
 - **Debit card activity.** Debit cards aren't reported to the credit bureaus at all. Spending responsibly on a debit card is good money management, but it's invisible to your credit file no matter how it's used.
 
